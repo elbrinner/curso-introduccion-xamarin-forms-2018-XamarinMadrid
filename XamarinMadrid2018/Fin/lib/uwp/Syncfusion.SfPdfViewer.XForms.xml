@@ -1,0 +1,2849 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPdfViewer.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu">
+            <summary>
+             Specifies information about menu items in the context menu during text selection. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.Copy">
+            <summary>
+            Gets the properties of copy menu from the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu" />.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.Highlight">
+            <summary>
+            Gets the properties of highlight menu from the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu" />.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.Underline">
+            <summary>
+            Gets the properties of underline menu from the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu" />.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.Strikethrough">
+            <summary>
+            Gets the properties of strikethrough menu from the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSelectionMenu" />.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSelectionMenuItem">
+            <summary>
+            Specifies the information about menu item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionMenuItem.IsVisible">
+            <summary>
+            Gets or sets a value that indicates whether menu item in the context menu is enabled.
+            </summary>
+            <value>
+            <b>false</b> if menu is disabled; otherwise, <b>true</b>.The default value is <b>true</b>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService">
+            <summary>
+            Provides the platform specific functionality to render the PDF document using third party renderers in a SfPdfViewer.    
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.AlternatePdfRenderer">
+            <summary>
+            Gets the object of the Custom PDF renderer that provides the platform specific functionality to render the PDF document using third party PDF renderers
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.CanRedoInkModifiedEventArgs.CanRedoInk">
+            <summary>
+            Returns false when redo collection is empty otherwise true.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CanRedoModifiedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedoModified"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.CanRedoModifiedEventArgs.CanRedo">
+            <summary>
+            Returns false when redo collection is empty otherwise true.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.CanUndoInkModifiedEventArgs.CanUndoInk">
+            <summary>
+            Returns false when undo collection is empty otherwise true.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CanUndoModifiedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndoModified"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.CanUndoModifiedEventArgs.CanUndo">
+            <summary>
+            Returns false when undo collection is empty otherwise true.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.DocumentSaveInitiatedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.DocumentSaveInitiated"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.DocumentSaveInitiatedEventArgs.SaveStream">
+            <summary>
+            Returns the save stream
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs.#ctor(Xamarin.Forms.Rectangle,System.String,System.Single,Xamarin.Forms.Color,System.Int32)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationAdded"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs.TextColor">
+            <summary>
+            Gets the color of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs.TextSize">
+            <summary>
+            Gets the font size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs.Text">
+            <summary>
+            Gets the text of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs.#ctor(Xamarin.Forms.Rectangle,System.String,System.Single,Xamarin.Forms.Color,System.Int32)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationLongPressed"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="!:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs.TextColor">
+            <summary>
+            Gets the color of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs.TextSize">
+            <summary>
+            Gets the font size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs.Text">
+            <summary>
+            Gets the text of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs.#ctor(Xamarin.Forms.Rectangle,System.String,System.Single,Xamarin.Forms.Color,System.Int32)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationRemoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the removed free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs.TextColor">
+            <summary>
+            Gets the color of the removed free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs.TextSize">
+            <summary>
+            Gets the font size of the removed free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs.Text">
+            <summary>
+            Gets the text of the removed free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the removed free text annotation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs.#ctor(Xamarin.Forms.Rectangle,System.String,System.Single,Xamarin.Forms.Color,System.Int32)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationTapped"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs.TextColor">
+            <summary>
+            Gets the color of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs.TextSize">
+            <summary>
+            Gets the font size of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs.Text">
+            <summary>
+            Gets the text of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.HyperlinkClicked"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs.Uri">
+            <summary>
+            Gets the hyperlink is being clicked.
+            </summary>
+            <value>
+            A string that holds the clicked uri. Default value is <see cref="F:System.String.Empty"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs.Handled">
+            <summary>
+            Gets or sets a value indicating whether the hyperlink navigation was handled. 
+            </summary>
+            <value>
+            Default value is true.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs.PageIndex">
+            <summary>
+            Gets the current page index of the hyperlink.
+            </summary>
+            <value>
+            An interger that holds the current page index. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the hyperlink is being clicked.
+            </summary>
+            <value>
+            A rectanglef that holds a bounds of link uri.
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs.#ctor(System.String,System.Int32,Xamarin.Forms.Rectangle)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventHandler"/> class with given the clicked link. 
+            </summary>
+            <param name="targetLink">The hyperlink to be clicked.</param>        
+            <param name="uriPageIndex">Get the pageindex of the hyperlink.</param>
+            <param name="uriBounds">Get the bounds of hyperlink.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs">
+            <summary>
+            Gets the page number, bounds and color of the added ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the added ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs.Color">
+            <summary>
+            Gets the color of the added ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the added ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the added ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs">
+            <summary>
+            Gets the page number, bounds and color of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs.Color">
+            <summary>
+            Gets the color of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs">
+            <summary>
+            Gets the page number, bounds and color of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.OldColor">
+            <summary>
+            Gets the old color of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.NewColor">
+            <summary>
+            Gets the new color of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.OldThickness">
+            <summary>
+            Gets the old thickness of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.NewThickness">
+            <summary>
+            Gets the new thickness of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.OldOpacity">
+            <summary>
+            Gets the old opacity of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.NewOpacity">
+            <summary>
+            Gets the new opacity of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the edited ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs">
+            <summary>
+            Gets the page number, old bounds ,new bounds, color of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs.OldBounds">
+            <summary>
+            Gets the old bounds of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs.NewBounds">
+            <summary>
+            Gets the new bounds of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs.Color">
+            <summary>
+            Gets the color of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the moved or resized ink and shape annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs">
+            <summary>
+            Gets the page number, bounds and color of the removed ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the removed ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the removed ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs.Color">
+            <summary>
+            Gets the color of the removed ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the removed ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the removed ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs">
+            <summary>
+            Gets the page number, bounds and color of the selected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the selected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the selected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs.Color">
+            <summary>
+            Gets the color of the selected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the selected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the selected ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs">
+            <summary>
+            Gets the page number, bounds and color of the tapped ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the tapped ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the tapped ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs.Color">
+            <summary>
+            Gets the color of the tapped ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the deselected ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs">
+            <summary>
+            Provides event data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageChanged"/> event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs.OldPageNumber">
+            <summary>
+            Gets the page number from which the navigation was initiated in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            An integer that holds value of the page number from which navigation is initiated.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs.NewPageNumber">
+            <summary>
+            Gets the page number to which the document is navigated to in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            An integer that holds the destination page number/current page number.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs.IsLastPage">
+            <summary>
+            Returns true, if the new page number is the last page of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />, otherwise false.
+            </summary>
+            <value>
+            A boolean which represents whether the current page is the last page of the document or not. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs.IsFirstPage">
+            <summary>
+            Returns true, if the new updated page number is the first page of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />, otherwise false.
+            </summary>
+            <value>
+            A boolean which represents whether the current page is the first page of the document or not. 
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs"/> class with given page number. 
+            </summary>
+            <param name="pageNumber"> The number of the current page after the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageChanged"/> event occurs. </param>
+            <param name="oldPageNumber"> Gets the page number from which the navigation was initiated in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. </param>
+            <param name="newPageNumber"> Gets the page number to which the document is navigated to in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. </param>
+            <param name="isFirstPage"> Returns true, if the new updated page number is the first page of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />, otherwise false. </param>
+            <param name="isLastPage"> Returns true, if the new page number is the last page of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />, otherwise false. </param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.RedoPerformedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RedoPerformed"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.RedoPerformedEventArgs.CanRedo">
+            <summary>
+            Returns false when redo collection is empty otherwise true.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.RedoPerformedEventArgs.AnnotationsInformation">
+            <summary>
+            Returns the annotation information collection once redo operation is performed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs.TextColor">
+            <summary>
+            Gets the color of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs.TextSize">
+            <summary>
+            Gets the font size of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs.Text">
+            <summary>
+            Gets the text of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs.#ctor(System.Int32,Xamarin.Forms.Rectangle,System.String,System.Single,Xamarin.Forms.Color)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationDeselected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.#ctor(System.String,System.String,Xamarin.Forms.Color,Xamarin.Forms.Color,System.Single,System.Single)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationEdited"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.OldText">
+            <summary>
+            Gets the old text of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.NewText">
+            <summary>
+            Gets the new text of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.OldTextColor">
+            <summary>
+            Gets the old color of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.NewTextColor">
+            <summary>
+            Gets the new color of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.OldTextSize">
+            <summary>
+            Gets the old size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs.NewTextSize">
+            <summary>
+            Gets the new size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrResizedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrResizedEventArgs.OldBounds">
+            <summary>
+            Gets the  old position and size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrResizedEventArgs.NewBounds">
+            <summary>
+            Gets the new position and size of the added free text annotation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrResizedEventArgs.#ctor(System.Int32,Xamarin.Forms.Rectangle,Xamarin.Forms.Rectangle)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationMovedOrResized"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrResizedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the added  free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs.TextColor">
+            <summary>
+            Gets the color of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs.TextSize">
+            <summary>
+            Gets the font size of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs.Text">
+            <summary>
+            Gets the text of the tapped free text annotation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs.#ctor(System.Int32,Xamarin.Forms.Rectangle,System.String,System.Single,Xamarin.Forms.Color)">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationSelected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationAdded"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides bounds of the annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.Position">
+            <summary>
+            Gets the position of the annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides position of the annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> that provides the page number of the annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.DataPoints">
+            <summary>
+            Gets the collection of points which used to draw shape annnotation.
+            </summary>
+            <value>
+            A data points provides collection of <see cref="T:Xamarin.Forms.Point"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.StrokeColor">
+            <summary>
+            Gets the stroke color which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the stroke color of the shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.FillColor">
+            <summary>
+            Gets the fill color which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the fill color of the shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.Opacity">
+            <summary>
+            Gets the opacity which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="!:System.float"/> that holds the opacity of the shape annotation.The maximum value is 1, minimum value is 0.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.Thickness">
+            <summary>
+            Gets the thickness which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that holds the thickness of the shape annotation.The maximum value is 12 and minimum value is 1.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs.AnnotationType">
+            <summary>
+            Gets the annotation type of the annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            An <see cref="T:Syncfusion.SfPdfViewer.XForms.AnnotationMode"/> that provides the type of the annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationDeselectedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationDeselected"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationDeselectedEventArgs.AnnotationType">
+            <summary>
+            Gets the annotation type of the deselected shape annotation.
+            </summary>
+            <value>
+            An <see cref="T:Syncfusion.SfPdfViewer.XForms.AnnotationMode"/> that provides the type of the deselected shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationDeselectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the deselected shape annotation.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> that provides the page number of the deselected shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationDeselectedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the deselected shape annotation.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides bounds of the deselected shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationEdited"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.OldFillColor">
+            <summary>
+            Gets the fill color which was in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the fill color of the shape annotation before edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.OldStrokeColor">
+            <summary>
+            Gets the stroke color which was in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the stroke color of the shape annotation before edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.NewFillColor">
+            <summary>
+            Gets the fill color which is in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the fill color of the shape annotation after edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.NewStrokeColor">
+            <summary>
+            Gets the stroke color which is in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the stroke color of the shape annotation after edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.OldOpacity">
+            <summary>
+            Gets the opacity which was in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="!:System.float"/> that holds the opacity of the shape annotation before edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.NewOpacity">
+            <summary>
+            Gets the opacity which in in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="!:System.float"/> that holds the opacity of the shape annotation after edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.OldThickness">
+            <summary>
+            Gets the thickness which was in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that holds the thickness of the shape annotation before edited.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs.NewThickness">
+            <summary>
+            Gets the thickness which is in edited <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that holds the thickness of the shape annotation after edited.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationRemoved"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the removed shape annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides bounds of the removed shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.Position">
+            <summary>
+            Gets the position of the removed shape annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides position of the removed shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the removed shape annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            An integer that provides the page number of the removed shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.DataPoints">
+            <summary>
+            Gets the collection of points which used to draw removed shape annnotation.
+            </summary>
+            <value>
+            A data points provides collection of <see cref="T:Xamarin.Forms.Point"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.StrokeColor">
+            <summary>
+            Gets the stroke color of the removed shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the stroke color of the removed shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.FillColor">
+            <summary>
+            Gets the fill color of the removed shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the fill color of the removed shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the removed shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="!:System.float"/> that holds the opacity of the removed shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the removed shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that holds the thickness of the removed shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs.AnnotationType">
+            <summary>
+            Gets the annotation type of the removed shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            /// <value>
+            An <see cref="T:Syncfusion.SfPdfViewer.XForms.AnnotationMode"/> that provides the type of the removed shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationSelected"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventArgs.AnnotationType">
+            <summary>
+            Gets the annotation type of the selected shape annotation.
+            </summary>
+            <value>
+            An <see cref="T:Syncfusion.SfPdfViewer.XForms.AnnotationMode"/> that provides the type of the selected shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the selected shape annotation.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> that provides the page number of the selected shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the selected shape annotation.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides bounds of the selected shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationTapped"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.Bounds">
+            <summary>
+            Gets the bounds of the tapped shape annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides bounds of the tapped shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.Position">
+            <summary>
+            Gets the position of the tapped shape annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Point"/> that provides position of the tapped shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the tapped shape annotation which is in the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> that provides the page number of the tapped shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.DataPoints">
+            <summary>
+            Gets the collection of points which used to draw tapped shape annnotation.
+            </summary>
+            <value>
+            A data points provides collection of <see cref="T:Xamarin.Forms.Point"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.StrokeColor">
+            <summary>
+            Gets the stroke color of the tapped shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the stroke color of the tapped shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.FillColor">
+            <summary>
+            Gets the fill color of the tapped shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="T:Xamarin.Forms.Color"/> that holds the fill color of the tapped shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.Opacity">
+            <summary>
+            Gets the opacity of the tapped shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="!:System.float"/> that holds the opacity of the tapped shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.Thickness">
+            <summary>
+            Gets the thickness of the tapped shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that holds the thickness of the tapped shape annotation.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs.AnnotationType">
+            <summary>
+            Gets the annotation type of the tapped shape annotation which is in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            /// <value>
+            An <see cref="T:Syncfusion.SfPdfViewer.XForms.AnnotationMode"/> that provides the type of the tapped shape annotation in the loaded PDF document.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAddedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupAdded"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupAddedEventArgs.TextMarkupAnnotationType">
+            <summary>
+            Gets the type of the added textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupAddedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the added textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupAddedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the added textmarkup annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupDeselectedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupDeselected"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupDeselectedEventArgs.TextMarkupAnnotationType">
+            <summary>
+            Gets the type of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupDeselectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupDeselectedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupEditedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupEdited"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupEditedEventArgs.OldColor">
+            <summary>
+            Gets the old color of the edited textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupEditedEventArgs.NewColor">
+            <summary>
+            Gets the new color of the edited textmarkup annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupLongPressedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupLongPressed"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupLongPressedEventArgs.TextMarkupAnnotationType">
+            <summary>
+            Gets the type of the long pressed textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupLongPressedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the long pressed textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupLongPressedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the textmarkup annotation during long press.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupRemovedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupRemoved"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupRemovedEventArgs.TextMarkupAnnotationType">
+            <summary>
+            Gets the type of textmarkup annotation which was removed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupRemovedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the removed textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupRemovedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the textmarkup annotation which was removed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupSelectedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupSelected"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupSelectedEventArgs.TextMarkupAnnotationType">
+            <summary>
+            Gets the type of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupSelectedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupSelectedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupTappedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupTapped"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupTappedEventArgs.TextMarkupAnnotationType">
+            <summary>
+            Gets the type of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupTappedEventArgs.PageNumber">
+            <summary>
+            Gets the page number of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupTappedEventArgs.Bounds">
+            <summary>
+            Gets the position and size of the selected textmarkup annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMatchFound"/> event. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventArgs.TargetText">
+            <summary>
+            Gets the text being searched.
+            </summary>
+            <value>
+            A string that holds the text that is being searched in the PDF document. Default value is <see cref="F:System.String.Empty"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventArgs.PageNumber">
+            <summary>
+            Gets the page number in which the current searched text instance found.
+            </summary>
+            <value>
+            An integer which gets the current page number of the PDF document. 
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventArgs.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventArgs"/> class with given text to be searched and a value indicating whether no match to the given text is found. 
+            </summary>
+            <param name="targetText"> The text to be searched. </param>
+            <param name="pageNumber">Page number of the in which the current searched instance found.</param>
+            <param name="bounds"> Bounds of the current searched instance.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchCompleted"/> event. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventArgs.TargetText">
+            <summary>
+            Gets the text being searched.
+            </summary>
+            <value>
+            A string that holds the text that is being searched in the PDF document. Default value is <see cref="F:System.String.Empty"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventArgs.NoMatchFound">
+            <summary>
+            Gets a value indicating whether there is no match to the text found.
+            </summary>
+            <value>
+            A boolean value which when set to true, represents no match of the searched text is found in the document and vice versa.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventArgs.NoMoreOccurrence">
+            <summary>
+            Gets a value indicating whether there are no more occurrences of the text being searched. 
+            </summary>
+            <value>
+            A boolean value which when set to true, represents that no more match of the searched text is found in the document and vice versa.
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventArgs.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventHandler"/> class with given text to be searched and a value indicating whether no match to the given text is found. 
+            </summary>
+            <param name="targetText"> The text to be searched. </param>
+            <param name="noMoreOccurrence"> A value indicating whether there are no more occurrences of the text being searched. </param>
+            <param name="noMatchFound"> A value indicating whether there is no match to the text found. </param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSearchInitiatedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchInitiated"/> event. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSearchInitiatedEventArgs.TargetText">
+            <summary>
+            Gets the text being searched.
+            </summary>
+            <value>
+            A string that holds the text that is being searched in the PDF document. Default value is <see cref="F:System.String.Empty"/>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.TextSearchInitiatedEventArgs.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSearchInitiatedEventArgs"/> class with given text to be searched and a value indicating whether no match to the given text is found. 
+            </summary>
+            <param name="targetText"> The text to be searched. </param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextSelectionCompleted"/> event. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs.PageNumber">
+            <summary>
+            Gets the current page number where the selected text resides in the PDF document.
+            </summary>
+            <value>
+            An integer which gets the current page number of the PDF document. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs.PageBounds">
+            <summary>
+            Gets the bounds of the page where the selected text resides in the PDF document.
+            </summary>
+            <value>
+            A rectangle that contains the bounds of the page in which the text is selected.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs.SelectedText">
+            <summary>
+            Gets the text selected in the page of the PDF document
+            </summary>
+            <value>
+            A string that holds the text selected in the page.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs.SelectedRegion">
+            <summary>
+            Gets the selected bounds of the text in the page of the PDF document
+            </summary>
+            <value>
+            A rectangle that contains the bounds of the text selected in the page of the PDF document. 
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.UndoPerformedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UndoPerformed"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.UndoPerformedEventArgs.CanUndo">
+            <summary>
+            Returns false when undo collection is empty otherwise true.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.UndoPerformedEventArgs.AnnotationsInformation">
+            <summary>
+            Returns the annotation information collection once undo operation is performed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UnhandledConditionOccurred"/> event. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs.Title">
+            <summary>
+            Gets the title of the unhandled condition.
+            </summary>
+            <value>
+            A string that holds the title of the unhandled condition.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs.Description">
+            <summary>
+            Gets the details of the unhandled condition
+            </summary>
+            <value>
+            A string that holds complete details about the unhandled condition. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewerResources.ResourceManager">
+            <summary>
+            Gets or sets the ResourceManager of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewerResources"/>.
+            </summary>
+            <value>The ResourceManager of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewerResources"/>.</value>   
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewerResources.Culture">
+            <summary>
+            Gets the CultureInfo of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewerResources"/> which handles the culture of the text.
+            </summary>  
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewerResources.GetString(System.Globalization.CultureInfo,System.String)">
+             <summary>
+             provides the localize text value
+             </summary>
+            <param name="culture">gives the Culture Information</param>
+            <param name="text">gives the text string</param>
+            <returns>Returns the text</returns>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.NamespaceDoc">
+            <summary>
+            Contains classes for creating a view control that allows displaying PDF documents.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.DocumentSaveInitiatedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkRemoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.DocumentSaveInitiatedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CanUndoInkModifiedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="!:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanInkSessionUndoModified"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.CanUndoInkModifiedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CanRedoInkModifiedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="!:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanInkSessionRedoModified"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.CanRedoInkModifiedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkSelectedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkSelected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.InkSelectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkEditedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkEdited"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.InkEditedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkTappedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkTapped"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.InkTappedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkAddedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkAdded"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAddedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkDeselected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.InkDeselectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.AnnotationMovedOrResizedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="!:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkAnnotationMoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="!:Syncfusion.SfPdfViewer.XForms.InkAnnotationMovedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkRemovedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkRemoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.InkRemovedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.PageChangedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageChanged"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. 
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.DocumentLoadedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.DocumentLoaded"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.  
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSearchInitiatedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchInitiated"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSearchInitiatedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchCompleted"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSearchCompletedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.HyperlinkClicked"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.  
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.HyperlinkClickedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMatchFound"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMatchFoundEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSelectionEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextSelectionCompleted"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UnhandledConditionOccurred"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAddedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupAdded"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAddedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupRemovedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupRemoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupRemovedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupEditedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupEdited"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupEditedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupTappedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupTapped"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupTappedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.UndoPerformedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UndoPerformed"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.UndoPerformedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.RedoPerformedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RedoPerformed"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.RedoPerformedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupLongPressedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupLongPressed"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupLongPressedEventHandler"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupSelectedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupSelected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupSelectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupDeselectedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupDeselected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.TextMarkupDeselectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CanUndoModifiedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndoModified"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.CanUndoModifiedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CanRedoModifiedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedoModified"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.CanRedoModifiedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationTapped"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationTappedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationLongPressed"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationLongPressedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationAdded"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationAddedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationRemoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationRemovedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrResizedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationMovedOrResized"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="!:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationMovedOrresizedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationEdited"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationEditedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationSelected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSelectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationDeselected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationDeselectedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextPopupAppearingEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextPopupAppearing"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextPopupAppearingEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.FreeTextPopupDisappearedEventHandler">
+            <summary> 
+            Represents the method that will handle the <see cref="!:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextPopupDisappearing"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotation"/> that is the source of the event.</param>
+            <param name="args">The <see cref="!:Syncfusion.SfPdfViewer.XForms.FreeTextPopupDisappearingEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationTapped"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.IAnnotation" /> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationTappedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationAdded"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" /> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationAddedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationRemoved"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" /> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationRemovedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationEdited"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" /> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationEditedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationSelected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" /> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationDeselectedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationDeselected"/> event of a <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" /> that is the source of the event.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationDeselectedEventArgs"/>that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UndoInkCommand">
+            <summary>
+            Defines command for the undo action of the ink session in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RedoInkCommand">
+            <summary>
+            Defines command for the redo action of the ink session in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchTextCommand">
+            <summary>
+            Defines command to find all occurrences of the given text in the PDF document.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchNextTextCommand">
+            <summary>
+            Defines command to find the next occurrence of the text being searched. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchPreviousTextCommand">
+            <summary>
+            Defines command to find the previous occurrence of the text being searched. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CancelSearchTextCommand">
+            <summary>
+            Defines command to cancel the text search operation. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToNextPageCommand">
+            <summary>
+            Defines command to navigates to the next page of the PDF document. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToPreviousPageCommand">
+            <summary>
+            Defines command to navigates to the previous page of the PDF document. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToPageCommand">
+            <summary>
+            Defines command to navigates to the specified page of the PDF document. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UnloadCommand">
+            <summary>
+            Defines command to Unload the PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.AnnotationModeCommand">
+            <summary>
+            Defines command to set the annotation mode in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PerformUndoCommand">
+            <summary>
+            Defines command for the undo action of the annotation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PerformRedoCommand">
+            <summary>
+            Defines command for the redo action of the annotation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RemoveAnnotationCommand">
+            <summary>
+            Defines command to delete the selected annotation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndoCommand">
+            <summary>
+            Defines command that notifies whether we can perform undo operation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedoCommand">
+            <summary>
+            Defines command that notifies whether we can perform redo operation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ClearAllAnnotationsCommand">
+            <summary>
+            Defines command for clear annotation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.EditFreeTextAnnotationCommand">
+            <summary>
+            Defines command to edit the text of free text annotation in PDF viewer control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.DocumentSaveInitiated">
+            <summary>
+            Occurs when an document is saved
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndoInkModified">
+            <summary>
+            Occurs when an undo property is modified.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedoInkModified">
+            <summary>
+            Occurs when an redo property is modified.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkSelected">
+            <summary>
+            Occurs when an ink is selected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkEdited">
+            <summary>
+            Occurs when an ink is edited.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkTapped">
+            <summary>
+            Occurs when an ink is tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkAdded">
+            <summary>
+            Occurs when an ink is added.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkDeselected">
+            <summary>
+            Occurs when an ink is deselected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.AnnotationMovedOrResized">
+            <summary>
+            Occurs when an ink is moved.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InkRemoved">
+            <summary>
+            Occurs when an ink is removed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageChanged">
+            <summary>
+            Occurs when the value of <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageNumber"/> property changes.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.DocumentLoaded">
+            <summary>
+            Occurs when a PDF document is finished loading to <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />. 
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchInitiated">
+            <summary>
+            Occurs when a text search operation is initiated.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchCompleted">
+            <summary>
+            Occurs when a text search operation is completed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.HyperlinkClicked">
+            <summary>
+            Occurs when hyperlink click operation is performed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMatchFound">
+            <summary>
+            Occurs when a match for the searched text found.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextSelectionCompleted">
+            <summary>
+            Occurs when text selection is completed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UnhandledConditionOccurred">
+            <summary>
+            Occurs when an unhandled condition occurs.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupAdded">
+            <summary>
+            Occurs when an textmarkup annotation is added.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupRemoved">
+            <summary>
+            Occurs when an textmarkup annotation is removed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupEdited">
+            <summary>
+            Occurs when an textmarkup annotation is edited.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupTapped">
+            <summary>
+            Occurs when an textmarkup annotation is selected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UndoPerformed">
+            <summary>
+            Occurs when an undo operation is performed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RedoPerformed">
+            <summary>
+            Occurs when an redo operation is performed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupLongPressed">
+            <summary>
+            Occurs when an textmarkup annotation is long pressed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupSelected">
+            <summary>
+            Occurs when an textmarkup annotation is selected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextMarkupDeselected">
+            <summary>
+            Occurs when an textmarkup annotation is deselected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndoModified">
+            <summary>
+            Occurs when an undo property is modified.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedoModified">
+            <summary>
+            Occurs when an redo property is modified.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationTapped">
+            <summary>
+            Occurs when free text annotation is tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationLongPressed">
+            <summary>
+            Occurs when free text annotation is long pressed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationAdded">
+            <summary>
+            Occurs when free text annotation is added.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationRemoved">
+            <summary>
+            Occurs when free text annotation is removed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationMovedOrResized">
+            <summary>
+            Occurs when free text annotation is moved or resized.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationEdited">
+            <summary>
+            Occurs when an undo operation is performed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationSelected">
+            <summary>
+            Occurs when free text annotation is selected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextAnnotationDeselected">
+            <summary>
+            Occurs when free text annotation is deselected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextPopupAppearing">
+            <summary>
+            Occurs when edit text popup view is appearing
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.FreeTextPopupDisappeared">
+            <summary>
+            Occurs when edit text popup is disappearing
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationTapped">
+            <summary>
+            Occurs when a shape annotation tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationAdded">
+            <summary>
+            Occurs when a shape annotation added.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationRemoved">
+            <summary>
+            Occurs when a shape annotation removed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationEdited">
+            <summary>
+            Occurs when a shape annotation edited.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationSelected">
+            <summary>
+            Occurs when a shape annotation Selected.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ShapeAnnotationDeselected">
+            <summary>
+            Occurs when a shape annotation Deselected.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.EnableDocumentLinkAnnotation">
+            <summary>
+            Enable or disable the TOC of PDF document
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.IsDocumentLoaded">
+            <summary>
+            Returns true if the PDF document is loaded otherwise false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageNumber">
+            <summary>
+            Gets or sets the number of the current page being displayed in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.IsTextSelectionEnabled">
+            <summary>
+            Gets or sets a value that indicates whether text selection is enabled.
+            </summary>
+            <value>
+            <b>false</b> if text selection is disabled; otherwise, <b>true</b>.The default value is <b>true</b>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.IsTextSearchEnabled">
+            <summary>
+            Gets or sets a value that indicates whether text search is enabled.
+            </summary>
+            <value>
+            <b>false</b> if text search is disabled; otherwise, <b>true</b>.The default value is <b>true</b>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextSearchSettings">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSearchSettings" /> associated with the text search operations. 
+            </summary>
+            <value>
+            The text search settings allows the user to customize the color in which the highlighted matches are filled. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.TextSelectionSettings">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.TextSelectionSettings" /> associated with text selection.
+            </summary> 
+            <value>
+            The text selection settings allows the user to customize the color in which selection is made, color of the bubble head and so on.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SelectedText">
+            <summary>
+            Gets the text selected in the page of the PDF document
+            </summary>
+            <value>
+            A string that provides the text that is being selected.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.MaximumZoomPercentage">
+            <summary>
+            Gets or Sets the maximum zoom percentage. 
+            </summary>
+            <value>
+            A float that represent the maximum extent to which the document can be magnified. The default value is 400 for Android and 300 for iOS and UWP.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageCount">
+            <summary>
+            Gets the total page count of the PDF document loaded to <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+            <value>
+            An integer that provides the total number of pages in the loaded PDF document.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ZoomPercentage">
+            <summary>        
+            Gets or sets the current zoom percentage of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.HorizontalOffset">
+            <summary>        
+            Gets the current horizontal scroll position of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.VerticalOffset">
+            <summary>        
+            Gets the current vertical scroll position of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InputFileStream">
+            <summary>
+            Gets and sets the input file stream of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />. 
+            </summary>
+            <value>
+            A stream that is used to load and retrieve PDF document in the PDF viewer. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.AnnotationSettings">
+            <summary>
+            Gets or sets the default appearance of textmarkup annotation.
+            </summary>
+            <value>
+            The annotation settings allows the user to customize the default appearance of the textmarkup annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.AnnotationMode">
+            <summary>
+            Gets or sets the type of annotation to be drawn in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />. 
+            </summary>
+            <value>
+            The annotation mode that provides type of annotation to be drawn in sfpdfviewer. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndo">
+            <summary>
+            Gets the flag that notifies whether we can perform undo operation in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />. 
+            </summary>
+            <value>
+            The flag that specifies whether the undo operation can be perform or not in sfpdfviewer.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedo">
+             <summary>
+             Gets the flag to notify whether we can perform redo operation in <see cref="!:Syncfusion.SfPdfViewer.iOS.SfPdfViewer" />. 
+             </summary>
+             <value>
+            The flag that specifies whether the redo operation can be perform or not in sfpdfviewer.
+             </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SelectedAnnotation">
+            <summary>
+            Gets the selected annotation type.
+            </summary>
+            <value>
+            The selected annotation allows the user to customize appearance of the selected annotation. 
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RemoveAnnotation(Syncfusion.SfPdfViewer.XForms.IAnnotation)">
+            <summary>
+            Clears the selected annotation.
+            </summary>
+            <param name="annotation">Selected annotation to be deleted</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ClearAllAnnotations(System.Int32)">
+            <summary>
+            Delete all the annotations in the given page.
+            </summary>
+            <param name="pageNumber">The page in which all the annotations to be cleared</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ClearAllAnnotations">
+            <summary>
+            Delete all the annotations in the whole PDF document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PerformUndo">
+            <summary>
+            Performs undo operation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PerformRedo">
+            <summary>
+            Performs redo operation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ZoomPercentageProperty">
+            <summary>        
+            Backing store for the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ZoomPercentage"/> property    
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.HorizontalOffsetProperty">
+            <summary>        
+            Backing store for the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.HorizontalOffset"/> bindable property.        
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.VerticalOffsetProperty">
+            <summary>        
+            Backing store for the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.VerticalOffset"/> property.        
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageCountProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageCount"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets the page count of the PDF viewer. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ItemSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ItemsSource"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageNumberProperty">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageNumber"/>  of the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. It is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets or sets the page number in the PDF viewer. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.MaximumZoomPercentageProperty">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.MaximumZoomPercentage"/> of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. It is a bindable property.
+            </summary>
+            <value>
+            A bindable property which is used to get or set the maximum zoom percentage. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InputFileStreamProperty">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InputFileStream"/> of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>. It is a bindable property.
+            </summary>
+            <value>
+            A bindable property which is used to get or set the input file stream. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SelectedTextProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SelectedText"/> of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>
+            </summary>
+            <value>
+            A bindable property which is used to get the selected text. 
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.OnPageCountChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SelectedText"/> of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/>
+            </summary>
+            <value>
+            A bindable property which is used to get the selected text. 
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ScrollToOffset(System.Single,System.Single)">
+            <summary>        
+            Scrolls the <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> to a position relative to the horizontal offset and vertical offset values.
+            </summary>
+            <param name="horizontalOffset">The value to which the control scrolls horizontally.</param>
+            <param name="verticalOffset">The value to which the control scrolls vertically.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.Unload">
+            <summary>
+            Unloads the PDF viewer control. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.LoadDocument(System.IO.Stream)">
+            <summary>
+            Loads a PDF document to <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> from the specified stream.
+            </summary>
+            <param name="stream">The stream that contains the data of the PDF document.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToPage(System.Int32)">
+            <summary>
+            Navigates to the specified page of the PDF document.
+            </summary>
+            <param name="pageNumber">The number of the page to navigate to.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToNextPage">
+            <summary>
+            Navigates to the next page of the PDF document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToPreviousPage">
+            <summary>
+            Navigates to the previous page of the PDF document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchNext">
+            <summary>
+            Finds the next occurrence of the text being searched. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchPrevious">
+            <summary>
+            Finds the previous occurrence of the text being searched.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchNext(System.String)">
+            <summary>
+            Finds the next occurrence of the text being searched. 
+            </summary>
+            <param name="text">The text to be searched.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchPrevious(System.String)">
+            <summary>
+            Finds the previous occurrence of the text being searched.
+            </summary>
+            <param name="text">The text to be searched.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.SearchText(System.String)">
+            <summary>
+            Finds all occurrences of the given text in the PDF document.
+            </summary>
+            <param name="text">The text to be searched.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CancelSearch">
+            <summary>
+            Cancels the text Search operation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.AllowHyperlinkNavigation">
+            <summary>
+            Gets or sets a value to perform hyperlink navigation.
+            </summary>
+            <value>
+            Default value is true.
+            </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.OnPageChanged(System.Object,Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageChanged"/>  event.
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> that is the source of the event. </param>
+            <param name="e">The <see cref="T:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.OnDocumentLoaded(System.Object,System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.DocumentLoaded"/>  event
+            </summary>
+            <param name="sender">The instance of <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer"/> which is the source of the event. </param>
+            <param name="e">The <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanUndoInk">
+            <summary>
+            Gets the flag that notifies whether we can perform ink session undo operation in <see cref="T:Syncfusion.SfPdfViewer.XForms.SfPdfViewer" />. 
+            </summary>
+            <value>
+            The flag that specifies whether the ink session undo operation can be perform or not in sfpdfviewer.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.CanRedoInk">
+             <summary>
+             Gets the flag to notify whether we can perform ink session redo operation in <see cref="!:Syncfusion.SfPdfViewer.iOS.SfPdfViewer" />. 
+             </summary>
+             <value>
+            The flag that specifies whether the ink session redo operation can be perform or not in sfpdfviewer.
+             </value>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.UndoInk">
+            <summary>
+            Perform undo opeartion on ink session.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.RedoInk">
+            <summary>
+            Perform redo opeartion on ink session.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.EndInkSession(System.Boolean)">
+            <summary>
+            Save or unsave session ink
+            </summary>
+             <param name="save">The </param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSelectionSettings">
+            <summary>
+             Specifies and allows editing the information about how text is selected. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionSettings.MenuOptions">
+            <summary>
+            Gets the details of menu items displayed in the context menu during text selection
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionSettings.TextSelectionColor">
+            <summary>
+            Gets or sets the color being used to highlight the text during selection 
+            </summary>
+            <value>
+            A color that is used to highlight the selected text. The default value is <see cref="!:Color.FromRgba(0, 0, 205, 80)"/>;
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionSettings.TextSelectionHandleColor">
+            <summary>
+            Gets or sets the color of selection handle appeared during text selection
+            </summary>
+            <value>
+            A color that is used to highlight the selection handle. The default value is <see cref="!:Color.FromRgb(0, 0, 255)"/>;
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSelectionSettings.ShowContextMenu">
+            <summary>
+            Gets or sets a value that indicates whether context menu is visible.
+            </summary>
+            <value>
+            A boolean used to toggle the visibility of the text selection context menu. The default value is true.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextSearchSettings">
+            <summary>
+            Specifies and allows editing the information about how the highlight of the text search instance to be made. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSearchSettings.CurrentInstanceColor">
+            <summary>
+            Gets or Sets the ARGB <see cref="T:Xamarin.Forms.Color"/> value for the current instance of the text being searched.
+            </summary>
+            <value>
+            A color that is used to highlight the current instance of the text match. The default value is <see cref="!:Color.FromRgba(0, 0, 255, 80)"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextSearchSettings.OtherInstanceColor">
+            <summary>
+            Gets or Sets the ARGB <see cref="T:Xamarin.Forms.Color"/> value for all other instances expect the current instance of the text found. Default value is <see cref="!:Color.FromRgba(0, 0, 255, 50)"/>.
+            </summary>
+            <value>
+            A color that is used to highlight the current instance of the text match. The default value is <see cref="!:Color.FromRgba(0, 0, 255, 50)"/>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation">
+            <summary>
+            Specifies and allows editing the appearance of the paricular shape annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotation.Settings">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/> associated with the shape annotation.  
+            </summary>    
+            <value>
+            The shape allows the user to customize the appearance of the shape annotation.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ArrowAnnotation">
+            <summary>
+            Specifies and allows editing the information about how the arrow shape annotation will appear. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ArrowAnnotation.Settings">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/> associated with the shape annotation.  
+            </summary>    
+            <value>
+            The shape allows the user to customize the appearance of the shape annotation.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.CircleAnnotation">
+            <summary>
+            Specifies and allows editing the information about how the circle shape annotation will appear. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.CircleAnnotation.Settings">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/> associated with the shape annotation.  
+            </summary>    
+            <value>
+            The shape allows the user to customize the appearance of the shape annotation.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.LineAnnotation">
+            <summary>
+            Specifies and allows editing the information about how the line shape annotation will appear. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.LineAnnotation.Settings">
+            <summary>
+            Gets or sets the associated with the shape annotation.  
+            </summary>    
+            <value>
+            The shape allows the user to customize the appearance of the shape annotation.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.RectangleAnnotation">
+            <summary>
+            Specifies and allows editing the information about how the rectangle shape annotation will appear. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.Settings">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/> associated with the shape annotation.  
+            </summary>    
+            <value>
+            The shape allows the user to customize the appearance of the shape annotation.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings">
+            <summary>
+            Specifies and allows editing the appearance of the selected shape annotation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.StrokeColorProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.StrokeColor"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the stroke color of the shape annotation. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.OpacityProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.Opacity"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the opacity of the shape annotation. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.ThicknessProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.Thickness"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the thickness of the shape annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.StrokeColor">
+            <summary>
+            Gets or sets the <see cref="T:Xamarin.Forms.Color"/> stroke color of the selected shape.  
+            </summary>    
+            <value>
+            The stroke color allows the user to change the color of the selected shape's stroke.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.FillColor">
+            <summary>
+            Gets or sets the <see cref="T:Xamarin.Forms.Color"/> fill color of the selected shape.  
+            </summary>    
+            <value>
+            The fill color allows the user to change the color of the selected shape's fill.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.Opacity">
+            <summary>
+            Gets or sets the <see cref="!:System.float"/> opacity of the selected shape.  
+            </summary>    
+            <value>
+            The opacity allows the user to apply the transparency in selected shape's fill and stroke.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSettings.Thickness">
+            <summary>
+            Gets or sets the <see cref="T:System.Int32"/> thickness of the selected shape.  
+            </summary>    
+            <value>
+            The thickness allows the user to change the selected shape's stroke width.
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings.TextColorProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings.TextColor"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the text color of the FreeText annotation. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings.TextSizeProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings.TextSize"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the textsize of the FreeText annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings.TextColor">
+            <summary>
+            Gets or sets the default color of the text annotation.
+            </summary>
+            <value>
+            The default color is black.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.FreeTextAnnotationSettings.TextSize">
+            <summary>
+            Gets or sets the default font size of the text annotation.
+            </summary>
+            <value>
+            the default font size of the text annotation is 12.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.AnnotationInformation">
+            <summary>
+            Represents information about the annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationInformation.PageIndex">
+            <summary>
+            Gives page number of the added textmarkup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationInformation.Bounds">
+            <summary>
+            Gives position and size of the added textmarkup annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.AnnotationMode">
+            <summary>
+            Specifies the type of annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.AnnotationSettings">
+            <summary>
+            Represents annotation and its selector settings
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.Selector">
+            <summary>
+            Gets or sets the default appearance of textmarkup annotation selector.
+            </summary>
+            <value>
+            The selector settings allows the user to customize the default appearance of the textmarkup annotation selector. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.TextMarkup">
+            <summary>
+            Gets or sets the default appearance of textmarkup annotation.
+            </summary>
+            <value>
+            The annotation settings allows the user to customize the default appearance of the textmarkup annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.Ink">
+            <summary>
+            Gets or sets the default appearance of ink annotation.
+            </summary>
+            <value>
+            The annotation settings allows the user to customize the default appearance of the ink annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.Rectangle">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.RectangleAnnotation"/> appearance of the rectangle shape.  
+            </summary>    
+            <value>
+            The rectangle allows the user to change the rectangle shape's appearance.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.Circle">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.CircleAnnotation"/> appearance of the circle shape.  
+            </summary>    
+            <value>
+            The rectangle allows the user to change the circle shape's appearance.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.Line">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.LineAnnotation"/> appearance of the line shape.  
+            </summary>    
+            <value>
+            The rectangle allows the user to change the line shape's appearance.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.Arrow">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfPdfViewer.XForms.ArrowAnnotation"/> appearance of the arrow shape.  
+            </summary>    
+            <value>
+            The rectangle allows the user to change the arrow shape's appearance.
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.AnnotationSettings.FreeText">
+            <summary>
+            Gets or sets the default appearance of text annotation.
+            </summary>
+            <value>
+            The default text color is Black
+            The default text size is 12
+            The default text is empty
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.DefaultTextMarkupAnnotationSettings">
+            <summary>
+            Represents the default appearance of text markup annotation to be drawn in the page of the PDF document 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.DefaultTextMarkupAnnotationSettings.Highlight">
+            <summary>
+            Gets or sets the default appearance of hightlight textmarkup annotation.
+            </summary>
+            <value>
+            The annotation settings allows the user to customize the default appearance of the highlight textmarkup annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.DefaultTextMarkupAnnotationSettings.Underline">
+            <summary>
+            Gets or sets the default appearance of underline textmarkup annotation.
+            </summary>
+            <value>
+            The annotation settings allows the user to customize the default appearance of the underline textmarkup annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.DefaultTextMarkupAnnotationSettings.Strikethrough">
+            <summary>
+            Gets or sets the default appearance of strikethrough textmarkup annotation.
+            </summary>
+            <value>
+            The annotation settings allows the user to customize the default appearance of the strikethrough textmarkup annotation. 
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.HighlightAnnotationSettings">
+            <summary>
+            Represents the default appearance of highlight annotation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.HighlightAnnotationSettings.ColorProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.HighlightAnnotationSettings.Color"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.HighlightAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the color of the highlight annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.HighlightAnnotationSettings.Color">
+            <summary>
+            Gets or sets the default color of highlight textmarkup annotation.
+            </summary>
+            <value>
+            the default color of highlight textmarkup annotation is yellow.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.IAnnotation">
+            <summary>
+            Represents the annotation to be customized
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkAnnotation">
+            <summary>
+            Represents the details about ink annotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings">
+            <summary>
+            Represents the customization of ink annotation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.ColorProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.Color"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the stroke color of the ink annotation. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.OpacityProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.Opacity"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the opacity of the ink annotation. 
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.ThicknessProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.Thickness"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the thickness of the ink annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.Color">
+            <summary>
+            Gets and sets default color of ink annotation.
+            </summary>
+            <value>Default ink color is red.</value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.Thickness">
+            <summary>
+            Gets or sets default thickness of ink annotation.
+            </summary>
+            <value>Default ink thickness is 5.</value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.InkAnnotationSettings.Opacity">
+            <summary>
+            Gets or sets default opacity of ink annotation.
+            </summary>
+            <value>Default ink opacity is 1.</value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.SelectorSettings">
+            <summary>
+            Represents the default appearance of annotation selector
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SelectorSettings.#ctor">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SelectorSettings.StrokeColor">
+            <summary>
+            Gets or sets the default color of textmarkup annotation selector.
+            </summary>
+            <value>
+            the default color of textmarkup annotation selector is blue.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.StrikethroughAnnotationSettings">
+            <summary>
+            Represents the default appearance of strikeout annotation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.StrikethroughAnnotationSettings.ColorProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.StrikethroughAnnotationSettings.Color"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.StrikethroughAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the color of the strikeout annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.StrikethroughAnnotationSettings.Color">
+            <summary>
+            Gets or sets the default color of strikeout textmarkup annotation.
+            </summary>
+            <value>
+            The default color of strikeout textmarkup annotation is red.
+            </value>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation">
+            <summary>
+            Represents the details about text markup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotation.Settings">
+            <summary>
+            Gets or sets the value to customize the text markup annotation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotationSettings.Color">
+            <summary>
+            Gets or sets the color of the selected textmarkup annotation color.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotationType">
+            <summary>
+            Specifies the type of text markup annotation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotationType.Highlight">
+            <summary>
+            Sets annotation mode to highlight
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotationType.Underline">
+            <summary>
+            Sets annotation mode to underline
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.TextMarkupAnnotationType.Strikethrough">
+            <summary>
+            Sets annotation mode to strikethrough
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.XForms.UnderlineAnnotationSettings">
+            <summary>
+            Represents the default appearance of underline annotation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.UnderlineAnnotationSettings.ColorProperty">
+            <summary>
+            Gets the <see cref="P:Syncfusion.SfPdfViewer.XForms.UnderlineAnnotationSettings.Color"/> property of <see cref="T:Syncfusion.SfPdfViewer.XForms.UnderlineAnnotationSettings"/>. This is a bindable property.
+            </summary>
+            <value>
+            A bindable property that gets and sets the color of the underline annotation. 
+            </value>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.UnderlineAnnotationSettings.Color">
+            <summary>
+            Gets or sets the default color of underline textmarkup annotation.
+            </summary>
+            <value>
+            the default color of underline textmarkup annotation is green.
+            </value>
+        </member>
+    </members>
+</doc>

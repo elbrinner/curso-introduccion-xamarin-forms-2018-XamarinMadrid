@@ -1,0 +1,69 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.UI.Xaml.Kanban">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.SfKanban.UWP/KanbanCardItem/Themes/KanbanCardItem.xaml"/>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.SfKanban.UWP/KanbanColumn/Themes/KanbanColumn.xaml"/>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.SfKanban.UWP/Themes/Generic.Common.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="local:SfKanban">
+        <Setter Property="Background"
+                Value="#FFF7F9FB" />
+        <Setter Property="BorderBrush"
+                Value="#FFE8E6E7" />
+        <Setter Property="BorderThickness"
+                Value="1"></Setter>
+        <Setter Property="CardStyle">
+            <Setter.Value>
+                <local:KanbanCardStyle Style="{StaticResource DefaultCardStyleKey}" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Margin" 
+                Value="5">
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SfKanban">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}"
+                            Margin="{TemplateBinding Margin}"
+                            Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}">
+                        <Grid x:Name="KANBAN_RootPanel">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <ContentPresenter Content="{TemplateBinding Header}" 
+                                              HorizontalAlignment="{TemplateBinding HeaderAlignment}"
+                                              VerticalAlignment="Center"></ContentPresenter>
+                            <Grid x:Name="RootPanel" Grid.Row="1">
+                                <ScrollViewer x:Name="KANBAN_MainScrollViewer"
+                                              ManipulationMode="All"
+                                              VerticalScrollMode="Disabled"
+                                              HorizontalScrollMode="Enabled"
+                                              VerticalScrollBarVisibility="Disabled"
+                                              HorizontalScrollBarVisibility="Auto">
+                                    <Grid x:Name="KANBAN_MainPanel">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <!--Have to replace this Itemscontrol with some light weight 
+                                        panel if we have performance or memory issues-->
+                                        <ItemsControl x:Name="KANBAN_MainContent"/>
+                                    </Grid>
+                                </ScrollViewer>
+                            </Grid>
+                            <Canvas Grid.Row="1" x:Name="Adorning_Canvas" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>
+

@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfTabView.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.XForms.TabView.SelectionIndicatorSettings">
+            <inheritdoc />
+            <summary>
+            Provides set of properties to be customized for selection indicator in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>,
+            selection indicator is strip which is to indicate the selected index in the <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SelectionIndicatorSettings.Color">
+            <summary>
+            Gets or sets the value for the color of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SelectionIndicatorSettings.ColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SelectionIndicatorSettings.Color"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SelectionIndicatorSettings.StrokeThickness">
+            <summary>
+            Gets or sets the value for the thickness of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SelectionIndicatorSettings.StrokeThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SelectionIndicatorSettings.StrokeThickness"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SelectionIndicatorSettings.Position">
+            <summary>
+            Gets or sets the value for the position of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SelectionIndicatorSettings.PositionProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SelectionIndicatorSettings.Position"/> bindable property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.SfTabView">
+            <inheritdoc />
+            <summary>
+            TabView control lets users explore and switch among different views.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.TabView.SfTabView.SelectionChanged">
+            <summary>
+            Occurs when selected index of <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.CanTriggerSelectionChangedEvent">
+            <summary>
+            To check Whether the selection changed event triggered or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.RaiseSelectionChanged(Syncfusion.XForms.TabView.SelectionChangedEventArgs)">
+            <summary>
+            Invoke event with the updated index value.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="E:Syncfusion.XForms.TabView.SfTabView.OverflowButtonTapped">
+            <summary>
+            Occurs when overflow button tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.TabView.SfTabView.CenterButtonTapped">
+            <summary>
+            Occurs when overflow button tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.CanTriggerOverflowButtonTappedEvent">
+            <summary>
+            To check Whether the overflow button tapped event triggered or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.CanTriggerCenterButtonTappedEvent">
+            <summary>
+            To check Whether the center button tapped event triggered or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.RaiseOverflowButtonTapped(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Invoke event with the status for overflow button tapping.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.RaiseCenterButtonTapped(System.EventArgs)">
+            <summary>
+            Invoke event with the status for center button tapping.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="E:Syncfusion.XForms.TabView.SfTabView.TabItemTapped">
+            <summary>
+            Occurs when tab header item tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.CanTriggerTabItemTappedEvent">
+            <summary>
+            To check Whether the tab header item tapped event triggered or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.RaiseTabItemTapped(Syncfusion.XForms.TabView.TabItemTappedEventArgs)">
+            <summary>
+            Invoke event with the status for tab item tapping.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.Items">
+            <summary>
+            Gets or sets children for tab control through the collection of <see cref="T:Syncfusion.XForms.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.ItemsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.Items"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.SelectionIndicatorSettings">
+            <summary>
+            Gets or sets value to configure the attributes of <see cref="P:Syncfusion.XForms.TabView.SfTabView.SelectionIndicatorSettings"/>,
+            Selection indicator is a strip which is used to indicate the selected index of <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.SelectionIndicatorSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.SelectionIndicatorSettings"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.TabHeight">
+            <summary>
+            Gets or sets the value for the height of header in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.TabHeightProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.TabHeight"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.TabWidth">
+            <summary>
+            Gets or sets the value for the width of each header in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.TabWidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.TabWidth"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.CenterButtonView">
+            <summary>
+            Gets or sets the value for the custom view for of a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.CenterButtonViewProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.CenterButtonView"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.TabHeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the tab header background in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>.
+            </summary>
+            <value>The color of the tab header background.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.TabHeaderBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.TabHeaderBackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.OverflowMode">
+            <summary>
+            Gets or sets the value to choose navigation option for the exceeded headers which can't be occupied in the current view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.OverflowModeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.OverflowMode"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.OverflowButtonSettings">
+            <summary>
+            Gets or sets the value to configure the overflow button attributes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.OverflowButtonSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.OverflowButtonSettings"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.CenterButtonSettings">
+            <summary>
+            Gets or sets the center button settings.
+            </summary>
+            <value>The center button settings.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.CenterButtonSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.CenterButtonSettings"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.SelectedIndex">
+            <summary>
+            Gets or sets the value for current view index.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.SelectedIndexProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.SelectedIndex"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.EnableSwiping">
+            <summary>
+            Gets or sets a value indicating whether <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> should enable swiping or not.
+            </summary>
+            <value><c>true</c> if enable swiping; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.EnableSwipingProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.EnableSwiping"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.DisplayMode">
+            <summary>
+            Gets or sets the value to define the type of header. By default it will display title from <see cref="T:Syncfusion.XForms.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.DisplayModeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.DisplayMode"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.VisibleHeaderCount">
+            <summary>
+            Gets or sets the value for the number of headers to be displayed in the visible region.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.VisibleHeaderCountProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.VisibleHeaderCount"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabView.TabHeaderPosition">
+            <summary>
+            Gets or sets the value for the position of the header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabView.TabHeaderPositionProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabView.TabHeaderPosition"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TabView.SfTabView.OnMeasure(System.Double,System.Double)">
+            <summary>
+            Ons the measure.
+            </summary>
+            <returns>The measure.</returns>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.SelectionChangedEventArgs">
+            <inheritdoc />
+            <summary>
+            Contains data for the event which is raised selected index changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SelectionChangedEventArgs.Index">
+            <summary>
+            Gets the value of selected index.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SelectionChangedEventArgs.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.TabItemTappedEventArgs">
+            <inheritdoc />
+            <summary>
+            Contains data for the event which is raised while tapped on the header item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.TabItemTappedEventArgs.TabItem">
+            <summary>
+            Gets the selected <see cref="T:Syncfusion.XForms.TabView.SfTabItem"/> value. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.SfTabItem">
+            <inheritdoc />
+            <summary>
+            Represents a single element in <see cref="T:Syncfusion.XForms.TabView.SfTabView" /> control.
+            It contains the properties to configure title and content region.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.Title">
+            <summary>
+            Gets or sets the value for the text of tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.TitleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.Title"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.Content">
+            <summary>
+            Gets or sets the value for the content region in a tab.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.ContentProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.Content"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.HeaderContent">
+            <summary>
+            Gets or sets the value for the custom view for of a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.HeaderContentProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.HeaderContent"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.IconFont">
+            <summary>
+            Gets or sets the value for the icon font text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.IconFontProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.IconFont"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontAttributes">
+            <summary>
+            Gets or sets the value for the font representation of text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.TitleFontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontSize">
+            <summary>
+            Gets or sets the value for the font size of text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.TitleFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontFamily">
+            <summary>
+            Gets or sets the value for the font family of text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.TitleFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontAttributes">
+            <summary>
+            Gets or sets the value for the font representation of icon font text for a tab header.
+            </summary>
+            <remarks>It is not applicable for most of the font icons.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.FontIconFontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontFamily">
+            <summary>
+            Gets or sets the value for the font family of icon font text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.FontIconFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontSize">
+            <summary>
+            Gets or sets the value for the font size of icon font text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.FontIconFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontColor">
+            <summary>
+            Gets or sets the value for the color of text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.TitleFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.TitleFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontColor">
+            <summary>
+            Gets or sets the value for the color of font icon text for a tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.FontIconFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.FontIconFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.SfTabItem.SelectionColor">
+            <summary>
+            Gets or sets the value for the selection color of tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SfTabItem.SelectionColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.SfTabItem.SelectionColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.OverflowButtonSettings">
+            <inheritdoc />
+            <summary>
+            Provides set of properties to be customized for more button in <see cref="T:Syncfusion.XForms.TabView.SfTabView" />.
+            It is applicable when <see cref="T:Syncfusion.XForms.TabView.OverflowMode" /> is set as drop down.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.Width">
+            <summary>
+            Gets or sets the value for the width of more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.WidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.Width"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.Title">
+            <summary>
+            Gets or sets the value for more button text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.Title"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.IconFont">
+            <summary>
+            Gets or sets the value for more button font text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.IconFontProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.IconFont"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.DisplayMode">
+            <summary>
+            Gets or sets the value to choose the display type of more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.DisplayModeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.DisplayMode"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontAttributes">
+            <summary>
+            Gets or sets the value to font representation of text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontSize">
+            <summary>
+            Gets or sets the value to font size of text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontFamily">
+            <summary>
+            Gets or sets the value to font family of text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontAttributes">
+            <summary>
+            Gets or sets the value to font representation of icon text in more button.
+            </summary>
+            <remarks>It is not applicable for many font icons.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontFamily">
+            <summary>
+            Gets or sets the value to font family of icon text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontSize">
+            <summary>
+            Gets or sets the value to font size of icon text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontColor">
+            <summary>
+            Gets or sets the value to font color of text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.TitleFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontColor">
+            <summary>
+            Gets or sets the value to font color of icon text in more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.FontIconFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.OverflowButtonSettings.BackgroundColor">
+            <summary>
+            Gets or sets the value for the background color of more button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonSettings.BackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.OverflowButtonSettings.BackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.TabItemCollection">
+            <summary>
+            Represents a collection which holds the children for tab control through the collection of <see cref="T:Syncfusion.XForms.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.OverflowMode">
+            <summary>
+            Describes the possible values for overflow mode. 
+            These values are used to update the header layout in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            based on that pagination for excess tabs can be displayed.
+            </summary>    
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowMode.Scroll">
+            <summary>
+            Specifies the scrollable header to view the excess tabs.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowMode.DropDown">
+            <summary>
+            Specifies the expandable more drop down menu.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowMode.CenterButton">
+            <summary>
+            Enables the Center Button
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.TabHeaderPosition">
+            <summary>
+            Describes the possible values for the position of header layout in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.TabHeaderPosition.Top">
+            <summary>
+            Specifies the top location above the content region of <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.TabHeaderPosition.Bottom">
+            <summary>
+            Specifies the bottom location below the content region of <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.TabDisplayMode">
+            <summary>
+            Describes the possible values for the display type of headers in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.TabDisplayMode.Image">
+            <summary>
+            Specifies the image type for header in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.TabDisplayMode.Text">
+            <summary>
+            Specifies the text type for header in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.TabDisplayMode.ImageWithText">
+            <summary>
+            Specifies both image as well as text for the header in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.TabDisplayMode.NoHeader">
+            <summary>
+            Specifies the no header in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.OverflowButtonDisplayMode">
+            <summary>
+            Option to choose the type of header for its rendering content.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonDisplayMode.Text">
+            <summary>
+            Specifies the text type for more button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            when <see cref="T:Syncfusion.XForms.TabView.OverflowMode"/> is set as drop down.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonDisplayMode.Image">
+            <summary>
+            Specifies the image type for more button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            when <see cref="T:Syncfusion.XForms.TabView.OverflowMode"/> is set as drop down.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.OverflowButtonDisplayMode.ImageWithText">
+            <summary>
+            Specifies both image as well as text for more button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            when <see cref="T:Syncfusion.XForms.TabView.OverflowMode"/> is set as drop down.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.CenterButtonDisplayMode">
+            <summary>
+            Option to choose the type of Center button for its rendering content.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonDisplayMode.Text">
+            <summary>
+            Specifies the text type for Center button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonDisplayMode.Image">
+            <summary>
+            Specifies the image type for Center button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonDisplayMode.ImageWithText">
+            <summary>
+            Specifies both image as well as text for Center button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.SelectionIndicatorPosition">
+            <summary>
+            Describes the possible values for the position of selection strip in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control,
+            selection indicator is to indicate the selected index in the <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SelectionIndicatorPosition.Top">
+            <summary>
+            Specifies the top location for the selection indicator in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SelectionIndicatorPosition.Bottom">
+            <summary>
+            Specifies the bottom location for the selection indicator in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.SelectionIndicatorPosition.Fill">
+            <summary>
+            Specifies the fill region for the selection indicator in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/> control.
+            </summary>
+            <remarks>Selection color of <see cref="T:Syncfusion.XForms.TabView.SfTabItem"/> should be varied with the strip color when set this value. /></remarks>
+        </member>
+        <member name="T:Syncfusion.XForms.TabView.CenterButtonSettings">
+            <inheritdoc />
+            <summary>
+            Represents a Center Button element in <see cref="T:Syncfusion.XForms.TabView.SfTabView" /> control.
+            It contains the properties to configure title region.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.Title">
+            <summary>
+            Gets or sets the value for the text of center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.TitleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.Title"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.ContentProperty">
+            <summary>
+            Identifies the <see cref="!:Content"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.IconFont">
+            <summary>
+            Gets or sets the value for the icon font text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.IconFontProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.IconFont"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontAttributes">
+            <summary>
+            Gets or sets the value for the font representation of text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontSize">
+            <summary>
+            Gets or sets the value for the font size of text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontFamily">
+            <summary>
+            Gets or sets the value for the font family of text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontAttributes">
+            <summary>
+            Gets or sets the value for the font representation of icon font text for a center button.
+            </summary>
+            <remarks>It is not applicable for most of the font icons.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontFamily">
+            <summary>
+            Gets or sets the value for the font family of icon font text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontSize">
+            <summary>
+            Gets or sets the value for the font size of icon font text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.CornerRadius">
+            <summary>
+            Gets or sets the corner radius.
+            </summary>
+            <value>The corner radius.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.CornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.CornerRadius"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.BorderThickness">
+            <summary>
+            Gets or sets the border thickness.
+            </summary>
+            <value>The border thickness.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.BorderThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.CornerRadius"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontColor">
+            <summary>
+            Gets or sets the value for the color of text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.TitleFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.BorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.BorderColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.BackgroundColor">
+            <summary>
+            Gets or sets the color of the background.
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.BackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.BorderColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontColor">
+            <summary>
+            Gets or sets the value for the color of font icon text for a center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.FontIconFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.DisplayMode">
+            <summary>
+            Gets or sets the value to choose the display type of center button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.DisplayModeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.DisplayMode"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.Height">
+            <summary>
+            Gets or sets the value for the height of Center button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.HeightProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.Height"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TabView.CenterButtonSettings.Width">
+            <summary>
+            Gets or sets the value for the width of each Center button in <see cref="T:Syncfusion.XForms.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TabView.CenterButtonSettings.WidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.TabView.CenterButtonSettings.Width"/> bindable property.
+            </summary>
+        </member>
+    </members>
+</doc>

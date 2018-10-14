@@ -1,0 +1,836 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfBarcode.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfBarcode.XForms.BarcodeQuietZone">
+            <summary>
+            BarcodeQuietZone class is used to configure the encoding properties of Barcode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.LeftProperty">
+            <summary>
+            Using a BindableProperty as the backing store for Left.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.Left">
+            <summary>
+            Gets or sets the Left of Barcode to encode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.RightProperty">
+            <summary>
+            Using a BindableProperty as the backing store for Right.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.Right">
+            <summary>
+            Gets or sets the Right of Barcode to encode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.TopProperty">
+            <summary>
+            Using a BindableProperty as the backing store for Top.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.Top">
+            <summary>
+            Gets or sets the Top of Barcode to encode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.BottomProperty">
+            <summary>
+            Using a BindableProperty as the backing store for Bottom.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.Bottom">
+            <summary>
+            Gets or sets the Bottom of Barcode to encode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.AllProperty">
+            <summary>
+            Using a BindableProperty as the backing store for All.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.All">
+            <summary>
+            Gets or sets the All of Barcode to encode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.IsAllProperty">
+            <summary>
+            Using a BindableProperty as the backing store for IsAll.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.BarcodeQuietZone.IsAll">
+            <summary>
+            Gets or sets the IsAll of Barcode to encode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.BarcodeSettings">
+            <summary>
+            BarcodeSettings class is used to configure the various types of Barcode. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.Barcode1DSettings">
+            <summary>
+            Barcode1DSettings class is used to configure the properties of 1D Barcode. 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.Barcode1DSettings.BarHeightProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.Barcode1DSettings.BarHeight">
+            <summary>
+            The <c>BarHeight</c>  property is used to set the BarHeight of the 1D Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.Barcode1DSettings.NarrowBarWidthProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.Barcode1DSettings.NarrowBarWidth">
+            <summary>
+            The <c>NarrowBarWidth</c> property is used to set the width of the NarrowBar in the 1D Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.Barcode1DSettings.EnableCheckDigitProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.Barcode1DSettings.EnableCheckDigit">
+            <summary>
+            The <c>EnableCheckDigit</c> property is used to enable or disable the checkdigit in the Barcode UI. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.Barcode1DSettings.EncodeStartStopSymbolsProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.Barcode1DSettings.EncodeStartStopSymbols">
+            <summary>
+            The <c>EncodeStartStopSymbols</c> property is used to enable or disable the EncodeStartStopSymbols in the Barcode UI. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.Barcode1DSettings.ShowCheckDigitProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.Barcode1DSettings.ShowCheckDigit">
+            <summary>
+            The <c>ShowCheckDigit</c> property is used for enable or disabe the ShowCheckDigit in the Barcode UI. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.Barcode2DSettings">
+            <summary>
+            Barcode2DSettings class is used to configure the properties of 2D Barcode. 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.Barcode2DSettings.XDimensionProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.Barcode2DSettings.XDimension">
+            <summary>
+            The <c>XDimension</c> property is used to set the XDimension for 2D Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.DataMatrixSettings.SizeProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.DataMatrixSettings.Size">
+            <summary>
+            The <c>Size</c> property is used to set the DataMatrix size of the Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.DataMatrixSize"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.DataMatrixSettings.EncodingProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.DataMatrixSettings.Encoding">
+            <summary>
+            The <c>Encoding</c> property is used for specifying the Barcode Data Encoding. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.DataMatrixEncoding"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.QRBarcodeSettings.VersionProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.QRBarcodeSettings.Version">
+            <summary>
+            The <c>Version</c> property is used to specify the Barcode version. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.QRVersion"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.QRBarcodeSettings.InputModeProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.QRBarcodeSettings.InputMode">
+            <summary>
+            The <c>InputMode</c> property is used to specify the mode of Input for the Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.QRInputMode"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.QRBarcodeSettings.ErrorCorrectionLevelProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.QRBarcodeSettings.ErrorCorrectionLevel">
+            <summary>
+            The <c>ErrorCorrectionLevel</c> property is used for specifying the the Barcode Error Correction level. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.QRErrorCorrectionLevel"/> value.</value>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.BarcodeSymbolType">
+             <summary>
+            Specifies BarcodeSymbolType.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.CodaBar">
+            <summary>
+            This returns CodaBar as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code11">
+            <summary>
+            This returns Code11 as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code32">
+            <summary>
+            This returns Code32 as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code39">
+            <summary>
+            This returns Code39 as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code39Extended">
+            <summary>
+            This returns Code39Extended as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code93">
+            <summary>
+            This returns Code93 as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code93Extended">
+            <summary>
+            This returns Code93Extended as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code128A">
+            <summary>
+            This returns Code128A as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code128B">
+            <summary>
+            This returns Code128B as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.Code128C">
+            <summary>
+            This returns Code128C as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.DataMatrix">
+            <summary>
+            This returns DataMatrix as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.QRCode">
+            <summary>
+            This returns QRCode as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeSymbolType.UpcBarcode">
+            <summary>
+            This returns UpcBarcode as Barcode symbol type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.BarcodeRotation">
+            <summary>
+            Specifies barcode rotation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.BarcodeTextLocation">
+             <summary>
+            Specifies BarcodeTextLocation.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeTextLocation.Top">
+            <summary>
+            This returns BarcodeTextLocation in Top
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeTextLocation.Bottom">
+            <summary>
+            This returns BarcodeTextLocation in Bottom
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.BarcodeTextAlignment">
+             <summary>
+            Specifies BarcodeTextAlignment.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeTextAlignment.Left">
+            <summary>
+            This returns BarcodeTextAlignment in Left
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeTextAlignment.Center">
+            <summary>
+            This returns BarcodeTextAlignment in Center
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.BarcodeTextAlignment.Right">
+            <summary>
+            This returns BarcodeTextAlignment in Right
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.DataMatrixSize">
+             <summary>
+            Specifies DataMatrixSize.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.SizeAuto">
+            <summary>
+            This returns Auto as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size10x10">
+            <summary>
+            This returns Size10x10 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size12x12">
+            <summary>
+            This returns Size12x12 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size14x14">
+            <summary>
+            This returns Size14x14 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size16x16">
+            <summary>
+            This returns Size16x16 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size18x18">
+            <summary>
+            This returns Size18x18 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size20x20">
+            <summary>
+            This returns Size20x20 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size22x22">
+            <summary>
+            This returns Size22x22 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size24x24">
+            <summary>
+            This returns Size24x24 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size26x26">
+            <summary>
+            This returns Auto as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size32x32">
+            <summary>
+            This returns Size32x32 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size36x36">
+            <summary>
+            This returns Size36x36 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size40x40">
+            <summary>
+            This returns Size40x40 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size44x44">
+            <summary>
+            This returns Size44x44 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size48x48">
+            <summary>
+            This returns Size48x48 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size52x52">
+            <summary>
+            This returns Size52x52 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size64x64">
+            <summary>
+            This returns Size64x64 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size72x72">
+            <summary>
+            This returns Size72x72 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size80x80">
+            <summary>
+            This returns Size80x80 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size88x88">
+            <summary>
+            This returns Size88x88 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size96x96">
+            <summary>
+            This returns Size96x96 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size104x104">
+            <summary>
+            This returns Size104x104 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size120x120">
+            <summary>
+            This returns Size120x120 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size132x132">
+            <summary>
+            This returns Size132x132 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size144x144">
+            <summary>
+            This returns Size144x144 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size8x18">
+            <summary>
+            This returns Size8x18 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size8x32">
+            <summary>
+            This returns Size8x32 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size12x26">
+            <summary>
+            This returns Size12x26 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size12x36">
+            <summary>
+            This returns Size12x36 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size16x36">
+            <summary>
+            This returns Size16x36 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixSize.Size16x48">
+            <summary>
+            This returns Size16x48 as DataMatrixSize
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.DataMatrixEncoding">
+             <summary>
+            Specifies DataMatrixEncoding.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixEncoding.Auto">
+            <summary>
+            This specifies Auto DataMatrixEncoding
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixEncoding.ASCII">
+            <summary>
+            This specifies ASCII DataMatrixEncoding
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixEncoding.ASCIINumeric">
+            <summary>
+            This specifies ASCIINumeric DataMatrixEncoding
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.DataMatrixEncoding.Base256">
+            <summary>
+            This specifies Base256 DataMatrixEncoding
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.QRVersion">
+             <summary>
+            Specifies QRVersion.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.VersionAuto">
+            <summary>
+            This returns VersionAuto as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version01">
+            <summary>
+            This returns Version01 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version02">
+            <summary>
+            This returns Version02 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version03">
+            <summary>
+            This returns Version03 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version04">
+            <summary>
+            This returns Version04 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version05">
+            <summary>
+            This returns Version05 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version06">
+            <summary>
+            This returns Version06 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version07">
+            <summary>
+            This returns Version07 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version08">
+            <summary>
+            This returns Version08 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version09">
+            <summary>
+            This returns Version09 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version10">
+            <summary>
+            This returns Version10 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version11">
+            <summary>
+            This returns Version11 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version12">
+            <summary>
+            This returns Version12 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version13">
+            <summary>
+            This returns Version13 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version14">
+            <summary>
+            This returns Version14 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version15">
+            <summary>
+            This returns Version15 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version16">
+            <summary>
+            This returns Version16 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version17">
+            <summary>
+            This returns Version17 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version18">
+            <summary>
+            This returns Version18 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version19">
+            <summary>
+            This returns Version19 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version20">
+            <summary>
+            This returns Version20 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version21">
+            <summary>
+            This returns Version21 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version22">
+            <summary>
+            This returns Version22 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version23">
+            <summary>
+            This returns Version23 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version24">
+            <summary>
+            This returns Version24 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version25">
+            <summary>
+            This returns Version25 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version26">
+            <summary>
+            This returns Version26 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version27">
+            <summary>
+            This returns Version27 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version28">
+            <summary>
+            This returns Version28 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version29">
+            <summary>
+            This returns Version29 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version30">
+            <summary>
+            This returns Version30 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version31">
+            <summary>
+            This returns Version31 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version32">
+            <summary>
+            This returns Version32 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version33">
+            <summary>
+            This returns Version33 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version34">
+            <summary>
+            This returns Version34 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version35">
+            <summary>
+            This returns Version35 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version36">
+            <summary>
+            This returns Version36 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version37">
+            <summary>
+            This returns Version37 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version38">
+            <summary>
+            This returns Version38 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version39">
+            <summary>
+            This returns Version39 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRVersion.Version40">
+            <summary>
+            This returns Version40 as QRBarcodeVersion
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.QRInputMode">
+             <summary>
+            Specifies QRInputMode.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRInputMode.NumericMode">
+            <summary>
+            This returns NumericMode as QRInputMode
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRInputMode.AlphaNumericMode">
+            <summary>
+            This returns AlphaNumericMode as QRInputMode
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRInputMode.BinaryMode">
+            <summary>
+            This returns BinaryMode as QRInputMode
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.QRErrorCorrectionLevel">
+             <summary>
+            Specifies QRErrorCorrectionLevel.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRErrorCorrectionLevel.Low">
+            <summary>
+            This specifies Low ErrorCorrectionLevel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRErrorCorrectionLevel.Medium">
+            <summary>
+            This specifies Medium ErrorCorrectionLevel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRErrorCorrectionLevel.Quartile">
+            <summary>
+            This specifies Quartile ErrorCorrectionLevel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.QRErrorCorrectionLevel.High">
+            <summary>
+            This specifies High ErrorCorrectionLevel
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.NameSpaceDoc">
+            <summary>
+            SfBarcode control is applicable in this namespace.
+            </summary>	
+        </member>
+        <member name="T:Syncfusion.SfBarcode.XForms.SfBarcode">
+            <summary>
+            Represents the SfBarcode that provides a simple method of encoding text information that is easily read by inexpensive electronic readers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.SymbologyProperty">
+            <summary>
+            Gets or sets the <c>Symbology</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.Symbology">
+            <summary>
+            The <c>Symbology</c> property is used to choose the type of the Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.BarcodeSymbolType"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.SymbologySettingsProperty">
+            <summary>
+            Gets or sets the <c>SymbologySettings</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.SymbologySettings">
+            <summary>
+            The <c>SymbologySettings</c> property is used to define the Barcode 1D/2D settings properties. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.BarcodeSettings"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.TextProperty">
+            <summary>
+            Gets or sets the <c>Text</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.Text">
+            <summary>
+            The <c>Text</c> property is used to set the Text for Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.ShowTextProperty">
+            <summary>
+            Gets or sets the <c>ShowText</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.ShowText">
+            <summary>
+            The <c>ShowText</c> property is used to define whether to show text or not in the Barcode UI. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.LightBarColorProperty">
+            <summary>
+            Gets or sets the <c>LightBarColor</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.LightBarColor">
+            <summary>
+            The <c>LightBarColor</c> property is used to set the color of the LightBar in the BarCode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.DarkBarColorProperty">
+            <summary>
+            Gets or sets the <c>DarkBarColor</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.DarkBarColor">
+            <summary>
+            The <c>DarkBarColor</c> property is used to set the color of the DarkBar in the BarCode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfBarcode.XForms.SfBarcode.TextColorProperty">
+            <summary>
+            Gets or sets the <c>TextColor</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.TextColor">
+            <summary>
+            The <c>TextColor</c> property is used to set the TextColor of the Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.SfBarcode.TextFontProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.TextFont">
+            <summary>
+            The <c>TextFont</c> property is used to set the TextFontSize of the Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Font"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.SfBarcode.TextGapHeightProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.TextGapHeight">
+            <summary>
+            The <c>TextGapHeight</c> property is used to set the Height between the barcode and the Text diplayed. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Single"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.SfBarcode.TextAlignmentProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.TextAlignment">
+            <summary>
+            The <c>TextAlignment</c> property is used to set the TextPosition in the layout for Barcode. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.BarcodeTextAlignment"/> value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfBarcode.XForms.SfBarcode.TextLocationProperty" -->
+        <member name="P:Syncfusion.SfBarcode.XForms.SfBarcode.TextLocation">
+            <summary>
+            The <c>TextLocation</c> property is used to set the TextLocation in the Barcode UI. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfBarcode.XForms.BarcodeTextLocation"/> value.</value>
+        </member>
+    </members>
+</doc>

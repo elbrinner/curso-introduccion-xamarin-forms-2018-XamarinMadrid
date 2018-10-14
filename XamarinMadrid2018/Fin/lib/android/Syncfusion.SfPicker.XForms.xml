@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPicker.XForms</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.PickerViewEventhandler">
+            <summary>
+            Custom view eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.OnPickerItemLoaded">
+            <summary>
+            Occurs when get view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnGetView(Syncfusion.SfPicker.XForms.PickerViewEventArgs)">
+            <summary>
+            Occurs when each item getting loaded. Users can customize the items or its view using its event parameters
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.OpendedEventhandler">
+            <summary>
+            Pop up opended eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.Opened">
+            <summary>
+            Occurs when get view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnOpened(System.EventArgs)">
+            <summary>
+            Occurs when the dialog getting opened.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.ClosedEventhandler">
+            <summary>
+            Custom view eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.Closed">
+            <summary>
+            Occurs when get view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnClosed(System.EventArgs)">
+            <summary>
+            Occurs when the dialog getting closed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.SelectionChangedChangedEventhandler">
+            <summary>
+            Value changed eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.SelectionChanged">
+            <summary>
+            Occurs when value changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectionChanged(Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the user selects an item from unselected items.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.OkButtonEventhandler">
+            <summary>
+            Custom view eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.OkButtonClicked">
+            <summary>
+            Occurs when OkButton clicked.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnOkButtonClicked(Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the default OK button clicked.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonEventhandler">
+            <summary>
+            Custom view eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonClicked">
+            <summary>
+            Occurs when Cancel button clicked.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnCancelButtonClicked(Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the default Cancel button clicked.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.ColumnLoadedEventhandler">
+            <summary>
+            Custom view eventhandler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.OnColumnLoaded">
+            <summary>
+            Occurs when get view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.ColumnLoaded(Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs)">
+            <summary>
+            Occurs when each column getting loaded. Users can customize the column using its event parameters.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.Parent">
+            <summary>
+            Gets or sets the value indicating a layout that holds the control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ItemTemplate">
+            <summary>
+            Gets or sets an instance of the Template class that defines the visual structure of a SfPicker item.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ItemTemplateProperty">
+            <summary>
+            An instance of the Template class that defines the visual structure of a Carousel item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontAttribute">
+            <summary>
+            Gets or sets  the value that indicating font attributes of header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontAttributeProperty">
+            <summary>
+            The header font property determines the font settings of Header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontFamily">
+            <summary>
+            Gets or sets  the value that indicating font family of header text
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontFamilyProperty">
+            <summary>
+            The header font family property determines the font family of header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontAttribute">
+            <summary>
+            Gets or sets  the value that indicating font attributes of column header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontAttributeProperty">
+            <summary>
+            The header font property determines the font settings of ColumnHeader in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontFamily">
+            <summary>
+            Gets or sets  the value that indicating font family of column header text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontFamilyProperty">
+            <summary>
+            The header font family property determines the font family of header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontAttribute">
+            <summary>
+            Gets or sets  the value that indicating font attributes of unselected items text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemsFontAttributeProperty">
+            <summary>
+            The header font property determines the font settings of Header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontFamily">
+            <summary>
+            Gets or sets  the value that indicating that font family of unselected items text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemsFontFamilyProperty">
+            <summary>
+            The header font family property determines the font family of header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontAttribute">
+            <summary>
+            Gets or sets  the value that indicating font attributes of selected item text
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontAttributeProperty">
+            <summary>
+            The header font property determines the font settings of Header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontFamily">
+            <summary>
+            Gets or sets  the value that indicating that font family of selected item text
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontFamilyProperty">
+            <summary>
+            The header font family property determines the font family of header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PickerMode">
+            <summary>
+            Gets or sets the value that indicating display mode of the control either as a dialog or default standalone representation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemTextColor">
+            <summary>
+            Gets or sets text color of unselected items
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.BorderColor">
+            <summary>
+            Gets or sets border color of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderBackgroundColor">
+            <summary>
+            Gets or sets background color of the control header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderBackgroundColor">
+            <summary>
+            Gets or sets background color of the control column header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderTextColor">
+            <summary>
+            Gets or sets text color of the control column header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderTextColor">
+            <summary>
+            Gets or sets text color of the control  header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.BackgroundColor">
+            <summary>
+            Gets or sets background color of the control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderText">
+            <summary>
+            Gets or sets the value indicating columns header. It has collection of header text when the control represents multi column
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItem">
+            <summary>
+            Gets or sets the value indicating selected item. It has collection selected item when the control represents multi column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedIndex">
+            <summary>
+            Gets or sets the value indicating selected index. It has collection selected index when the control represents multi column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderText">
+            <summary>
+            Gets or sets the value that indicating header of the control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderHeight">
+            <summary>
+            Gets or sets the value that determines the height of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.FooterHeight">
+            <summary>
+            Gets or sets the value that determines the height of the footer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderHeight">
+            <summary>
+            Gets or sets the value that determines the height of the column header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontSize">
+            <summary>
+            Gets or sets  the value that indicating font size of header text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontSize">
+            <summary>
+            Gets or sets  the value that indicating font size of column header text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontSize">
+            <summary>
+            Gets or sets  the value that indicating font attributes of unselected items text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontSize">
+            <summary>
+            Gets or sets  the value that indicating font size of selected item text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PickerHeight">
+            <summary>
+            Gets or sets  the value that determines the height of the Picker 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PickerWidth">
+            <summary>
+            Gets or sets  the value that determines the Width of the picker
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ItemHeight">
+            <summary>
+            Gets or sets  the value that determines the height of the items
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectionBackgroundColor">
+            <summary>
+            Gets or sets text color of selected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.IsOpen">
+            <summary>
+            Gets or sets  the value that indicating the state of the Dialog whether it is opened.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.DisplayMemberPath">
+            <summary>
+            Gets or sets  the value that show / hide the header view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ShowHeader">
+            <summary>
+            Gets or sets  the value that show / hide the header view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.EnableLooping">
+            <summary>
+            Gets or sets  the value that show / hide the header view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ShowFooter">
+            <summary>
+            Gets or sets  the value that show / hide the footer view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ShowColumnHeader">
+            <summary>
+            Gets or sets  the value that show / hide the column header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderView">
+            <summary>
+            Gets or sets  the value of view that will hold on Header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.FooterView">
+            <summary>
+            Gets or sets  the value of view that will hold on Footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemTextColor">
+            <summary>
+            Gets or sets text color of selected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ItemsSource">
+            <summary>
+            Gets or sets a collection of items that can be populated as picker items and get rendered at run-time based on the Template provided.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Open">
+            <summary>
+            Opens the dialog when the control in Dialog mode
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Close">
+            <summary>
+            Closes the dialog when the control in Dialog mode
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Dispose">
+            <summary>
+            Closes the dialog when the control in Dialog mode
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+    </members>
+</doc>

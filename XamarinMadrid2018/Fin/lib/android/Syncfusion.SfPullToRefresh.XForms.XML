@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPullToRefresh.XForms.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer">
+            <summary>
+            A class that contains the refresh content for the SfPullToRefresh to display the progress of animation when performing the pull to refresh action.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.RADIANS">
+            <summary>
+             In iOS arc calculated in Radians value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.runTimeRefresh">
+            <summary>
+            flag used for Runtime refreshing (SfPullToRefresh.StartPulling())
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.progress">
+            <summary>
+            calculate the arc progress for identifying arc completion
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.isProgressArcVisiable">
+            <summary>
+            isProgressArcVisiable flag used to check whether progress completed to 360 or not, if yes this flag value is false or it was true
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.isTouchUp">
+            <summary>
+             mouseUp is set as true after touch up. based on this flag we have draw the arg after release the touch.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            This method checks whether to change value, y and visiblity
+            </summary>
+            <param name="sender">SfCircleVieRenderer instance</param>
+            <param name="e">PropertyChangedEvent arguments</param>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.Draw(CoreGraphics.CGRect)">
+            <summary>
+            This method helps to draw the circle and arc, this Draw method will be called while we call SetNeedsDisplay
+            </summary>
+            <param name="rect">CGRect has been passed for drawing Circle and arc</param>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfCircleViewRenderer.ThreshHoldToAngle">
+            <summary>
+            This method used to calculate the progress value based on the pulling
+            </summary>
+            <returns>Progress value</returns>
+        </member>
+        <member name="T:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer">
+            <summary>
+            A refresh control that allows you to interact and refresh the view loaded in it. The SfPullToRefresh control allows you to refresh the view upon performing the pull to refresh action.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.isScrolling">
+            <summary>
+            canScroll flag will be work based on isScroll values. isScroll is true when view Y position not 0 , otherwise it was false 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.OnElementChanged(Xamarin.Forms.Platform.iOS.ElementChangedEventArgs{Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh})">
+            <summary>
+            Methods gets called when any property of the SfPullToRefreshControlRenderer get changed. 
+            </summary>
+            <param name="e">ElementChangedEvent argument</param>
+            <remarks>This method checks whether to change y, visibility</remarks>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Methods gets called when any property of the SfProgressCircleView get changed. 
+            </summary>
+            <param name="sender">SfPullToRefreshControlRenderer instance</param>
+            <param name="e">PropertyChangedEvent argument</param>
+            <remarks>This method checks whether to change y, visibility</remarks>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.WillMoveToWindow(UIKit.UIWindow)">
+            <summary>
+            Tells the view that its window object is about to change.
+            </summary>
+            <param name="window">current view</param>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.GestureRecognizerShouldBegin(UIKit.UIGestureRecognizer)">
+            <summary>
+            It begins processing touches to determine if its gesture is occurring.
+            </summary>
+            <param name="gestureRecognizer">gesture recognizer instance.</param>
+            <returns>Returns true (the default) to tell the gesture recognizer to proceed with interpreting touches, false to prevent it from attempting to recognize its gesture.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.CheckDragging(UIKit.UIView,UIKit.UIGestureRecognizer,UIKit.UIGestureRecognizer)">
+            <summary>
+            This method check dragging of DataGrid. 
+            </summary>
+            <param name="view"> Gets the view of gesture to evaluate ExtendedScrollViewRenderer. </param>
+            <param name="gesture1">gesture1 enable true if view is ExtendedScrollViewRenderer. </param>
+            <param name="gesture2"> gesture2 enable true if view is ExtendedScrollViewRenderer. </param>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshControlRenderer.CheckChildren(UIKit.UIView,System.Int32)">
+            <summary>
+            This method used to check the children and scrolling position
+            </summary>
+            <param name="view">The view to be checked for current View</param>
+            <param name="index">Identifying the index for the view</param>
+            <returns>Returns the boolean value</returns>
+        </member>
+        <member name="T:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshRenderer">
+            <summary>
+            A refresh control that allows you to interact and refresh the view loaded in it. The SfPullToRefresh control allows you to refresh the view upon performing the pull to refresh action.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.iOS.SfPullToRefreshRenderer.Init">
+            <summary>
+            Initialize the required renderer classes of a SfPullToRefresh control
+            </summary>
+        </member>
+    </members>
+</doc>

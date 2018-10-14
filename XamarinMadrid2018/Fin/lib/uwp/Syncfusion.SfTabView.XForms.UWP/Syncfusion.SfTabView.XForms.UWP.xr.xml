@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Tag" />
+    <RootPropertyPathName Name="CornerRadius" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="Width" />
+    <RootPropertyPathName Name="Height" />
+    <RootPropertyPathName Name="TitleForeground" />
+    <RootPropertyPathName Name="TitleFontSize" />
+    <RootPropertyPathName Name="TitleFontFamily" />
+    <RootPropertyPathName Name="FontIconFontWeight" />
+    <RootPropertyPathName Name="TitleFontAttributes" />
+    <RootPropertyPathName Name="ButtonDisplayMode" />
+    <RootPropertyPathName Name="Header" />
+    <RootPropertyPathName Name="FontIconFontSize" />
+    <RootPropertyPathName Name="IconFont" />
+    <RootPropertyPathName Name="FontIconFontAttributes" />
+    <RootPropertyPathName Name="FontIconForeground" />
+    <RootPropertyPathName Name="FontIconFontFamily" />
+    <RootPropertyPathName Name="Parent" />
+    <RootPropertyPathName Name="InternalTabWidth" />
+    <RootPropertyPathName Name="DisplayMode" />
+    <RootPropertyPathName Name="TabHeaderPosition" />
+    <RootPropertyPathName Name="OverflowMode" />
+    <RootPropertyPathName Name="CenterButtonContent" />
+    <RootPropertyPathName Name="CenterButtonSettings" />
+    <RootPropertyPathName Name="OverflowButtonSettings" />
+    <RootPropertyPathName Name="Title" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.ScrollPanel" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.DisplayModeToVisibilityConverter" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.TopHeaderPositionToVerticalAlignmentConverter" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.CenterButtonContentToVisibilityConverter" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.OverflowModeToVisibilityConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Style" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Template" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.SfTabView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.SfTabViewItem" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.OverflowControl" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.OverflowItem" />
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.CenterButton">
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Margin" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootMethod Name="GetZIndex" />
+      <RootMethod Name="SetZIndex" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="IsLightDismissEnabled" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Syncfusion.XForms.UWP.TabView.CustomStackPanel" />
+  </Roots.RootTypes>
+</Roots>

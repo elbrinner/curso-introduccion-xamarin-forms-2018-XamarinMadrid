@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPopupLayout.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.XForms.PopupLayout.PopupStyle">
+            <summary>
+            Represents the style of the SfPopupLayout.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.cornerRadius">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.CornerRadius"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.borderThickness">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.BorderThickness"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.popupLayout">
+            <summary>
+            Instance of the <see cref="T:Syncfusion.XForms.PopupLayout.SfPopupLayout"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.closeButtonIcon">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.CloseButtonIcon"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.headerbackgroundColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderBackgroundColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.headerTextColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderTextColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.headerFontSize">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderFontSize"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.headerFontFamily">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderFontFamily"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.headerFontAttribute">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderFontAttribute"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.headerTextAlignment">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderTextAlignment"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.footerBackgroundColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.FooterBackgroundColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.acceptButtonBackgroundColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.AcceptButtonBackgroundColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.acceptButtonTextColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.AcceptButtonTextColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.declineButtonBackgroundColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.DeclineButtonBackgroundColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.declineButtonTextColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.DeclineButtonTextColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupStyle.borderColor">
+            <summary>
+            Backing field for the <see cref="P:Syncfusion.XForms.PopupLayout.PopupStyle.BorderColor"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupStyle.#ctor">
+            <summary>
+            Initializes a new instance of the PopupStyle class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.CloseButtonIcon">
+            <summary>
+            Gets or sets the image to be placed in the header close button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the background color to be applied for the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderTextColor">
+            <summary>
+            Gets or sets the text color to be applied for the header title.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderFontSize">
+            <summary>
+            Gets or sets the font size of the header title.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderFontFamily">
+            <summary>
+            Gets or sets the font style to be applied for the header title.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderFontAttribute">
+            <summary>
+            Gets or sets the font attribute to be applied for the header title.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.HeaderTextAlignment">
+            <summary>
+            Gets or sets the text alignment of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.MessageBackgroundColor">
+            <summary>
+            Gets or sets the background color of the message in the PopupContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.MessageTextColor">
+            <summary>
+            Gets or sets the text color of the message in the PopupContent. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.MessageFontSize">
+            <summary>
+            Gets or sets the font size of the message in the PopupContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.MessageFontFamily">
+            <summary>
+            Gets or sets the font style of the message in the PopupContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.MessageFontAttribute">
+            <summary>
+            Gets or sets the font attribute of the message in the PopupContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.MessageTextAlignment">
+            <summary>
+            Gets or sets the text alignment of the message in the PopupContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.FooterBackgroundColor">
+            <summary>
+            Gets the background color of the footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.AcceptButtonBackgroundColor">
+            <summary>
+            Gets or sets the background color of the accept button in the footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.AcceptButtonTextColor">
+            <summary>
+            Gets or sets the foreground color of the accept button in the footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.DeclineButtonBackgroundColor">
+            <summary>
+            Gets or sets the background color of the decline button in the footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.DeclineButtonTextColor">
+            <summary>
+            Gets or sets the foreground color of the decline button in the footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.BorderColor">
+            <summary>
+            Gets or sets the border color for the PopupView.
+            </summary>
+            <value>
+            The border color for the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.CornerRadius">
+            <summary>
+            Gets or sets the corner radius for the PopupView.
+            </summary>
+            <value>
+            The corner radius for the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupStyle.BorderThickness">
+            <summary>
+            Gets or sets the border thickness for the PopupView.
+            </summary>
+            <value>
+            The border thickness for the PopupView.
+            </value>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupStyle.Initializestyle">
+            <summary>
+            Initializes the default values for the properties in <see cref="T:Syncfusion.XForms.PopupLayout.PopupStyle"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupStyle.SetPopupLayout(Syncfusion.XForms.PopupLayout.SfPopupLayout)">
+            <summary>
+            Used to get the instance of the <see cref="N:Syncfusion.XForms.PopupLayout"/> class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.AnimationMode">
+            <summary>
+            Built-in animations available in SfPopupLayout, which is applied when the 
+            PopupView opens and closes in the screen.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AnimationMode.Zoom">
+            <summary>
+            zoom-out animation will be applied when the PopupView opens and zoom-in animation
+            will be applied when the PopupView closes
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AnimationMode.Fade">
+            <summary>
+            Fade-out animation will be applied when the PopupView opens and Fade-in animation
+            will be applied when the PopupView closes
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AnimationMode.SlideOnLeft">
+            <summary>
+            PopupView will be animated from left-to-right, when it opens and it will be animated 
+            from right-to-left when the PopupView closes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AnimationMode.SlideOnRight">
+            <summary>
+            PopupView will be animated from right-to-left, when it opens and it will be animated 
+            from left-to-right when the PopupView closes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AnimationMode.SlideOnTop">
+            <summary>
+            PopupView will be animated from top-to-bottom, when it opens and it will be animated 
+            from bottom-to-top when the PopupView closes.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.XForms.PopupLayout.AnimationMode.SlideOnBottom" -->
+        <member name="F:Syncfusion.XForms.PopupLayout.AnimationMode.None">
+            <summary>
+            Animation will not be applied.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.AppearanceMode">
+            <summary>
+            Built-in layout styles of the PopupView.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AppearanceMode.OneButton">
+            <summary>
+            A layout with one button in the footer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.AppearanceMode.TwoButton">
+            <summary>
+            A layout with two buttons in the footer.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.RelativePosition">
+            <summary>
+            Positions the popup view relative to the given view. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignTop">
+            <summary>
+            Displays the popup at the top of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignToLeftOf">
+            <summary>
+            Displays the popup to the left of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignToRightOf">
+            <summary>
+            Displays the popup to the right of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignBottom">
+            <summary>
+            Displays the popup at the bottom of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignTopLeft">
+            <summary>
+            Displays the popup at the top left position of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignTopRight">
+            <summary>
+            Displays the popup at the top right position of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignBottomLeft">
+            <summary>
+            Displays the popup at the bottom left position of the given view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.RelativePosition.AlignBottomRight">
+            <summary>
+            Displays the popup at the botto right position of the given view.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.XamarinExtensions">
+            <exclude/>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.XamarinExtensions.density">
+            <summary>
+            Density of the device.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.XamarinExtensions.ConvertPixelsToDp(System.Object,System.Double)">
+            <summary>
+            Converts the pixels to dp.
+            </summary>
+            <param name="pixels">The pixel value for which the density independent pixel should be obtained.</param>
+            <returns>The dp for the given pixels.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.XamarinExtensions.ConvertDpToPixels(System.Object,System.Double)">
+            <summary>
+            Converts the given dp to pixels.
+            </summary>
+            <param name="dp">The density independent pixel value for which the pixel 
+            value should be obtained.</param>
+            <returns>The pixels for the given dp value.</returns>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.PopupView">
+            <summary>
+            The popup view of the SfPopupLayout.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.SfPopupLayout">
+            <summary>
+            Instance of SfPopupLayout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.#ctor">
+            <summary>
+            Initializes a new instance of the PopupView class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.AppearanceModeProperty">
+            <summary>
+            Identifies the AppearanceMode bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.HeaderTemplateProperty">
+            <summary>
+            Identifies the HeaderTemplate bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.ContentTemplateProperty">
+            <summary>
+            Identifies the ContentTemplate bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.FooterTemplateProperty">
+            <summary>
+            Identifies the FooterTemplate bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.ShowHeaderProperty">
+            <summary>
+            Identifies the ShowHeader bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.ShowFooterProperty">
+            <summary>
+            Identifies the ShowFooter bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.HeaderTitleProperty">
+            <summary>
+            Identifies the HeaderTitle bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.PopupMessageProperty">
+            <summary>
+            Identifies the PopupMessage bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.AcceptButtonTextProperty">
+            <summary>
+            Identifies the AcceptButtonText bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.DeclineButtonTextProperty">
+            <summary>
+            Identifies the DeclineButtonText bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.StartXProperty">
+            <summary>
+            Identifies the StartX bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.StartYProperty">
+            <summary>
+            Identifies the StartY bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.PopupStyleProperty">
+            <summary>
+            Identifies the PopupStyle bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.AnimationModeProperty">
+            <summary>
+            Identifies the AnimationMode bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.ShowCloseButtonProperty">
+            <summary>
+            Identifies the ShowCloseButton bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.AnimationDurationProperty">
+            <summary>
+            Identifies the AnimationDuration bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.HeaderHeightProperty">
+            <summary>
+            Identifies the HeaderHeight bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.PopupView.FooterHeightProperty">
+            <summary>
+            Identifies the FooterHeight bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.AppearanceMode">
+            <summary>
+            Gets or sets the type of layout template of the PopupView.
+            </summary>
+            <value>
+            The type of layout template of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.HeaderTemplate">
+            <summary>
+            Gets or sets the template to be loaded in the header of the PopupView.
+            </summary>
+            <value>
+            The template to be loaded in the header of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.ContentTemplate">
+            <summary>
+            Gets or sets the template to be loaded in the body of the PopupView.
+            </summary>
+            <value>
+            The template to be loaded in the body of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.FooterTemplate">
+            <summary>
+            Gets or sets the template to be loaded in the footer of the PopupView.
+            </summary>
+            <value>
+            The template to be loaded in the footer of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether the header is to be included in the PopupView.
+            </summary>
+            <value>
+            A value indicating whether the header is to be included in the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether the footer is to be included in the PopupView.
+            </summary>
+            <value>
+            A value indicating whether the footer is to be included in the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.HeaderTitle">
+            <summary>
+            Gets or sets the Header title of the PopupView.
+            </summary>
+            <value>
+            The Header title of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.PopupMessage">
+            <summary>
+            Gets or sets the popup message of the PopupView.
+            </summary>
+            <value>
+            The popup message of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.AcceptButtonText">
+            <summary>
+            Gets or sets the text of the accept button in the footer.
+            </summary>
+            <value>
+            The text of the accept button in the footer.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.DeclineButtonText">
+            <summary>
+            Gets or sets the text of the decline button in the footer.
+            </summary>
+            <value>
+            The text of the decline button in the footer.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.StartX">
+            <summary>
+            Gets or sets the x-position of the PopupView.
+            </summary>
+            <value>
+            The x-position of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.StartY">
+            <summary>
+            Gets or sets the y-position of the PopupView.
+            </summary>
+            <value>
+            The y-position of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.PopupStyle">
+            <summary>
+            Gets or sets the style to be applied to the PopupView in SfPopupLayout.
+            </summary>
+            <value>
+            The style to be applied to the PopupView in SfPopupLayout.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.AnimationMode">
+            <summary>
+            Gets or sets the animation to be applied for the PopupView when it opens and closes.
+            </summary>
+            <value>
+            The animation to be applied for the PopupView when it opens and closes.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.AnimationDuration">
+            <summary>
+            Gets or sets the duration in milliseconds of the animation played at the opening and closing of the PopupView.
+            </summary>
+            <value>
+            The duration in milliseconds of the animation played at the opening and closing of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.HeaderHeight">
+            <summary>
+            Gets or sets the header height of the PopupView.
+            </summary>
+            <value>
+            The header height of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.FooterHeight">
+            <summary>
+            Gets or sets the footer height of the PopupView.
+            </summary>
+            <value>
+            The footer height of the PopupView.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.ShowCloseButton">
+            <summary>
+            A boolean value indicating whether to show the close button in the header.
+            </summary>
+            <value>
+            A boolean value indicating whether to show the close button in the header.
+            </value>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnAppearanceModePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for AppearanceMode bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnHeaderTemplatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for HeaderTemplate bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnContentTemplatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for ContentTemplate bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnFooterTemplatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for FooterTemplate bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnShowHeaderPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for ShowHeader bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnShowFooterPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for ShowFooter bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnHeaderTitlePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for HeaderTitle bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnPopupMessagePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for PopupMessage bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnAcceptButtonTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for AcceptButtonText bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnDeclineButtonTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for DeclineButtonText bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnStartXPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for StartX bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnStartYPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for StartY bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnPopupStylePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for PopupStyle bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnAnimationModePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for AnimationMode bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnShowCloseButtonPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for ShowCloseButton bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnAnimationDurationPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for AnimationDuration bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnHeaderHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for HeaderHeight bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.OnFooterHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for FooterHeight bindable property changed.
+            </summary>
+            <param name="bindable">instance of the PopupView class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.AcceptCommand">
+            <summary>
+            This command will be fired when the accept button in the footer is clicked.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.PopupView.DeclineCommand">
+            <summary>
+            This command will be fired when the decline button in the footer is clicked.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.RaiseAcceptCommand(System.Windows.Input.ICommand)">
+            <summary>
+            Raises the given command.
+            </summary>
+            <param name="command">The command to be raised.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.RaiseDeclineCommand(System.Windows.Input.ICommand)">
+            <summary>
+            Raises the given command.
+            </summary>
+            <param name="command">The command to be raised.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.Dispose">
+            <summary>
+            Perform final clean up before it is released from memory.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.PopupView.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the component and optionally releases the managed resources.
+            </summary>
+            <param name="disposing"> if true - release both managed and unmanaged resources; 
+            if false - release only unmanaged resources.
+            </param>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService">
+            <summary>
+            Dependency service interface of SfPopupLayout
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.IsAnimationInProgress(System.Object)">
+            <summary>
+            Gets whether Popup opening / closing animation is in progress.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+            <returns>Returns whether Popup opening / closing animation is in progress.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.GetDensity">
+            <summary>
+            Gets the density of the device.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.GetScreenWidth">
+            <summary>
+            Gets the width of the device in pixels.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.GetScreenHeight">
+            <summary>
+            Gets the height of the device in pixels.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.Show(System.Object,Syncfusion.XForms.PopupLayout.SfPopupLayout)">
+            <summary>
+            Displays the Popup in the view.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.UpdatePopupViewstyle(System.Object)">
+            <summary>
+            Displays the Popup in the view.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.ShowAtTouchPoint(System.Object,Syncfusion.XForms.PopupLayout.SfPopupLayout)">
+            <summary>
+            Displays the Popup at the touch point.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.Show(System.Object,System.Double,System.Double,Syncfusion.XForms.PopupLayout.SfPopupLayout)">
+            <summary>
+            Displays popup at the given x and y position.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+            <param name="xPosition">The x-position where the popup should be displayed.</param>
+            <param name="yPosition">The y-position where the popup should be displayed.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.ShowRelativeToView(System.Object,Syncfusion.XForms.PopupLayout.SfPopupLayout,Xamarin.Forms.View,Syncfusion.XForms.PopupLayout.RelativePosition,System.Double,System.Double)">
+            <summary>
+            Displays popup, relative to the given view.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+            <param name="relativeView">The view relative to which popup should be displayed.</param>
+            <param name="relativePosition">The position, where popup should be displayed,
+            relative to the given view.</param>
+            <param name="absoluteX">The absolute X-point from relative view.</param>
+            <param name="absoluteY">The absolute Y-point from relative view.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.IPopupLayoutDependencyService.DismissPopup(System.Object)">
+            <summary>
+            Dismisses the pop-up from the view.
+            </summary>
+            <param name="nativeObject">The native object of SfPopupLayout.</param>
+            <param name="resetParent">Indicates whether to reset the ParentView in the 
+            ContentView</param>
+            <remarks>
+            This parameter is used, when the rootView is not SfPopupLayout. If it is true,
+            the ParentView will be reset in the CotentView, else the rootView will be maintained 
+            as SfPopupLayout. 
+            </remarks>
+        </member>
+        <member name="T:Syncfusion.XForms.PopupLayout.SfPopupLayout">
+            <summary>
+            SfPopupLayout allows the user to display an alert message with the customizable buttons or load any desired view inside the pop-up. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.popupOpeningEventArgs">
+            <summary>
+            Holds the <see cref="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Opening"/> event arguments.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.popupClosingEventArgs">
+            <summary>
+            Holds the <see cref="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Closing"/> event arguments.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.canReplaceRootView">
+            <summary>
+            Indicates whether the Content of the Page should be replaced.
+            </summary>
+            <remarks>
+            This case is used, when the SfPopupLayout is not the root view from sample level.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.#ctor">
+            <summary>
+            Initializes a new instance of the SfPopupLayout class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.ContentProperty">
+            <summary>
+            Identifies the Content bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupViewProperty">
+            <summary>
+            Identifies the PopupView bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.IsOpenProperty">
+            <summary>
+            Identifies the IsOpen bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.PopupLayout.SfPopupLayout.StaysOpenProperty">
+            <summary>
+            Identifies the StaysOpen bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.Content">
+            <summary>
+            Gets or sets the content of the SfPopupLayout which is the hosting view of the SfPopupLayout.  
+            </summary>
+            <value>
+            The content of the SfPopupLayout.
+            </value>
+            <remarks>
+            The PopupView will be hosted inside the view which is set as the Content.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView">
+            <summary>
+            Gets the popup view of the SfPopupLayout that will be displayed when setting the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.IsOpen"/> property as <c>true</c>.
+            </summary>
+            <value>
+            The popup view of the SfPopupLayout that will be displayed when setting the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.IsOpen"/> property as <c>true</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> is open or not.
+            </summary>
+            <value>
+            The value indicating whether the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> is open or not.
+            </value>
+            <remarks>
+            The PopupView will be opened and closed based on this value.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.StaysOpen">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> should stay open, when the interaction is made outside its boundary area.
+            </summary>
+            <value>
+            The value indicating whether the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> should stay open, when the interaction is made outside its boundary area.
+            </value>
+        </member>
+        <member name="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.NativeObject">
+            <summary>
+            Gets or sets the native object of SfPopupLayout.
+            </summary>
+            <value>
+            The native object of SfPopupLayout.
+            </value>
+        </member>
+        <member name="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Opened">
+            <summary>
+            This event will be fired whenever the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> is shown in the view.
+            </summary>
+            <remarks>
+            This event fires whenever the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.IsOpen"/> property is set as <c>true</c>.
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Closed">
+            <summary>
+            This event will be fired whenever the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> is dismissed from the view.
+            </summary>
+            <remarks>
+            This event fires whenever the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.IsOpen"/> property is set as <c>false</c>.
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Opening">
+            <summary>
+            This event will be fired whenever the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> is opening in the view. Occurring of this event can be cancelled based on conditions.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Closing">
+            <summary>
+            This event will be fired whenever the <see cref="P:Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView"/> is closing in the view. Occurring of this event can be cancelled based on conditions.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Show(Xamarin.Forms.View)">
+            <summary>
+            Displays the Popup in the view.
+            </summary>
+            <param name="rootView">The root view of the Activity, if the root view is not SfPopupLayout.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Show">
+            <summary>
+            Displays the Popup in the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.ShowAtTouchPoint">
+            <summary>
+            Displays the Popup at the touch point.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Show(System.Int32,System.Int32,Xamarin.Forms.View)">
+            <summary>
+            Displays the popup at the given x and y point.
+            </summary>
+            <param name="rootView">The root view of the Activity, if the root view is not SfPopupLayout.</param>
+            <param name="xPosition">The x-point at which the popup should be displayed.</param>
+            <param name="yPosition">The y-point at which the popup should be displayed.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Show(System.Double,System.Double)">
+            <summary>
+            Displays the popup at the given x and y point.
+            </summary>
+            <param name="xPosition">The x-point at which the popup should be displayed.</param>
+            <param name="yPosition">The y-point at which the popup should be displayed.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.ShowRelativeToView(Xamarin.Forms.View,Syncfusion.XForms.PopupLayout.RelativePosition,Xamarin.Forms.View)">
+            <summary>
+            Displays popup, relative to the given view.
+            </summary>
+            <param name="relativeView">The view relative to which popup should be displayed.</param>
+            <param name="relativePosition">The position, where popup should be displayed,
+            relative to the given view.</param>
+            <param name="rootView">The root view of the Activity, if the root view is not SfPopupLayout.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.ShowRelativeToView(Xamarin.Forms.View,Syncfusion.XForms.PopupLayout.RelativePosition,System.Double,System.Double)">
+            <summary>
+            Displays popup, relative to the given view.
+            </summary>
+            <param name="relativeView">The view relative to which popup should be displayed.</param>
+            <param name="relativePosition">The position, where popup should be displayed,
+            relative to the given view.</param>
+            <param name="absoluteX">The absolute X-point from relative view.</param>
+            <param name="absoluteY">The absolute Y-point from relative view.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.DismissPopup(System.Boolean)">
+            <summary>
+            Dismisses the pop-up from the view.
+            </summary>
+            <param name="resetParent">Indicates whether to reset the ParentView in the 
+            Content of the page.</param>
+            <remarks>
+            This parameter is used, when the rootView is not SfPopupLayout. If it is true,
+            the ParentView will be reset in the CotentView, else the rootView will be maintained 
+            as SfPopupLayout. 
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Dismiss" -->
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Positions and sizes the children of a Layout.
+            </summary>
+            <param name="x">A value representing the x coordinate of the child region bounding box.</param>
+            <param name="y">A value representing the y coordinate of the child region bounding box.</param>
+            <param name="width">A value representing the width of the child region bounding box.</param>
+            <param name="height">A value representing the height of the child region bounding box.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.GetMainPage">
+            <summary>
+            Gets the main page of the application
+            </summary>
+            <returns>Returns the main page of the application.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.RaisePopupOpeningEvent">
+            <summary>
+            Raises the Popup Opening event.
+            </summary>
+            <returns>Returns whether to cancel opening of the Popup.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.RaisePopupOpenedEvent">
+            <summary>
+            Raises the <see cref="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Opened"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.RaisePopupClosingEvent">
+            <summary>
+            Raises the Popup Closing event.
+            </summary>
+            <returns>Returns whether to cancel closing of the Popup.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.RaisePopupClosedEvent">
+            <summary>
+            Raises the <see cref="E:Syncfusion.XForms.PopupLayout.SfPopupLayout.Closed"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.ReplaceRootView">
+            <summary>
+            Replaces the root view of the page.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.OnContentChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for Content bindable property changed.
+            </summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.OnPopupViewChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for PopupView bindable property changed.
+            </summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.OnIsOpenChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for IsOpen bindable property changed.
+            </summary>
+            <param name="bindable">Instance of the SfPopupLayout class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.OnStaysOpenChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Delegate for StaysOpen bindable property changed.
+            </summary>
+            <param name="bindable">Instance of the SfPopupLayout class.</param>
+            <param name="oldValue">Old value in the property.</param>
+            <param name="newValue">New value obtained in the property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.GetViewParentPage(Xamarin.Forms.View)">
+            <summary>
+            Gets the parent page of the view.
+            </summary>
+            <param name="view">The view whose parent page has to be obtained.</param>
+            <returns>The parent page of the view.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Dispose">
+            <summary>
+            Perform final clean up before it is released from memory.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.PopupLayout.SfPopupLayout.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the component and optionally releases the managed resources.
+            </summary>
+            <param name="disposing"> if true - release both managed and unmanaged resources; 
+            if false - release only unmanaged resources.
+            </param>
+        </member>
+    </members>
+</doc>

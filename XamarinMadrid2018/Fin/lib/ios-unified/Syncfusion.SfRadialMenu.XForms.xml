@@ -1,0 +1,1013 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRadialMenu.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.IShow">
+            <summary>
+            Represents the interface for Show method
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.IClose">
+            <summary>
+            Represents the interface for Close method
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.IDispose">
+            <summary>
+            Represents the interface for dispose method
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.LayoutType">
+            <summary>
+            Contains values of LayoutType that determines arrangement of items on rim either automatic or user defined
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.LayoutType.Default">
+            <summary>
+            Available items can populated on the rim by sharing the available space in equal ratio. Order of the item based on order of items in the assigned source.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.LayoutType.Custom">
+            <summary>
+            User can split the available spaces using VisibleSegmentCount as segments. Exceeded items will not shown and beneath items leave empty space on rim. User can rearrange or position the items using SegmentIndex property of SfRadialMenuItem.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenuCenterButtonPlacement">
+            <summary>
+            Contains the position of Radial menu center button placement.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuCenterButtonPlacement.TopLeft">
+            <summary>
+             SfRadialMenuCenterButtonPlacement at TopLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuCenterButtonPlacement.Center">
+            <summary>
+             SfRadialMenuCenterButtonPlacement at Center
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.OpenedEventHandler">
+            <summary>
+            Occurs when the first level menu get expanded to opened.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Opened">
+            <summary>
+            Occurs when the first level menu get expanded to opened.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseOpened(Syncfusion.SfRadialMenu.XForms.OpenedEventArgs)">
+            <summary>
+            Raises the opened.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ClosedEventHandler">
+            <summary>
+            Occurs when the first level menu get collapsed to Closed.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Closed">
+            <summary>
+            Occurs when the first level menu get collapsed to Closed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseClosed(Syncfusion.SfRadialMenu.XForms.ClosedEventArgs)">
+            <summary>
+            Raises the Closed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.OpeningEventHandler">
+            <summary>
+            Occurs when the first level menu that starts to expanding to open.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Opening">
+            <summary>
+            Occurs when the first level menu that starts to expanding to open.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseOpening(Syncfusion.SfRadialMenu.XForms.OpeningEventArgs)">
+            <summary>
+            Raises the Opening method.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ClosingEventHandler">
+            <summary>
+            Occurs when the first level menu that starts to collapsing to close.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Closing">
+            <summary>
+            Occurs when the first level menu that starts to collapsing to close.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseClosing(Syncfusion.SfRadialMenu.XForms.ClosingEventArgs)">
+            <summary>
+            Raises the Closing method.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackTappedEventHandler">
+            <summary>
+            Occurs when the Center button is tapped. Center button can be retrieve and customized.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackTapped">
+            <summary>
+            Occurs when the Center button is tapped. Center button can be retrieve and customized.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseCenterButtonBackTapped(Syncfusion.SfRadialMenu.XForms.CenterButtonBackTappedEventArgs)">
+            <summary>
+            Raises the CenterButtonTapped method.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.NavigatingEventHandler">
+            <summary>
+            Occurs when a Radial Menu item tapped to starts navigating to its next hierarchy level or Center back button is tapped to starts navigating to previous hierarchy level. Its occurs only an item that has children.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Navigating">
+            <summary>
+            Occurs when a Radial Menu item tapped to starts navigating to its next hierarchy level or Center back button is tapped to starts navigating to previous hierarchy level. Its occurs only an item that has children.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseNavigating(Syncfusion.SfRadialMenu.XForms.NavigatingEventArgs)">
+            <summary>
+            Raises the Navigating method.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.NavigatedEventHandler">
+            <summary>
+            Occurs when a Radial Menu item tapped and navigated to its next hierarchy level or Center back button is tapped to navigated to its previous hierarchy level. Its occurs only an item that has children.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Navigated">
+            <summary>
+            Occurs when a Radial Menu item tapped and navigated to its next hierarchy level or Center back button is tapped to navigated to its previous hierarchy level. Its occurs only an item that has children.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseNavigated(Syncfusion.SfRadialMenu.XForms.NavigatedEventArgs)">
+            <summary>
+            Raises the Navigated method.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.DragBeginEventHandler">
+            <summary>
+            Occurs when the control get Dragged.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.DragBegin">
+            <summary>
+            Occurs when the control get Dragged.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseDragBegin(Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs)">
+            <summary>
+            Raises the DragBegin.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.DragEndEventHandler">
+            <summary>
+            Occurs when the control get DragEnded.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.DragEnd">
+            <summary>
+            Occurs when the control get DragEnded.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RaiseDragEnd(Syncfusion.SfRadialMenu.XForms.DragEndEventArgs)">
+            <summary>
+            Raises the DragEnd.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonView">
+            <summary>
+            Gets or sets the value indicating view of the center button at first level. Any view can be assigned as center button view.
+            </summary>
+            <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonView property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonText">
+            <summary>
+            Get or set the value indicating text of the center button at first level and it can also act as font icon. It will not applicable to custom view assigned through CenterButtonView.
+            </summary>
+            <value>
+            The default value is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonTextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonText property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonTextColor">
+            <summary>
+            Get or set the value indicating text/font icon color of the center button at first level. It will not applicable to custom view assigned through CenterButtonView.
+            </summary>
+            <value>
+            The default value is White
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonTextColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackgroundColor">
+            <summary>
+            Gets or sets the value indicating the back color of the center button at first level. It will not applicable to custom view assigned through CenterButtonView.
+            </summary>
+            <value>
+            The default value is Gray
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBackgroundColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonRadius">
+            <summary>
+            Get or set the value that indicating the size of the center button at first level by adjusting its radius.
+            </summary>
+            <value>
+            The default value is 0.5
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonRadiusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonRadius property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonFontFamily">
+            <summary>
+            Gets or sets the value that indicating the font family of the text of center button at first level. Font icon support will achieved through this support. It will not applicable to custom view assigned through CenterButtonView.
+            </summary>
+            <value>
+            The default font size is 16
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonFontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonFontFamily property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonFontSize">
+            <summary>
+            Gets or sets the value that indicating the size of the text / icon of the center button at first level. It will not applicable to custom view assigned through CenterButtonView.
+            </summary>
+            <value>
+            The default font size is 16
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonFontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonFontSize property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonFontAttributes">
+            <summary>
+            Gets or sets the value indicating font attributes of the center button at first level. It will not applicable to custom view assigned through CenterButtonView.
+            </summary>
+            <value>
+            The default font attribute is none
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonFontAttributesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonFontAttributes property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.IsOpen">
+            <summary>
+            Gets or sets the value indicating either the control has to be open or closed. Using this property user can load the control with open state.
+            </summary>
+            <value>
+            The default value is false
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.IsOpenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsOpen property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.EnableRotation">
+            <summary>
+            Gets or sets the value that enable or disable the rim rotation with touch gestures.
+            </summary>
+            <value>
+            The default value is true
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.EnableRotationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableRotation property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.VisibleSegmentsCount">
+            <summary>
+            Gets or sets the value that splits the available spaces as pie segments. Exceeded items will not shown and beneath items leave empty space on rim. It will be applicable only if the SfRadialMenu in Custom layout type.
+            </summary>
+            <value>
+            The default value is 10
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.VisibleSegmentsCountProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for VisibleSegmentsCount property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.AnimationDuration">
+            <summary>
+            Gets or sets the value indicating the speed of opening / closing / navigating animations.
+            </summary>
+            <value>
+            The default value is 10
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.AnimationDurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AnimationDuration property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.SelectionColor">
+            <summary>
+            Gets or sets the value indicating the back color of each items. Generally its represent as pie. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default value is transparent
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.SelectionColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectionColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.SeparatorColor">
+            <summary>
+            Gets or sets the value indicating the color of the separator that appear between two items.
+            </summary>
+            <value>
+            The default value is White
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.SeparatorColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SeparatorColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.SeparatorThickness">
+            <summary>
+            Gets or sets the value indicating the thickness of the separator that appear between two items.
+            </summary>
+            <value>
+            The default value is zero
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.SeparatorThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SeparatorThickness property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RimRadius">
+            <summary>
+            Gets or sets the value indicating the size of the rim by adjusting its radius.
+            </summary>
+            <value>
+            The default value is zero
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RimRadiusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RimRadius property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RimColor">
+            <summary>
+            Gets or sets the value indicating the color of the entire rim.
+            </summary>
+            <value>
+            The default value is Transparent
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.RimColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RimColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Point">
+            <summary>
+            Gets or sets the value indication the position of the center button placement. User can determine the position of the center button while loading.
+            </summary>
+            <value>
+            The default value is zero
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.PointProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Point property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.IsDragEnabled">
+            <summary>
+            Gets or sets the value indicating whether the center button can be drag on the view. It is applicable when the SfRadialMenu in closed state.
+            </summary>
+            <value>
+            The default value is zero
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.IsDragEnabledProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsDragEnabled property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBorderColor">
+            <summary>
+            Gets or sets the value indicating the border color of the center button.
+            </summary>
+            <value>
+            The default value is transparent
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBorderColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBorderColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackView">
+            <summary>
+            Gets or sets the value indicating a view of the center button when it navigated to next level and not in first level. Any view can be assigned as center back button view
+            </summary>
+            <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBackView property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackFontFamily">
+            <summary>
+            Gets or sets the value that indicating the font family of the text of center button when it navigated to next level and not in first level. Font icon support will achieved through this support. It will not applicable to custom view assigned through CenterBackButtonView.
+            </summary>
+            <value>
+            The default value is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackFontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBackFontFamily property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackFontSize">
+            <summary>
+            Gets or sets the value that indicating the size of the text / icon of the center button when it navigated to next level and not in first level. It will not applicable to custom view assigned through CenterBackButtonView.
+            </summary>
+            <value>
+            The default font size is 16
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackFontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBackFontSize property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackTextColor">
+            <summary>
+            Get or set the value indicating text/font icon color of the center button when it navigated to next level and not in first level. It will not applicable to custom view assigned through CenterBackButtonView.
+            </summary>
+            <value>
+            The default value is Black
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBackTextColor property. 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonPlacement" -->
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonPlacement property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBorderThickness">
+            <summary>
+            Gets or sets the value indicating the border thickness of the center button.
+            </summary>
+            <value>
+            The default value is 3
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBorderThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBorderThickness property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackText">
+            <summary>
+            Get or set the value indicating text of the center button when it navigated to next level and not in first level and it can also act as font icon. It will not applicable to custom view assigned through CenterBackButtonView.
+            </summary>
+            <value>
+            The default value is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.CenterButtonBackTextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CenterButtonBackText property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.EnableCenterButtonAnimation">
+            <summary>
+            Gets or sets the value that enable and disable Zoom In or Zoom out animation when the RadialMenu getting open or close respectively.
+            </summary>
+            <value>
+            The default value is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.EnableCenterButtonAnimationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableCenterButtonAnimation property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemsSource">
+            <summary>
+            Gets or sets a collection of items that can be populated as SfRadialMenuItem and get rendered at run-time based on the Template provided.
+            </summary>
+            <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemsSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemsSource property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemTemplate">
+            <summary>
+            Gets or sets an instance of the Template class that defines the visual structure of a suggestion item.
+            </summary>
+            /// <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemTemplate property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.DisplayMemberPath">
+            <summary>
+            Gets or sets the display member path which is used to search the item.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.DisplayMemberPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DisplayMemberPath property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Items">
+            <summary>
+            Gets or sets the list of items to display 
+            </summary>
+            <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Items property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemHeight">
+            <summary>
+            Gets or sets the value indication the height of the items.
+            </summary>
+            <value>
+            The default value is 40
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemHeight property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemWidth">
+            <summary>
+            Gets or sets the value indicating the width of each items.
+            </summary>
+            <value>
+            The default value is 40
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.ItemWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemWidth property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.LayoutType">
+            <summary>
+            Gets or sets the value indicating arrangement of items on rim either automatic or user defined.
+            </summary>
+            <value>
+            The default value is LayoutType.Default
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.LayoutTypeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LayoutType property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Show">
+            <summary>
+            Opens the first level items of the Radial Menu by expanding the rim.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Close">
+            <summary>
+            Closed the items of the Radial Menu by collapsing the rim.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenu.Dispose">
+            <summary>
+            Closed the items of the Radial Menu by collapsing the rim.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.OpenedEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.OpenedEventArgs"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.ClosedEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.ClosedEventArgs"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.OpeningEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.OpeningEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.OpeningEventArgs.Cancel">
+            <summary>
+            Gets or sets the cancel of opening item in control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.ClosingEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.ClosingEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.ClosingEventArgs.Cancel">
+            <summary>
+            Gets or sets the cancel of Closing item in control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.CenterButtonBackTappedEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="!:Syncfusion.SfRadialMenu.XForms.CenterButtonEventArgs"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.NavigatingEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.NavigatingEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.NavigatingEventArgs.Cancel">
+            <summary>
+            Gets or sets the cancel of Navigating item in control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.NavigatedEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.NavigatedEventArgs"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.Handled">
+            <summary>
+            Gets or sets the Handled of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.Position">
+            <summary>
+            Gets or sets the position of the control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.DragEndEventArgs">
+            <summary>
+            Represents the Arguments for <see cref="T:Syncfusion.SfRadialMenu.XForms.DragEndEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.OldValue">
+            <summary>
+            Gets or sets the OldValue of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.NewValue">
+            <summary>
+            Gets or sets the NewValue of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.Handled">
+            <summary>
+            Gets or sets the Handled of the control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem">
+            <summary>
+            Represents an item that can be added as children in SfRadialMenu.Any object can be added as SfRadialMenuItem and that can be populated as menus.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemTappedEventHandler">
+            <summary>
+            Occurs when a RadialMenuItem get Tapped. Item can be retrieve and customized
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemTapped">
+            <summary>
+            Occurs when a RadialMenuItem get Tapped. Item can be retrieve and customized
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.RaiseItemTapped(Syncfusion.SfRadialMenu.XForms.ItemTappedEventArgs)">
+            <summary>
+            Raises the ItemTapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.View">
+            <summary>
+            Gets or sets the value indicating a view that placed on it . Any view can be assigned on the item.
+            </summary>
+            <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for View property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.Text">
+            <summary>
+            Get or set the value indicating caption text of the item. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default value is String.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.TextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Text property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.TextColor">
+            <summary>
+            Get or set the value indicating color of the caption text of the item. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default value is black
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.TextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.BackgroundColor">
+            <summary>
+            Gets or sets the value indicating the back color of the item. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default value is transparent
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.BackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for BackgroundColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontFamily">
+            <summary>
+            Gets or sets the value that indicating the font family of the caption text item. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default font family is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontFamily property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontSize">
+            <summary>
+            Get or set the value indicating size of the caption text of the item. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default text size is 20
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontSize property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontAttributes">
+            <summary>
+            Get or set the value indicating attributes of the caption text of the item. It will not applicable to custom view.
+            </summary>
+            <value>
+            The default font attribute is none
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontAttributesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontAttributes property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.Image">
+            <summary>
+            Get or set the value indicating image that load on the item. Users can directly load an image instead of custom view.
+            </summary>
+            <value>
+            The default value is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ImageProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Image property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.Items">
+            <summary>
+            Gets or sets the list of items to display 
+            </summary>
+            <value>
+            The default value is null
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Items property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.VisibleSegmentsCount">
+            <summary>
+            Gets or sets the value that splits the available spaces as pie segments. Exceeded items will not shown and beneath items leave empty space on rim. It will be applicable only if the SfRadialMenu in Custom layout type.
+            </summary>
+            <value>
+            The default value is 10
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.VisibleSegmentsCountProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for VisibleSegmentsCount property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.SegmentIndex">
+            <summary>
+            Gets or sets the value that allows user to rearrange or position the items. It will be applicable only if the SfRadialMenu in Custom layout type.
+            </summary>
+            <value>
+            The default value is -1
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.SegmentIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SegmentIndex property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.IconFontColor">
+            <summary>
+            Gets or sets the value indicating the color of FontIconText.
+            </summary>
+            <value>
+            The default value is black
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.IconFontColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IconFontColor property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemHeight">
+            <summary>
+            Gets or sets the value indication the height of the items.
+            </summary>
+            <value>
+            The default value is 90
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemHeight property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemWidth">
+            <summary>
+            Gets or sets the value indication the width of the items.
+            </summary>
+            <value>
+            The default value is 90
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.ItemWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemWidth property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontIconText">
+            <summary>
+            Gets or sets the value indicating the text of the font icon.
+            </summary>
+            <value>
+            The default value is string.Empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.FontIconTextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontIconText property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.IconFontSize">
+            <summary>
+            Gets or sets the value indicating size of the font icon.
+            </summary>
+            <value>
+            The default value is 20
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.IconFontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IconFontSize property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.IconFontFamily">
+            <summary>
+            Gets or sets the value indicating the font family of font icon.
+            </summary>
+            <value>
+            The default value is empty
+            </value>
+        </member>
+        <member name="F:Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.IconFontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IconFontFamily property. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.XForms.ItemTappedEventArgs">
+            <summary>
+            Occurs when a RadialMenuItem get Tapped. Item can be retrieve and customized
+            </summary>
+            
+        </member>
+    </members>
+</doc>

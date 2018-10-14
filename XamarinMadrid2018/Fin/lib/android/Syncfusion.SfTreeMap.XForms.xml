@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfTreeMap.XForms</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Range.From">
+            <summary>
+            to get and set the From value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Range.To">
+            <summary>
+            to get and set the To value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Range.LegendLabel">
+            <summary>
+            to get and set the Legend Label of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Range.Color">
+            <summary>
+            to get and set the  Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.RangeColorMapping.Ranges">
+            <summary>
+            to get and set the  Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.Color">
+            <summary>
+            to get and set the  Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.From">
+            <summary>
+            to get and set the Desaturation from value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.To">
+            <summary>
+            to get and set the Desaturation To value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.RangeMinimum">
+            <summary>
+            to get and set the Desaturation Range minimum value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.RangeMaximum">
+            <summary>
+            to get and set the Desaturation Range Maximum value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.UniColorMapping.Color">
+            <summary>
+            to get and set the  Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.PaletteColorMapping.Colors">
+            <summary>
+            to get and set the  Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.LeafItemSettings">
+            <summary>
+            to get and set the  LeafItemSettings of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.LegendSettings">
+            <summary>
+            to get and set the  LegendSettings of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.Levels">
+            <summary>
+            to get and set the  Levels of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.HighlightOnSelection">
+            <summary>
+            to get and set the HighlightOnSelection  of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.HightlightBorderWidth">
+            <summary>
+            to get and set the  Highlight Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.HightlightColor">
+            <summary>
+            to get and set the  Highlight Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.LeafItemColorMapping">
+            <summary>
+            to get and set the  Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.Items">
+            <summary>
+            to get and set the  TreeMapItems of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.DataSource">
+            <summary>
+            to get and set the  Datasource of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.ShowTooltip">
+            <summary>
+            to get and set the Tooltip visiblity of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.ItemTemplate">
+            <summary>
+            to get and set whether to show map items or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.WeightValuePath">
+            <summary>
+            to get and set the  Weight Value Path of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.ColorValuePath">
+            <summary>
+            to get and set the  Color value path of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.LayoutType">
+            <summary>
+            to get and set the LayoutType of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.SfTreeMap.SelectionMode">
+            <summary>
+            to get and set the MarkerIcon value
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfTreeMap.XForms.SfTreeMap.TreeMapItemSelectedEventHandler">
+            <summary>
+            Maps event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfTreeMap.XForms.SfTreeMap.TreeMapItemSelected">
+            <summary>
+            Occurs when on Shape is tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfTreeMap.XForms.SfTreeMap.OnTreeMapItemSelected(System.Object)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfTreeMap.XForms.LegendIcons">
+            <summary>
+            Specifies the Type of Legend Icon
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendIcons.Rectangle">
+            <summary>
+            Draws Rectangular shape of Legend
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendIcons.Ellipse">
+            <summary>
+            Draws Elliptical shape of Legend
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendIcons.Custom">
+            <summary>
+            Draws Custom shape of Legend
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfTreeMap.XForms.LegendPositions">
+            <summary>
+            Specifies the Position of Legend
+            </summary>    
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendPositions.Left">
+            <summary>
+            Arranges the Legend at Left position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendPositions.Top">
+            <summary>
+            Arranges the Legend at Top position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendPositions.Right">
+            <summary>
+            Arranges the Legend at Right position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LegendPositions.Bottom">
+            <summary>
+            Arranges the Legend at Bottom position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfTreeMap.XForms.LayoutTypes">
+            <summary>
+            Specifies the Type of TreeMap Layouts
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LayoutTypes.Squarified">
+            <summary>
+            Arranges the TreeeMap Items Based on Squarified algorithm
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LayoutTypes.SliceAndDiceHorizontal">
+            <summary>
+            Arranges the TreeeMap Items in Horizontal form
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LayoutTypes.SliceAndDiceVertical">
+            <summary>
+            Arranges the TreeeMap Items in Vertical form
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfTreeMap.XForms.LayoutTypes.SliceAndDiceAuto">
+            <summary>
+            Arranges the TreeeMap Items in mixed of Horizontal and vertical form
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel.GroupPath">
+            <summary>
+            to get and set the  Group Path of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel.GroupGap">
+            <summary>
+            to get and set the  Group Gap value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel.GroupBorderColor">
+            <summary>
+            to get and set the  Group BorderColor of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel.GroupBackground">
+            <summary>
+            to get and set the  Group Background color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel.GroupPadding">
+            <summary>
+            to get and set the  Group Padding of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel.GroupBorderThickness">
+            <summary>
+            to get and set the  Group Border Thickness of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.ChildPath">
+            <summary>
+            to get and set the  ChildPath of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.HeaderPath">
+            <summary>
+            to get and set the  Header path of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.ChildGap">
+            <summary>
+            to get and set the  Child gap of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.ChildBorderColor">
+            <summary>
+            to get and set the  Child Border Color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.ChildBackground">
+            <summary>
+            to get and set the  Child Background color of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.ChildPadding">
+            <summary>
+            to get and set the  Child Padding value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapHierarchicalLevel.ChildBorderThickness">
+            <summary>
+            to get and set the  Child Border Thickness of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapItem.Weight">
+            <summary>
+            to get and set the weight of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapItem.ColorWeight">
+            <summary>
+            to get and set the Color Weight of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapItem.ChildItems">
+            <summary>
+            to get and set the SubItems of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapItem.Header">
+            <summary>
+            to get and set the Header text of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapItem.Data">
+            <summary>
+            to get and set the Data of the TreeMap Item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapItem.Label">
+            <summary>
+            to get and set the Label text of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapLevel.LabelStyle">
+            <summary>
+            to get and set the  LabelStyle of the LeafLevel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapLevel.HeaderStyle">
+            <summary>
+            to get and set the  HeaderStyle of the Header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapLevel.LabelPath">
+            <summary>
+            to get and set the  Label Path of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapLevel.HeaderHeight">
+            <summary>
+            to get and set the Header Height of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapLevel.ShowHeader">
+            <summary>
+            to get and set the Header visiblity of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapLevel.ShowLabels">
+            <summary>
+            to get and set the  labels visiblity of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.TreeMapEngine.ItemProperties">
+            <summary>
+            Gets a PropertyInfo collection describing the type of the underlying data item.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfTreeMap.XForms.SummaryBase">
+            <summary>
+            This class is an abstract class that defines the necessary functionality to do tablix calculations.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfTreeMap.XForms.SummaryBase.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.SfTreeMap.XForms.SummaryBase.Reset">
+            <summary>
+            Resets all internal values so the calculations begins anew.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfTreeMap.XForms.SummaryBase.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfTreeMap.XForms.SummaryBase.GetInstance">
+            <summary>
+            Provides a new instance of this SummaryBase object.
+            </summary>
+            <returns>New instance of this SummaryBase.</returns>
+        </member>
+        <member name="M:Syncfusion.SfTreeMap.XForms.SummaryBase.CombineSummary(Syncfusion.SfTreeMap.XForms.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LeafItemSettings.LabelStyle">
+            <summary>
+            to get and set the  LabelStyle of the LeafLevel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LeafItemSettings.LabelPath">
+            <summary>
+            to get and set the  LabelPath of the LeafLevel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LeafItemSettings.Gap">
+            <summary>
+            to get and set the  Gap of the LeafLevel TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LeafItemSettings.ShowLabels">
+            <summary>
+            to get and set the  visible lables of the LeafLevel  in TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LeafItemSettings.BorderColor">
+            <summary>
+            to get and set the  BorderColor of the LeafLevel in TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LeafItemSettings.BorderWidth">
+            <summary>
+            to get and set the  BorderWidth of the LeafLevel in TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LegendSettings.LabelStyle">
+            <summary>
+            to get and set the  LabelStyle of the LeafLevel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LegendSettings.Size">
+            <summary>
+            to get and set the size of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LegendSettings.IconSize">
+            <summary>
+            to get and set the IconSize of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LegendSettings.LegendIcon">
+            <summary>
+            to get and set the LegendType of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LegendSettings.LegendPosition">
+            <summary>
+            to get and set the DockPosition value of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.LegendSettings.ShowLegend">
+            <summary>
+            to get and set the Legend visiblity of the TreeMap
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Style.Color">
+            <summary>
+            to get and set the foreground Color for the Text Element
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Style.BackgroundColor">
+            <summary>
+            to get and set the background Color for the Text Element
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Style.Margin">
+            <summary>
+            to get and set the Margin for Text 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.XForms.Style.Font">
+            <summary>
+            to get and set the Font for Text
+            </summary>
+        </member>
+    </members>
+</doc>

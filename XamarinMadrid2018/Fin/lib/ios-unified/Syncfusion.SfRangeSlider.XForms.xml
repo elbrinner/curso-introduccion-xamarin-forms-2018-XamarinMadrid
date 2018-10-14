@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRangeSlider.XForms</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfRangeSlider.XForms.SfRangeSlider"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RangeEventHandler">
+            <summary>
+            Represents the method that handles the Range event of SfRangeSlider.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event arguments data.</param>
+        </member>
+        <member name="E:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RangeChanging">
+            <summary>
+            Occurs when range changes in SfRangeSlider.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RaiseRangeChanging(Syncfusion.SfRangeSlider.XForms.RangeEventArgs)">
+            <summary>
+            Occurs when the thumb position changed in Range mode.
+            </summary>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ValueEventHandler">
+            <summary>
+            Represents the method that handles the Value event of SfRangeSlider.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ValueChanging">
+            <summary>
+            Occurs when value changes in SfRangeSlider
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RaiseValueChanging(Syncfusion.SfRangeSlider.XForms.ValueEventArgs)">
+            <summary>
+            Occurs when the thumbs position changed in Default mode.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TickPlacement">
+            <summary>
+            Gets or sets the value that determines intervals of the tick representation.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfRangeSlider.XForms.TickPlacement.TopLeft"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TickPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TickPlacement property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ValuePlacement">
+            <summary>
+            Gets or sets the value that determines the placement of value representation.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfRangeSlider.XForms.ValuePlacement.BottomRight"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ValuePlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ValuePlacement property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.SnapsTo">
+            <summary>
+            Gets or sets the value that restricts range snaps movement.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfRangeSlider.XForms.SnapsTo.StepValues"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.SnapsToProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SnapsTo property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.Orientation">
+            <summary>
+            Gets or sets the value that determines orientation of the control either vertical or horizontal.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfRangeSlider.XForms.Orientation.Vertical"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.OrientationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Orientation property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.KnobColor">
+            <summary>
+            Gets or sets the fill color of the knob.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.KnobColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for KnobColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.LabelColor">
+            <summary>
+            Gets or sets the text color of the label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.LabelColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LabelColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackColor">
+            <summary>
+            Gets or sets the fill color for the track.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TrackColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackThickness">
+            <summary>
+            Gets or sets the height of the track.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TrackThickness property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackSelectionThickness">
+            <summary>
+            Gets or sets the Thickness of the trackSelection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackSelectionThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TrackSelectionThickness property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackSelectionColor">
+            <summary>
+            Gets or sets the fill color for the ranged track.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TrackSelectionColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TrackSelectionColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.MaximumProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Maximum property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.Maximum">
+            <summary>
+            Gets or sets the value indicating maximum value of the range.
+            </summary>
+            <value>The default value is 100.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.MinimumProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Minimum property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.Minimum">
+            <summary>
+            Gets or sets the value indicating minimum value of the range.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.LabelFormatProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FormatString property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.LabelFormat">
+            <summary>
+            Gets or sets the formatstring of the value label.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.CultureProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Culture property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.Culture">
+            <summary>
+            Gets or sets the value for a culture to display the value based on it.
+            </summary>
+            <value>The default value is CultureInfo.CurrentCulture</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RangeStartProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RangeStart property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RangeStart">
+            <summary>
+            Gets or sets the value indicating position of the left / top thumb.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RangeEndProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RangeEnd property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.RangeEnd">
+            <summary>
+            Gets or sets the value indicating position of the right / bottom thumb.
+            </summary>
+            <value>The default value is 100.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.Value">
+            <summary>
+            Gets or sets the value that determines the current position of thumb in single thumb representation.
+            </summary>
+            <value>The default value is 100.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.StepFrequencyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StepFrequency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.StepFrequency">
+            <summary>
+            Gets or sets the value that determines intervals of the thumb step movement.
+            </summary>
+            <value>The default value is 20.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TickFrequencyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TickFrequency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.TickFrequency">
+            <summary>
+            Gets or sets the value that determines intervals of the thumb step movement.
+            </summary>
+            <value>The default value is 10.</value>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ShowValueLabel">
+            <summary>
+            Gets or sets the value show / hide value representation.
+            </summary>
+            <value>The default value is <c>true</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ShowValueLabelProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowValueLabel property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipPlacement">
+            <summary>
+            Gets or sets the value that determines the placement of tool tip.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.TopLeft"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ToolTipPlacement property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipPrecision">
+            <summary>
+            Gets or sets the value that determines the number of digits to be displayed in tool tip.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipPrecisionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ToolTipPrecision property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipBackgroundColor">
+            <summary>
+            Gets or sets the background color of the tool tip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ToolTipBackgroundColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipTextColor">
+            <summary>
+            Gets or sets the text color of the tool tip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ToolTipTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ToolTipTextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ShowRange">
+            <summary>
+            Gets or sets the value enable range selection by representing two thumbs.
+            </summary>
+            <value>The default value is <c>true</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ShowRangeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowRange property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ShowCustomLabel">
+            <summary>
+            Gets or sets the value show / hide the custom label representation.
+            </summary>
+            <value>The default value is <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.ShowCustomLabelProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowCustomLabel property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.LabelPlacement">
+            <summary>
+            Gets or sets the value that determines the placement of label.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfRangeSlider.XForms.LabelPlacement.BottomRight"/> .</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.LabelPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LabelPlacement property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.CustomLabels">
+            <summary>
+            Gets or sets the value for custom labels.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.CustomLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomLabels property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRangeSlider.XForms.SfRangeSlider.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.RangeEventArgs">
+            <summary>
+            Represents the Arguments for <see 
+            cref="T:Syncfusion.SfRangeSlider.XForms.RangeEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.RangeEventArgs.RangeSlider">
+            <summary>
+            Gets the <see cref="T:Syncfusion.SfRangeSlider.XForms.SfRangeSlider"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.RangeEventArgs.Start">
+            <summary>
+            Gets the RangeStart value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.RangeEventArgs.End">
+            <summary>
+            Gets the RangeEnd value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.ValueEventArgs">
+            <summary>
+            Represents the Arguments for <see 
+            cref="T:Syncfusion.SfRangeSlider.XForms.ValueEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.ValueEventArgs.RangeSlider">
+            <summary>
+            Gets the <see cref="T:Syncfusion.SfRangeSlider.XForms.SfRangeSlider"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.ValueEventArgs.Value">
+            <summary>
+            Gets the value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.TickPlacement">
+            <summary>
+            Contains the values for the TickPlacement enumeration that determines the placement of the tick representation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.TickPlacement.BottomRight">
+            <summary>
+            Displays the ticks representation at bottom and right side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.TickPlacement.Inline">
+            <summary>
+            Displays the ticks representation on the track.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.TickPlacement.None">
+            <summary>
+            Hides the ticks representation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.TickPlacement.Outside">
+            <summary>
+            Displays the ticks representation outside to the track.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.TickPlacement.TopLeft">
+            <summary>
+            Displays the ticks representation at top and left side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.Orientation">
+            <summary>
+            Contains the values for the Orientation enumeration that determines the orientation of the control either vertical or horizontal.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.Orientation.Horizontal">
+            <summary>
+            Represents the control in horizontal orientation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.Orientation.Vertical">
+            <summary>
+            Represents the control in vertical orientation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.ValuePlacement">
+            <summary>
+            Contains the values for the ValuePlacement enumeration that determines the placement of the value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.ValuePlacement.TopLeft">
+            <summary>
+            Displays the values representation at top and left side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.ValuePlacement.BottomRight">
+            <summary>
+             Displays the values representation at bottom and right side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.SnapsTo">
+            <summary>
+            Contains the values for the SnapsTo enumeration that restricts range snaps movement.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SnapsTo.StepValues">
+            <summary>
+            Thumbs interval movement depends on step value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SnapsTo.Ticks">
+            <summary>
+             Thumbs interval movement depends on tick value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.SnapsTo.None">
+            <summary>
+            Thumbs interval movement is 1.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.ToolTipPlacement">
+            <summary>
+            Contains the values for the ToolTipPlacement enumeration that determines the placement of the tool tip representation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.TopLeft">
+            <summary>
+            Displays the tool tip at top and left side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.BottomRight">
+            <summary>
+            Displays the tool tip at bottom and right side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.None">
+            <summary>
+            Don't shows the tool tip
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.LabelPlacement">
+            <summary>
+            Contains the values for the LabelPlacement enumeration that determines the placement of the label representation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.LabelPlacement.TopLeft">
+            <summary>
+            Displays the label representation at top and left side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.LabelPlacement.BottomRight">
+            <summary>
+            Displays the label representation at bottom and right side for vertical and horizontal orientation respectively.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRangeSlider.XForms.Items">
+            <summary>
+            Items Class for Custom Label support
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.Items.Label">
+            <summary>
+            Gets or sets the label of a value 
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.Items.LabelProperty">
+            <summary>
+            The show range property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRangeSlider.XForms.Items.Value">
+            <summary>
+            Gets or sets the value for which a label is assigned 
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfRangeSlider.XForms.Items.ValueProperty">
+            <summary>
+            The show range property.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfRangeSlider.XForms.Items.PropertyChanged">
+            <summary>
+            Invokes an event when there is a change in property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRangeSlider.XForms.Items.OnPropertyChanged(System.String)">
+            <summary>
+            Occurs when the property changed.
+            </summary>
+            <param name="name"></param>
+        </member>
+    </members>
+</doc>

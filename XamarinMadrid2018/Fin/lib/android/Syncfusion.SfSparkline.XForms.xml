@@ -1,0 +1,495 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfSparkline.XForms</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfSparkline.XForms.MarkerBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfSparkline.XForms.MarkerBase"/> class .
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.MarkerBase.Height">
+            <summary>
+            Gets or sets height of the marker.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.MarkerBase.HeightProperty">
+            <summary>
+            Gets or sets height of the marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.MarkerBase.Width">
+            <summary>
+            Gets or sets width of the marker.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.MarkerBase.WidthProperty">
+            <summary>
+            Gets or sets width of the marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.MarkerBase.IsVisible">
+            <summary>
+            Gets or sets visiblity of the marker.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.MarkerBase.IsVisibleProperty">
+            <summary>
+            Gets or sets visiblity of the marker. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.MarkerBase.Color">
+            <summary>
+            Gets or sets color of the marker.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.MarkerBase.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.MarkerBase.ColorProperty">
+            <summary>
+            Gets or sets color of the marker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.XForms.SfSparklineBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfSparkline.XForms.SfSparklineBase"/> class .
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.SfSparkline.XForms.SfSparklineBase.ItemsSource" -->
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.ItemsSourceProperty">
+            <summary>
+            Gets or sets the data source for sparkline. This is a bindable property.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.YBindingPath">
+            <summary>
+            Gets or sets the property path to retrieve Y data from ItemsSource.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.YBindingPathProperty">
+            <summary>
+            Gets or sets the property path to retrieve Y data from ItemsSource. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.RangeBandColor">
+            <summary>
+            Gets or sets the range band colors of the Sparkline.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.RangeBandColorProperty">
+            <summary>
+            Gets or sets the range band colors of the Sparkline. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.RangeBandStart">
+            <summary>
+            Gets or sets start value of the range band in Y axis.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.RangeBandStartProperty">
+            <summary>
+            Gets or sets start value of the range band in Y axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.RangeBandEnd">
+            <summary>
+            Gets or sets end value of the range band in Y axis.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.RangeBandEndProperty">
+            <summary>
+            Gets or sets end value of the range band in Y axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.StrokeColor">
+            <summary>
+            Gets or sets stroke color of the sparkline.
+            </summary>
+            <value>This property takes the color value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.StrokeColorProperty">
+            <summary>
+            Gets or sets stroke color of the sparkline.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.StrokeWidth">
+            <summary>
+            Gets or sets stroke width of the sparkline. 
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.StrokeWidthProperty">
+            <summary>
+            Gets or sets stroke width of the sparkline. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.EmptyPointValue">
+            <summary>
+            Gets or sets empty point value. It can be average, zero or none.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.EmptyPointValueProperty">
+            <summary>
+            Gets or sets empty point value. It can be average, zero or none. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.MaximumYValue">
+            <summary>
+            Gets or sets the maximum value of the sparkline.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.MaximumYValueProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.MaximumYValue"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.MinimumYValue">
+            <summary>
+            Gets or sets the maximum value of the sparkline.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfSparklineBase.MinimumYValueProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.SfSparkline.XForms.SfSparklineBase.MinimumYValue"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.Axis">
+            <summary>
+            Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.AxisProperty">
+            <summary>
+            Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.FirstPointColor">
+            <summary>
+            Gets or sets color to highlight the first point.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.FirstPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the first point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.LastPointColor">
+            <summary>
+            Gets or sets color to highlight the last point.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.LastPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the last point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.HighPointColor">
+            <summary>
+            Gets or sets color to highlight the highest point.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.HighPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the highest point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.LowPointColor">
+            <summary>
+            Gets or sets color to highlight the lowest point.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.LowPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the lowest point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.NegativePointsColor">
+            <summary>
+            Gets or sets color to highlight the negative points.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.NegativePointsColorProperty">
+            <summary>
+            Gets or sets color to highlight the negative points. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfLineSparkline.Marker">
+            <summary>
+            Gets or sets marker to the sparkline.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfLineSparkline.MarkerProperty">
+            <summary>
+            Gets or sets marker to the sparkline.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Axis">
+            <summary>
+            Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.AxisProperty">
+            <summary>
+             Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Marker">
+            <summary>
+            Gets or sets marker to the sparklines.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.MarkerProperty">
+            <summary>
+            Gets or sets marker to the sparklines.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Color">
+            <summary>
+            Gets or sets color to fill the interior of the area sparkline. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.ColorProperty">
+            <summary>
+            Gets or sets color to fill the interior of the area sparkline. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.FirstPointColor">
+            <summary>
+            Gets or sets color to highlight the first point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.FirstPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the first point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.LastPointColor">
+            <summary>
+            Gets or sets color to highlight the last point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.LastPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the last point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.HighPointColor">
+            <summary>
+            Gets or sets color to highlight the highest point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.HighPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the highest point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.LowPointColor">
+            <summary>
+            Gets or sets color to highlight the lowest point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.LowPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the lowest point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.NegativePointsColor">
+            <summary>
+            Gets or sets color to highlight the negative points.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfAreaSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfAreaSparkline.NegativePointsColorProperty">
+            <summary>
+            Gets or sets color to highlight the negative points. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Axis">
+            <summary>
+            Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.AxisProperty">
+            <summary>
+            Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color">
+            <summary>
+            Gets or sets color to fill the interior of the column sparkline.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.ColorProperty">
+            <summary>
+            Gets or sets color to fill the interior of the column sparkline. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.FirstPointColor">
+            <summary>
+            Gets or sets color to highlight the first point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.FirstPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the first point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.LastPointColor">
+            <summary>
+            Gets or sets color to highlight the last point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.LastPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the last point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.HighPointColor">
+            <summary>
+            Gets or sets color to highlight the highest point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.HighPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the highest point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.LowPointColor">
+            <summary>
+            Gets or sets color to highlight the lowest point.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.LowPointColorProperty">
+            <summary>
+            Gets or sets color to highlight the lowest point. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.NegativePointsColor">
+            <summary>
+            Gets or sets color to highlight the negative points.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfColumnSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfColumnSparkline.NegativePointsColorProperty">
+            <summary>
+            Gets or sets color to highlight the negative points. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.NeutralPointColor">
+            <summary>
+            Gets or sets color to fill the interior of neutral columns.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.NeutralPointColorProperty">
+            <summary>
+            Gets or sets color to fill the interior of neutral columns. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.NegativePointColor">
+            <summary>
+            Gets or sets color to highlight the negative points.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.NegativePointColorProperty">
+            <summary>
+            Gets or sets color to highlight the negative points. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.Color">
+            <summary>
+            Gets or sets color to fill the interior of positive columns.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SfWinLossSparkline.ColorProperty">
+            <summary>
+            Gets or sets color to fill the interior of positive columns. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.XForms.SparklineAxis.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfSparkline.XForms.SparklineAxis"/> class .
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SparklineAxis.AxisOrigin">
+            <summary>       
+            Gets or sets origin of the sparkline axis.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SparklineAxis.AxisOriginProperty">
+            <summary>
+            Gets or sets origin of the sparkline axis.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SparklineAxis.StrokeColorProperty">
+            <summary>
+             Gets or sets a stroke color for axis lines. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SparklineAxis.StrokeColor">
+            <summary>
+            Gets or sets a stroke color for axis. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SparklineAxis.StrokeWidthProperty">
+            <summary>
+            Gets or sets the stroke width of the axis line.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SparklineAxis.StrokeWidth">
+            <summary>
+            Gets or sets the stroke width of the axis line.
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.XForms.SparklineAxis.IsVisible">
+            <summary>
+            Gets or sets visibility of the axis.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.SparklineAxis.IsVisibleProperty">
+            <summary>
+            Gets or sets visibility of the axis. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.EmptyPointValues.Zero">
+            <summary>
+            Represents the zero empty points
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.EmptyPointValues.Average">
+            <summary>
+            Represents the average empty points 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSparkline.XForms.EmptyPointValues.None">
+            <summary>
+            Represents none empty points
+            </summary>
+        </member>
+    </members>
+</doc>

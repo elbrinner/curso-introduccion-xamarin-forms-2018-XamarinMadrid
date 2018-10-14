@@ -1,0 +1,29 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.UI.Xaml.SunburstChart">
+
+    <Style TargetType="local:SfSunburstChart">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SfSunburstChart">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Margin="{TemplateBinding Margin}"
+                            BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+                        <local:SunburstDockPanel x:Name="Part_DockPanel" LastChildFill="False">
+                            <ContentPresenter x:Name="Header" local:SunburstDockPanel.Dock="Top" Content="{TemplateBinding Header}"
+                                              HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <local:SunburstDockPanel.RootElement>
+                                <local:SunburstRootPanel x:Name="Part_LayoutRootPanel">
+                                    <Canvas x:Name="Part_SeriesPanel" />
+                                    <Canvas x:Name="Part_DataLabelsPanel" />
+                                    <Canvas x:Name="AdorningCanvas" />
+                                </local:SunburstRootPanel>
+                            </local:SunburstDockPanel.RootElement>
+                        </local:SunburstDockPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

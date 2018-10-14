@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Tag" />
+    <RootPropertyPathName Name="CardStyle" />
+    <RootPropertyPathName Name="BorderBrush" />
+    <RootPropertyPathName Name="BorderThickness" />
+    <RootPropertyPathName Name="CornerRadius" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="IndicatorVisibility" />
+    <RootPropertyPathName Name="IndicatorColor" />
+    <RootPropertyPathName Name="IconVisibility" />
+    <RootPropertyPathName Name="TagVisibility" />
+    <RootPropertyPathName Name="Tags" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="FontSize" />
+    <RootPropertyPathName Name="Foreground" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="TitleHorizontalAlignment" />
+    <RootPropertyPathName Name="TitleFontSize" />
+    <RootPropertyPathName Name="TitleColor" />
+    <RootPropertyPathName Name="ActualHeight" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="Fill" />
+    <RootPropertyPathName Name="StrokeThickness" />
+    <RootPropertyPathName Name="RadiusX" />
+    <RootPropertyPathName Name="RadiusY" />
+    <RootPropertyPathName Name="Stroke" />
+    <RootPropertyPathName Name="StrokeDashArray" />
+    <RootPropertyPathName Name="HorizontalAlignment" />
+    <RootPropertyPathName Name="ItemsCount" />
+    <RootPropertyPathName Name="ValidationColor" />
+    <RootPropertyPathName Name="ErrorBarSettings" />
+    <RootPropertyPathName Name="Height" />
+    <RootPropertyPathName Name="Cards" />
+    <RootPropertyPathName Name="Count" />
+    <RootPropertyPathName Name="CardCount" />
+    <RootPropertyPathName Name="Header" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.KanbanColumn" />
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="AllowDrop" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.SwimlaneColumn" />
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.ItemsStackPanel" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.KanbanCardItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MinHeight" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.ImageConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.DescriptionMinWidthConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.CardCountConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.CollapsedHeader" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.CollapsedHeaderMargin" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.StrokeDashArrayConverter" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.Swimlane" />
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.PlaceholderStyle">
+      <RootProperty Name="RadiusX" />
+      <RootProperty Name="RadiusY" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="TextHorizontalAlignment" />
+      <RootProperty Name="TextVerticalAlignment" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.KanbanCardStyle">
+      <RootProperty Name="TitleColor" />
+      <RootProperty Name="TitleFontSize" />
+      <RootProperty Name="TitleHorizontalAlignment" />
+      <RootProperty Name="TagVisibility" />
+      <RootProperty Name="IndicatorVisibility" />
+      <RootProperty Name="IconVisibility" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="DataContext" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextTrimming" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
+      <RootProperty Name="EndPoint" />
+      <RootProperty Name="StartPoint" />
+      <RootProperty Name="GradientStops" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Offset" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="ManipulationMode" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="HorizontalScrollMode" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.TagsStackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="TagsCollection" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="RadiusX" />
+      <RootProperty Name="RadiusY" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Data" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="StrokeLineJoin" />
+      <RootProperty Name="UseLayoutRounding" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TransformGroup">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+      <RootProperty Name="CenterX" />
+      <RootProperty Name="CenterY" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.PreviewPanel" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="X1" />
+      <RootProperty Name="Y1" />
+      <RootProperty Name="X2" />
+      <RootProperty Name="Y2" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="StrokeDashArray" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="Rotation" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Kanban.SfKanban">
+      <RootProperty Name="CardStyle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

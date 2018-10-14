@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="StartValue" />
+    <RootPropertyPathName Name="InternalRotateAngle" />
+    <RootPropertyPathName Name="SymbolFilters" />
+    <RootPropertyPathName Name="SelectedFilter" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="TargetDecorator" />
+    <RootPropertyPathName Name="SourceDecorator" />
+    <RootPropertyPathName Name="Shape" />
+    <RootPropertyPathName Name="SelectorConstraints" />
+    <RootPropertyPathName Name="TooltipContent" />
+    <RootPropertyPathName Name="DataContext" />
+    <RootPropertyPathName Name="ContentTemplate" />
+    <RootPropertyPathName Name="ShapeStyle" />
+    <RootPropertyPathName Name="ToolTip_Pivot" />
+    <RootPropertyPathName Name="PreviewWidth" />
+    <RootPropertyPathName Name="PreviewHeight" />
+    <RootPropertyPathName Name="ViewportPosition" />
+    <RootPropertyPathName Name="VpWidth" />
+    <RootPropertyPathName Name="VpHeight" />
+    <RootPropertyPathName Name="IsResizing" />
+    <RootPropertyPathName Name="DrawFocusWidth" />
+    <RootPropertyPathName Name="DrawFocusHeight" />
+    <RootPropertyPathName Name="DrawFocusPosition" />
+    <RootPropertyPathName Name="WindowHeight" />
+    <RootPropertyPathName Name="VpOffsetY" />
+    <RootPropertyPathName Name="WindowWidth" />
+    <RootPropertyPathName Name="VpOffsetX" />
+    <RootPropertyPathName Name="Source" />
+    <RootPropertyPathName Name="Constraints" />
+    <RootPropertyPathName Name="Bitmap" />
+    <RootPropertyPathName Name="OutlineSettings" />
+    <RootPropertyPathName Name="OutlineStyle" />
+    <RootPropertyPathName Name="HorizontalOffset" />
+    <RootPropertyPathName Name="VerticalOffset" />
+    <RootPropertyPathName Name="IsExpanded" />
+    <RootPropertyPathName Name="HeaderVisibility" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="ThemeDictionaries" />
+    </RootType>
+    <RootType FullName="System.String" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.PathConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.NullToBooleanConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.NullToVisibityConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.VisibilityToBoolConverter" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Node" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.PortBase">
+      <RootProperty Name="ShapeStyle" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.DockPort">
+      <RootProperty Name="ShapeStyle" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.NodePort" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.ConnectorPort" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Connector">
+      <RootProperty Name="SourceDecoratorStyle" />
+      <RootProperty Name="TargetDecoratorStyle" />
+      <RootProperty Name="SegmentDecoratorStyle" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.ConnectorBase">
+      <RootProperty Name="ConnectorGeometryStyle" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Group" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Stencil.Stencil" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Stencil.Symbol" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.AnnotationEditor" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.Ruler" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.RulerSegment" />
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="UseLayoutRounding" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.RunTimeConnectionIndicator" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Data" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="StrokeLineJoin" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+      <RootProperty Name="Transitions" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="RepeatBehavior" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.LabelConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ConverterParameter" />
+      <RootProperty Name="ElementName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="Content" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+      <RootProperty Name="Duration" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="ManipulationMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter">
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Panels.AnnotationPanel" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="System.Double" />
+    <RootType FullName="Windows.UI.Xaml.Thickness" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.InvertAngleConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.NulltoVisibilityConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.SfDiagram" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.PrintPreviewControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.ScrollViewer">
+      <RootProperty Name="Page" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.Overview">
+      <RootProperty Name="UnFocusBrush" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.DiagramThumb">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ControlPointType" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="ThumbType" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Controls.OverviewResizer">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.QuickCommand" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Selector">
+      <RootProperty Name="TooltipTemplate" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Panels.SelectorPanel">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line">
+      <RootProperty Name="X1" />
+      <RootProperty Name="X2" />
+      <RootProperty Name="Y1" />
+      <RootProperty Name="Y2" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ColorAnimation">
+      <RootProperty Name="To" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="To" />
+      <RootProperty Name="Duration" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteColorKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.GridLengthToDoubleConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.OverviewBackgroundConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Panels.OverviewCustomPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.VisualImage">
+      <RootProperty Name="Visual" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Thumb">
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualTransition">
+      <RootProperty Name="From" />
+      <RootProperty Name="To" />
+      <RootProperty Name="GeneratedDuration" />
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollingIndicatorMode" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="SmallChange" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="ViewportSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="LargeChange" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TransformGroup">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SkewTransform" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PopInThemeAnimation" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Stencil.Header">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Panels.WrapPanel" />
+    <RootType FullName="Syncfusion.UI.Xaml.Diagram.Utility.FocusUtility">
+      <RootMethod Name="GetFocusOnLoad" />
+      <RootMethod Name="SetFocusOnLoad" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

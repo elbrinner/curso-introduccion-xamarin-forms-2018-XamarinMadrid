@@ -1,0 +1,341 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.UI.Xaml.Gauges">
+
+
+    <DataTemplate x:Key="TickShapeEllipse">
+        <Grid>
+            <Ellipse Height="{Binding TickStrokeThickness}"  Width="{Binding Length}" 
+                     Fill="{Binding TickStroke}" />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TickShapeRectangle">
+        <Grid>
+            <Rectangle Height="{Binding TickStrokeThickness}"  Width="{Binding Length}" 
+                       Fill="{Binding TickStroke}" />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TickShapeTriangle">
+        <Grid Width="{Binding Length}" Height="{Binding Length}">
+            <Path Data="F0 M0,1 L1,0 L1,2 z" 
+                          Stretch="Fill"
+                          Fill="{Binding TickStroke}" Stroke="{Binding TickStroke}" 
+                          Width="{Binding Length}" Height="{Binding TickStrokeThickness}" />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Ellipse">
+        <Grid>
+            <Ellipse Stroke="{Binding SymbolPointerBorderBrush}"  StrokeThickness="{Binding SymbolPointerBorderThickness}" Height="{Binding SymbolPointerHeight}" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="{Binding SymbolPointerWidth}" 
+                     Fill="{Binding SymbolPointerStroke}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Rectangle">
+        <Grid>
+            <Rectangle Stroke="{Binding SymbolPointerBorderBrush}" Height="{Binding SymbolPointerHeight}"  StrokeThickness="{Binding SymbolPointerBorderThickness}" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="{Binding SymbolPointerWidth}" 
+                       Fill="{Binding SymbolPointerStroke}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="RoundedRectangle">
+        <Grid>
+            <Rectangle Stroke="{Binding SymbolPointerBorderBrush}" Height="{Binding SymbolPointerHeight}"  StrokeThickness="{Binding SymbolPointerBorderThickness}" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="{Binding SymbolPointerWidth}" 
+                       Fill="{Binding SymbolPointerStroke}"  RadiusX="3" RadiusY="3"/>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Arrow">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}" Points="5,15 10,10 5,5 20,10 5,15" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Triangle">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}" Points="5,15 5,5 20,10 5,15" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="InvertedTriangle">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}" Points="20,5 20,15 5,10" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="InvertedArrow">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}" Points="20,5 15,10 20,15 5,10" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Hexagon">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}"  Points="10,15 5,10 5,5 10,0 15,5 15,10" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Pentagon">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}"  Points="15,5 10,5 5,10 10,15 15,15" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Cross">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}"  Points="5,10 5,5 10,5 10,0 15,0 15,5 20,5 20,10 15,10 15,15 10,15 10,10" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Diamond">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}"  Points="5,10 10,5 15,10 10,15" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TailRectangleTemplate">
+        <Rectangle StrokeThickness="{Binding TailStrokeThickness}" Stroke="{Binding TailBorderBrush}"
+                   Fill="{Binding TailStroke}" Width="{Binding TailLength}" Height="{Binding NeedlePointerStrokeThickness}" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="NeedlePointerRectangleTemplate">
+        <Rectangle Fill="{Binding NeedlePointerStroke}" Width="{Binding NeedleLength}" Height="{Binding NeedlePointerStrokeThickness}" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="NeedlePointerTriangleTemplate">
+        <Path Data="F1 M1,1 L0,0 L0,2 z" Stretch="Fill" Fill="{Binding NeedlePointerStroke}" 
+              Width="{Binding NeedleLength}" Height="{Binding NeedlePointerStrokeThickness}" />
+    </DataTemplate>
+
+    <Style TargetType="local:CircularScale" x:Key="CircularScaleDefaultStyle" >
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CircularScale">
+                    <Grid>
+                        <Path Stroke="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=RimStroke}"  
+                              Fill="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=RimStroke}"  
+                              Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ScaleMargin}"    >
+                            <Path.Data>
+                                <PathGeometry>
+                                    <PathFigure IsFilled="True" Segments="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ScaleSeg}"
+                                                IsClosed="True" StartPoint="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=StartPoint}">
+                                    </PathFigure>
+                                </PathGeometry>
+                            </Path.Data>
+                        </Path>
+
+                        <ItemsControl Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=RangesMargin}"
+                                      ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ranges}" >
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <local:TickLinesPanel x:Name="MajorTickpanel" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MajorTicksMargin}"
+                                          Ticks="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MajorTicks}"
+                                          TickStrokeThickness="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TickStrokeThickness}"/>
+                        
+                        <local:TickLinesPanel x:Name="MinorTickpanel" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MinorTicksMargin}"
+                                          Ticks="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MinorTicks}"
+                                          TickStrokeThickness="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TickStrokeThickness}"/>
+
+                        <local:CircularPanel x:Name="LabelsPanel" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=LabelsMargin}"
+                                             Labels="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Labels}" 
+                                             Foreground="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Foreground}" />
+
+                        <ItemsControl ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Pointers}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:CircularScaleTick">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CircularScaleTick">
+                      <Grid Width="{Binding Length}" Height="{Binding Length}">
+                        
+                        <ContentPresenter Width="{Binding Length}" Height="{Binding Length}"
+                            ContentTemplate="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TickShapeContent}"
+                                         HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:CircularScaleLabel">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CircularScaleLabel">
+                    <Grid>
+                        <TextBlock Text="{Binding Content}" Foreground="{Binding Foreground}" FontSize="{Binding LabelFontSize}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:CircularRange">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CircularRange">
+                    <Canvas x:Name="RangeCanvas" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=RangeMargin}">
+                        <Path Stroke="{Binding Stroke, RelativeSource={RelativeSource TemplatedParent}}"
+                              Fill="{Binding Stroke, RelativeSource={RelativeSource TemplatedParent}}">
+                            <Path.Data>
+                                <PathGeometry>
+                                    <PathFigure IsFilled="True" IsClosed="True"
+                                                Segments="{Binding RangeSeg, RelativeSource={RelativeSource TemplatedParent}}" 
+                                                StartPoint="{Binding StartPoint, RelativeSource={RelativeSource TemplatedParent}}">
+                                    </PathFigure>
+                                </PathGeometry>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:CircularPointer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CircularPointer">
+                    <Grid>
+                        <Grid x:Name="Needle" Visibility="{Binding Path=NeedlePointerVisibility, RelativeSource={RelativeSource TemplatedParent}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <ContentPresenter Grid.Column="1" UseLayoutRounding="False" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                              Margin="{Binding NeedlePointerMargin, RelativeSource={RelativeSource TemplatedParent}}"
+                                              Content="{Binding NeedlePointerContent, RelativeSource={RelativeSource TemplatedParent}}"
+                                              RenderTransform="{Binding NeedleTranform, RelativeSource={RelativeSource TemplatedParent}}">
+                            </ContentPresenter>
+
+                            <ContentPresenter Grid.Column="1" UseLayoutRounding="False" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                              Margin="{Binding NeedlePointerMargin, RelativeSource={RelativeSource TemplatedParent}}"
+                                              Content="{Binding TailContent, RelativeSource={RelativeSource TemplatedParent}}"
+                                              RenderTransform="{Binding NeedleTranform, RelativeSource={RelativeSource TemplatedParent}}">
+                            </ContentPresenter>
+
+                            <Ellipse x:Name="PART_PointerCap" Grid.ColumnSpan="2" Grid.RowSpan="2" 
+                                     Margin="{Binding PointerCapMargin, RelativeSource={RelativeSource TemplatedParent}}"
+                                     Height="{Binding InternalKnobRadius, RelativeSource={RelativeSource TemplatedParent}}" 
+                                     Width="{Binding InternalKnobRadius, RelativeSource={RelativeSource TemplatedParent}}" 
+                                     Fill="{Binding PointerCapStroke, RelativeSource={RelativeSource TemplatedParent}}" 
+                                     Stroke="{Binding KnobStroke, RelativeSource={RelativeSource TemplatedParent}}"
+                                     StrokeThickness="{Binding KnobStrokeThickness, RelativeSource={RelativeSource TemplatedParent}}"
+                                     HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <Canvas x:Name="Range" Visibility="{Binding RangePointerVisibility, RelativeSource={RelativeSource TemplatedParent}}"
+                                Margin="{Binding RangePointerMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                            <Path Stroke="{Binding RangePointerStroke, RelativeSource={RelativeSource TemplatedParent}}"
+                                  Fill="{Binding RangePointerStroke, RelativeSource={RelativeSource TemplatedParent}}">
+                                <Path.Data>
+                                    <PathGeometry>
+                                        <PathFigure x:Name="PointerPathFigure" IsFilled="True" IsClosed="True" 
+                                                    Segments="{Binding Rangepointer, RelativeSource={RelativeSource TemplatedParent}}" 
+                                                    StartPoint="{Binding RangePointerStartPoint, RelativeSource={RelativeSource TemplatedParent}}">
+                                        </PathFigure>
+                                    </PathGeometry>
+                                </Path.Data>
+                            </Path>
+                            <Path Stroke="{Binding RangePointerStroke, RelativeSource={RelativeSource TemplatedParent}}"
+                                  Fill="{Binding RangePointerStroke, RelativeSource={RelativeSource TemplatedParent}}">
+                                <Path.Data>
+                                    <EllipseGeometry Center="{Binding StartCapCenter, RelativeSource={RelativeSource TemplatedParent}}"
+                                                     RadiusX="{Binding StartCapRadiusX, RelativeSource={RelativeSource TemplatedParent}}"
+                                                     RadiusY="{Binding StartCapRadiusY, RelativeSource={RelativeSource TemplatedParent}}" />
+                                </Path.Data>
+                            </Path>
+                            <Path Stroke="{Binding RangePointerStroke, RelativeSource={RelativeSource TemplatedParent}}"
+                                  Fill="{Binding RangePointerStroke, RelativeSource={RelativeSource TemplatedParent}}">
+                                <Path.Data>
+                                    <EllipseGeometry Center="{Binding EndCapCenter, RelativeSource={RelativeSource TemplatedParent}}"
+                                                     RadiusX="{Binding EndCapRadiusX, RelativeSource={RelativeSource TemplatedParent}}"
+                                                     RadiusY="{Binding EndCapRadiusY, RelativeSource={RelativeSource TemplatedParent}}" />
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                        
+                        <Grid x:Name="Symbol" RenderTransformOrigin="0.5,0.5"
+                              Visibility="{Binding SymbolPointerVisibility, RelativeSource={RelativeSource TemplatedParent}}"  
+                              Margin="{Binding SymbolPointerMargin, RelativeSource={RelativeSource TemplatedParent}}"  
+                              RenderTransform="{Binding NeedleTranform, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ContentPresenter Content="{Binding SymbolContent, RelativeSource={RelativeSource TemplatedParent}}"
+                                              HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:CircularScale" BasedOn="{StaticResource CircularScaleDefaultStyle}">
+    </Style>
+
+    <Style TargetType="local:SfCircularGauge">
+        <Setter Property="MinWidth" Value="100"/>
+        <Setter Property="MinHeight" Value="100"/>
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="CircularScaleStyle" Value="{StaticResource CircularScaleDefaultStyle}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SfCircularGauge">
+                    <Grid Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"  x:Name="main_Grid"
+                          MinWidth="{TemplateBinding MinWidth}" MinHeight="{TemplateBinding MinHeight}"
+                          Background="{TemplateBinding Background}">
+                        <local:SquaredPanel  MinWidth="{Binding MinWidth, ElementName=main_Grid}"
+                                             MinHeight="{Binding MinHeight, ElementName=main_Grid}">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" local:SquaredPanel.Spacing="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=SpacingMargin}" Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MainScale}"/>
+                            <ItemsControl ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=SubScales}" >
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <local:SquaredPanel/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ItemsControl>
+                            <ItemsControl ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Scales}" >
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <local:SquaredPanel/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ItemsControl>
+                            <Border IsHitTestVisible="False" Background="Transparent" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"  >
+                                <ContentPresenter IsHitTestVisible="False" Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=GaugeHeader}"
+                                                  HorizontalAlignment="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HorizontalHeaderPosition}"
+                                                  VerticalAlignment="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=VerticalHeaderPosition}" 
+                                                  Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=GaugeHeaderMargin}"/>
+                            </Border>
+                            <ItemsControl ItemsSource="{Binding Annotations, RelativeSource={RelativeSource TemplatedParent}}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <Canvas />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ItemsControl>
+                        </local:SquaredPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+

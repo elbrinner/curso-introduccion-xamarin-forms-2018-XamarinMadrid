@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinMadrid2018.Pages.HomePage"
+             Title="{Binding TitlePage}"
+             >
+    <ContentPage.Content>
+    <StackLayout>
+        <ListView 
+            IsVisible="{Binding Path=IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+            ItemsSource="{Binding ListCoin}"
+            SelectedItem="{Binding SeletedListCoin}" 
+               HasUnevenRows="true"
+               >
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                       <Frame Margin="15" BackgroundColor="White" CornerRadius="15">
+                                <Grid RowSpacing="1">
+                                    <Grid.RowDefinitions>
+                                           <RowDefinition></RowDefinition>
+                                     </Grid.RowDefinitions>
+                                     <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                            </Grid.ColumnDefinitions>
+
+                                          <Image Grid.Column="0" Source="{Binding ImagenOperacion}"></Image>
+                                          <Label Text = "{Binding NombreMoneda}" TextColor="Black" Grid.Column="1" FontSize="15" FontAttributes="Bold"/>
+                                          <Label Text = "{Binding PrecioCompra, StringFormat='$ {0:N5}'}" Grid.Column="2" FontSize="15" />
+                         </Grid>
+
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <busyindicator:SfBusyIndicator Duration="1" IsVisible="{Binding IsBusy}" VerticalOptions="FillAndExpand"  AnimationType="Ball" x:Name="sfbusyindicator" ViewBoxWidth="150" ViewBoxHeight="150" BackgroundColor="White"/> 
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

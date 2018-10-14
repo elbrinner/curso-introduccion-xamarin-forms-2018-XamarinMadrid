@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRating.XForms</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfRating.XForms.SfRating"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.SfRating.ValueEventHandler">
+            <summary>
+            Represents the method that will handle the SfRating.Value event of a SfRating.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRating.XForms.SfRating.ValueChanged">
+            <summary>
+            Occur when user interacts the control to change the value property. Returns the value rated.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.RaiseValueChanging(Syncfusion.SfRating.XForms.ValueEventArgs)">
+            <summary>
+            Raises the value changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ItemSize">
+            <summary>
+            Gets or sets the size of the each item.
+            </summary>
+            <value>The Default value is 50.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemSizeProperty">
+            <summary>
+            The size of the each item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.EnableCustomView">
+            <summary>
+            Gets or sets a Boolean value indicating whether user can apply a custom view.
+            </summary>
+            <value>The Default value is false.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.EnableCustomViewProperty">
+            <summary>
+            The Boolean value indicating whether user can apply a custom view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.EnableAutoSize">
+            <summary>
+            Gets or sets a Boolean value indicating whether item size can automatically adjusted based on available space
+            </summary>
+            <value>The default value is false.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.EnableAutoSizeProperty">
+            <summary>
+            The enable auto size property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ItemSpacing">
+            <summary>
+            Gets or sets the space between each item.
+            </summary>
+            <value>The default value is 5.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemSpacingProperty">
+            <summary>
+            The space between each item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.Items">
+            <summary>
+            Gets or sets a collection of items that can be populated as Rating Items and get rendered at run-time based on the custom view provided.
+            </summary>
+            <value>The default value is null</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemsProperty">
+             <summary>
+            Collection of items that can be populated as Rating Items and get rendered at run-time based on the custom view provided.
+             </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.OnCustomViewCollectionPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Ons the CustomViewCollectionProperty property changed.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ItemCount">
+            <summary>
+            Gets or sets a value indicating whether exact number of rating item to be displayed.
+            </summary>
+            <value>The default value is 5.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemCountProperty">
+            <summary>
+            The value indicating whether exact number of rating item to be displayed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.Value">
+            <summary>
+            Gets or Sets the value for the control which determines the number of items to be selected based on the precision set.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ValueProperty">
+            <summary>
+            The value for the control which determines the number of items to be selected based on the precision set.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ReadOnly">
+            <summary>
+            Gets of sets a Boolean value indicating whether user interaction should be restricted or not.
+            </summary>
+            <value>The default value is false.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ReadOnlyProperty">
+            <summary>
+            The Boolean value indicating whether user interaction should be restricted or not.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.SfRating.XForms.SfRating.Precision" -->
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.PrecisionProperty">
+            <summary>
+            The mode of selection or rating to be done. By default Standard rating will be set.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipPlacement">
+            <summary>
+            Gets or sets enum value indicating the placement of tool tip either top or bottom.
+            </summary>
+            <value>The default value is none.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipPlacementProperty">
+            <summary>
+            The enum value indicating the placement of tool tip either top or bottom.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipPrecision">
+            <summary>
+            Gets or sets the precision value indicating number of digits to be displayed on the tool tip.
+            </summary>
+            <value>The default value is 1.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipPrecisionProperty">
+            <summary>
+            The precision value indicating number of digits to be displayed on the tool tip.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipBackgroundColor">
+            <summary>
+            Gets or sets color value that can be applied to the background of tool tip.
+            </summary>
+            <value>The default value is white color</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipBackgroundColorProperty">
+            <summary>
+            The color value that can be applied to the background of tool tip.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipTextColor">
+            <summary>
+            Gets or sets color value that can be applied to the text of the tool tip.
+            </summary>
+            <value>The default value is black color.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipTextColorProperty">
+            <summary>
+            The color value that can be applied to the text of the tool tip.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.RatingSettings">
+            <summary>
+            Gets or sets the properties of RatingSettings class that contains all the color customization.
+            </summary>
+            <value>The sfratingSettings properties.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.RatingSettingsProperty">
+            <summary>
+            The properties of RatingSettings class that contains all the color customization.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.ValueEventArgs">
+            <summary>
+            Value event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.ValueEventArgs.Rating">
+            <summary>
+            Gets or sets the rating.
+            </summary>
+            <value>The rating.</value>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.ValueEventArgs.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.SfRatingSettings">
+            <summary>
+            Implements the properties for the color customizations of the items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRatingSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfRating.XForms.SfRatingSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.RatedFill">
+            <summary>
+            Gets or sets the color to be filled for selected item.
+            </summary>
+            <value>The default color is blue.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.RatedFillProperty">
+            <summary>
+            The color to be filled for selected item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStroke">
+            <summary>
+            Gets or sets the border color width of the unselected items.
+            </summary>
+            <value>The default value is blue.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStrokeProperty">
+            <summary>
+            The border color width of the unselected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStrokeWidth">
+            <summary>
+            Gets or sets the border stroke width of the selected items.
+            </summary>
+            <value>The default value is 2.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStrokeWidthProperty">
+            <summary>
+            The border stroke width of the selected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedFill">
+            <summary>
+            Gets or sets the color to be filled for unselected item.
+            </summary>
+            <value>The default value is transparent color.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedFillProperty">
+            <summary>
+            The color to be filled for unselected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStroke">
+            <summary>
+            Gets or sets the border color width of the unselected items.
+            </summary>
+            <value>The default value is charcoal color.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStrokeProperty">
+            <summary>
+            The border color width of the unselected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStrokeWidth">
+            <summary>
+            Gets or sets the border stroke width of the unselected items.
+            </summary>
+            <value>The default value is 2.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStrokeWidthProperty">
+            <summary>
+            The border stroke width of the unselected items.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.Precision">
+            <summary>
+            Values of the Precision enumeration declared.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.Precision.Standard">
+            <summary>
+            User can rate the values in whole numbers and this is the default rating mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.Precision.Half">
+            <summary>
+            User can rate the values with whole values and half rating values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.Precision.Exact">
+             <summary>
+             User can rate the accurate values of rating in decimal points.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.TooltipPlacement">
+            <summary>
+            Values of the Tooltip placement enumeration declared.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.TooltipPlacement.TopLeft">
+            <summary>
+            Tooltip will render at the top of the control while user interaction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.TooltipPlacement.BottomRight">
+            <summary>
+            Tooltip will render at the bottom of the control while user interaction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.TooltipPlacement.None">
+            <summary>
+            Tooltip will not render.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRatingItem.#ctor">
+            <summary>
+            Implements the properties used to get or set the custom views for the control for rendering.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingItem.SelectedView">
+            <summary>
+            Gets or sets custom view that render on selected rating item.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingItem.SelectedViewProperty">
+            <summary>
+            The custom view that render on selected rating item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingItem.UnSelectedView">
+            <summary>
+            Gets or sets custom view that render on unselected rating item.
+            </summary>
+            <value>TThe default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingItem.UnSelectedViewProperty">
+            <summary>
+            The custom view that render on unselected rating item.
+            </summary>
+        </member>
+    </members>
+</doc>

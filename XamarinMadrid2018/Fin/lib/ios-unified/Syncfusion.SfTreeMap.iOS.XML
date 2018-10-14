@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfTreeMap.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfTreeMap.iOS.SFTreeMap">
+            <summary>
+             SFTreeMap provides a simple but effective way to visualize flat or hierarchical data as clustered rectangles with a specific weighted attribute determining the size of the rectangle. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMap.ShowTooltip">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfTreeMap.iOS.SFTreeMap"/> show tooltip.
+            </summary>
+            <value><c>true</c> if show tooltip; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMap.HightlightOnSelection">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfTreeMap.iOS.SFTreeMap"/> hightlight
+            on selection.
+            </summary>
+            <value><c>true</c> if hightlight on selection; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMap.HighlightColor">
+            <summary>
+            Gets or sets the color of the selection.
+            </summary>
+            <value>The color of the highlight.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMap.HighlightBorderWidth">
+            <summary>
+            Gets or sets the width of the selection border.
+            </summary>
+            <value>The width of the highlight border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMap.Delegate">
+            <summary>
+            Gets or sets the delegate.
+            </summary>
+            <value>The delegate.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMap.GroupColorMapping">
+            <summary>
+            Gets or sets the group color mapping.
+            </summary>
+            <value>The group color mapping.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping.From">
+            <summary>
+            Gets or sets the starting value of the source object.
+            </summary>
+            <value>From. </value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping.To">
+            <summary>
+            Gets or sets the end value of the source object.
+            </summary>
+            <value>To.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping.Color">
+            <summary>
+            Gets or sets the color to be desatured.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFGroupColorMapping.GroupId">
+            <summary>
+            Gets or sets the group identifier.
+            </summary>
+            <value>The group identifier.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFGroupColorMapping.ColorMapping">
+            <summary>
+            Gets or sets the color mapping.
+            </summary>
+            <value>The color mapping.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFRange.From">
+            <summary>
+            Gets or sets the starting value of the source object.
+            </summary>
+            <value>From.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFRange.To">
+            <summary>
+            Gets or sets the end value of the source object.
+            </summary>
+            <value>To.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFRange.LegendLabel">
+            <summary>
+            Gets or sets the legend label.
+            </summary>
+            <value>The legend label.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFRange.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.Ranges">
+            <summary>
+            Gets or sets the ranges.
+            </summary>
+            <value>The ranges.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFUniColorMapping.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.GroupPath">
+            <summary>
+            Gets or sets the path of source object to be grouped.
+            </summary>
+            <value>The group path.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.GroupPadding">
+            <summary>
+            Gets or sets the padding between group border and TreeMap Items.
+            </summary>
+            <value>The group padding.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.GroupBorderWidth">
+            <summary>
+            Gets or sets the width of the group border.
+            </summary>
+            <value>The width of the group border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.GroupBorderColor">
+            <summary>
+            Gets or sets the color of the group border.
+            </summary>
+            <value>The color of the group border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.GroupBackground">
+            <summary>
+            Gets or sets the group background.
+            </summary>
+            <value>The group background.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.GroupGap">
+            <summary>
+            Gets or sets the group gap.
+            </summary>
+            <value>The group gap.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.ChildPath">
+            <summary>
+            Gets or sets the path of source object to be grouped.
+            </summary>
+            <value>The child path.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.ChildGap">
+            <summary>
+            Gets or sets the gap between the child.
+            </summary>
+            <value>The child gap.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.HeaderPath">
+            <summary>
+            Gets or sets the header path.
+            </summary>
+            <value>The header path.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.ChildPadding">
+            <summary>
+            Gets or sets the padding between child border and TreeMap Items.
+            </summary>
+            <value>The child padding.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.ChildBorderWidth">
+            <summary>
+            Gets or sets the width of the child border.
+            </summary>
+            <value>The width of the child border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.ChildBorderColor">
+            <summary>
+            Gets or sets the color of the child border.
+            </summary>
+            <value>The color of the child border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHierarchicalLevel.ChildBackground">
+            <summary>
+            Gets or sets the child background.
+            </summary>
+            <value>The child background.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.HeaderHeight">
+            <summary>
+            Gets or sets the height of the header.
+            </summary>
+            <value>The height of the header.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel"/> show header.
+            </summary>
+            <value><c>true</c> if show header; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.ShowLabels">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel"/> show labels.
+            </summary>
+            <value><c>true</c> if show labels; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.LabelPath">
+            <summary>
+            Gets or sets the path of the lable on the source object.
+            </summary>
+            <value>The label path.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.LabelStyle">
+            <summary>
+            Gets or sets the label style.
+            </summary>
+            <value>The label style.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.HeaderStyle">
+            <summary>
+            Gets or sets the header style.
+            </summary>
+            <value>The header style.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapHeader.HeaderText">
+            <summary>
+            Gets or sets the header text.
+            </summary>
+            <value>The header text.</value>
+        </member>
+        <member name="T:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting">
+            <summary>
+            Represents the list of settings for leaf nodes
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.LabelPath">
+            <summary>
+            Gets or sets the path of the lable on the source object.
+            </summary>
+            <value>The label path.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.LabelStyle">
+            <summary>
+            Gets or sets the label style.
+            </summary>
+            <value>The label style.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.Gap">
+            <summary>
+            Gets or sets the distance between the leaf nodes.
+            </summary>
+            <value>The gap.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.BorderWidth">
+            <summary>
+            Gets or sets the width of the border.
+            </summary>
+            <value>The width of the border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.ShowLabels">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting"/> show labels.
+            </summary>
+            <value><c>true</c> if show labels; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLegendSetting.Size">
+            <summary>
+            Gets or sets the size of the legend layer.
+            </summary>
+            <value>The size.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLegendSetting.IconSize">
+            <summary>
+            Gets or sets the size of the icon.
+            </summary>
+            <value>The size of the icon.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLegendSetting.LabelStyle">
+            <summary>
+            Gets or sets the label style.
+            </summary>
+            <value>The label style.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLegendSetting.LegendType">
+            <summary>
+            Gets or sets the type of the legend.
+            </summary>
+            <value>The type of the legend.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFLegendSetting.LegendPosition">
+            <summary>
+            Gets or sets the legend position.
+            </summary>
+            <value>The legend position.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.Header">
+            <summary>
+            Gets or sets the header of TreeMap Item.
+            </summary>
+            <value>The header.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.ChildItems">
+            <summary>
+            Gets or sets the child nodes of TreeMap Item.
+            </summary>
+            <value>The child items.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.Weight">
+            <summary>
+            Gets or sets the weight of TreeMap Item.
+            </summary>
+            <value>The weight.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.ColorWeight">
+            <summary>
+            Gets or sets the color weight of TreeMap Item.
+            </summary>
+            <value>The color weight.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.BackgroundColor">
+            <summary>
+            Gets or sets the color of the background.
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFTreeMapItem.Frame">
+            <summary>
+            Gets or sets the frame.
+            </summary>
+            <value>The frame.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFStyle.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFStyle.Font">
+            <summary>
+            Gets or sets the font.
+            </summary>
+            <value>The font.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFStyle.BackgroundColor">
+            <summary>
+            Gets or sets the color of the background.
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFStyle.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFStyle.BorderWidth">
+            <summary>
+            Gets or sets the width of the border.
+            </summary>
+            <value>The width of the border.</value>
+        </member>
+        <member name="P:Syncfusion.SfTreeMap.iOS.SFStyle.AdjustsFontSizeToFitWidth">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfTreeMap.iOS.SFStyle"/> adjusts font
+            size to fit width.
+            </summary>
+            <value><c>true</c> if adjusts font size to fit width; otherwise, <c>false</c>.</value>
+        </member>
+    </members>
+</doc>

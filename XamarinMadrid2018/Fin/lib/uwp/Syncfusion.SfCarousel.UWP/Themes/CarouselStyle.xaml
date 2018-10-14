@@ -1,0 +1,283 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  xmlns:shared="using:Syncfusion.UI.Xaml.Converters"
+    xmlns:local="using:Syncfusion.UI.Xaml.Controls.Layout">
+
+<local:OrientationToBoolean x:Key="visualboolean" />
+    <SolidColorBrush x:Key="AccentBrush">#FF4617B4</SolidColorBrush>
+
+    <SolidColorBrush x:Key="UnselectedForeground">#FF121212</SolidColorBrush>
+
+    <Style TargetType="local:SfCarouselItem" x:Key="DefaultSfCarouselItemStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SfCarouselItem">
+                 
+                        <Grid x:Name="LayoutRoot" >
+
+                            <Grid.Resources>
+                                <Storyboard x:Name="Animation">
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Rotator" Storyboard.TargetProperty="RotationY">
+                                        <EasingDoubleKeyFrame x:Name="rotationKeyFrame" KeyTime="00:00:00.9" Value="0">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Rotator" Storyboard.TargetProperty="LocalOffsetZ">
+                                        <EasingDoubleKeyFrame x:Name="offsetZKeyFrame" KeyTime="00:00:00.9" Value="0">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleX">
+                                        <EasingDoubleKeyFrame x:Name="scaleXKeyFrame" KeyTime="00:00:00.9" Value="1">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleY">
+                                        <EasingDoubleKeyFrame x:Name="scaleYKeyFrame" KeyTime="00:00:00.9" Value="1">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                                <Storyboard x:Name="verticalAnimation">
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Rotator" Storyboard.TargetProperty="RotationX">
+                                        <EasingDoubleKeyFrame x:Name="verticalrotationKeyFrame" KeyTime="00:00:00.9" Value="0">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Rotator" Storyboard.TargetProperty="LocalOffsetZ">
+                                        <EasingDoubleKeyFrame x:Name="verticaloffsetZKeyFrame" KeyTime="00:00:00.9" Value="0">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleX">
+                                        <EasingDoubleKeyFrame x:Name="verticalscaleXKeyFrame" KeyTime="00:00:00.9" Value="1">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="scaleTransform" Storyboard.TargetProperty="ScaleY">
+                                        <EasingDoubleKeyFrame x:Name="verticalscaleYKeyFrame" KeyTime="00:00:00.9" Value="1">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Grid.Resources>
+                      
+                            <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Grid>
+                                <Grid RenderTransformOrigin=".5,.5" x:Name="LayoutRootGrid">
+                                    <Grid.RenderTransform>
+                                        <ScaleTransform x:Name="scaleTransform" ScaleX="1" ScaleY="1" />
+                                    </Grid.RenderTransform>
+                                    <Grid.Projection>
+                                        <PlaneProjection  x:Name="Rotator" CenterOfRotationX="0.5" CenterOfRotationY="0.5"/>
+                                    </Grid.Projection>
+                                    <ContentPresenter  x:Name="ContentPresenter" RenderTransformOrigin="0.5,0.5"
+                                                  ContentTemplate="{TemplateBinding ContentTemplate}" 
+                                                  ContentTransitions="{TemplateBinding ContentTransitions}" 
+                                                  Content="{TemplateBinding Content}" 
+                                                  />
+                                </Grid>
+
+                                </Grid>
+                            </Border>
+
+                        </Grid>
+                  
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style BasedOn="{StaticResource DefaultSfCarouselItemStyle}" TargetType="local:SfCarouselItem"/>
+
+    <Style TargetType="Button" x:Key="NextNavigationButtonStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="PART_Grid" HorizontalAlignment="Stretch" Background="{TemplateBinding Background}" VerticalAlignment="Stretch">
+                        <Path x:Name="PART_Path" VerticalAlignment="Center" Data="M279.2309,381.01L318.1899,419.969L280.8209,457.337" Height="15.327" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="5.059"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Button" x:Key="PreviousNavigationButtonStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="PART_Grid" HorizontalAlignment="Stretch" Background="{TemplateBinding Background}" VerticalAlignment="Stretch">
+                        <Path x:Name="PART_Path" VerticalAlignment="Center" Data="M279.2309,381.01L318.1899,419.969L280.8209,457.337" Height="15.327" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="5.059">
+                        <Path.RenderTransform>
+                                <RotateTransform Angle="180" CenterY="7"/>
+                        </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Button" x:Key="UpNavigationButtonStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="PART_Grid" HorizontalAlignment="Stretch" Background="{TemplateBinding Background}" VerticalAlignment="Stretch">
+                        <Path x:Name="PART_Path" VerticalAlignment="Center" Data="M279.2309,381.01L318.1899,419.969L280.8209,457.337" Height="15.327" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="5.059">
+                            <Path.RenderTransform>
+                                <RotateTransform Angle="270" CenterY="7"/>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="Button" x:Key="DownNavigationButtonStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="PART_Grid" HorizontalAlignment="Stretch" Background="{TemplateBinding Background}" VerticalAlignment="Stretch">
+                        <Path x:Name="PART_Path" VerticalAlignment="Center" Data="M279.2309,381.01L318.1899,419.969L280.8209,457.337" Height="15.327" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="5.059">
+                            <Path.RenderTransform>
+                                <RotateTransform Angle="90" CenterY="7"/>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+	<ControlTemplate x:Key="DefualtTemplate" TargetType="local:SfCarousel">
+        <Grid x:Name="LayoutGrid">
+            <Border
+                x:Name="LayoutRoot"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+                <ItemsPresenter x:Name="ItemsPresenter" local:SfCarouselPanel.ZIndex="0" />
+            </Border>
+         
+        </Grid>
+    </ControlTemplate>
+
+    <ItemsPanelTemplate x:Key="DefaultPanel">
+        <local:SfCarouselPanel x:Name="itemCanvas" />
+    </ItemsPanelTemplate>
+
+    <Style TargetType="local:SfCarousel" x:Key="DefaultSfCarouselStyle">
+        <Setter Property="ManipulationMode" Value="All"/>
+        <!--<Setter Property="Height" Value="500"/>-->
+        <!--<Setter Property="Width" Value="880"/>-->
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Template" Value="{StaticResource DefualtTemplate}" />
+
+        <Setter Property="ItemsPanel" Value="{StaticResource DefaultPanel}" />
+    </Style>
+
+    <Style TargetType="local:SfCarousel" BasedOn="{StaticResource DefaultSfCarouselStyle}"/>
+ <ControlTemplate x:Key="LinearTemplate" TargetType="local:SfCarousel">
+        <Grid x:Name="LayoutGrid">
+            <Border
+                x:Name="LayoutRoot"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+                <Grid>
+                    <Button
+                        Name="PART_UpButton"
+                        Height="15"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        local:SfCarouselPanel.ZIndex="1"
+                        Style="{StaticResource UpNavigationButtonStyle}"
+                        Visibility="Collapsed" />
+                    <Button
+                        Name="PART_PreviousButton"
+                        Width="15"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        local:SfCarouselPanel.ZIndex="1"
+                        Style="{StaticResource PreviousNavigationButtonStyle}"
+                        Visibility="Collapsed" />
+                    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        x:Name="scrollviewer" 
+                        HorizontalScrollBarVisibility="Hidden"
+                        HorizontalScrollMode="Auto" 
+                        VerticalScrollBarVisibility="Disabled"
+                        VerticalScrollMode="Disabled">
+                        <ItemsPresenter x:Name="ItemsPresenter" local:SfCarouselPanel.ZIndex="0" />
+                    </ScrollViewer>
+                    <ProgressRing 
+                        x:Name="PART_ProgressRing"
+                        Width="20"
+                        Height="30"
+                        IsActive="True"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        local:SfCarouselPanel.ZIndex="1"
+                        Margin="0,0,30,0"
+                        Visibility="Collapsed"/>
+                    <Button
+                        Name="PART_NextButton"
+                        Width="15"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        local:SfCarouselPanel.ZIndex="1"
+                        Style="{StaticResource NextNavigationButtonStyle}"
+                        Visibility="Collapsed" />
+                    <Button
+                        Name="PART_DownButton"
+                        Height="15"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        local:SfCarouselPanel.ZIndex="1"
+                        Style="{StaticResource DownNavigationButtonStyle}"
+                        Visibility="Collapsed" />
+                </Grid>
+            </Border>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="VisualMode">
+                    <VisualState x:Name="Linear">
+                        <VisualState.StateTriggers>
+                            <StateTrigger IsActive="{Binding Orientation, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource visualboolean}}" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="scrollviewer.HorizontalScrollBarVisibility" Value="Disabled" />
+                            <Setter Target="scrollviewer.HorizontalScrollMode" Value="Disabled" />
+                            <Setter Target="scrollviewer.VerticalScrollBarVisibility" Value="Hidden" />
+                            <Setter Target="scrollviewer.VerticalScrollMode" Value="Auto" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </Grid>
+    </ControlTemplate>
+
+    <ItemsPanelTemplate x:Key="LinearPanel">
+        <local:SfCarouselLinearPanel x:Name="itemPanel" />
+    </ItemsPanelTemplate>
+</ResourceDictionary>
+

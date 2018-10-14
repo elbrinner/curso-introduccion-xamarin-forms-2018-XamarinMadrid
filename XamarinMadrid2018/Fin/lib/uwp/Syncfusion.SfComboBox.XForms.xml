@@ -1,0 +1,1462 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfComboBox.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox">
+            <summary>
+            Represents a control that allows the user to enter text with additional functionality that offering suggestions as user type.
+            </summary>
+            <remarks>
+            The SfComboBox is inherited from <see
+            cref="T:Xamarin.Forms.View"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.#ctor">
+            <summary>
+            Represents a control that allows the user to enter text with additional functionality that offering suggestions as user type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.SuggestionPredicate`1">
+            <summary>
+            Suggestion predicate.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.Filter">
+            <summary>
+            Returns a SuggestionPredicate on filtering
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.ValueChangedEventHandler">
+            <summary>
+            Occurs when the user input changed.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.ValueChanged">
+            <summary>
+            Occurs when the user input changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseValueChanged(Syncfusion.XForms.ComboBox.ValueChangedEventArgs)">
+            <summary>
+            Raises the value changed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler">
+            <summary>
+            Occurs when the user selects an item from unselected items. 
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.SelectionChanged">
+            <summary>
+            Occurs when the user selects an item from unselected items. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseSelectionChanged(Syncfusion.XForms.ComboBox.SelectionChangedEventArgs)">
+            <summary>
+            Raises the selection changed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangingEventHandler">
+            <summary>
+            Occurs when the user selects an item from unselected items. 
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.SelectionChanging">
+            <summary>
+            Occurs when the user selects an item from unselected items. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseSelectionChanging(Syncfusion.XForms.ComboBox.SelectionChangingEventArgs)">
+            <summary>
+            Raises the selection changed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.CompletedEventHandler">
+            <summary>
+            Occurs when the user clicks the done button  
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.Completed">
+            <summary>
+             Occurs when the user clicks the done button 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseCompleted(System.EventArgs)">
+            <summary>
+            Raises the Completed event.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ComboBoxMode">
+            <summary>
+            Gets or sets <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.ComboBoxMode"/>�that
+            display the�Suggestions in several ways.
+            </summary>
+            <value>
+            The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.ComboBoxMode.Suggest"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ComboBoxModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ComboBoxMode property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SuggestionMode">
+            <summary>
+            Gets or sets the <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.SuggestionMode"/>�to filter the Suggestions.
+            </summary>
+            <value>The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.SuggestionMode.StartsWith"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SuggestionModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SuggestionMode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SuggestionBoxPlacement">
+            <summary>
+            Gets or sets the <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.SuggestionBoxPlacement"/>�to postion the suggestions box.
+            </summary>
+            <value> The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.SuggestionBoxPlacement.Bottom"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SuggestionBoxPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SuggestionBoxPlacement property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.MultiSelectMode">
+            <summary>
+            Gets or sets <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.ComboBoxMode"/>�that
+            display the�Suggestions in several ways.
+            </summary>
+            <value>
+            The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.ComboBoxMode.Suggest"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.MultiSelectModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ComboBoxMode property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.TokensWrapMode">
+            <summary>
+            Gets or sets <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.ComboBoxMode"/>�that
+            display the�Suggestions in several ways.
+            </summary>
+            <value>
+            The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.ComboBoxMode.Suggest"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.TokensWrapModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ComboBoxMode property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.TokenSettings">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.TokenSettingsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.Keyboard">
+            <summary>
+            Gets or sets the keyboard.
+            </summary>
+            <value>The keyboard.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.KeyboardProperty">
+            <summary>
+            The keyboard property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ImageMemberPath">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ImageMemberPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownHeaderView">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownHeaderViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownHeaderViewHeight">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownHeaderViewHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ShowDropDownHeaderView">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ShowDropDownHeaderViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownFooterView">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownFooterViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownFooterViewHeight">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownFooterViewHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ShowDropDownFooterView">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ShowDropDownFooterViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownCornerRadius">
+            <summary>
+            Gets or sets the radius of drop-down that show the covered dropDown.
+            </summary>
+            <value>The default value is 5</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownCornerRadiusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownCornerRadius property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownBackgroundColor">
+            <summary>
+            Gets or sets the color of the drop down background.
+            </summary>
+            <value>The color of the drop down background is white.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownBackgroundColorProperty">
+            <summary>
+            The drop down background color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.TextHighlightMode">
+            <summary>
+            Gets or sets the <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.SuggestionMode"/>�to filter the Suggestions.
+            </summary>
+            <value>The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.SuggestionMode.StartsWith"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.TextHighlightModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SuggestionMode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.HighlightedTextColor">
+            <summary>
+            Gets or sets the color of Matchingtext in dropdownbox.
+            </summary>
+            <value>The default value is Red</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.HighlightedTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HighlightColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.HighlightedTextFontAttributes">
+            <summary>
+            Gets or sets the font attributes of the MatchingText in the drop down.
+            </summary>
+            <value>
+            The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.HighlightedTextFontAttributesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HighlightedTextFontAttributes property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.MaximumSuggestion">
+            <summary>
+            Gets or sets the minimum number of characters to be typed for the dropdown to open.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.MaximumSuggestionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaximumSuggestion property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.EnableSelectionIndicator">
+            <summary>
+            Gets or sets the value to display the SelectionIndicator in dropdown.
+            </summary>
+            <value> The default value is true.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.EnableSelectionIndicatorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableSelectionIndicator property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorText">
+            <summary>
+            Gets or sets the Indicator Text.
+            </summary>
+            <value>The Indicator Text.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorTextProperty">
+            <summary>
+            The Indicator Text property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorFontFamily">
+            <summary>
+            Gets or sets the Indicator Family .
+            </summary>
+            <value>The Indicator Family .</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorFontFamilyProperty">
+            <summary>
+            The Indicator Family  property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorTextColor">
+            <summary>
+            Gets or sets the color of the IndicatorText.
+            </summary>
+            <value>The color of the IndicatorText  is blue.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorTextColorProperty">
+            <summary>
+            The Indicator Text Color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorTextSize">
+            <summary>
+            Gets or sets the value to Indicator Text Size.
+            </summary>
+            <value> The default value is 22.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IndicatorTextSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IndicatorTextSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ItemPadding">
+            <summary>
+            Gets or sets the value to Indicator Text Size.
+            </summary>
+            <value> The default value is 22.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ItemPaddingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IndicatorTextSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.FilteredItems">
+            <summary>
+            Gets or sets the DataSource of <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox"/> control.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.FilteredItemsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DataSource property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.Delimiter">
+             <summary>
+            Gets or sets the font family for the text in input field.
+             </summary>
+             <value>
+             The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+             </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DelimiterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IsFocused">
+            <summary>
+            Gets or sets a value indicating whether the dropDown has shown are not
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IsFocusedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowSuggestionsOnFocus property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ShowClearButton">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfComboBox.XForms.SfComboBox"/>
+            is clear button visible.
+            </summary>
+            <value><c>true</c> if is clear button visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ShowClearButtonProperty">
+            <summary>
+            The is clear button visible property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IsSelectedItemsVisibleInDropDown">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfComboBox.XForms.SfComboBox"/>
+            is selected item visible in drop down.
+            </summary>
+            <value><c>true</c> if is selected item visible in drop down; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IsSelectedItemsVisibleInDropDownProperty">
+            <summary>
+            The is selected item visible in drop down property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ClearButtonColor">
+            <summary>
+            Gets or sets the color of hint text in input field.
+            </summary>
+            <value>The default value is Gray</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ClearButtonColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WatermarkColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IgnoreDiacritic">
+            <summary>
+            Gets or sets a value indicating whether the EnableDiacritic
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IgnoreDiacriticProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableDiacritic property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ShowBorder">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfComboBox.XForms.SfComboBox"/> show border.
+            </summary>
+            <value><c>true</c> if show border; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ShowBorderProperty">
+            <summary>
+            The show border property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.LoadMoreText">
+            <summary>
+            Gets or sets the load more text.
+            </summary>
+            <value>The load more text.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.LoadMoreTextProperty">
+            <summary>
+            The load more text property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.NoResultsFoundText">
+            <summary>
+            Gets or sets the no results found text.
+            </summary>
+            <value>The no results found text.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.NoResultsFoundTextProperty">
+            <summary>
+            The no results found text property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.Watermark">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.WatermarkProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.MinimumPrefixCharacters">
+            <summary>
+            Gets or sets the minimum number of characters to be typed for the dropdown to open.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.MinimumPrefixCharactersProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MinimumPrefixCharacters property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ShowSuggestionsOnFocus">
+            <summary>
+            Gets or sets a value indicating whether the complete suggestion list should be displayed when an empty input field got focused.
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ShowSuggestionsOnFocusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowSuggestionsOnFocus property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IsDropDownOpen">
+            <summary>
+            Gets or sets a value indicating whether the dropDown has shown are not
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IsDropDownOpenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowSuggestionsOnFocus property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownItemHeight">
+            <summary>
+            Gets or sets the height of drop-down that holds the available suggestion items.
+            </summary>
+            <value>The default value is 30</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownItemHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownItemHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.Text">
+            <summary>
+            Gets or sets the text of input field.
+            </summary>
+            <value>The default value is string.Empty</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.TextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Text property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.MaximumDropDownHeight">
+            <summary>
+            Gets or sets the maximum height of drop-down that holds the available suggestion items.
+            </summary>
+            <value>The default value is 400</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.MaximumDropDownHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaximumDropDownHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownTextSize">
+            <summary>
+            Gets or sets the text size of the available suggestion items in the drop down.
+            </summary>
+            <value>The default value is 18</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownTextSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownTextSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.TextSize">
+            <summary>
+            Gets or sets the text size of input field.
+            </summary>
+            <value>The default value is 18</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.TextSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.PopupDelay">
+            <summary>
+            Gets or sets the delay(milliseconds) to open the suggestion popup.
+            </summary>
+            <value>The default value is 100 milliseconds</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.PopupDelayProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupDelay property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.TextColor">
+            <summary>
+            Gets or sets the color of text in input field.
+            </summary>
+            <value>The default value is Black</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.TextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.WatermarkColor">
+            <summary>
+            Gets or sets the color of hint text in input field.
+            </summary>
+            <value>The default value is Gray</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.WatermarkColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WatermarkColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.BorderColor">
+            <summary>
+            Gets or sets the color of border of input field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.BorderColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for BorderColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ComboBoxSource">
+            <summary>
+            Get or set the ComboBox source 
+            </summary>  
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ComboBoxSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ComboBoxSource property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ItemTemplate">
+            <summary>
+            Gets or sets an instance of the Template class that defines the visual structure of a suggestion item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ItemTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemTemplate property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownTextColor">
+            <summary>
+            Gets or sets the text color of suggestion items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownTextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DisplayMemberPath">
+            <summary>
+            Gets or sets the display member path which is used to search the suggestions.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DisplayMemberPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DisplayMemberPath property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SelectedValuePath">
+             <summary>
+            Gets or sets the selected value path using which SelectedValue is set in SfComboBox control.
+             </summary>
+             <value>
+             The default value is null.
+             </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SelectedValuePathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedValuePath property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DataSource">
+            <summary>
+            Gets or sets the DataSource of <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox"/> control.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DataSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DataSource property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownButtonSettings">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownButtonSettingsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SelectedValue">
+            <summary>
+            Gets the selected value of control.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SelectedValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedValue property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SelectedIndex">
+            <summary>
+            Gets the selected index of selected item.
+            </summary>
+            <value>
+            The default value is -1.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SelectedIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedIndex property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SelectedIndices">
+            <summary>
+            Gets the selected indexes of selected items.
+            </summary>
+            <value>
+            The default value is -1.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SelectedIndicesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedIndices property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SelectedItem">
+            <summary>
+            Gets the selected value of control.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SelectedItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedValue property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownFontAttributes">
+            <summary>
+            Gets or sets the font attributes of the available suggestion items in the drop down.
+            </summary>
+            <value>
+            The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownFontAttributesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownFontAttributes property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownItemFontAttributes">
+            <summary>
+            Gets or sets the font attributes of the available suggestion items in the drop down.
+            </summary>
+            <value>
+            The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownItemFontAttributesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownFontAttributes property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.FontAttributes">
+            <summary>
+            Gets or sets the font attributes for the text in input field.
+            </summary>
+            <value>
+            The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.FontAttributesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontAttributes property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.FontFamily">
+             <summary>
+            Gets or sets the font family for the text in input field.
+             </summary>
+             <value>
+             The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+             </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.FontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownItemFontFamily">
+            <summary>
+            Gets or sets the font family of the available suggestion items in the drop down.
+            </summary>
+            <value>
+            The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/> 
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownItemFontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DropDownItemFontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.ItemsSource">
+            <summary>
+            Gets or sets a collection of items that can be populated as suggestion items and get rendered at run-time based on the Template provided.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.ItemsSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemsSource property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.IsEditableMode">
+            <summary>
+            Gets or sets a value indicating whether the dropDown has shown are not
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.IsEditableModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowSuggestionsOnFocus property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.AllowFiltering">
+            <summary>
+            Gets or sets a value indicating whether the dropDown has shown are not
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.AllowFilteringProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowSuggestionsOnFocus property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.CustomView">
+            <summary>
+            Gets or sets a value indicating whether the custom view
+            </summary>
+            <value>The default value is null</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.CustomViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.SelectedDropDownItemColor">
+            <summary>
+            Gets or sets the value to display color of the selected item
+            </summary>
+            <value> The default value is Color.FromHex("#e4e4e4")
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.SelectedDropDownItemColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SfComboBox.DropDownWidth">
+            <summary>
+            Gets or sets the minimum number of characters to be typed for the dropdown to open.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SfComboBox.DropDownWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaximumSuggestion property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.Clear">
+            <summary>
+            Clear the text inside the ComboBox control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.Focus">
+            <summary>
+            Focus this instance.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.LoadMoreItems">
+            <summary>
+            Loads the moreItem.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.LoadMoreItems(System.Int32)">
+            <summary>
+            Loads the moreItem.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.SetCursorPosition(System.Int32)">
+            <summary>
+            Cursors the position.
+            </summary>
+            <param name="position">Position.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.FocusEventHandler">
+            <summary>
+            Focus event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.FocusChanged">
+            <summary>
+            Occurs when focus changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseFocusChanging(Syncfusion.XForms.ComboBox.FocusChangedEventArgs)">
+            <summary>
+            Raises the focus changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.FilterCollectionChangedEventHandler">
+            <summary>
+            Filter collection event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.FilterCollectionChanged">
+            <summary>
+            Occurs when filterted collection changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseFilterCollectionChanging(Syncfusion.XForms.ComboBox.FilterCollectionChangedEventArgs)">
+            <summary>
+            Raises the filtered collection changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.DropDownOpenEventHandler">
+            <summary>
+            Filter collection event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.DropDownOpen">
+            <summary>
+            Occurs when filterted collection changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseDropDownOpen(System.EventArgs)">
+            <summary>
+            Raises the filtered collection changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SfComboBox.DropDownClosedEventHandler">
+            <summary>
+            Filter collection event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.ComboBox.SfComboBox.DropDownClosed">
+            <summary>
+            Occurs when filterted collection changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBox.RaiseDropDownClosed(System.EventArgs)">
+            <summary>
+            Raises the filtered collection changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.ValueChangedEventArgs">
+            <summary>
+            Represents the Arguments for <see 
+            cref="!:Syncfusion.SfComboBox.XForms.ValueChangedEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.ValueChangedEventArgs.Value">
+            <summary>
+            Gets the <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.Text"/>
+            of <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SelectionChangedEventArgs">
+            <summary>
+            Represents the Arguments for <see 
+            cref="!:Syncfusion.SfComboBox.XForms.SelectionChangedEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SelectionChangedEventArgs.Value">
+            <summary>
+            Gets the <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.Text"/>
+            of <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SelectionChangingEventArgs">
+            <summary>
+            Represents the Arguments for <see 
+            cref="!:Syncfusion.SfComboBox.XForms.SelectionChangingEventArgs"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.SelectionChangingEventArgs.Value">
+            <summary>
+            Gets the <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.Text"/>
+            of <see cref="!:Syncfusion.SfComboBox.XForms.SfComboBox"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.FocusChangedEventArgs">
+            <summary>
+            Focus changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.FocusChangedEventArgs.HasFocus">
+            <summary>
+            Gets or sets a value indicating whether this
+            <see cref="T:Syncfusion.SfComboBox.XForms.FocusChangedEventArgs"/> has focus.
+            </summary>
+            <value><c>true</c> if has focus; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.FilterCollectionChangedEventArgs">
+            <summary>
+            Filter changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.FilterCollectionChangedEventArgs.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.ComboBoxMode">
+            <summary>
+             Contains the values for the ComboBoxMode enumeration that about to filter the suggestion items based on user input.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.ComboBoxMode.Append">
+            <summary>
+            Appends the first matching string with the entered text input.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.ComboBoxMode.Suggest">
+            <summary>
+            Displays the suggestion in the dropdown.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.ComboBoxMode.SuggestAppend">
+            <summary>
+            Displays the suggestion in the dropdown along with appending the first matching string.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SuggestionBoxPlacement">
+            <summary>
+             Contains the values for the SuggestionBoxPlacement mode enumeration that determines the placement of the drop-down that holds the available suggestion items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.Bottom">
+            <summary>
+            Place dropdown at the Bottom of the input field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.Top">
+            <summary>
+            Place dropdown at the Top of the input field.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.SuggestionMode">
+            <summary>
+              Contains the values for the SuggestionMode enumeration that determines the suggestion way represent the suggested items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.StartsWith">
+            <summary>
+            Filters the list of suggestions based on starting text of the items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.StartsWithCaseSensitive">
+            <summary>
+            Filters the list of suggestions based on starting text of the items with case sensitive.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.Contains">
+            <summary>
+            Filters the list of suggestions from items that contains the user input.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.ContainsWithCaseSensitive">
+             <summary>
+            Filters the list of suggestions from items that contains the user input with case sensitive.
+             </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.Equals">
+            <summary>
+            Filters the list of suggestion from items that match exact text with user input
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.EqualsWithCaseSensitive">
+             <summary>
+            Filters the list of suggestion from items that match exact text with user input with case sensitive
+             </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.EndsWith">
+            <summary>
+            Filters the list of suggestions based on end text of the items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.SuggestionMode.EndsWithCaseSensitive">
+            <summary>
+            Filters the list of suggestions based on end text of the items with case sensitive.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.MultiSelectMode">
+            <summary>
+            Multi select mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.MultiSelectMode.Token">
+            <summary>
+            The token.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.MultiSelectMode.Delimiter">
+            <summary>
+            The delimiter.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.MultiSelectMode.None">
+            <summary>
+            The none.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.TokensWrapMode">
+            <summary>
+            Tokens wrap mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokensWrapMode.None">
+            <summary>
+            The none.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokensWrapMode.Wrap">
+            <summary>
+            The wrap.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.OccurrenceMode">
+            <summary>
+            Occurrence mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.OccurrenceMode.None">
+            <summary>
+            The none.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.OccurrenceMode.FirstOccurrence">
+            <summary>
+            The first occurrence.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.OccurrenceMode.MultipleOccurrence">
+            <summary>
+            The multiple occurrence.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.SfComboBoxItem.#ctor(System.String,System.String)">
+            <summary>
+            Represents an item that can be add as children.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.TokenSettings">
+            <summary>
+            Implements the properties for the button customizations 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.SelectedBackgroundColor">
+            <summary>
+            Gets or sets the <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.TokenBackgroundColor"/>�to filter the Suggestions.
+            </summary>
+            <value>The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.SuggestionMode.StartsWith"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.SelectedBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TokenBackgroundColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.BackgroundColor">
+            <summary>
+            Gets or sets the <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.TokenBackgroundColor"/>�to filter the Suggestions.
+            </summary>
+            <value>The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.SuggestionMode.StartsWith"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.BackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TokenBackgroundColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.TextColor">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.TextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.CornerRadius">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.CornerRadiusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.FontSize">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.FontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.FontFamily">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value> The default value is string.Empty.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.FontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.IsCloseButtonVisible">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfComboBox.XForms.TokenSettings"/> is
+            close button visible.
+            </summary>
+            <value><c>true</c> if is close button visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.IsCloseButtonVisibleProperty">
+            <summary>
+            The is close button visible property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.TokenSettings.DeleteButtonColor">
+            <summary>
+            Gets or sets the <see
+            cref="!:Syncfusion.SfComboBox.XForms.SfComboBox.CloseButtonTextColor"/>�to filter the Suggestions.
+            </summary>
+            <value>The default value is <see
+            cref="!:Syncfusion.SfComboBox.XForms.SuggestionMode.StartsWith"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.TokenSettings.DeleteButtonColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TokenBackgroundColor property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ComboBox.DropDownButtonSettings">
+            <summary>
+            Implements the properties for the button customizations 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ComboBox.DropDownButtonSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.ComboBox.DropDownButtonSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.View">
+            <summary>
+             Gets or sets the View
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.ViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for View property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.Width">
+            <summary>
+             Gets or sets the Width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.WidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Width property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.Height">
+            <summary>
+             Gets or sets the Height.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.HeightProperty" -->
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontIcon">
+            <summary>
+             Gets or sets the FontIcon
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontIconProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontIcon property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontFamily">
+            <summary>
+             Gets or sets the FontFamily
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontSize">
+            <summary>
+             Gets or sets the FontSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.Image">
+            <summary>
+             Gets or sets the Image
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.ImageProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for image property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontColor">
+            <summary>
+             Gets or sets the FontColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.FontColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.HighlightedBackgroundColor">
+            <summary>
+             Gets or sets the HighlightedBackgroundColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.HighlightedBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HighlightedBackgroundColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.BackgroundColor">
+            <summary>
+             Gets or sets the BackgroundColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.BackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for BackgroundColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ComboBox.DropDownButtonSettings.HighlightFontColor">
+            <summary>
+             Gets or sets the HighlightFontColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.ComboBox.DropDownButtonSettings.HighlightFontColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HighlightFontColor property.
+            </summary>
+        </member>
+    </members>
+</doc>

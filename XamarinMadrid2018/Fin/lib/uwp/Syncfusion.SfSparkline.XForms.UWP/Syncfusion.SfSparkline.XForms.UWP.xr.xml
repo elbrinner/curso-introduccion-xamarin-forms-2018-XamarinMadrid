@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SparklineBase" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfWinLossSparkline" />
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.MarkerBase">
+      <RootProperty Name="AxisStyle" />
+      <RootProperty Name="LineStyle" />
+      <RootProperty Name="TrackBallStyle" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfLineSparkline" />
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfAreaSparkline" />
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfColumnSparkline">
+      <RootProperty Name="AxisStyle" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Background" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

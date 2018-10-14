@@ -1,0 +1,104 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "8b790f5fa491cc146b0a68da7fc724f8f59a7d0c"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Syncfusion.DocIORenderer.Portable/16.2200.0.41": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.1",
+          "SkiaSharp": "1.59.3",
+          "Syncfusion.Compression.Portable": "16.2200.0.41",
+          "Syncfusion.DocIO.Portable": "16.2200.0.41",
+          "Syncfusion.OfficeChart.Portable": "16.2200.0.41",
+          "Syncfusion.Pdf.Portable": "16.2200.0.41"
+        },
+        "runtime": {
+          "Syncfusion.DocIORenderer.Portable.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "SkiaSharp/1.59.3": {
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.dll": {}
+        }
+      },
+      "Syncfusion.Compression.Portable/16.2200.0.41": {
+        "runtime": {
+          "Syncfusion.Compression.Portable.dll": {}
+        }
+      },
+      "Syncfusion.DocIO.Portable/16.2200.0.41": {
+        "runtime": {
+          "Syncfusion.DocIO.Portable.dll": {}
+        }
+      },
+      "Syncfusion.OfficeChart.Portable/16.2200.0.41": {
+        "runtime": {
+          "Syncfusion.OfficeChart.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Pdf.Portable/16.2200.0.41": {
+        "runtime": {
+          "Syncfusion.Pdf.Portable.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Syncfusion.DocIORenderer.Portable/16.2200.0.41": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dvsme4Y4lhmkY0FTfbg0R0/cjeV3mSsh+ep6yEsA5WYSRtdltVGbiCZbTwtn+B4QZpAU+51dennz6GL2lXSZfg==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+      "path": "netstandard.library/2.0.1",
+      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+    },
+    "SkiaSharp/1.59.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MNVXKHn3dDGnJPtO4dPMU6GtvFHO1aUHDWm1V5i7QbacVJFxT+a8x1chGGdgFNl7pB4+/yzEo39x9Q7ggRYt6A==",
+      "path": "skiasharp/1.59.3",
+      "hashPath": "skiasharp.1.59.3.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Portable/16.2200.0.41": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.DocIO.Portable/16.2200.0.41": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.OfficeChart.Portable/16.2200.0.41": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Pdf.Portable/16.2200.0.41": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

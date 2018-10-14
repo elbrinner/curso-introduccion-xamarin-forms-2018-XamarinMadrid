@@ -1,0 +1,70 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="using:Syncfusion.UI.Xaml.NavigationDrawer">
+    
+    <Style TargetType="local:SfNavigationDrawer">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SfNavigationDrawer">
+                    <Grid Background="{TemplateBinding Background}" Name="PART_MainGrid">
+
+                        <Grid Name="PART_MainContent" Visibility="Visible" Background="Transparent" >
+                            <ContentPresenter Name="PART_MainContentPresenter" Content="{Binding ContentView, RelativeSource={RelativeSource TemplatedParent}}" >
+
+                            </ContentPresenter>
+                        </Grid>
+                        
+                        <Grid Name="PART_TransparentContent" Background="Transparent" Opacity="0.30"  Visibility="Collapsed"/>
+
+                        <Grid Name="PART_DrawerContent" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" Width="{Binding DrawerWidth, RelativeSource={RelativeSource TemplatedParent}}" Height="{Binding DrawerHeight, RelativeSource= {RelativeSource TemplatedParent}}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" Name="PART_HeaderPanel">
+                                <ContentPresenter Name="PART_HeaderTemplatePresenter" Height="{Binding HeaderHeight, RelativeSource={RelativeSource Mode=TemplatedParent}}" Width="{TemplateBinding Width}" Content="{Binding DrawerHeaderView, RelativeSource={RelativeSource TemplatedParent}}">
+
+                                </ContentPresenter>
+                            </Grid>
+
+                            <Grid Grid.Row="1" Name="PART_ContentPanel">
+                                <ContentPresenter Name="PART_DrawerContentPresenter" Content="{Binding DrawerContentView, RelativeSource={RelativeSource TemplatedParent}}" />
+                            </Grid>
+
+                            <Grid Grid.Row="2" Name="PART_FooterPanel">
+                                <ContentPresenter Name="PART_FooterTemplatePresenter" Height="{Binding FooterHeight, RelativeSource={RelativeSource Mode=TemplatedParent}}" Content="{Binding DrawerFooterView, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid Name="PART_SecondaryDrawerContent" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" Width="{Binding SecondaryDrawerSettings.DrawerWidth, RelativeSource={RelativeSource TemplatedParent}}" Height="{Binding SecondaryDrawerSettings.DrawerHeight, RelativeSource= {RelativeSource TemplatedParent}}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" Name="PART_SecondaryHeaderPanel">
+                                <ContentPresenter Name="PART_SecondaryHeaderTemplatePresenter" Height="{Binding SecondaryDrawerSettings.HeaderHeight, RelativeSource={RelativeSource Mode=TemplatedParent}}" Width="{TemplateBinding Width}" Content="{Binding SecondaryDrawerSettings.DrawerHeaderView, RelativeSource={RelativeSource TemplatedParent}}">
+
+                                </ContentPresenter>
+                            </Grid>
+
+                            <Grid Grid.Row="1" Name="PART_SecondaryContentPanel">
+                                <ContentPresenter Name="PART_SecondaryDrawerContentPresenter" Content="{Binding SecondaryDrawerSettings.DrawerContentView, RelativeSource={RelativeSource TemplatedParent}}" />
+                            </Grid>
+
+                            <Grid Grid.Row="2" Name="PART_SecondaryFooterPanel">
+                                <ContentPresenter Name="PART_SecondaryFooterTemplatePresenter" Height="{Binding SecondaryDrawerSettings.FooterHeight, RelativeSource={RelativeSource Mode=TemplatedParent}}" Content="{Binding SecondaryDrawerSettings.DrawerFooterView, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:converter="clr-namespace:XamarinMadrid2018.Converters;assembly=XamarinMadrid2018"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinMadrid2018.App">
+    <Application.Resources>
+            <ResourceDictionary> 
+                     <converter:InvertBoolenConverter x:Key="InverseBooleanConverter"></converter:InvertBoolenConverter>
+            </ResourceDictionary>
+    </Application.Resources>
+</Application>

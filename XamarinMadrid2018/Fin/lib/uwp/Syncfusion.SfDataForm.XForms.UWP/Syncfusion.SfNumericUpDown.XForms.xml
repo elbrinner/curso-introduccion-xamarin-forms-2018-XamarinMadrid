@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfNumericUpDown.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.ParsingMode">
+            <summary>
+            Contains the values for the Parser enumeration that determines the validation mode as decimal or double.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.ParsingMode.Decimal">
+            <summary>
+            Display the parsers content in decimal format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.ParsingMode.Double">
+            <summary>
+            Display the parser content in double format.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.PercentDisplayMode">
+            <summary>
+            Contains the values for the PercentDisplayMode enumeration allow to display the value with percentage computation .
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.PercentDisplayMode.Value">
+            <summary>
+            Display the value with Percentage(%) symbol.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.PercentDisplayMode.Compute">
+            <summary>
+            Display the computed value with Percentage(%) symbol.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown">
+            <summary>
+            Represents a control that allows the user to increment and decrement a numeric value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.#ctor">
+            <summary>
+            Represents a control that allows the user to increment and decrement a numeric value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ParsingMode">
+            <summary>
+            Gets or sets the parser mode that parses the entered text in specified mode.
+            </summary>
+            <value>The default value is Decimal.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ParsingModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ParserMode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.PercentDisplayMode">
+            <summary>
+            Gets or sets the value that display the value either as actual value or computed with percentage.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfNumericUpDown.XForms.PercentDisplayMode.Compute"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.PercentDisplayModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PercentDisplayMode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ValueChangeMode">
+            <summary>
+            Gets or sets the value that determines value change action either while every character changed or lost focus.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.OnLostFocus"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ValueChangeModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ValueChangeMode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.MaximumDecimalDigits">
+            <summary>
+            Gets or sets the value of determines the maximum number of decimal digits to be allowed.
+            </summary>
+            <value>The default value is 2.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.MaximumDecimalDigitsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaximumNumberDecimalDigits property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.SelectAllOnFocus">
+            <summary>
+            Gets or sets a value indicating whether to enable or disable the SelectAllOnFocus property.
+            </summary>
+            <value><c>true</c> if enable group separator; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.SelectAllOnFocusProperty">
+            <summary>
+            The SelectAllOnFocus property.
+            </summary>
+            <value><c>true</c> if enable group separator; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Minimum">
+            <summary>
+            Gets or sets the value that determines the minimum value of the decrement.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.MinimumProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Minimum property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Maximum">
+            <summary>
+            Gets or sets the value that determines the maximum value of the increment.
+            </summary>
+            <value>The default value is 100.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.MaximumProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Maximum property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Value">
+            <summary>
+            Gets or sets the value of the input field.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.StepValue">
+            <summary>
+            Gets or sets the value that determine the next increment and decrement value.
+            </summary>
+            <value>The default value is 1.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.StepValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StepValue property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.SpinButtonAlignment">
+            <summary>
+            Gets or sets the value that places the increment or decrement button in left, right or both side.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfNumericUpDown.XForms.SpinButtonAlignment.Right"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.SpinButtonAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SpinButtonAlignment property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.AllowNull">
+            <summary>
+            Gets or sets the value indicating whether null value can be set or not in input field.
+            </summary>
+            <value>The default value is false.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.AllowNullProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AllowNull property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.EnableGroupSeparator">
+            <summary>
+            Gets or sets the value to indicate whether EnableGroupSeparator value is allowed in <see cref="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown"/> control.
+            </summary>
+            <value>The default value is true.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.EnableGroupSeparatorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableGroupSeparator property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.AutoReverse">
+            <summary>
+            Gets or sets the value that enable or disable the cyclic behavior when value reached minimum or maximum value.
+            </summary>
+            <value>The default value is false.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.AutoReverseProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoReverse property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.IsEditable">
+            <summary>
+            Gets or sets the value that restrict or allow the user to perform edition operation in input field.
+            </summary>
+            <value>The default value is true.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.IsEditableProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoReverse property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Watermark">
+            <summary>
+            Gets or sets the value to display hint text when the input field is empty and unfocused.
+            </summary>
+            <value>The default value is false.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.WatermarkProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.SpinValidation">
+            <summary>
+            Gets or sets the SpinValidation value
+            </summary>
+            <value>The default value is Default.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.SpinValidationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SpinValidation property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FormatString">
+            <summary>
+            Gets or sets the value that determines the display format of the text when the control is unfocused. 
+            </summary>
+            <value>The default value is 'n'</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FormatStringProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FormatString property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Culture">
+            <summary>
+            Gets or sets the value for a culture to display the value based on it.
+            </summary>
+            <value>The default value is CultureInfo.CurrentUICulture</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.CultureProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Culture property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontSize">
+            <summary>
+            Gets or sets the value of text size.
+            </summary>
+            <value>The default value is 20</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.TextColor">
+            <summary>
+            Gets or sets the color of text of the input field.
+            </summary>
+            <value>The default value is Red</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.TextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.WatermarkColor">
+            <summary>
+            Gets or sets the color of hint text of the input field.
+            </summary>
+            <value>The default value is Gray</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.WatermarkColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WatermarkColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.BorderColor">
+            <summary>
+            Gets or sets the Border color of the input field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.BorderColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for BorderColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.UpDownButtonColor">
+            <summary>
+            Gets or sets the updown button color of <see cref="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown"/> control.
+            </summary>
+            <value>The default value is Red</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.UpDownButtonColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpDownButtonColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontAttribute">
+            <summary>
+            Gets or sets the font attributes for the text of the input field.
+            </summary>
+            <value>The default value is <see cref="F:Xamarin.Forms.FontAttributes.None"/></value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontAttributeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontAttributes property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Font">
+            <summary>
+            Gets or sets the font for the text of the input field.
+            </summary>
+            <value>The default value is 16.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Font property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontFamily">
+            <summary>
+             Gets or sets the font family for the text of the input field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.TextAlignment">
+            <summary>
+            Gets or sets the value that determines the alignment of the text of the input field.
+            </summary>
+            <value>The default value is <see cref="F:Xamarin.Forms.TextAlignment.Start"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.TextAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextAlignment property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ValueEventHandler">
+            <summary>
+            Occurs when the value get changed, the mode of change can be decided by ValueChangeMode.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ValueChanged">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.Value"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.RaiseValueChanging(Syncfusion.SfNumericUpDown.XForms.ValueEventArgs)">
+            <summary>
+            Raises the value changing event.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FocusEventHandler">
+            <summary>
+            Occurs when the focus get changed.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FocusChanged">
+            <summary>
+            Occurs when <see cref="!:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.HasFocus"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.RaiseFocusChanging(Syncfusion.SfNumericUpDown.XForms.FocusEventArgs)">
+            <summary>
+            Raises the value changing event.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.IncrementButtonSettings">
+            <summary>
+            Gets or sets the properties of IncrementButtonSettings class that contains all the customization.
+            </summary>
+            <value>The sfratingSettings properties.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.IncrementButtonSettingsProperty">
+            <summary>
+            The properties of UpDownButtonSettings class that contains all the customization.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.DecrementButtonSettings">
+            <summary>
+            Gets or sets the properties of UpDownButtonSettings class that contains all the customization.
+            </summary>
+            <value>The sfratingSettings properties.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.DecrementButtonSettingsProperty">
+            <summary>
+            The properties of UpDownButtonSettings class that contains all the customization.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.CustomView">
+            <summary>
+            Gets or sets the CustomView of <see cref="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.CustomViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomView property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.ValueEventArgs">
+            <summary>
+            Represents the arguments for <see 
+            cref="E:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.ValueChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.ValueEventArgs.Value">
+            <summary>
+            Gets the value
+            of <see cref="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.FocusEventArgs">
+            <summary>
+            Represents the arguments for <see 
+            cref="!:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.FocusChagned"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.FocusEventArgs.HasFocus">
+            <summary>
+            Gets the value
+            of <see cref="T:Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.SpinValidation">
+            <summary>
+            Contains the values for the SpinValidation enumeration that determines the validation mode as default or tapped.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SpinValidation.Default">
+            <summary>
+            When long pressing the updown button value value will be increment or decrement automatically.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SpinValidation.Tapped">
+            <summary>
+            To restrict or avoid increment or decrement on long pressing updown button.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.ValueChangeMode">
+            <summary>
+            Contains the values for the ValueChangeMode enumeration that determines the nature of validation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.OnLostFocus">
+            <summary>
+            The value will be updated once the control lost its focus.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.OnKeyFocus">
+            <summary>
+            The value will be changed for each keypress.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.SpinButtonAlignment">
+            <summary>
+            Contains the values for the SpinButtonAlignment enumeration that determines the placement of the increment and decrement button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SpinButtonAlignment.Right">
+            <summary>
+            Represents the increment and decrement button at right side of the user input field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SpinButtonAlignment.Left">
+            <summary>
+            Represents the increment and decrement button at left side of the user input field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.SpinButtonAlignment.Both">
+            <summary>
+            Represents the increment and decrement button at right side and left side of the user input field respectively.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings">
+            <summary>
+            Implements the properties for the button customizations 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:Syncfusion.SfNumericUpDown.XForms.SfButtonSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonView">
+            <summary>
+             Gets or sets the ButtonView
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonWidth">
+            <summary>
+             Gets or sets the ButtonWidth.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonWidth property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonHeight">
+            <summary>
+             Gets or sets the ButtonHeight.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonHeightProperty" -->
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontIcon">
+            <summary>
+             Gets or sets the ButtonFontIcon
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontIconProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonFontIcon property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontFamily">
+            <summary>
+             Gets or sets the ButtonFontFamily
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontFamilyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonFontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontSize">
+            <summary>
+             Gets or sets the ButtonFontSize
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonFontSize property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonImage">
+            <summary>
+             Gets or sets the ButtonImage
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonImageProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonFontFamily property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontColor">
+            <summary>
+             Gets or sets the ButtonFontColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.ButtonFontColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonFontIcon property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.BackgroundColor">
+            <summary>
+             Gets or sets the BackgroundColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.BackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonFontIcon property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.HighlightedBackgroundColor">
+            <summary>
+             Gets or sets the HighlightedBackgroundColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.HighlightedBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonHighlightedBackgroundColor property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.HighlightedFontColor">
+            <summary>
+             Gets or sets the HighlightedFontColor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericUpDown.XForms.UpDownButtonSettings.HighlightedFontColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ButtonHighlightFontColor property.
+            </summary>
+        </member>
+    </members>
+</doc>

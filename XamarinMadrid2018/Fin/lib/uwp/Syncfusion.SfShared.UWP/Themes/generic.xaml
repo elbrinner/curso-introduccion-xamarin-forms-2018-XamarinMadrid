@@ -1,0 +1,532 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Syncfusion.UI.Xaml.Controls"
+    xmlns:converter="using:Syncfusion.UI.Xaml.Converters"
+    xmlns:local="using:Syncfusion.UI.Xaml.Primitives">
+
+    <FontFamily x:Key="SyncfusionUpDownThemeFontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="SyncfusionUpDownThemeFontWeight">SemiBold</FontWeight>
+
+    <x:Double x:Key="SyncfusionUpDownThemeFontSize">14.667</x:Double>
+    <Thickness x:Key="SyncfusionUpDownBorderThemeThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionUpDownThemePadding">12 4 12 4</Thickness>
+
+    <SolidColorBrush x:Key="SyncfusionUpDownBorderThemeBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="SyncfusionUpDownBackgroundThemeBrush" Color="#FF002EFF" />
+    <SolidColorBrush x:Key="SyncfusionUpDownAccentThemeBrush">#FF4617B4</SolidColorBrush>
+
+    <Style TargetType="controls:TransitionContentControl">
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+        <Setter Property="IsTapEnabled" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:TransitionContentControl">
+                    <Grid
+                        x:Name="PART_LayoutRoot"
+                        Background="{TemplateBinding Background}"
+                        IsTapEnabled="{TemplateBinding IsTapEnabled}">
+                        <ContentControl
+                            x:Name="PART_TempContent"
+                            HorizontalContentAlignment="{Binding HorizontalAlignment, ElementName=PART_Content}"
+                            VerticalContentAlignment="{Binding VerticalAlignment, ElementName=PART_Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
+                            IsTabStop="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Visibility="Collapsed" />
+                        <ContentPresenter
+                            x:Name="PART_Content"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="UpButtonStyle" TargetType="RepeatButton">
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="MinWidth" Value="30" />
+        <Setter Property="Background" Value="{StaticResource SyncfusionUpDownBackgroundThemeBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource SyncfusionUpDownBackgroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SyncfusionUpDownBorderThemeBrush}" />
+        <Setter Property="BorderThickness" Value="{StaticResource SyncfusionUpDownBorderThemeThickness}" />
+        <!--<Setter Property="Padding" Value="{StaticResource SyncfusionUpDownThemePadding}" />-->
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontFamily" Value="{StaticResource SyncfusionUpDownThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="{StaticResource SyncfusionUpDownThemeFontWeight}" />
+        <Setter Property="FontSize" Value="{StaticResource SyncfusionUpDownThemeFontSize}" />
+        <Setter Property="IsTapEnabled" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RepeatButton">
+                    <Grid>
+                        <Border
+                            x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{StaticResource SyncfusionUpDownBorderThemeThickness}"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}">
+                            <ContentPresenter
+                                x:Name="ContentPresenter"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                ContentTemplate="{TemplateBinding ContentTemplate}"
+                                ContentTransitions="{TemplateBinding ContentTransitions}"
+                                IsTapEnabled="{TemplateBinding IsTapEnabled}">
+                                <Path
+                                    x:Name="path"
+                                    Width="12"
+                                    Height="12"
+                                    Margin="0,0,0,0"
+                                    Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z"
+                                    Fill="#FFFFFFFF"
+                                    IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                                    RenderTransformOrigin=".5,.5"
+                                    Stretch="Uniform">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform />
+                                            <SkewTransform />
+                                            <RotateTransform Angle="180" />
+                                            <TranslateTransform />
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </ContentPresenter>
+                        </Border>
+                        <Rectangle
+                            x:Name="FocusVisualWhite"
+                            IsHitTestVisible="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Opacity="0"
+                            Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}"
+                            StrokeDashArray="1,1"
+                            StrokeDashOffset="1.5"
+                            StrokeEndLineCap="Square" />
+                        <Rectangle
+                            x:Name="FocusVisualBlack"
+                            IsHitTestVisible="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Opacity="0"
+                            Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
+                            StrokeDashArray="1,1"
+                            StrokeDashOffset="0.5"
+                            StrokeEndLineCap="Square" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0.9"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPressedForegroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="path" Storyboard.TargetProperty="Fill">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding Path=Background, RelativeSource={RelativeSource TemplatedParent}}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonDisabledForegroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualWhite"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualBlack"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DownButtonStyle" TargetType="RepeatButton">
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="MinWidth" Value="30" />
+        <Setter Property="Background" Value="{StaticResource SyncfusionUpDownBackgroundThemeBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource SyncfusionUpDownBackgroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SyncfusionUpDownBorderThemeBrush}" />
+        <Setter Property="BorderThickness" Value="{StaticResource SyncfusionUpDownBorderThemeThickness}" />
+        <!--<Setter Property="Padding" Value="{StaticResource SyncfusionUpDownThemePadding}" />-->
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontFamily" Value="{StaticResource SyncfusionUpDownThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="{StaticResource SyncfusionUpDownThemeFontWeight}" />
+        <Setter Property="FontSize" Value="{StaticResource SyncfusionUpDownThemeFontSize}" />
+        <Setter Property="IsTapEnabled" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RepeatButton">
+                    <Grid>
+                        <Border
+                            x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{StaticResource SyncfusionUpDownBorderThemeThickness}"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}">
+                            <ContentPresenter
+                                x:Name="ContentPresenter"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                ContentTemplate="{TemplateBinding ContentTemplate}"
+                                ContentTransitions="{TemplateBinding ContentTransitions}"
+                                IsTapEnabled="{TemplateBinding IsTapEnabled}">
+                                <Path
+                                    x:Name="path"
+                                    Width="12"
+                                    Height="12"
+                                    Margin="0,0,0,0"
+                                    Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z"
+                                    Fill="#FFFFFFFF"
+                                    IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                                    Stretch="Uniform" />
+                            </ContentPresenter>
+                        </Border>
+                        <Rectangle
+                            x:Name="FocusVisualWhite"
+                            IsHitTestVisible="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Opacity="0"
+                            Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}"
+                            StrokeDashArray="1,1"
+                            StrokeDashOffset="1.5"
+                            StrokeEndLineCap="Square" />
+                        <Rectangle
+                            x:Name="FocusVisualBlack"
+                            IsHitTestVisible="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Opacity="0"
+                            Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
+                            StrokeDashArray="1,1"
+                            StrokeDashOffset="0.5"
+                            StrokeEndLineCap="Square" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0.9"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPressedForegroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="path" Storyboard.TargetProperty="Fill">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding Path=Background, RelativeSource={RelativeSource TemplatedParent}}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonDisabledForegroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualWhite"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualBlack"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="UpDownStyle" TargetType="controls:SfUpDown">
+        <Setter Property="AccentBrush" Value="{StaticResource SyncfusionUpDownAccentThemeBrush}" />
+        <Setter Property="IsTapEnabled" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:SfUpDown">
+                    <Grid x:Name="PART_OuterGrid" IsTapEnabled="{TemplateBinding IsTapEnabled}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <ContentControl
+                            x:Name="PART_Content"
+                            Margin="{StaticResource SyncfusionUpDownBorderThemeThickness}"
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            Content="{TemplateBinding UpDownContent}"
+                            IsTabStop="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}" />
+                        <RepeatButton
+                            x:Name="PART_DownButton"
+                            Grid.Column="1"
+                            Margin="{StaticResource SyncfusionUpDownBorderThemeThickness}"
+                            VerticalAlignment="Stretch"
+                            Background="{TemplateBinding AccentBrush}"
+                            BorderBrush="{TemplateBinding AccentBrush}"
+                            Command="{TemplateBinding DownCommand}"
+                            IsTabStop="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Style="{StaticResource DownButtonStyle}" />
+                        <RepeatButton
+                            x:Name="PART_UpButton"
+                            Grid.Column="2"
+                            Margin="{StaticResource SyncfusionUpDownBorderThemeThickness}"
+                            VerticalAlignment="Stretch"
+                            Background="{TemplateBinding AccentBrush}"
+                            BorderBrush="{TemplateBinding AccentBrush}"
+                            Command="{TemplateBinding UpCommand}"
+                            IsTabStop="False"
+                            IsTapEnabled="{TemplateBinding IsTapEnabled}"
+                            Style="{StaticResource UpButtonStyle}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style BasedOn="{StaticResource UpDownStyle}" TargetType="controls:SfUpDown" />
+
+    <Style x:Key="DefaultHeaderStyle" TargetType="ContentControl">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="Margin" Value="10,5" />
+    </Style>
+
+    <Style x:Key="DefaultTitleStyle" TargetType="ContentControl">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="FontSize" Value="10" />
+    </Style>
+
+    <controls:RotateTransition
+        x:Key="RotateTransition"
+        Easing="{x:Null}"
+        Duration="0:0:0.4" />
+
+    <converter:RandomBrushConverter x:Key="RandomBrushConverter" />
+
+    <Style TargetType="controls:LoopingSelector">
+        <Setter Property="ItemHeight" Value="80" />
+        <Setter Property="ItemWidth" Value="80" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="ItemMargin" Value="4" />
+        <Setter Property="ManipulationMode" Value="All" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border Background="{TemplateBinding Background}">
+                        <Canvas x:Name="ItemsPanel">
+                            <Canvas.RenderTransform>
+                                <TransformGroup>
+                                    <TranslateTransform x:Name="CenteringTransform" />
+                                    <TranslateTransform x:Name="PanningTransform" />
+                                </TransformGroup>
+                            </Canvas.RenderTransform>
+                        </Canvas>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="controls:LoopingSelectorItem">
+        <Setter Property="Padding" Value="6" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border
+                        x:Name="root"
+                        Padding="{TemplateBinding Padding}"
+                        Background="Transparent"
+                        CacheMode="BitmapCache"
+                        Opacity="0">
+                        <Border.RenderTransform>
+                            <TranslateTransform x:Name="Transform" />
+                        </Border.RenderTransform>
+
+                        <Grid>
+                            <Rectangle
+                                x:Name="background"
+                                Margin="2"
+                                CacheMode="BitmapCache"
+                                Fill="Transparent"
+                                Opacity="0" />
+
+                            <Border BorderBrush="Black" BorderThickness="2">
+                                <ContentPresenter x:Name="contentPresenter" CacheMode="BitmapCache" />
+                            </Border>
+                        </Grid>
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition GeneratedDuration="0:0:0.2" />
+                                </VisualStateGroup.Transitions>
+
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="root"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0.6"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="background"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To=".6"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="contentPresenter"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0.6"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Expanded">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="root"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="background"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="contentPresenter"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To=".6"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+
+                                <VisualState x:Name="Selected">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="root"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="background"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="controls:SfNavigator">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:SfNavigator">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+
+                            <ContentControl
+                                x:Name="PART_SupportingContent"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                HorizontalContentAlignment="Stretch"
+                                VerticalContentAlignment="Stretch"
+                                IsTabStop="False">
+                                <ContentControl.RenderTransform>
+                                    <CompositeTransform />
+                                </ContentControl.RenderTransform>
+                            </ContentControl>
+
+                            <ContentControl
+                                x:Name="PART_Content"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                HorizontalContentAlignment="Stretch"
+                                VerticalContentAlignment="Stretch"
+                                IsTabStop="False">
+                                <ContentControl.RenderTransform>
+                                    <CompositeTransform />
+                                </ContentControl.RenderTransform>
+                            </ContentControl>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,694 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.UI.Xaml.Kanban">
+
+    <local:ImageConverter x:Key="ImageConverter"/>
+    <local:DescriptionMinWidthConverter x:Key="DescriptionMinWidthConverter"/>
+    <local:CardCountConverter x:Key="CardCountConverter"/>
+    <local:CollapsedHeader x:Key="HeaderConverter"/>
+    <local:CollapsedHeaderMargin x:Key="CollapsedHeaderMarginConverter"/>
+    <local:StrokeDashArrayConverter x:Key="StrokeDashArrayConverter"/>
+
+    <DataTemplate x:Key="DefaultKanbanHeaderTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="4*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="Header"  Text="{Binding Header}"
+                                           VerticalAlignment="Center"
+                                           FontWeight="Medium"
+                                           FontSize="16"
+                                           Foreground="#FF494949"
+                                           TextWrapping="NoWrap"
+                                           Grid.Row="0"
+                                           Margin="0,5,0,5"
+                                           Grid.ColumnSpan="1" />
+
+            <StackPanel Grid.Row="1" x:Name="WIPPanel"
+                                            Grid.Column="0"
+                                            Orientation="Horizontal">
+                <TextBlock Text="{Binding [ItemsCount]}" 
+                                               Margin="0,2,0,5"
+                                               VerticalAlignment="Center"
+                                               Foreground="#FF767980"
+                                               FontSize="14"
+                                               TextWrapping="WrapWholeWords"/>
+                <TextBlock Text="{Binding CardCount}"
+                                               Margin="5,2,0,5"
+                                               VerticalAlignment="Center"
+                                               Foreground="#FF767980"
+                                               FontSize="14"
+                                               TextWrapping="WrapWholeWords"/>
+                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                               ConverterParameter=MinMaxLimit,
+                                               Converter={StaticResource CardCountConverter}}"
+                                               Margin="0,2,0,5"
+                                               Foreground="#FF767980"
+                                               VerticalAlignment="Center"
+                                               FontSize="14"
+                                               TextWrapping="WrapWholeWords" />
+
+            </StackPanel>
+
+            <Border Grid.Column="1" x:Name="CollapsedIcon" Background="Transparent"
+                                        Grid.Row="1">
+                <Path Data="M172.444,310.778 L158.444,317.111 L171.222,324.222"
+                                          Stretch="Fill" HorizontalAlignment="Right"
+                                          Stroke="#FF595959" IsHitTestVisible="False"
+                                          StrokeThickness="2"
+                                          StrokeLineJoin="Miter"
+                                          UseLayoutRounding="False"
+                                          Width="7" Height="14">
+                    <Path.RenderTransform>
+                        <CompositeTransform x:Name="RotateTransform" 
+                                                                Rotation="0"/>
+                    </Path.RenderTransform>
+                </Path>
+            </Border>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultSwimlaneColumnHeaderTemplate">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="4*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="Header"  Text="{Binding Header}"
+                                        VerticalAlignment="Center"
+                                        FontWeight="Medium"
+                                        FontSize="16"
+                                        Foreground="#FF494949"
+                                        TextWrapping="NoWrap"
+                                        Grid.Row="0"
+                                        Margin="0,5,0,5" />
+
+            <StackPanel Grid.Row="1" x:Name="WIPPanel"
+                        Orientation="Horizontal">
+                <TextBlock Text="{Binding [ItemsCount]}" 
+                                               Margin="0,2,0,5"
+                                               VerticalAlignment="Center"
+                                               Foreground="#FF767980"
+                                               FontSize="14"
+                                               TextWrapping="WrapWholeWords"/>
+                <TextBlock Text="{Binding CardCount}"
+                                               Margin="5,2,0,5"
+                                               VerticalAlignment="Center"
+                                               Foreground="#FF767980"
+                                               FontSize="14"
+                                               TextWrapping="WrapWholeWords"/>
+                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent},
+                    Converter={StaticResource CardCountConverter}}"
+                                               Margin="0,2,0,5"
+                                               Foreground="#FF767980"
+                                               VerticalAlignment="Center"
+                                               FontSize="14"
+                                               TextWrapping="WrapWholeWords" />
+
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+
+    <ControlTemplate x:Key="CollapsedTemplate" TargetType="local:KanbanColumn">
+        <Grid  Background="{TemplateBinding Background}" Margin="2,0,0,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Line Grid.Column="0" HorizontalAlignment="Left"
+                  X1="0" Y1="0" X2="0" Y2="300" Stretch="Fill"
+                  Stroke="{TemplateBinding BorderBrush}"
+                  StrokeThickness="1.5" 
+                  StrokeDashOffset="1"
+                  StrokeDashArray="2 1"/>
+            <Line Grid.Column="2" HorizontalAlignment="Right"
+                  X1="0" Y1="0" X2="0" Y2="300" Stretch="Fill"
+                  Stroke="{TemplateBinding BorderBrush}" 
+                  StrokeThickness="1.5"
+                  StrokeDashOffset="1"
+                  StrokeDashArray="2 1"/>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="Header" 
+                                           Text="{TemplateBinding Title}"
+                                           VerticalAlignment="Center"
+                                           FontWeight="Medium" Opacity="0"
+                                           FontSize="16" 
+                                           Foreground="{TemplateBinding Foreground}"
+                                           TextWrapping="NoWrap"
+                                           Grid.Row="0"
+                                           Margin="0,5,0,5"
+                                       />
+
+                    <Border  Margin="0,8,0,0" x:Name="ExpandIcon"
+                                        Grid.Row="1" Background="Transparent">
+                        <Path Data="M129.843,187.893 L141.871,195.519 L130.236,203.308" 
+                              HorizontalAlignment="Center" IsHitTestVisible="False"
+                              Height="14" 
+                              Stretch="Fill" Stroke="#FF595959" StrokeThickness="1.5" 
+                              StrokeLineJoin="Miter" 
+                              UseLayoutRounding="False" 
+                              Width="7"/>
+                    </Border>
+
+                    <TextBlock Grid.Row="2" Text="{Binding Cards.Count, Converter={StaticResource HeaderConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}"  
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Top"
+                               FontWeight="Normal" Margin="0,45,0,0"
+                               Foreground="{TemplateBinding Foreground}"
+                               FontSize="13">
+                        <TextBlock.RenderTransform>
+                            <RotateTransform Angle="270" CenterX="0.5" CenterY="0.5"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Canvas HorizontalAlignment="Center" >
+                        <TextBlock Text="{TemplateBinding Title}"  
+                               HorizontalAlignment="Center"
+                               FontWeight="Medium"
+                               FontSize="16" 
+                               Margin="{Binding Converter={StaticResource CollapsedHeaderMarginConverter}
+                            , RelativeSource={RelativeSource Mode=Self}}"                                 
+                               Foreground="{TemplateBinding Foreground}">
+                            <TextBlock.RenderTransform>
+                                <RotateTransform Angle="270" CenterX="0.5" CenterY="0.5"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Canvas>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate TargetType="local:KanbanColumn" x:Key="ExpandedTemplate">
+        <Grid x:Name="RootGrid" 
+              Background="{TemplateBinding Background}"
+              BorderBrush="{TemplateBinding BorderBrush}"
+              BorderThickness="{TemplateBinding BorderThickness}">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="DragOver">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Column_StatusPrev"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Visible" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Collapsed" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="DefaultState">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Column_StatusPrev"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Collapsed" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Visible" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="HeaderBorder" Background="{TemplateBinding Background}"
+                                Grid.Row="0">
+                <Grid x:Name="HeaderContainer" Background="Transparent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <ContentPresenter x:Name="KanbanColumnHeader"
+                                      Background="Transparent"
+                                      ContentTemplate="{StaticResource DefaultKanbanHeaderTemplate}"
+                                    Content="{Binding Tags,
+                        RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+
+                    <Grid Grid.Row="1"
+                          x:Name="IndicatorPanel"
+                          Grid.Column="0"
+                          Margin="0,5,0,0">
+                        <Rectangle Fill="{Binding ValidationColor,RelativeSource={RelativeSource TemplatedParent}}"
+                                   Height="{Binding ErrorBarSettings.Height, RelativeSource={RelativeSource TemplatedParent}}"
+                                   Width="Auto"
+                                   VerticalAlignment="Top" />
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border x:Name="Column_StatusPrev" Visibility="Collapsed"
+                                Grid.Row="1"                               
+                                BorderThickness="2,2,2,2"
+                                Background="AliceBlue"
+                                CornerRadius="6">
+                <local:PreviewPanel />
+            </Border>
+
+            <Border x:Name="OuterBorder" Grid.Row="1" 
+                    Background="{TemplateBinding Background}"
+                    BorderThickness="0,2,0,2">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                                          x:Name="Vertical_Scroll">
+                        <ItemsPresenter x:Name="ColumnItemsPresenter" />
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate TargetType="local:SwimlaneColumn" x:Key="SwimlaneColumnTemplate">
+        <Grid x:Name="RootGrid" 
+              Background="{TemplateBinding Background}"
+              BorderBrush="{TemplateBinding BorderBrush}"
+              BorderThickness="{TemplateBinding BorderThickness}"
+              MinHeight="100">
+            
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="DragOver">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Column_StatusPrev"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Visible" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Collapsed" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="DefaultState">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Column_StatusPrev"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Collapsed" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                                                    Value="Visible" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="Column_StatusPrev" Visibility="Collapsed"
+                                Background="AliceBlue"
+                                CornerRadius="6">
+                <local:PreviewPanel />
+            </Border>
+
+            <Border x:Name="OuterBorder"
+                    Background="{TemplateBinding Background}">
+                <ItemsPresenter x:Name="ColumnItemsPresenter" />
+            </Border>
+        </Grid>
+    </ControlTemplate>
+
+    <Style x:Key="KanbanAreaStyle" TargetType="ItemsControl">
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ItemsControl">
+                    <Border x:Name="KANBAN_AREA" >
+                        <ItemsPresenter />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SwimlaneColumnHeaderStyle" TargetType="ItemsControl">
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ItemsControl">
+                    <Border>
+                        <ItemsPresenter />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate TargetType="local:KanbanColumn" x:Key="SwimlaneKanbanColumnTemplate">
+        <Border x:Name="HeaderBorder">
+            <Grid x:Name="HeaderContainer" Background="{TemplateBinding Background}" Margin="15,0,15,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <ContentPresenter x:Name="KanbanColumnHeader"
+                                  HorizontalAlignment="Left"
+                                  ContentTemplate="{StaticResource DefaultSwimlaneColumnHeaderTemplate}"
+                                  Content="{Binding Tags, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+
+                <Border Grid.Row="1"
+                        x:Name="IndicatorPanel"
+                        Margin="0,5,0,0">
+                    <Rectangle Fill="{Binding ValidationColor,RelativeSource={RelativeSource TemplatedParent}}"
+                                   Height="{Binding ErrorBarSettings.Height, RelativeSource={RelativeSource TemplatedParent}}"
+                                   Width="{TemplateBinding Width}"
+                                   VerticalAlignment="Top" />
+                </Border>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+
+    <Style x:Key="KanbanAreaSwimlaneStyle" TargetType="ItemsControl">
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ItemsControl">
+                    <Border x:Name="KANBAN_AREA" >
+                        <ItemsPresenter />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:Swimlane">
+        <Setter Property="AllowDrop" Value="True"></Setter>
+        <Setter Property="BorderBrush"
+                Value="#FFBFBEBE"/>
+        <Setter Property="Foreground" 
+                Value="#FF494949"></Setter>
+        <Setter Property="Background"
+                Value="Transparent"></Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"></StackPanel>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <DataTemplate x:Key="DefaultSwimlaneHeaderTemplate">
+        <StackPanel x:Name="SwimlaneHeaderPanel" Orientation="Horizontal" Background="White" Margin="15,2,15,0">
+            <Grid x:Name="CollapsedIcon" Background="Transparent" Height="25" Width="25">
+                <Path x:Name="ExpandedPath" 
+                              Data="M30.587915,0L31.995998,1.4199842 15.949964,17.351 0,1.4979873 1.4099131,0.078979151 15.949964,14.53102z" 
+                              Stretch="Uniform" Fill="#FF000000" Width="14" Height="14" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="CollapsedPath" Visibility="Collapsed"
+                              Data="M1.4200482,0L17.351001,16.046996 1.4980513,31.996001 0.078979631,30.585997 14.531046,16.046019 0,1.4089964z" 
+                              Stretch="Uniform" Fill="#FF000000" Width="14" Height="14" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Grid>
+
+            <TextBlock FontWeight="Medium"
+                       IsHitTestVisible="False"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       Foreground="#FF494949"
+                       TextWrapping="NoWrap"
+                       Text="{Binding Title}" />
+
+            <TextBlock FontSize="12"
+                       IsHitTestVisible="False"
+                       Foreground="#FF494949"
+                       TextWrapping="NoWrap"
+                       Margin="5,0,0,0"
+                       VerticalAlignment="Center"
+                       Text="-"/>
+
+            <TextBlock FontSize="12"
+                       IsHitTestVisible="False"
+                       Foreground="#FF494949"
+                       TextWrapping="NoWrap"
+                       Margin="5,0,0,0"
+                       VerticalAlignment="Center"
+                       Text="{Binding ItemsCount, ConverterParameter=SwimlaneCardCount, Converter={StaticResource CardCountConverter}}"/>
+        </StackPanel>
+    </DataTemplate>
+
+    <ControlTemplate x:Key="SwimlaneTemplate" TargetType="local:Swimlane">
+        <Grid x:Name="RootGrid" 
+              Background="{TemplateBinding Background}"
+              BorderBrush="{TemplateBinding BorderBrush}"
+              BorderThickness="{TemplateBinding BorderThickness}">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <ContentPresenter x:Name="SwimlaneHeader"                            
+                              Background="Transparent"
+                              ContentTemplate="{StaticResource DefaultSwimlaneHeaderTemplate}"
+                              Content="{Binding Tags, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+
+            <Border Grid.Row="1" 
+                    Background="{TemplateBinding Background}"
+                    BorderThickness="0,2,0,2">
+                <ItemsPresenter x:Name="SwimlaneItemsPresenter"/>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+
+    <DataTemplate x:Key="KanbanCardItemTemplate">
+
+        <Border BorderBrush="{Binding Tag.CardStyle.BorderBrush ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                BorderThickness="{Binding Tag.CardStyle.BorderThickness ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                CornerRadius="{Binding Tag.CardStyle.CornerRadius ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                Background="{Binding Tag.CardStyle.Background ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                Margin="5">
+
+            <ContentControl Content="{Binding Tag.Content,RelativeSource={RelativeSource TemplatedParent}}"
+                            HorizontalAlignment="{Binding Tag.CardStyle.HorizontalAlignment,RelativeSource={RelativeSource TemplatedParent}}"
+                            FontSize="{Binding Tag.CardStyle.FontSize ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                            Foreground="{Binding Tag.CardStyle.Foreground ,RelativeSource={RelativeSource Mode=TemplatedParent}}"></ContentControl>
+
+        </Border>
+
+    </DataTemplate>
+
+    <DataTemplate x:Key="ShadowCardTemplate">
+        <Grid >
+            <Rectangle Margin="0,6,0,6" 
+                       Fill="{Binding Content.Fill, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                       StrokeThickness="{Binding Content.StrokeThickness, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                       RadiusX="{Binding Content.RadiusX, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                       RadiusY="{Binding Content.RadiusY, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                       Stroke="{Binding Content.Stroke, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                       StrokeDashArray="{Binding Content.StrokeDashArray,Converter={StaticResource StrokeDashArrayConverter}, 
+                RelativeSource={RelativeSource Mode=TemplatedParent}}">
+            </Rectangle>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="RemovedCardTemplate">
+        <Grid Height="{Binding ActualHeight, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+            <Rectangle x:Name="rectangle" RadiusX="6" RadiusY="6"
+                   HorizontalAlignment="Stretch" Margin="0,6,0,6" 
+                   Fill="LightGray" StrokeThickness="1.5" Stroke="DarkGray" StrokeDashArray="4,2">
+            </Rectangle>
+        </Grid>
+
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultKanbanCardTemplate">
+        <Border BorderBrush="{Binding Tag.CardStyle.BorderBrush ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                BorderThickness="{Binding Tag.CardStyle.BorderThickness ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                CornerRadius="{Binding Tag.CardStyle.CornerRadius ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                MinHeight="100"
+                Background="{Binding Tag.CardStyle.Background ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                MaxHeight="300"
+                Height="Auto"
+                Margin="0,6,0,6"
+                >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Grid.ColumnSpan="1" Margin="8,5,2,2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="KANBAN_Title" Grid.Row="0" 
+                               TextWrapping="NoWrap"
+                               Text="{Binding Title}" 
+                               TextTrimming="CharacterEllipsis"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="{Binding Tag.CardStyle.TitleHorizontalAlignment ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                               FontSize="{Binding Tag.CardStyle.TitleFontSize ,RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                               FontWeight="Bold" 
+                               Foreground="{Binding Tag.CardStyle.TitleColor ,RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+
+                    <TextBlock x:Name="KANBAN_Description" Grid.Row="1"
+                               MinWidth="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent},
+                        Converter={StaticResource DescriptionMinWidthConverter}}"
+                                      TextWrapping="Wrap" MaxHeight="50"
+                                      Text="{Binding Description}"
+                                      TextTrimming="CharacterEllipsis"
+                                      FontSize="{Binding Tag.CardStyle.FontSize ,RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                               Foreground="{Binding Tag.CardStyle.Foreground ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                      HorizontalAlignment="Left" VerticalAlignment="Center" 
+                                      Height="Auto" 
+                                       />
+                    <ScrollViewer Grid.Row="2" Grid.ColumnSpan="1" VerticalAlignment="Bottom"
+                                  Margin="0,4,0,2"
+                                  Visibility="{Binding Tag.CardStyle.TagVisibility ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                  HorizontalScrollBarVisibility="Hidden"
+                                  VerticalScrollBarVisibility="Disabled">
+                        <local:TagsStackPanel x:Name="KANBAN_TagsPanel" 
+                                              Orientation="Horizontal"
+                                              HorizontalAlignment="Left"
+                                              ContentTemplate="{StaticResource TagsTemplate}"
+                                              TagsCollection="{Binding Tags}"
+                                              DataContext="{Binding}" Height="Auto"  >
+
+                        </local:TagsStackPanel>
+                    </ScrollViewer>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderBrush="#FFE4E5E6" BorderThickness="1.5"
+                            Grid.Row="1" x:Name="KANBAN_ProfileIcon"
+                            CornerRadius="50"  
+                            Visibility="{Binding Tag.CardStyle.IconVisibility ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                            Height="50" Width="50"
+                            HorizontalAlignment="Left" VerticalAlignment="Center" >
+                        <Border.Background>
+                            <ImageBrush ImageSource="{Binding RelativeSource={RelativeSource TemplatedParent},Converter={StaticResource ImageConverter}}" Stretch="Fill" />
+                        </Border.Background>
+                    </Border>
+
+                    <Border Grid.Row="2" BorderThickness="0" CornerRadius="0,0,6,0" Margin="0,0,-1,-1"
+                            Height="30" Width="30"
+                            Visibility="{Binding Tag.CardStyle.IndicatorVisibility ,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                            DataContext="{Binding RelativeSource={RelativeSource TemplatedParent}}"
+                            HorizontalAlignment="Right">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                                <GradientStop Color="Transparent" Offset="0.5" />
+                                <GradientStop Color="{Binding Tag.IndicatorColor}" Offset="0.5" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TagsTemplate">
+        <Border Background="#FFEDEDED" CornerRadius="2" >
+            <TextBlock Text="{Binding}" HorizontalAlignment="Center"
+                       TextTrimming="CharacterEllipsis" Margin="10,1,10,1"
+                       FontSize="10" VerticalAlignment="Center"
+                       Foreground="#FF454545" />
+        </Border>
+    </DataTemplate>
+
+    <Style TargetType="local:PlaceholderStyle" x:Key="PlaceholderStyleKey">
+        <Setter Property="RadiusX" Value="6"/>
+        <Setter Property="RadiusY" Value="6"/>
+        <Setter Property="Fill" Value="#F0FEFEFE"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="DarkGray"/>
+        <Setter Property="Stroke" Value="DarkGray"/>
+        <Setter Property="StrokeDashArray" Value="4,2"/>
+        <Setter Property="StrokeThickness" Value="1.5"/>
+        <Setter Property="TextHorizontalAlignment" Value="Center"/>
+        <Setter Property="TextVerticalAlignment" Value="Top"/>
+    </Style>
+
+    <Style TargetType="local:KanbanCardStyle" x:Key="DefaultCardStyleKey">
+        <Setter Property="TitleColor" Value="#FF494949"/>
+        <Setter Property="TitleFontSize" Value="14"/>
+        <Setter Property="TitleHorizontalAlignment" Value="Left"/>
+
+        <Setter Property="TagVisibility" Value="Visible"/>
+        <Setter Property="IndicatorVisibility" Value="Visible"/>
+        <Setter Property="IconVisibility" Value="Visible"/>
+
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="#FF3F444F"/>
+
+        <Setter Property="BorderBrush" Value="#FFE4E4E5"/>
+        <Setter Property="BorderThickness" Value="1.5"/>
+
+        <Setter Property="CornerRadius" Value="4"/>
+
+        <Setter Property="Background" Value="#FFFFFFFF"/>
+    </Style>
+
+</ResourceDictionary>
+

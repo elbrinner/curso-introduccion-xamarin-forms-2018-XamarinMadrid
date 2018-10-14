@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfNavigationDrawer.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.Transition">
+            <summary>
+            Defines the transition on toggling drawer in <see
+            cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Transition.Push">
+            <summary>
+            Drawer pushes the content view along the position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Transition.Reveal">
+            <summary>
+            ContentView reveals the drawer behind it to view drawer
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Transition.SlideOnTop">
+            <summary>
+            Drawer slides over the content view from its position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.Position">
+            <summary>
+            Defines the position of drawer view in <see
+            cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Position.Left">
+            <summary>
+            Places drawer at the left position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Position.Top">
+            <summary>
+            Places drawer at the top position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Position.Right">
+            <summary>
+            Places drawer at the right position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.Position.Bottom">
+            <summary>
+            Places drawer at the bottom position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.IToggleDrawer">
+            <summary>
+            Represents the interface for ToggleDrawer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Transition">
+            <summary>
+            Gets or sets the transition of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfNavigationDrawer.XForms.Transition.SlideOnTop"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.TransitionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Transition property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Position">
+            <summary>
+            Gets or sets the drawer position of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is <see cref="F:Syncfusion.SfNavigationDrawer.XForms.Position.Left"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.PositionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Position property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ContentView">
+            <summary>
+            Gets or sets the content view of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ContentViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerContentView">
+            <summary>
+            Gets or sets the drawer content view of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerContentViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerContentView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderView">
+            <summary>
+            Gets or sets the drawer header view of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeaderView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterView">
+            <summary>
+            Gets or sets the drawer footer view of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerFooterView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.TouchThreshold">
+            <summary>
+            Gets or sets the touch threshold value of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is 40.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.TouchThresholdProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TouchThreshold property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerWidth">
+            <summary>
+            Gets or sets the drawer width of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is 300.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerWidth property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeight">
+            <summary>
+            Gets or sets the drawer height of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is 500.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Duration">
+            <summary>
+            Gets or sets the animation duration of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is 400.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderHeight">
+            <summary>
+            Gets or sets the drawer header height of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is 150.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeaderHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterHeight">
+            <summary>
+            Gets or sets the drawer header height of <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is 150.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerFooterHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.IsOpen">
+            <summary>
+            Gets or sets the value indicating whether the drawer is open in <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.IsOpenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsOpen property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.EnableSwipeGesture">
+            <summary>
+            Gets or sets the value indicating whether swipe gesture to open drawer is enabled or not in <see cref="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer"/> control.
+            </summary>
+            <value>The default value is <c>true</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.EnableSwipeGestureProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableSwipeGesture property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DefaultDrawerSettings">
+            <summary>
+            Gets or sets the properties of DefaultDrawerSettings class that contains all the customization.
+            </summary>
+            <value>The DefaultDrawerSettings properties.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DefaultDrawerSettingsProperty">
+            <summary>
+            The properties of DefaultDrawerSettings class that contains all the customization.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.SecondaryDrawerSettings">
+            <summary>
+            Gets or sets the properties of SecondaryDrawerSettings class that contains all the customization.
+            </summary>
+            <value>The SecondaryDrawerSettings properties.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.SecondaryDrawerSettingsProperty">
+            <summary>
+            The properties of SecondaryDrawerSettings class that contains all the customization.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ToggledEventHandler">
+            <summary>
+            Represents the event handler for Toggled event
+            </summary>
+            <param name="sender">The source element</param>
+            <param name="e">The toggled event arguments</param>
+        </member>
+        <member name="E:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Toggled">
+            <summary>
+            Occurs when the drawer is toggled to open or close
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.OpeningEventHandler">
+            <summary>
+            Opening event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Opening">
+            <summary>
+            Occurs when opening.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.RaiseOpening(Syncfusion.SfNavigationDrawer.XForms.CancelEventArgs)">
+            <summary>
+            Raises the opening.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ClosingEventHandler">
+            <summary>
+            Closing event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Closing">
+            <summary>
+            Occurs when closing.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.RaiseClosing(Syncfusion.SfNavigationDrawer.XForms.CancelEventArgs)">
+            <summary>
+            Raises the closing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ToggleDrawer">
+            <summary>
+            Toggle the drawer to open or close based on the existing state
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ToggleSecondaryDrawer">
+            <summary>
+            Toggle the drawer to open or close based on the existing state
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.OnBindingContextChanged">
+            <summary>
+            Binding context changed method
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.ToggledEventArgs">
+            <summary>
+            Represents the event arguments for Toggled event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.ToggledEventArgs.sender">
+            <summary>
+            Gets the source element
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.ToggledEventArgs.isOpen">
+            <summary>
+            Gets the boolean value which indicates whether drawer is opened or closed
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.ToggledEventArgs.IsSecondaryDrawer">
+            <summary>
+            Gets the boolean value which indicates whether drawer is secondary or default drawer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.CancelEventArgs.Cancel">
+            <summary>
+            Gets or sets the cancel of swiping in control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.CancelEventArgs.IsSecondaryDrawer">
+            <summary>
+            Gets the boolean value which indicates whether drawer is secondary or default drawer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.Transition">
+            <summary>
+            Gets or sets the transition of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is <see cref="!:Syncfusion.DrawerSettings.XForms.Transition.SlideOnTop"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.TransitionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Transition property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.Position">
+            <summary>
+            Gets or sets the drawer position of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is <see cref="!:Syncfusion.DrawerSettings.XForms.Position.Left"/>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.PositionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Position property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerContentView">
+            <summary>
+            Gets or sets the drawer content view of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerContentViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerContentView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerHeaderView">
+            <summary>
+            Gets or sets the drawer header view of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerHeaderViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeaderView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerFooterView">
+            <summary>
+            Gets or sets the drawer footer view of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerFooterViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerFooterView property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.TouchThreshold">
+            <summary>
+            Gets or sets the touch threshold value of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is 40.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.TouchThresholdProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TouchThreshold property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerWidth">
+            <summary>
+            Gets or sets the drawer width of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is 300.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerWidth property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerHeight">
+            <summary>
+            Gets or sets the drawer height of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is 500.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.Duration">
+            <summary>
+            Gets or sets the animation duration of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is 400.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerHeaderHeight">
+            <summary>
+            Gets or sets the drawer header height of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is 150.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerHeaderHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeaderHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerFooterHeight">
+            <summary>
+            Gets or sets the drawer header height of <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is 150.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.DrawerFooterHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerFooterHeight property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.IsOpen">
+            <summary>
+            Gets or sets the value indicating whether the drawer is open in <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.IsOpenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsOpen property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.EnableSwipeGesture">
+            <summary>
+            Gets or sets the value indicating whether swipe gesture to open drawer is enabled or not in <see cref="!:Syncfusion.DrawerSettings.XForms.DrawerSettings"/> control.
+            </summary>
+            <value>The default value is <c>true</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.EnableSwipeGestureProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableSwipeGesture property.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="MinWidth" />
+    <RootPropertyPathName Name="MinHeight" />
+    <RootPropertyPathName Name="Annotations" />
+    <RootPropertyPathName Name="GaugeHeader" />
+    <RootPropertyPathName Name="HorizontalHeaderPosition" />
+    <RootPropertyPathName Name="VerticalHeaderPosition" />
+    <RootPropertyPathName Name="GaugeHeaderMargin" />
+    <RootPropertyPathName Name="Scales" />
+    <RootPropertyPathName Name="SubScales" />
+    <RootPropertyPathName Name="SpacingMargin" />
+    <RootPropertyPathName Name="MainScale" />
+    <RootPropertyPathName Name="SymbolPointerVisibility" />
+    <RootPropertyPathName Name="SymbolPointerMargin" />
+    <RootPropertyPathName Name="NeedleTranform" />
+    <RootPropertyPathName Name="SymbolContent" />
+    <RootPropertyPathName Name="RangePointerVisibility" />
+    <RootPropertyPathName Name="RangePointerMargin" />
+    <RootPropertyPathName Name="RangePointerStroke" />
+    <RootPropertyPathName Name="EndCapCenter" />
+    <RootPropertyPathName Name="EndCapRadiusX" />
+    <RootPropertyPathName Name="EndCapRadiusY" />
+    <RootPropertyPathName Name="StartCapCenter" />
+    <RootPropertyPathName Name="StartCapRadiusX" />
+    <RootPropertyPathName Name="StartCapRadiusY" />
+    <RootPropertyPathName Name="Rangepointer" />
+    <RootPropertyPathName Name="RangePointerStartPoint" />
+    <RootPropertyPathName Name="NeedlePointerVisibility" />
+    <RootPropertyPathName Name="PointerCapMargin" />
+    <RootPropertyPathName Name="InternalKnobRadius" />
+    <RootPropertyPathName Name="PointerCapStroke" />
+    <RootPropertyPathName Name="KnobStroke" />
+    <RootPropertyPathName Name="KnobStrokeThickness" />
+    <RootPropertyPathName Name="NeedlePointerMargin" />
+    <RootPropertyPathName Name="TailContent" />
+    <RootPropertyPathName Name="NeedlePointerContent" />
+    <RootPropertyPathName Name="RangeMargin" />
+    <RootPropertyPathName Name="Stroke" />
+    <RootPropertyPathName Name="RangeSeg" />
+    <RootPropertyPathName Name="StartPoint" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="Foreground" />
+    <RootPropertyPathName Name="LabelFontSize" />
+    <RootPropertyPathName Name="Length" />
+    <RootPropertyPathName Name="TickShapeContent" />
+    <RootPropertyPathName Name="Pointers" />
+    <RootPropertyPathName Name="LabelsMargin" />
+    <RootPropertyPathName Name="Labels" />
+    <RootPropertyPathName Name="MinorTicksMargin" />
+    <RootPropertyPathName Name="MinorTicks" />
+    <RootPropertyPathName Name="TickStrokeThickness" />
+    <RootPropertyPathName Name="MajorTicksMargin" />
+    <RootPropertyPathName Name="MajorTicks" />
+    <RootPropertyPathName Name="RangesMargin" />
+    <RootPropertyPathName Name="Ranges" />
+    <RootPropertyPathName Name="RimStroke" />
+    <RootPropertyPathName Name="ScaleMargin" />
+    <RootPropertyPathName Name="ScaleSeg" />
+    <RootPropertyPathName Name="NeedlePointerStroke" />
+    <RootPropertyPathName Name="NeedleLength" />
+    <RootPropertyPathName Name="NeedlePointerStrokeThickness" />
+    <RootPropertyPathName Name="TailStrokeThickness" />
+    <RootPropertyPathName Name="TailBorderBrush" />
+    <RootPropertyPathName Name="TailStroke" />
+    <RootPropertyPathName Name="TailLength" />
+    <RootPropertyPathName Name="SymbolPointerBorderBrush" />
+    <RootPropertyPathName Name="SymbolPointerBorderThickness" />
+    <RootPropertyPathName Name="SymbolPointerStroke" />
+    <RootPropertyPathName Name="SymbolPointerHeight" />
+    <RootPropertyPathName Name="SymbolPointerWidth" />
+    <RootPropertyPathName Name="TickStroke" />
+    <RootPropertyPathName Name="ListSegments" />
+    <RootPropertyPathName Name="SegmentThickness" />
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="CharacterHeight" />
+    <RootPropertyPathName Name="CharacterWidth" />
+    <RootPropertyPathName Name="CharactersSpacing" />
+    <RootPropertyPathName Name="SkewAngleX" />
+    <RootPropertyPathName Name="SkewAngleY" />
+    <RootPropertyPathName Name="CharacterStroke" />
+    <RootPropertyPathName Name="DigitalCharacterType" />
+    <RootPropertyPathName Name="DimmedBrush" />
+    <RootPropertyPathName Name="EnableRTLFormat" />
+    <RootPropertyPathName Name="DimmedBrushOpacity" />
+    <RootPropertyPathName Name="TransformOrigin" />
+    <RootPropertyPathName Name="Transform" />
+    <RootPropertyPathName Name="ScaleBarWidth" />
+    <RootPropertyPathName Name="ScaleBarHeight" />
+    <RootPropertyPathName Name="TicksMargin1" />
+    <RootPropertyPathName Name="TicksMargin" />
+    <RootPropertyPathName Name="CornerRadius" />
+    <RootPropertyPathName Name="ScaleBarStroke" />
+    <RootPropertyPathName Name="ScaleBarBorderBrush" />
+    <RootPropertyPathName Name="ScaleBarBorderThickness" />
+    <RootPropertyPathName Name="ScaleBarMargin" />
+    <RootPropertyPathName Name="TickContent" />
+    <RootPropertyPathName Name="LabelStroke" />
+    <RootPropertyPathName Name="LabelSize" />
+    <RootPropertyPathName Name="LabelContent" />
+    <RootPropertyPathName Name="PointerMargin" />
+    <RootPropertyPathName Name="Symbol" />
+    <RootPropertyPathName Name="PointerVisibility" />
+    <RootPropertyPathName Name="PointerTop" />
+    <RootPropertyPathName Name="PointerLeft" />
+    <RootPropertyPathName Name="PointerScaleX" />
+    <RootPropertyPathName Name="PointerScaleY" />
+    <RootPropertyPathName Name="RangePathGeometry" />
+    <RootPropertyPathName Name="RangeStroke" />
+    <RootPropertyPathName Name="RangeOpacity" />
+    <RootPropertyPathName Name="TickLength" />
+    <RootPropertyPathName Name="LabelValue" />
+    <RootPropertyPathName Name="SymbolHeight" />
+    <RootPropertyPathName Name="SymbolWidth" />
+    <RootPropertyPathName Name="BarPointerStroke" />
+    <RootPropertyPathName Name="BarPointerWidth" />
+    <RootPropertyPathName Name="BarPointerHeight" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularScale" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularScaleTick" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularScaleLabel" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularRange" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularPointer" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SfCircularGauge">
+      <RootProperty Name="CircularScaleStyle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SquaredPanel">
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetSpacing" />
+      <RootMethod Name="SetSpacing" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTop" />
+      <RootMethod Name="SetTop" />
+      <RootMethod Name="GetLeft" />
+      <RootMethod Name="SetLeft" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.EllipseGeometry">
+      <RootProperty Name="Center" />
+      <RootProperty Name="RadiusX" />
+      <RootProperty Name="RadiusY" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.PathGeometry">
+      <RootProperty Name="Figures" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.PathFigure">
+      <RootProperty Name="IsFilled" />
+      <RootProperty Name="IsClosed" />
+      <RootProperty Name="Segments" />
+      <RootProperty Name="StartPoint" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.TickLinesPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Ticks" />
+      <RootProperty Name="TickStrokeThickness" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Labels" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="RadiusX" />
+      <RootProperty Name="RadiusY" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Points" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SfDigitalGauge" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.DigitalCharacter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line">
+      <RootProperty Name="StrokeEndLineCap" />
+      <RootProperty Name="StrokeStartLineCap" />
+      <RootProperty Name="X1" />
+      <RootProperty Name="Y1" />
+      <RootProperty Name="X2" />
+      <RootProperty Name="Y2" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.DigitalCharactersPanel">
+      <RootProperty Name="Values" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="CharacterHeight" />
+      <RootProperty Name="CharacterWidth" />
+      <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="SegmentThickness" />
+      <RootProperty Name="SkewAngleX" />
+      <RootProperty Name="SkewAngleY" />
+      <RootProperty Name="CharacterStroke" />
+      <RootProperty Name="CharacterType" />
+      <RootProperty Name="DimmedBrush" />
+      <RootProperty Name="EnableRTLFormat" />
+      <RootProperty Name="DimmedBrushOpacity" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearRange" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearPointer" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearScaleLabel" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearScaleTick" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearScale">
+      <RootProperty Name="LabelTemplate" />
+      <RootProperty Name="TickTemplate" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SfLinearGauge" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearGaugeUniformPanel">
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

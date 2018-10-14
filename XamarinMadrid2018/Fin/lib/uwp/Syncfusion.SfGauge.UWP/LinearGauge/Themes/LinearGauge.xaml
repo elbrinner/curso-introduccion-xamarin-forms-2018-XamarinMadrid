@@ -1,0 +1,383 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:local="using:Syncfusion.UI.Xaml.Gauges">
+
+    <DataTemplate x:Key="DefaultHorizontalBarPointerTemplate">
+        <Border Background="{Binding BarPointerStroke}" HorizontalAlignment="Left"
+                CornerRadius="{Binding CornerRadius}"
+                   Height="{Binding BarPointerHeight}" Width="{Binding BarPointerWidth}">
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultVerticalBarPointerTemplate">
+        <Border Background="{Binding BarPointerStroke}" VerticalAlignment="Top"
+                CornerRadius="{Binding CornerRadius}"
+                   Height="{Binding BarPointerWidth}" Width="{Binding BarPointerHeight}">
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="InvertedTriangle">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}" Points="20,5 20,15 5,10" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultHorizontalInvertedTrianglePointerTemplate">
+        <Path Data="M0,1 L1,0 L2,1 z" Stretch="Fill" 
+              Height="{Binding SymbolHeight}" Width="{Binding SymbolWidth}"
+              Fill="{Binding SymbolPointerStroke}">
+        </Path>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultVerticalInvertedTrianglePointerTemplate">
+        <Path Data="M0,1 L1,2 L1,0 z" Stretch="Fill" 
+              Height="{Binding SymbolHeight}" Width="{Binding SymbolWidth}"
+              Fill="{Binding SymbolPointerStroke}">
+        </Path>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Ellipse">
+        <Grid>
+            <Ellipse Stroke="{Binding SymbolPointerBorderBrush}"  StrokeThickness="{Binding SymbolPointerBorderThickness}" Height="{Binding SymbolPointerHeight}" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="{Binding SymbolPointerWidth}" 
+                     Fill="{Binding SymbolPointerStroke}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Rectangle">
+        <Grid>
+            <Rectangle Stroke="{Binding SymbolPointerBorderBrush}" Height="{Binding SymbolPointerHeight}"  StrokeThickness="{Binding SymbolPointerBorderThickness}" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="{Binding SymbolPointerWidth}" 
+                       Fill="{Binding SymbolPointerStroke}" />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="InvertedTriangles">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}" Points="20,5 20,15 5,10" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="Diamond">
+        <Grid>
+            <Polygon Stroke="{Binding SymbolPointerBorderBrush}" StrokeThickness="{Binding SymbolPointerBorderThickness}" Fill="{Binding SymbolPointerStroke}"  Points="5,10 10,5 15,10 10,15" Stretch="Fill"
+                     Height="{Binding SymbolPointerHeight}" Width="{Binding SymbolPointerWidth}" />
+        </Grid>
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="DefaultHorizontalTrianglePointerTemplate">
+        <Path Data="M0,1 L1,0 L2,1 z" Stretch="Fill" 
+              Height="{Binding SymbolHeight}" Width="{Binding SymbolWidth}"
+              Fill="{Binding SymbolPointerStroke}">
+        </Path>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultVerticalTrianglePointerTemplate">
+        <Path Data="M0,1 L1,2 L1,0 z" Stretch="Fill" 
+              Height="{Binding SymbolHeight}" Width="{Binding SymbolWidth}"
+              Fill="{Binding SymbolPointerStroke}">
+        </Path>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultLabelTemplate">
+        <!--Modified to Textbox from TextBlock since when running in Win 10 fatal exception thrown-->
+        <TextBlock 
+ Foreground="{Binding LabelStroke}" FontSize="{Binding LabelSize}" Text="{Binding LabelValue}">
+        </TextBlock >
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultHorizontalTickTemplate">
+        <Grid>
+            <Line X1="0" X2="0" Y1="0" Y2="{Binding TickLength}" 
+                  Stroke="{Binding TickStroke}" StrokeThickness="{Binding TickStrokeThickness}">
+            </Line>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultVerticalTickTemplate">
+        <Grid>
+            <Line Y1="0" Y2="0" X1="0" X2="{Binding TickLength}" 
+                  Stroke="{Binding TickStroke}" StrokeThickness="{Binding TickStrokeThickness}">
+            </Line>
+        </Grid>
+    </DataTemplate>
+
+    <Style TargetType="local:LinearRange">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LinearRange">
+                    <Path Data="{Binding RangePathGeometry, RelativeSource={RelativeSource TemplatedParent}}"
+                          
+                          Fill="{Binding RangeStroke, RelativeSource={RelativeSource TemplatedParent}}" 
+                          Opacity="{Binding RangeOpacity, RelativeSource={RelativeSource TemplatedParent}}" 
+                          Margin="{Binding RangeMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                    </Path>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:LinearPointer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LinearPointer">
+                    <Canvas Margin="{Binding PointerMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                        <ContentPresenter Content="{Binding Symbol, RelativeSource={RelativeSource TemplatedParent}}" 
+                                          Visibility="{Binding PointerVisibility, RelativeSource={RelativeSource TemplatedParent}}"
+                                          Canvas.Top="{Binding PointerTop, RelativeSource={RelativeSource TemplatedParent}}"
+                                          Canvas.Left="{Binding PointerLeft, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ContentPresenter.RenderTransform>
+                                <ScaleTransform ScaleX="{Binding PointerScaleX, RelativeSource={RelativeSource TemplatedParent}}"
+                                                ScaleY="{Binding PointerScaleY, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </ContentPresenter.RenderTransform>
+                        </ContentPresenter>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:LinearScaleLabel">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LinearScaleLabel">
+                    <ContentPresenter
+                        Foreground="{Binding LabelStroke,  RelativeSource={RelativeSource TemplatedParent}}"
+                        FontSize="{Binding LabelSize,RelativeSource={RelativeSource TemplatedParent}}"
+                        Content="{Binding LabelContent, RelativeSource={RelativeSource TemplatedParent}}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:LinearScaleTick">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LinearScaleTick">
+                    <ContentPresenter Content="{Binding TickContent, RelativeSource={RelativeSource TemplatedParent}}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="HorizontalScaleStyle" TargetType="local:LinearScale">
+        <Setter Property="MinWidth" Value="300"/>
+        <Setter Property="MinHeight" Value="150"/>
+        <Setter Property="LabelTemplate" Value="{StaticResource DefaultLabelTemplate}"/>
+        <Setter Property="TickTemplate" Value="{StaticResource DefaultHorizontalTickTemplate}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LinearScale">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center"
+                          RenderTransformOrigin="{Binding TransformOrigin, RelativeSource={RelativeSource TemplatedParent}}"
+                          RenderTransform="{Binding Transform, RelativeSource={RelativeSource TemplatedParent}}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!--Linear Scale Bar-->
+                        <Border Name="PART_LinearScaleBar" Grid.Row="1"
+                                CornerRadius="{Binding CornerRadius ,RelativeSource={RelativeSource TemplatedParent} }"
+                                Height="{Binding ScaleBarHeight, RelativeSource={RelativeSource TemplatedParent}}" 
+                                Background="{Binding ScaleBarStroke, RelativeSource={RelativeSource TemplatedParent}}" 
+                                BorderBrush="{Binding ScaleBarBorderBrush, RelativeSource={RelativeSource TemplatedParent}}"
+                                BorderThickness="{Binding ScaleBarBorderThickness, RelativeSource={RelativeSource TemplatedParent}}"
+                                Width="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                Margin="{Binding ScaleBarMargin, RelativeSource={RelativeSource TemplatedParent}}"/>
+
+                        <!--Linear Scale Ranges-->
+                        <ItemsControl Name="PART_LinearScaleRanges" Grid.Row="0" 
+                                      ItemsSource="{Binding Ranges, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Width="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <!--Linear Scale Ticks-->
+                        <ItemsControl Name="PART_LinearScaleMajorTicks" Grid.Row="2"
+                                      ItemsSource="{Binding MajorTicks, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Width="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Margin="{Binding TicksMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LinearGaugeUniformPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <ItemsControl Name="PART_LinearScaleMinorTicks"  Grid.Row="2"
+                                      ItemsSource="{Binding MinorTicks, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Width="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Margin="{Binding TicksMargin1, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LinearGaugeUniformPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <!--Linear Scale Labels-->
+                        <ItemsControl Name="PART_LinearScaleLabels" Grid.Row="3"
+                                      ItemsSource="{Binding Labels, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Width="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Margin="{Binding LabelsMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LinearGaugeUniformPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <!--Linear Scale Pointers-->
+                        <ItemsControl Name="PART_LinearScalePointers" Grid.Row="1"
+                                      ItemsSource="{Binding Pointers, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Width="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Height="{Binding ScaleBarHeight, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="VerticalScaleStyle" TargetType="local:LinearScale">
+        <Setter Property="MinWidth" Value="300"/>
+        <Setter Property="MinHeight" Value="150"/>
+        <Setter Property="LabelTemplate" Value="{StaticResource DefaultLabelTemplate}"/>
+        <Setter Property="TickTemplate" Value="{StaticResource DefaultVerticalTickTemplate}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LinearScale">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center"
+                          RenderTransformOrigin="{Binding TransformOrigin, RelativeSource={RelativeSource TemplatedParent}}"
+                          RenderTransform="{Binding Transform, RelativeSource={RelativeSource TemplatedParent}}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                     
+                        <!--Scale Bar-->
+                        <Border Name="PART_LinearScaleBar" Grid.Column="1" 
+                                    CornerRadius="{Binding CornerRadius,RelativeSource={RelativeSource TemplatedParent}}"
+                                Width="{Binding ScaleBarHeight, RelativeSource={RelativeSource TemplatedParent}}" 
+                                Background="{Binding ScaleBarStroke, RelativeSource={RelativeSource TemplatedParent}}" 
+                                BorderBrush="{Binding ScaleBarBorderBrush, RelativeSource={RelativeSource TemplatedParent}}"
+                                BorderThickness="{Binding ScaleBarBorderThickness, RelativeSource={RelativeSource TemplatedParent}}"
+                                Height="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                Margin="{Binding ScaleBarMargin, RelativeSource={RelativeSource TemplatedParent}}"/>
+
+                        <!--Linear Scale Ranges-->
+                        <ItemsControl Name="PART_LinearScaleRanges" Grid.Column="0" 
+                                      ItemsSource="{Binding Ranges, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Height="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <!--Linear Scale Ticks-->
+                        <ItemsControl Name="PART_LinearScaleMajorTicks" Grid.Column="2"
+                                      ItemsSource="{Binding MajorTicks, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Height="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Margin="{Binding TicksMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LinearGaugeUniformPanel Orientation="Vertical"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <ItemsControl Name="PART_LinearScaleMinorTicks" Grid.Column="2"
+                                      ItemsSource="{Binding MinorTicks, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Height="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Margin="{Binding TicksMargin1, RelativeSource={RelativeSource TemplatedParent}}">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LinearGaugeUniformPanel Orientation="Vertical"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                        <!--Linear Scale Labels-->
+                        <ItemsControl Name="PART_LinearScaleLabels" Grid.Column="3"
+                                      ItemsSource="{Binding Labels, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Height="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Margin="{Binding LabelsMargin, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LinearGaugeUniformPanel Orientation="Vertical"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+
+                        <!--Linear Scale Pointers-->
+                        <ItemsControl Name="PART_LinearScalePointers" Grid.Column="1"
+                                      ItemsSource="{Binding Pointers, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Height="{Binding ScaleBarWidth, RelativeSource={RelativeSource TemplatedParent}}"
+                                      Width="{Binding ScaleBarHeight, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:SfLinearGauge">
+        <Setter Property="MinWidth" Value="300"/>
+        <Setter Property="MinHeight" Value="150"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SfLinearGauge">
+                    <Grid Name="PART_LinearGaugeGrid">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Height="{TemplateBinding Height}"
+                                Width="{TemplateBinding Width}">
+                            <!--Linear Scale-->
+                            <ContentPresenter Name="PART_LinearScalePresenter" Content="{Binding MainScale, RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </Border>
+                        <ItemsControl ItemsSource="{Binding Annotations, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Canvas />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                        <Canvas>
+                            <ContentPresenter Name="PART_Header"  
+                                              VerticalAlignment="Top"
+                                              VerticalContentAlignment="Top"
+                                              FontFamily="{TemplateBinding HeaderFontFamily}"
+                                              FontSize="{TemplateBinding HeaderFontSize}"
+                                              FontStyle="{TemplateBinding HeaderFontStyle}"
+                                              Foreground="{TemplateBinding HeaderForeground}"
+                                              Content="{TemplateBinding Header}"/>
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+

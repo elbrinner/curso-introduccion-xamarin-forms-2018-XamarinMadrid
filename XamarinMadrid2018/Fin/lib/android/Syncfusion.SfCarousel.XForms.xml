@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfCarousel.XForms</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCarousel.XForms.SfCarousel"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCarousel.XForms.SfCarousel.SelectionChangedEventHandler">
+            <summary>
+            Represents the method that will handle the SfCarousel.SelectionChanged event of a SfCarousel.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCarousel.XForms.SfCarousel.SelectionChanged">
+            <summary>
+            Occurs when the user selects an item from unselected items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.RaiseSelectionChanged(Syncfusion.SfCarousel.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Raises the selection changed.
+            </summary>
+            <param name="args">Arguments of Selection changed event.</param>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.AllowLoadMore">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCarousel.XForms.SfCarousel"/> allow
+            load more.
+            </summary>
+            <value><c>true</c> if allow load more; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.AllowLoadMoreProperty">
+            <summary>
+            The allow load more property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.AllowPullToRefresh">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCarousel.XForms.SfCarousel"/> allow
+            pull to refresh.
+            </summary>
+            <value><c>true</c> if allow pull to refresh; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.AllowPullToRefreshProperty">
+            <summary>
+            The allow pull to refresh property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.EnableVirtualization">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCarousel.XForms.SfCarousel"/> is virtualization.
+            </summary>
+            <value><c>true</c> if is virtualization; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.EnableVirtualizationProperty">
+            <summary>
+            The is virtualization property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.LoadMoreItemsCount">
+            <summary>
+            Gets or sets the maximum items count.
+            </summary>
+            <value>The maximum items count.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.LoadMoreItemsCountProperty">
+            <summary>
+            The maximum items count property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.LoadMoreView">
+            <summary>
+            Gets or sets the load more view.
+            </summary>
+            <value>The load more view.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.LoadMoreViewProperty">
+            <summary>
+            The load more view property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.IsBusy">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCarousel.XForms.SfCarousel"/> is busy.
+            </summary>
+            <value><c>true</c> if is busy; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.IsBusyProperty">
+            <summary>
+            The is busy property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.PullToRefershCommand">
+            <summary>
+            Gets or sets the pull to refersh command.
+            </summary>
+            <value>The pull to refersh command.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.PullToRefershCommandProperty">
+            <summary>
+            The pull to refersh command property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedIndex">
+            <summary>
+            Gets or sets the item to be in a selected state and to be the center item of the control among the user input.
+            </summary>
+            <value>The default value is 0.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedIndexProperty">
+            <summary>
+            The item to be in a selected state and to be the center item of the control among the user input.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemsSource">
+            <summary>
+            Gets or sets a collection of type carousel items which can be rendered with different view for each item.
+            </summary>
+            <value>Default value is null</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemsSourceProperty">
+            <summary>
+            A collection of type carousel items which can be rendered with different view for each item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.OnItemsSourcePropertyChanged(Xamarin.Forms.BindableObject,System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Ons the items source property changed.
+            </summary>
+            <param name="bindable">Bindable value.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.DataSource">
+            <summary>
+            Gets or sets a collection of items that can be populated as Carousel Items and get rendered at run-time based on the Template provided.
+            </summary>
+            <value>The default value is null</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.DataSourceProperty">
+            <summary>
+            A collection of items that can be populated as Carousel Items and get rendered at run-time based on the Template provided.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.OnDataSourcePropertyChanged(Xamarin.Forms.BindableObject,System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Ons the data source property changed.
+            </summary>
+            <param name="bindable">Bindable value.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemTemplate">
+            <summary>
+            Gets or sets an instance of the Template class that defines the visual structure of a Carousel item.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemTemplateProperty">
+            <summary>
+            An instance of the Template class that defines the visual structure of a Carousel item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ViewMode">
+            <summary>
+            Gets or sets the mode used to arrange the items as default 3D view or in a horizontal stacked layout.
+            </summary>
+            <value>The default value of viewmode is "Default" </value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ViewModeProperty">
+            <summary>
+            The mode used to arrange the items as default 3D view or in a horizontal stacked layout.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemSpacing">
+            <summary>
+            Gets or sets the space between each item. Applies only in linear view mode.
+            </summary>
+            <value>The default value is 5.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemSpacingProperty">
+            <summary>
+            The space between each item. Applies only in linear view mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.RotationAngle">
+            <summary>
+            Gets or sets the angle that tilts the unselected items. Applies only in Default view mode.
+            </summary>
+            <value>The default value is 45.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.RotationAngleProperty">
+            <summary>
+            The angle that tilts the unselected items. Applies only in Default view mode
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.Offset">
+            <summary>
+            Gets or sets the space between each item. Applies only in Default view mode.
+            </summary>
+            <value>The default value is 60.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.OffsetProperty">
+            <summary>
+            The space between each item. Applies only in Default view mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ScaleOffset">
+            <summary>
+            Gets or sets scaling ratio to differentiate Unselected item. Applies only in Default view mode.
+            </summary>
+            <value>The default value is 0.7f.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ScaleOffsetProperty">
+            <summary>
+            The scaling ratio to differentiate Unselected item. Applies only in Default view mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedItemOffset">
+            <summary>
+            Gets or sets space between the Selected and Unselected Items. Applies only in Default view mode.
+            </summary>
+            <value>The default value is 60.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedItemOffsetProperty">
+            <summary>
+            The space between the Selected and Unselected Items. Applies only in Default view mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.Duration">
+            <summary>
+            Gets or sets delay on selection animation. 
+            </summary>
+            <value>The default value is 600.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.DurationProperty">
+            <summary>
+            The delay on selection animation. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemWidth">
+             <summary>
+            Gets or sets the width of each carousel item
+             </summary>
+             <value>The default value is 350.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemWidthProperty">
+            <summary>
+            The width of each carousel item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemHeight">
+            <summary>
+            Gets or sets the height of each carousel item.
+            </summary>
+            <value>The default value is 500.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemHeightProperty">
+            <summary>
+            The height of each carousel item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.MoveNext">
+            <summary>
+            Moves the item from right to left in turn increments the Selected index of the control by one.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.MovePrevious">
+            <summary>
+            Moves the item from left to right in turn decrements the Selected index of the control by one.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.OnSizeRequest(System.Double,System.Double)">
+            <param name="widthConstraint">The available width for the element to use.</param>
+            <param name="heightConstraint">The available height for the element to use.</param>
+            <summary>
+            This method is called during the measure pass of a layout cycle to get the desired size of an element.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCarousel.XForms.SelectionChangedEventArgs">
+            <summary>
+            Selection changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SelectionChangedEventArgs.SelectedItem">
+            <summary>
+            Gets or sets the selected item.
+            </summary>
+            <value>The selected item.</value>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SelectionChangedEventArgs.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected.
+            </summary>
+            <value>The index of the selected.</value>
+        </member>
+        <member name="T:Syncfusion.SfCarousel.XForms.SfCarouselItem">
+            <summary>
+            Implements the properties used to get the views of each item that is rendered in the SfCarousel control
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarouselItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCarousel.XForms.SfCarouselItem"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarouselItem.ItemContent">
+            <summary>
+            Gets or Sets the custom view that to be rendered to the item.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarouselItem.ItemContentProperty">
+            <summary>
+            The custom view that to be rendered to the item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarouselItem.ImageName">
+            <summary>
+            Gets or Sets Image to be displayed with in a carousel Item.
+            </summary>
+            <value>The default value is empty.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarouselItem.ImageNameProperty">
+            <summary>
+            The Image to be displayed with in a carousel Item.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCarousel.XForms.ViewMode">
+            <summary>
+            Contains the values for the view mode enumeration that about to layout based on user input.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.ViewMode.Default">
+            <summary>
+            Layouts the control in an 3D layered structure with rotation angle specified.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.ViewMode.Linear">
+            <summary>
+            Layouts the control in a horizontal Flat layout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.ICarousel.MovePrevious">
+             <summary>
+            Moves the item from left to right in turn decrements the Selected index of the control by one.
+             </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.ICarousel.MoveNext">
+            <summary>
+            Moves the item from right to left in turn increments the Selected index of the control by one.
+            </summary>
+        </member>
+    </members>
+</doc>

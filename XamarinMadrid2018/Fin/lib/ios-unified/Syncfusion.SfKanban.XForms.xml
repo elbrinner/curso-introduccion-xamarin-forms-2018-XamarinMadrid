@@ -1,0 +1,902 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfKanban.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanColumnCollection">
+            <summary>
+            Represent the collection of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.IKanbanEventDependencyService">
+            <exclude/>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs">
+            <summary>
+            Provides the card information for the <see cref="E:Syncfusion.SfKanban.XForms.SfKanban.DragEnd"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.#ctor">
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.#ctor(Syncfusion.SfKanban.XForms.KanbanColumn,Syncfusion.SfKanban.XForms.KanbanColumn,System.Int32,System.Int32,System.Object,System.Object,System.Boolean)">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.TargetColumn">
+            <summary>
+            Gets the target column upon which the card is dropped.
+            </summary>
+            <value><see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/></value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.TargetIndex">
+            <summary>
+             Gets the index in the target column where the card is going to be inserted.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that determines whether to insert the card in the target column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.TargetCategory">
+            <summary>
+            Get the card's current category value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs">
+            <summary>
+            Provides the card information for the <see cref="E:Syncfusion.SfKanban.XForms.SfKanban.DragEnter"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.TargetColumn">
+            <summary>
+             Gets the target column.
+            </summary>
+            <value><see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/></value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.TargetIndex">
+            <summary>
+             Gets the target index of card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.Cancel">
+            <summary>
+            Determines whether to end the dragging.
+            </summary>
+            <value>Returns bool value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.IsAboveMaximumLimit">
+            <summary>
+             Gets or sets a value that indicates whether the number of items in the column exceeds the maximum allowed limit.
+            </summary>
+            <value>The is above maximum limit.</value>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanDragEventArgs">
+            <summary>
+            Serves as a base class for all <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/> drag event arguments.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.#ctor">
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.#ctor(Syncfusion.SfKanban.XForms.KanbanColumn,System.Object,System.Int32)">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.SourceColumn">
+            <summary>
+            Gets the column, where the drag event occurs.
+            </summary>
+            <value><see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/></value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.Data">
+            <summary>
+            Gets the model data of the captured card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.SourceIndex">
+            <summary>
+            Gets the index of the captured card.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs">
+            <summary>
+            Provides the card information for the <see cref="E:Syncfusion.SfKanban.XForms.SfKanban.DragLeave"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs.#ctor">
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs.#ctor(Syncfusion.SfKanban.XForms.KanbanColumn,System.Object,System.Int32,Syncfusion.SfKanban.XForms.KanbanColumn,System.Boolean)">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs.TargetColumn">
+            <summary>
+            Gets the target column out of which the user drags the card.
+            </summary>
+            <value><see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/></value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs.IsBelowMinimumLimit">
+            <summary>
+             Gets or sets a value that indicates whether the cards count in the column is less than the minimum allowed limit.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs">
+            <summary>
+            Provides the card information for the <see cref="E:Syncfusion.SfKanban.XForms.SfKanban.DragOver"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.#ctor">
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.#ctor(Syncfusion.SfKanban.XForms.KanbanColumn,System.Object,System.Int32,Syncfusion.SfKanban.XForms.KanbanColumn,System.Int32,System.Boolean)">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.TargetColumn">
+            <summary>
+             Gets the target column upon which the card is being dragged.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.TargetIndex">
+            <summary>
+            Gets the target index of the card.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that determines whether to show the item placeholder for the current target index.
+            </summary>
+            <value>The cancel.</value>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs">
+            <summary>
+            Provides the card information for the <see cref="E:Syncfusion.SfKanban.XForms.SfKanban.DragStart"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.#ctor">
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.#ctor(Syncfusion.SfKanban.XForms.KanbanColumn,System.Object,System.Int32,System.Boolean,System.Boolean)">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that indicates whether to continue the drag event.
+            </summary>
+            <value>The cancel.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.KeepItem">
+            <summary>
+            Gets or sets a value that indicates whether to keep the orginal card in the source column. The card will be removed from the source column only after the drag ended on other column.
+            </summary>
+            <value>The keep item.</value>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs">
+            <summary>
+            Provides the card information for the <see cref="E:Syncfusion.SfKanban.XForms.SfKanban.ItemTapped"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.#ctor">
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.#ctor(Syncfusion.SfKanban.XForms.KanbanColumn,System.Int32,System.Object)">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.Column">
+            <summary>
+            Gets the column, where the tapped event occurs.
+            </summary>
+            <value><see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/></value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.Index">
+            <summary>
+            Gets the index of the tapped card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.Data">
+            <summary>
+            Gets the model data of the tapped item.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanColumn">
+            <summary>
+            Represents a column in <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimitProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimit"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimitProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimit"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.ItemsCountProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.ItemsCount"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.CategoriesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.Categories"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.TitleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.Title"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.IsExpandedProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.IsExpanded"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDragProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDrag"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDropProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDrop"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.ErrorbarSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.ErrorbarSettings"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanColumn.#ctor">
+            <summary>
+            Initializes the new instance of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimit">
+            <summary>
+            Gets or sets a value that denotes the minimum card limit constraint for the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+            <value>Minimum card limit value.</value>
+            <remarks>
+            If the card count is less than <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimit"/> then <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColor"/> will be applied to the error bar.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimit">
+            <summary>
+            Gets or sets a value that denotes the maximum card limit constraint for the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+            <value>Maximum card limit value.</value>
+            <remarks>
+            If the card count is greater than <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimit"/> then <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColor"/> will be applied to the error bar.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.ItemsCount">
+            <summary>
+            Gets the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>'s card count.
+            </summary>
+            <value><see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>'s card count.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.Categories">
+            <summary>
+            Gets or sets the categories of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>. 
+            </summary>
+            <value>List of <see cref="T:System.Object"/>.</value>
+            <example>
+            <code language="C#">
+            KanbanColumn todoColumn = new KanbanColumn();
+            todoColumn.Categories = new List&lt;object&gt;() { "Open" };
+            </code>
+            </example>
+            <remarks>
+            Multiple categories can be configured for <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.Title">
+            <summary>
+            Gets or sets the title content for the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.IsExpanded">
+            <summary>
+            Gets or sets the value that indicates whether the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> is in expanded state.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDrag">
+            <summary>
+            Gets or sets a value that indicates whether a card can be dragged from this <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDrop">
+            <summary>
+            Gets or sets a value that indicates whether a card can be dropped to this <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.SfKanban.XForms.KanbanColumn.ErrorbarSettings" -->
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanColorMapping">
+            <summary>
+            This class is used to specify the color for the indicator that appears in the card. The color can be used to identify the priority of the card.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanColorMapping.#ctor">
+            <summary>
+            Initializes the new instance of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColorMapping"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanColorMapping.#ctor(System.Object,Xamarin.Forms.Color)">
+            <summary>
+            Initializes the new instance of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColorMapping"/> class.
+            </summary>
+            <param name="key">Key value of color.</param>
+            <param name="color">Color value for the associated key</param>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.KanbanColorMapping.PropertyChanged">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColorMapping.Key">
+            <summary>
+            Gets or sets a value which will be the color key in the <see cref="T:Syncfusion.SfKanban.XForms.KanbanModel"/> item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColorMapping.Color">
+            <summary>
+            Gets or sets a Color value for the associated <see cref="P:Syncfusion.SfKanban.XForms.KanbanColorMapping.Key"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanModel">
+            <summary>
+            Represents fields for the Kanban card.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.KanbanModel.PropertyChanged">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.ColorKey">
+            <summary>
+            Gets or sets the indicator color key of Kanban card.
+            </summary>
+            <remarks>
+            Need to provide a key which defined in the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColorModel"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.ID">
+            <summary>
+            Gets or sets the ID of Kanban card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.Title">
+            <summary>
+            Gets or sets the title of Kanban card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.ImageURL">
+            <summary>
+            Gets or sets the image URL of Kanban card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.Category">
+            <summary>
+             Gets or sets the category of Kanban card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.Description">
+            <summary>
+            Gets or sets the description of Kanban card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanModel.Tags">
+            <summary>
+            Gets or sets the tags of Kanban card.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.SfKanban">
+            <summary>
+            Represents a Kanban control which is used for visualizing and managing the workflow of any process, like the software development process, in an effective way. 
+            </summary>
+            <remarks>
+            <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> type will be the default content in the XAML representation of Kanban.
+            </remarks>
+            <seealso cref="!:https://help.syncfusion.com/xamarin/sfkanban/getting-started"/>.
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPathProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPath"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumnsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumns"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ActualColumnsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ActualColumns"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.MinimumColumnWidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.MinimumColumnWidth"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.MaximumColumnWidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.MaximumColumnWidth"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ItemsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ItemsSource"/> bindable property.
+            </summary> 
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColumnsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.Columns"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.HeaderTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.HeaderTemplate"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.WorkflowsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.Workflows"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColorModelProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColorModel"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.PlaceholderStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.PlaceholderStyle"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.CardTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.CardTemplate"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColumnWidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnWidth"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.SfKanban.#ctor">
+            <summary>
+            Initializes new instance of <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.ItemTapped">
+            <summary>
+            Occurs when a card is tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragStart">
+            <summary>
+            Occurs when the user starts to drag a card.
+            </summary>
+            <remarks>
+            Using <see cref="P:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.KeepItem"/> property, user can set a value that will determine whether to hide the actual card in the source column while the preview of the card is being dragged. Default value is false; hence, the actual card will be hidden when a user starts to drag a card. If it is set to true, card will not be hidden.
+            This event can be cancelled using <see cref = "P:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.Cancel" /> property. When it is cancelled, card cannot be dragged.
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragEnd">
+            <summary>
+            Occurs when the card is dropped.
+            </summary>
+            <remarks>
+            This event can be cancelled using <see cref="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.Cancel"/> property. 
+            When this event is cancelled, card will not be dropped on to the target column. 
+            However, dragging will be stopped and the dragged card will stay in its source column.
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragEnter">
+            <summary>
+            Occurs when a card is dragged into the target <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+            <remarks>
+            This event can be cancelled using <see cref="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.Cancel"/> property. 
+            When the event is cancelled, DragOver event will not be fired when the card is moved over the <see cref="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.TargetColumn"/>. 
+            It also means the user will not be able to drop the card over the current target column.
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragLeave">
+            <summary>
+            Occurs when a card is dragged out of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragOver">
+            <summary>
+            Occurs when a card is dragged over the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+            <remarks>
+            This event can be used to disallow a dragged card from being dropped on a particular position in the target column by cancelling the event using <see cref="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.Cancel"/> property.
+            Current position can be determined using <see cref="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.TargetIndex"/>.
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.ColumnsGenerated">
+            <summary>
+            Occurs when the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> are auto-generated.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPath">
+            <summary>
+            Gets or sets a property name, which is used to categorize the columns.
+            </summary>
+            <remarks>
+            If a list of <see cref="T:Syncfusion.SfKanban.XForms.KanbanModel"/> is bound to <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ItemsSource"/> property, <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/> will automatically categorize the items using <see cref="P:Syncfusion.SfKanban.XForms.KanbanModel.Category"/> property. 
+            If <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ItemsSource"/> contains custom objects, the path of the property which can be used to categorize the card should be explicitly defined using this property.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumns">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> can be auto-generated based on the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPath"/> value.
+            </summary>
+            <remarks>
+            A <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> will be generated automatically only if the user does not specify the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> explicitly for a category using <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.Columns"/> property.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.MinimumColumnWidth">
+            <summary>
+            Gets or sets the minimum width constraint of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnWidth">
+            <summary>
+            Gets or sets the width of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.MaximumColumnWidth">
+            <summary>
+            Gets or sets the maximum width constraint of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>.
+            </summary>
+            <value>This property take the double value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.Columns">
+            <summary>
+            Gets or sets the collection of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> that belongs to <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/>.
+            </summary>
+            <value>
+            Type: <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumnCollection"/>
+            A <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumnCollection"/> that contains the collection of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> objects.  
+            </value>
+            <example>
+            <code language="XAML">
+            &lt;kanban:SfKanban&gt;
+            &lt;kanban:KanbanColumn&gt;  &lt;kanban:KanbanColumn/&gt; 
+            &lt;kanban:SfKanban/&gt;
+            </code>
+            <code language = "C#" >
+            SfKanban kanban = new SfKanban();
+            KanbanColumn todoColumn = new KanbanColumn();
+            todoColumn.Title = "To Do";
+            kanban.Columns.Add(todoColumn);
+            </code>
+            </example>
+            <remarks>
+            This is the ContentProperty of the <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/>.
+            A <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumnCollection"/> determines the schema of the <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ItemsSource">
+            <summary>
+            Gets or sets a collection used to generate the content of the <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/>.
+            </summary>
+            <remarks>
+            <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> will be populated with cards for the data in the ItemsSource. Each item in ItemsSource will be associated to a <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/> using either <see cref="P:Syncfusion.SfKanban.XForms.KanbanModel.Category"/> property or  <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPath"/> property depending on whether the item type is <see cref="T:Syncfusion.SfKanban.XForms.KanbanModel"/> or custom model respectively.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.HeaderTemplate">
+            <summary>
+            Gets or sets a template for the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>'s header.
+            </summary>
+            <value>DataTemplate as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ColorModel">
+            <summary>
+            Gets or sets the list of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColorMapping"/>, which is used to define the colors for each key.
+            </summary>
+            <value>List of <see cref="T:Syncfusion.SfKanban.XForms.KanbanColorMapping"/></value>
+            <example>
+            <code language="C#">
+            List&lt;KanbanColorMapping&gt; colormodels = new List&lt;KanbanColorMapping&gt;();
+            colormodels.Add(new KanbanColorMapping("Green", Color.Green));
+            colormodels.Add(new KanbanColorMapping("Red", Color.Red));
+            colormodels.Add(new KanbanColorMapping("Aqua", Color.Aqua));
+            colormodels.Add(new KanbanColorMapping("Blue", Color.Blue));
+            Kanban.ColorModel = colormodels;
+            </code>
+            </example>
+            <remarks>
+            To have a color indicator in the card, define the <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.ColorModel"/> and map the ColorKey value to the corresponding <see cref="T:Syncfusion.SfKanban.XForms.KanbanModel"/> item's <see cref="P:Syncfusion.SfKanban.XForms.KanbanModel.ColorKey"/> property.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ActualColumns">
+            <summary>
+            Gets the auto-generated <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>s.
+            </summary>
+            <remarks>
+            If <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumns"/> is set to true and also <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.Columns"/> are defined by user, this property will contain both the auto-generated <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>s and also  user specified <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.Columns"/>.
+            If <see cref="P:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumns"/> is set to false,  this property will contain only the user specified columns.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.PlaceholderStyle">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle"/> instance that provides the style for a card placeholder.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.CardTemplate">
+            <summary>
+            Gets or sets a template for the Kanban card view.
+            </summary>
+            <value>DataTemplate as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.Workflows">
+            <summary>
+            Gets or sets the workflows. Each <see cref="T:Syncfusion.SfKanban.XForms.KanbanWorkflow"/> item defines the workflow for a particular category, which is used to determine the target columns a card can be dropped.
+            </summary>
+            <value>List of <see cref="T:Syncfusion.SfKanban.XForms.KanbanWorkflow"/>.</value>
+            <example>
+            <code language="C#">
+            List&lt;KanbanWorkflow&gt; workflows = new List&lt;KanbanWorkflow&gt;();
+            KanbanWorkflow openWorkflow = new KanbanWorkflow();
+            openWorkflow.Category = "Open"; 
+            openWorkflow.AllowedTransitions = new List&lt;object&gt;{ "In Progress" }; 
+            workflows.Add(openWorkflow); 
+            Kanban.Workflows = workflows;
+            </code>
+            </example>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.SfKanban.OnSizeRequest(System.Double,System.Double)">
+            <exclude/>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle">
+            <summary>
+            This class is used to customize the appearance of card placeholder in the <see cref="T:Syncfusion.SfKanban.XForms.SfKanban"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.TextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.TextColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedTextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedTextColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.StrokeDashArrayProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.StrokeDashArray"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArrayProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArray"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderThickness"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderThickness"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.FontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.FontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.#ctor">
+            <summary>
+            Initializes the new instance of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle"/> class.
+            </summary>
+            
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BackgroundColor">
+            <summary>
+            Gets or sets the Color which specifies the backgroud color of the placeholder.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderColor">
+            <summary>
+            Gets or sets the Color value which specifies the border color of the placeholder.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBackgroundColor">
+            <summary>
+            Gets or sets the Color value which specifies the selected placeholder's background color.
+            </summary>
+            <remarks>
+            <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBackgroundColor"/> will be applied to the category's placeholder background, when a column is having multiple categories and card dragged over to a particular category.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.FontSize">
+            <summary>
+            Gets or sets a value which specifies the font size of the placeholder's content.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.TextColor">
+            <summary>
+            Gets or sets the Color value which specifies the text color of the placeholder.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderColor">
+            <summary>
+            Gets or sets the Color value which specifies the selected placeholder's border color.
+            </summary>
+            <see cref="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderColor"/> will be applied to the category's placeholder border, when a column is having multiple categories and card dragged over to a particular category.
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedTextColor">
+            <summary>
+            Gets or sets the Color value which specifies the selected placeholder's text color.
+            </summary>
+            <remarks>
+            <see cref = "P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedTextColor" /> will be applied to the category's placeholder text color, when a column is having multiple categories and card dragged over to a particular category.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.StrokeDashArray">
+            <summary>
+            Gets or sets a double array value to denote the placeholder border's stroke dash array.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArray">
+            <summary>
+            Gets or sets a double array value to denote the selected placeholder border's stroke dash array.
+            </summary>
+            <remarks>
+            <see cref ="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArray"/> will be applied to the category's placeholder border, when a column is having multiple categories and card dragged over to a particular category.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderThickness">
+            <summary>
+            Gets or sets a value which specifies the placeholder's border thickness.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderThickness">
+            <summary>
+            Gets or sets a value which specifies the selected placeholder's border thickness.
+            </summary>
+            <remarks>
+            <see cref ="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderThickness"/> will be applied to the category's placeholder border thickness, when a column is having multiple categories and card dragged over to a particular category.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedFontSize">
+            <summary>
+            Gets or sets a value which specifies the font size of the selected placeholder's content.
+            </summary>
+            <remarks>
+            <see cref ="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArray"/> will be applied to the category's placeholder content, when a column is having multiple categories and card dragged over to a particular category.
+            </remarks>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings">
+            <summary>
+            This class is used to customize the appearance of error bar that appears in the <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>'s header.
+            </summary>
+            <remarks>
+            Error bar is a line that appears at the bottom of the header. The color of the error bar indicates whether the column reached the maximum/minimum allowed limit of cards.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.ColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.Color"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.HeightProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.Height"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.#ctor">
+            <summary>
+            Intializes the instance of <see cref="T:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.Color">
+            <summary>
+            Gets or sets the default Color value of the error bar.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColor">
+            <summary>
+            Gets or sets the Color value of the error bar for <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimit"/> validation.
+            </summary>
+            <remarks>
+            <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColor"/> will be applied to the error bar when <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>'s card count is less than the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimit"/> value.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColor">
+            <summary>
+            Gets or sets the Color value of the error bar for the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimit"/> validation.
+            </summary>
+            <remarks>
+            <see cref="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColor"/> will be applied to the error bar when <see cref="T:Syncfusion.SfKanban.XForms.KanbanColumn"/>'s card count is greater than the <see cref="P:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimit"/> value.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.Height">
+            <summary>
+            Gets or sets the height of the error bar.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfKanban.XForms.KanbanWorkflow">
+            <summary>
+            Represents the workflow for a particular category, which is used to determine the target columns a card can be dropped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanWorkflow.#ctor">
+            <summary>
+            Initializes the new instance of <see cref="T:Syncfusion.SfKanban.XForms.KanbanWorkflow"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.XForms.KanbanWorkflow.#ctor(System.Object,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Initializes the new instance of the <see cref="T:Syncfusion.SfKanban.XForms.KanbanWorkflow"/> class.
+            </summary>
+            <param name="category">Source category</param>
+            <param name="allowedTransitions">Target categories where card can be dropped</param>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.KanbanWorkflow.PropertyChanged">
+            <exclude/>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanWorkflow.Category">
+            <summary>
+            Gets or sets a source category to which this workflow is applied.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanWorkflow.AllowedTransitions">
+            <summary>
+            Gets or sets a target categories to which the card is allowed can drop.
+            </summary>
+            <value>List of <see cref="T:System.Object"/></value>
+        </member>
+    </members>
+</doc>

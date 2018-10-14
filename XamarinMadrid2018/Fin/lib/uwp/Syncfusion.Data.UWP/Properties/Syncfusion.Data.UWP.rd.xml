@@ -1,0 +1,217 @@
+<!--
+    This file contains Runtime Directives used by .NET Native. The defaults here are suitable for most
+    developers. However, you can modify these parameters to modify the behavior of the .NET Native
+    optimizer.
+
+    Runtime Directives are documented at http://go.microsoft.com/fwlink/?LinkID=391919
+
+    To fully enable reflection for App1.MyClass and all of its public/private members
+    <Type Name="App1.MyClass" Dynamic="Required All"/>
+
+    To enable dynamic creation of the specific instantiation of AppClass<T> over System.Int32
+    <TypeInstantiation Name="App1.AppClass" Arguments="System.Int32" Activate="Required Public" />
+
+    Using the Namespace directive to apply reflection policy to all the types in a particular namespace
+    <Namespace Name="DataClasses.ViewModels" Seralize="All" />
+-->
+
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Library Name="Syncfusion.Data.UWP">
+    <!-- add directives for your library here -->
+
+    <!--While using System.Int32, its for integer type data.
+     while using System.Nullable{System.Int32}, its for nullable type data.-->
+    
+    <!--While using System.UInt32, its for unsigned integer type data.
+     while using System.Nullable{System.UInt32}, its for unsigned nullable type data.-->
+    
+    <!--While using System.Single, its for float type data.
+     while using System.Nullable{System.Single}, its for nullable float type data.-->
+
+    <!--Summary calculations-->
+    <Type Name="System.Linq.EnumerableExecutor{System.Int16}" Dynamic="Required Public" />    
+    <Type Name="System.Linq.EnumerableExecutor{System.Int32}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Int64}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Byte}" Dynamic="Required Public" />  
+    <Type Name="System.Linq.EnumerableExecutor{System.Single}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Decimal}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Double}" Dynamic="Required Public" />    
+    <Type Name="System.Linq.EnumerableExecutor{System.Boolean}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.DateTime}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.UInt16}" Dynamic="Required Public" />    
+    <Type Name="System.Linq.EnumerableExecutor{System.UInt32}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.UInt64}" Dynamic="Required Public" />
+    
+    <!--Nullable type summary calculations-->
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Int16}}" Dynamic="Required Public" />    
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Int32}}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Int64}}" Dynamic="Required Public" />    
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Byte}}" Dynamic="Required Public" />  
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Single}}" Dynamic="Required Public" />        
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Decimal}}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Double}}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.Boolean}}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.DateTime}}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.UInt16}}" Dynamic="Required Public" />    
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.UInt32}}" Dynamic="Required Public" />
+    <Type Name="System.Linq.EnumerableExecutor{System.Nullable{System.UInt64}}" Dynamic="Required Public" />
+    
+    
+    <Type Name="System.Collections.ObjectModel.ObservableCollection{}" Dynamic="Required Public" />
+    <Namespace Name="System.Linq" Dynamic="Required All" />
+    
+    <Type Name="System.Linq.Queryable">  
+      <!--Sorting, Filtering operations-->      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int16" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int32" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int64" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Byte" Dynamic="Required" />  
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Single" Dynamic="Required" />            
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Boolean" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Char" Dynamic="Required" />        
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.DateTime" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Decimal" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Double" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt16" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt32" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt64" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int16}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int32}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int64}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Byte}" Dynamic="Required" />   
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Single}" Dynamic="Required" />            
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Boolean}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Char}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.DateTime}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Decimal}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Double}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt16}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt32}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt64}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int16" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int32" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int64" Dynamic="Required" />           
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Byte" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Single" Dynamic="Required" />            
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Boolean" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Char" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.DateTime" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Decimal" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Double" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt16" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt32" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt64" Dynamic="Required" />           
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int16}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int32}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int64}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Byte}" Dynamic="Required" /> 
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Single}" Dynamic="Required" />            
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Boolean}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Char}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.DateTime}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Decimal}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Double}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt16}" Dynamic="Required" />      
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt32}" Dynamic="Required" />
+      <MethodInstantiation Name="OrderByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt64}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int16" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int32" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int64" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Byte" Dynamic="Required" />    
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Single" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Boolean" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Char" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.DateTime" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Decimal" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Double" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt16" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt32" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt64" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int16}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int32}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int64}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Byte}" Dynamic="Required" />    
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Single}" Dynamic="Required" />            
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Boolean}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Char}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.DateTime}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Decimal}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Double}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt16}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt32}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenBy" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt64}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int16" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int32" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int64" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Byte" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Single" Dynamic="Required" />            
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Boolean" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Char" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.DateTime" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Decimal" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Double" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt16" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt32" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt64" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int16}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int32}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int64}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Byte}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Single}" Dynamic="Required" />            
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Boolean}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Char}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.DateTime}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Decimal}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Double}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt16}" Dynamic="Required" />      
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt32}" Dynamic="Required" />
+      <MethodInstantiation Name="ThenByDescending" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt64}" Dynamic="Required" />
+      
+      
+      <!--Summary calculation  ( Max )-->      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int16" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int32" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int64" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Byte" Dynamic="Required" />  
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Single" Dynamic="Required" />            
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Decimal" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Double" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt16" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt32" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt64" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int16}" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int32}" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int64}" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Byte}" Dynamic="Required" /> 
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Single}" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Decimal}" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Double}" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt16}" Dynamic="Required" />      
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt32}" Dynamic="Required" />
+      <MethodInstantiation Name="Max" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt64}" Dynamic="Required" />
+      
+      <!--Summary calculation  ( Min )-->
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int16" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int32" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Int64" Dynamic="Required" />      
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Byte" Dynamic="Required" />    
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Single" Dynamic="Required" />            
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Decimal" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Double" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt16" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt32" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.UInt64" Dynamic="Required" />      
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int16}" Dynamic="Required" />      
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int32}" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Int64}" Dynamic="Required" />      
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Byte}" Dynamic="Required" /> 
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Single}" Dynamic="Required" />            
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Decimal}" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.Double}" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt16}" Dynamic="Required" />      
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt32}" Dynamic="Required" />
+      <MethodInstantiation Name="Min" Arguments="Syncfusion.Data.Extensions.QueryableExtensions,System.Nullable{System.UInt64}" Dynamic="Required" />
+            
+    </Type>  
+  </Library>
+</Directives>

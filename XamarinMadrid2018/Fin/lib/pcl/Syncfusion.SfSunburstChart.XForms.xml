@@ -1,0 +1,1051 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfSunburstChart.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.DrilldownSettings">
+            <summary>
+            Represents the drill down settings for sunburst chart.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Syncfusion.SfSunburstChart.XForms.DrilldownSettings"/> clas.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.Enable">
+            <summary>
+            Gets or sets a value indicating whether to enable drill down or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.EnableProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.Enable"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarHorizontalAlignment">
+            <summary>
+            Gets or sets the horizontal alignment for zooming toolbar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarHorizontalAlignmentProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarHorizontalAlignment"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarVerticalAlignment">
+            <summary>
+            Gets or sets the vertical alignment for zooming toolbar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarVerticalAlignmentProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarVerticalAlignment"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetX">
+            <summary>
+            Gets or sets the offset x value for zooming tool bar placement. Its value ranges between 0 to 1.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetXProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetX"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetY">
+            <summary>
+            Gets or sets the offset y value for zooming tool bar placement. Its value ranges between 0 to 1.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetYProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetX"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OnDrillDownEnableChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Property change callback for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.Enable"/> property.
+            </summary>
+            <param name="bindable">bindable object</param>
+            <param name="oldValue">old value</param>
+            <param name="newValue">new value</param>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OnToolbarHorizontalAlignmentChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Property change callback for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarHorizontalAlignment"/> property.
+            </summary>
+            <param name="bindable">bindable object</param>
+            <param name="oldValue">old value</param>
+            <param name="newValue">new value</param>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OnToolbarVerticalAlignmentChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Property change callback for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.ToolbarVerticalAlignment"/> property.
+            </summary>
+            <param name="bindable">bindable object</param>
+            <param name="oldValue">old value</param>
+            <param name="newValue">new value</param>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OnToolbarOffsetXChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Property change callback for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetX"/> property.
+            </summary>
+            <param name="bindable">bindable object</param>
+            <param name="oldValue">old value</param>
+            <param name="newValue">new value</param>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OnToolbarOffsetYChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Property change callback for <see cref="P:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OffsetY"/> property.
+            </summary>
+            <param name="bindable">bindable object</param>
+            <param name="oldValue">old value</param>
+            <param name="newValue">new value</param>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.DrilldownSettings.OnDrillDownSettingsChanged(System.String)">
+            <summary>
+            Adds the properties that are changed into the list.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SunburstColorPalette">
+            <summary>
+            Sunburst Color palette types.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstColorPalette.Metro">
+            <summary>
+            Metro palette will be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstColorPalette.TomatoSpectrum">
+            <summary>
+            TomatoSpectrum palette will be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstColorPalette.Pineapple">
+            <summary>
+            Pineapple palette will be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstColorPalette.Custom">
+            <summary>
+            Custom palette will be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstColorPalette.Natural">
+            <summary>
+            Natural palette will be set.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SunburstDockPosition">
+            <summary>
+            Represents Legend Placement in chart area.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstDockPosition.Left">
+            <summary>
+            Docks element at the left side of panel.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstDockPosition.Top">
+            <summary>
+            Docks element at the top side of panel.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstDockPosition.Right">
+            <summary>
+            Docks element at the right side of panel.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstDockPosition.Bottom">
+            <summary>
+            Docks element at the bottom side of panel.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SelectionType">
+            <summary>
+            Selection types for selection behavior.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionType.Child">
+            <summary>
+            Selection type is Child.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionType.Group">
+            <summary>
+            Selection type is Group.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionType.Single">
+            <summary>
+            Selection type is Single.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionType.Parent">
+            <summary>
+            Selection type is Parent.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SelectionDisplayMode">
+            <summary>
+            Selection highlight for selection behavior.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionDisplayMode.HighlightByColor">
+            <summary>
+            Highlights the selected segment by changing the color of the segment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionDisplayMode.HighlightByOpacity">
+            <summary>
+            Highlights the selected segment by reducing the opacity of other segments.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionDisplayMode.HighlightByStrokeColor">
+            <summary>
+            Highlights the selected segment by changing the stroke color of the segment.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon">
+            <summary>
+            Represents the Icon for the Sunburst
+            </summary>  
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon.Circle">
+            <summary>
+            Circle legend icon will set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon.Cross">
+            <summary>
+            Cross legend icon will set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon.Diamond">
+            <summary>
+            Diamond legend icon will set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon.Pentagon">
+            <summary>
+            Pentagon legend icon will set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon.Rectangle">
+            <summary>
+            Rectangle legend icon will set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendIcon.Triangle">
+            <summary>
+            Triangle legend icon will set.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SunburstLabelRotationMode">
+            <summary>
+            Data label visibility modes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLabelRotationMode.Angle">
+            <summary>
+            Indicates that the data label is rotated.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLabelRotationMode.Normal">
+            <summary>
+            Indicates that the data label is displayed horizontally.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SunburstLabelOverflowMode">
+            <summary>
+            Data label visibility modes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLabelOverflowMode.Trim">
+            <summary>
+            Data label visibility mode as Trim.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLabelOverflowMode.Hide">
+            <summary>
+            Data label visibility mode as Hide.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.ToolbarAlignment.Start">
+            <summary>
+            Places the toolbar at the begining for the specified Offset values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.ToolbarAlignment.Center">
+            <summary>
+            Places the toolbar at the center for the specified Offset values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.ToolbarAlignment.End">
+            <summary>
+            Places the toolbar at the end for the specified Offset values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.TextColorProperty">
+            <summary>
+            Gets or sets the text color of the legend items. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.TextColor">
+            <summary>
+            Gets or sets the text color of the legend items. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.MarginProperty">
+            <summary>
+            Gets or sets the margin of the legend label. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.Margin">
+            <summary>
+            Gets or sets the margin of the legend label. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Thickness"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.FontFamilyProperty">
+            <summary>
+            Gets or sets the font family for the legend label. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.FontFamily">
+            <summary>
+            Gets or sets the font family for the legend label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.FontSizeProperty">
+            <summary>
+            Gets or sets the size of the font for the legend label.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.FontSize">
+            <summary>
+            Gets or sets the size of the font for the legend label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.FontAttributesProperty">
+            <summary>
+            Gets or sets the font attributes for the legend label.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.FontAttributes">
+            <summary>
+            Gets or sets the font attributes for the legend label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.IsVisible">
+            <summary>
+            Gets or sets the value that indicates whether the legend is visible in the chart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.LegendPositionProperty">
+            <summary>
+            Gets or sets placement of the legend inside the chart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.LegendPosition">
+            <summary>
+            Gets or sets placement of the legend inside the chart. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstDockPosition"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.IconType">
+            <summary>
+            Gets or sets the value that indicates background of the legend. This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.IconWidthProperty">
+            <summary>
+            Gets or sets the width of the legend icon. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.IconWidth">
+            <summary>
+            Gets or sets the width of the legend icon. This is a bindable property.
+            </summary>
+            <value>This property takes double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.IconHeightProperty">
+            <summary>
+            Gets or sets the height of the legend icon. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.IconHeight">
+            <summary>
+            Gets or sets the height of the legend icon. This is a bindable property.
+            </summary>
+            <value>This property takes double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.ItemMarginProperty">
+            <summary>
+            Gets or sets the margin of the legend items. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.ItemMargin">
+            <summary>
+            Gets or sets the margin of the legend items. This is a bindable property.
+            </summary>
+            <value>This propery takes <c>Thickness</c> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.LabelStyleProperty">
+            <summary>
+            Gets or sets the customized style for the label inside the legend item. This is  a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.LabelStyle">
+            <summary>
+            Gets or sets the customized style for the label inside the legend item. This is  a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartColorModel.Palette">
+            <summary>
+            Gets or sets a predefined color palette for the sunburstchart. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstChartColorModel"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartColorModel.PaletteProperty">
+            <summary>
+            Gets or sets a predefined color palette for the sunburstchart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartColorModel.CustomBrushesProperty">
+            <summary>
+            Gets or sets the list of brushes to be used as custom palette. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartColorModel.CustomBrushes">
+            <summary>
+            Gets or sets the list of brushes to be used as custom palette. This is a bindable property.
+            </summary>
+            <value>This property takes the List of <see cref="T:Xamarin.Forms.Color"/> as its value.</value>
+            <remarks>This property effects only when we set the <c>Palette</c> as <c>ChartColorPalette.Custom</c>.</remarks>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.GroupMemberPath">
+            <summary>
+            Gets or sets the property path of the value data in ItemsSource.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.GroupMemberPathProperty">
+            <summary>
+            Gets or sets the property path to retrieve Value member from ItemsSource. This is a bindable property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings">
+            <summary>
+            Represents selection for SfSunburstChart.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.EnableSelection">
+            <summary>
+             Gets or sets the value that indicates whether the selection is visible in the chart. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.EnableSelectionProperty">
+            <summary>
+            Gets or sets the value that indicates whether the selection is visible in the chart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnSelectionChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionType">
+            <summary>
+             Gets or sets the selection type for selection in sunburst. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionTypeProperty">
+            <summary>
+            Gets or sets the selection type for selection in sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnSelectionTypeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionBrush">
+            <summary>
+             Gets or sets the selection brush color for selection in sunburst. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionBrushProperty">
+            <summary>
+            Gets or sets the selection brush color for selection in sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnSelectionBrushChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionStrokeBrush">
+            <summary>
+             Gets or sets the selection stroke brush for selection in sunburst. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionStrokeBrushProperty">
+            <summary>
+            Gets or sets the selection stroke brush for selection in sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnSelectionStrokeBrushChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionStrokeWidth">
+            <summary>
+             Gets or sets the selection stroke width for selection in sunburst. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionStrokeWidthProperty">
+            <summary>
+            Gets or sets the selection stroke width for selection in sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionStrokeWidthChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionDisplayMode">
+            <summary>
+             Gets or sets the selection display mode for selection in sunburst. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.SelectionDisplayModeProperty">
+            <summary>
+             Gets or sets the selection display mode for selection in sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnSelectionDisplayModeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SelectionSettings.Opacity">
+            <summary>
+             Gets or sets the opacity for selection display mode opacity of selection in sunburst. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OpacityProperty">
+            <summary>
+              Gets or sets the opacity for selection display mode opacity of selection in sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnOpacityChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.#ctor">
+            <summary>
+            Initialise SelectionSettings.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SelectionSettings.OnSelectionPropertyChanged(System.String)">
+            <summary>
+            To call when the property changed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SunburstSegment">
+            <summary>
+            Class implementation for sunburst segment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.Color">
+            <summary>
+             Gets or sets the color of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstSegment"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.Opacity">
+            <summary>
+             Gets or sets the opacity of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstSegment"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.StrokeColor">
+            <summary>
+             Gets or sets the stroke color of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstSegment"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.StrokeWidth">
+            <summary>
+             Gets or sets the stroke width of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.Category">
+            <summary>
+             Gets or sets the category of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.Value">
+            <summary>
+             Gets or sets the value of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.CurrentLevel">
+            <summary>
+             Gets or sets the current level of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstSegment.SliceIndex">
+            <summary>
+             Gets or sets the slice index of the sunburst segment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfSunburstChart.XForms.SelectionSettings"/> as its value.</value>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SunburstSegment.#ctor">
+            <summary>
+            Initialization of sunburstsegment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.ItemsSource">
+            <summary>
+            Gets or sets the data source for sunburstchart.
+            </summary>
+            <value>This property takes the collection as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.ItemsSourceProperty">
+            <summary>
+            Gets or sets the data source for sunburst. This is a bindable property.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.ValueMemberPath">
+            <summary>
+            Gets or sets the property path of the value data in ItemsSource.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.ValueMemberPathProperty">
+            <summary>
+            Gets or sets the property path to retrieve Value member from ItemsSource. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.Radius">
+            <summary>
+             Gets or sets the radius value for defining sunburst size. Value must be specified from 0 to 1. 
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.RadiusProperty">
+            <summary>
+            Gets or sets radius of the sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.InnerRadius">
+            <summary>
+             Gets or sets the inner radius value for defining sunburst size. Value must be specified from 0 to 1. 
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.InnerRadiusProperty">
+            <summary>
+            Gets or sets inner radius of the sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.StartAngle">
+            <summary>
+             Gets or sets the start angle for the sunburst chart. 
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.StartAngleProperty">
+            <summary>
+            Gets or sets start angle of the sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.EndAngle">
+            <summary>
+             Gets or sets the end angle for the sunburst chart. 
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.EndAngleProperty">
+            <summary>
+            Gets or sets end angle of the sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.StrokeColor">
+            <summary>
+            Gets or sets stroke color of the sunburst chart.
+            </summary>
+            <value>This property takes the color value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.StrokeColorProperty">
+            <summary>
+            Gets or sets stroke color of the sunburst.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.StrokeWidth">
+            <summary>
+            Gets or sets stroke width of the sunburst chart. 
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.StrokeWidthProperty">
+            <summary>
+            Gets or sets stroke width of the sunburst. This is a bindable property.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.DataLabelProperty" -->
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.DataLabel">
+            <summary>
+            Gets or sets a legend that helps to identify the series in the chart. This is a bindable property.
+            </summary>
+            <value>This property take <c>SunburstLegend</c> instance as value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.TitleProperty" -->
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.Title">
+            <summary>
+            Gets or sets a legend that helps to identify the series in the chart. This is a bindable property.
+            </summary>
+            <value>This property take <c>SunburstLegend</c> instance as value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.SelectionSettingsProperty" -->
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.SelectionSettings">
+            <summary>
+            Gets or sets a legend that helps to identify the series in the chart. This is a bindable property.
+            </summary>
+            <value>This property take <c>SunburstLegend</c> instance as value.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.LegendProperty" -->
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.Legend">
+            <summary>
+            Gets or sets a legend that helps to identify the series in the chart. This is a bindable property.
+            </summary>
+            <value>This property take <c>SunburstLegend</c> instance as value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.ColorModelProperty">
+            <summary>
+            Gets or sets the color schemes for all series in the chart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.OnColorModelChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked whenever the <c>ColorModel</c> property changes.
+            </summary>
+            <param name="bindable"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.ColorModel">
+            <summary>
+            Gets or sets the color schemes for the sunburstchart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.LevelsProperty">
+            <summary>
+            Gets or sets the collection of level to be added to the Sunburstchart. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.Levels">
+            <summary>
+            Gets or sets the collection of level to be added to the sunburstchart. This is a bindable property.
+            </summary>
+            <value>ChartBehaviorCollection</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.TooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings.
+            </summary>
+            <value>The tooltip settings.</value>
+        </member>
+        <member name="E:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.SelectionChanged">
+            <summary>
+            Triggered whenever range changes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSunburstChart.XForms.SfSunburstChart.RaiseSelectionChangedEvent(Syncfusion.SfSunburstChart.XForms.SelectionChangedEventArgs)">
+            <summary>
+            To raise the event.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.SelectionChangedEventArgs">
+            <summary>
+            To get the selected segment properties.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSunburstChart.XForms.ISunburstEventDependencyService">
+            <summary>
+            Adding interface to trigger the event.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.ShowLabelProperty">
+            <summary>
+            The show label property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.ShowLabel">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel"/>
+            show label.
+            </summary>
+            <value><c>true</c> if show label; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.TextColorProperty">
+            <summary>
+            The text color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.TextColor">
+            <summary>
+            Gets or sets the text color of the label items. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.FontFamilyProperty">
+            <summary>
+            Gets or sets the font family for the data label.This is a bindable property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.FontFamily">
+            <summary>
+            Gets or sets the font family for the data label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.FontSizeProperty">
+            <summary>
+            Gets or sets the size of the font for the data label.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.FontSize">
+            <summary>
+            Gets or sets the size of the font for the data label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.FontAttributesProperty">
+            <summary>
+            Gets or sets the font attributes for the data label.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.FontAttributes">
+            <summary>
+            Gets or sets the font attributes for the data label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.RotationModeProperty">
+            <summary>
+            Gets or sets the value that indicate whether the label rotation mode for data marker.This is a binable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.RotationMode">
+            <summary>
+            Gets or sets the value that indicate whether the label rotation mode for data marker.This is a binable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.OverflowModeProperty">
+            <summary>
+            Gets or sets the value that indicate whether the label overflow mode for data marker.This is a binable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.OverflowMode">
+            <summary>
+            Gets or sets the value that indicate whether the label overflow mode for data marker.This is a binable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.TextProperty">
+            <summary>
+            Gets or sets the string for the chart title. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.Text">
+            <summary>
+            Gets or sets the string for the chart title. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.Text"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.FontFamilyProperty">
+            <summary>
+            Gets or sets the font family for the chart title. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.FontFamily">
+            <summary>
+            Gets or sets the font family for the chart title.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.FontSizeProperty">
+            <summary>
+            Gets or sets the size of the font for the chart title.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.FontSize">
+            <summary>
+            Gets or sets the size of the font for the chart title.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.FontAttributesProperty">
+            <summary>
+            Gets or sets the font attributes for the chart title .This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.FontAttributes">
+            <summary>
+            Gets or sets the font attributes for the chart title.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.TextColorProperty">
+            <summary>
+            Gets or sets the TextColor of the chart title. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.TextColor">
+            <summary>
+            Gets or sets the TextColor of the chart title. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.TextColor"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.AlignmentProperty">
+            <summary>
+            Gets or sets the Alignment of the chart title. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.Alignment">
+            <summary>
+            Gets or sets the Alignment of the chart title. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.Alignment"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.MarginProperty">
+            <summary>
+            Gets or sets the margin of the chart title. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.Margin">
+            <summary>
+            Gets or sets the margin of the title. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.Margin"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.BackgroundColorProperty">
+            <summary>
+            Gets or Sets the background color of the title.This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.BackgroundColor">
+            <summary>
+            Gets or sets the the background color of the title. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.StrokeColorProperty">
+            <summary>
+            Gets or sets the stroke color of the title. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.StrokeColor">
+            <summary>
+            Gets or sets the stroke color of the title. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.StrokeWidthProperty">
+            <summary>
+            Gets or sets the width of the chart title border line. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstChartTitle.StrokeWidth">
+            <summary>
+            Gets or sets the width of the chart title border line. This is a bindable property.
+            </summary>
+            <value>This property takes the double value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.ShowTooltip">
+            <summary>
+            Gets or sets the ShowTooltip
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.Duration">
+            <summary>
+            Gets or sets the duration
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.BorderWidth">
+            <summary>
+            Gets or sets the Border width
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.BorderColor">
+            <summary>
+            Gets or sets the border color 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.BackgroundColor">
+            <summary>
+            Gets or sets the background color
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.TextColor">
+            <summary>
+            Gets or sets the text color
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.FontFamily">
+            <summary>
+            Gets or sets the font family
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.FontSize">
+            <summary>
+            Gets or sets the font size
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.FontAttributes">
+            <summary>
+            Gets or sets the font attributes
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.TooltipTemplate">
+            <summary>
+            Gets or sets the tooltip template
+            </summary>
+        </member>
+    </members>
+</doc>

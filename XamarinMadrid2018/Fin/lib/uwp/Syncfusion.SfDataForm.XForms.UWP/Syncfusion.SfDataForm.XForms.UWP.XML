@@ -1,0 +1,2883 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfDataForm.XForms.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.SfRadioButtonGroup">
+             <summary>
+             Show the RadioButton within a group.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormCheckBoxEditor">
+            <summary>
+            Represents a class to handle the bool type property editor with CheckBox.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormDropDownEditor">
+            <summary>
+            Represents a class to handle list of items with Spinner.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormDropDownEditor.#ctor(Syncfusion.UWP.DataForm.SfDataForm)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.Editors.DataFormDropDownEditor"/> class.
+            </summary>
+            <param name="dataForm">
+            The data form.
+            </param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormDateEditor">
+            <summary>
+            Represents a class to handle the DateTime type property editor with <see cref="T:Syncfusion.UI.Xaml.Controls.Input.SfDatePicker"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase">
+            <summary>
+            Represent an class that creates editor for data field and handles commit and validation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.#ctor(Syncfusion.UWP.DataForm.SfDataForm)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase"/>.
+            </summary>
+            <param name="dataForm"></param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.DataForm">
+            <summary>
+            Gets the instance of <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>        
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.Dispose">
+            <summary>
+            The dispose.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.CreateEditorView">
+            <summary>
+            Create and return it for DataFormItemView�s sub view.
+            </summary>
+            <returns>
+            Returns corresponding EditorView.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.InitializeView(Syncfusion.UWP.DataForm.DataFormItem,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Initialize View with DataFormItemView.DataFormItem property info.
+            </summary>
+            <param name="dataFormItem">The dataFormItem is property info of Editor</param> 
+            <param name="view">The UIview.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.Layout(Syncfusion.UWP.DataForm.DataFormItem,Windows.Foundation.Rect)">
+            <summary>
+            Layouts the editor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.UpdateReadOnly(Syncfusion.UWP.DataForm.DataFormItem,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Update value of ReadOnly property in editor's view.
+            </summary>
+            <param name="dataFormItem">The corresponding DataFormItem.</param>    
+            <param name="view">the editor.</param>       
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.GetReadOnly(Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>
+            Get ReadOnly value for editor's view.
+            </summary>        
+            <param name="view">DataFormItemView.</param>     
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.Measure(Syncfusion.UWP.DataForm.DataFormItem,System.Int32,System.Int32)">
+            <summary>
+            Measures the editor.
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.UnWireEvents(Syncfusion.UWP.DataForm.DataFormItem,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            UnWires events for DataFormItemView's editor view.
+            </summary>
+            <param name="view">The view to wire the events.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.UpdateValue(Syncfusion.UWP.DataForm.DataFormItem,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Updates the value of the specific editor to the corresponding property.
+            </summary>
+            <param name="dataFormItem">the corresponding DataFormItem.</param>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.WireEvents(Syncfusion.UWP.DataForm.DataFormItem,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Wires events for DataFormItemView's editor view.
+            </summary>
+            <param name="view">The view to wire the events.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.CommitValue(Windows.UI.Xaml.FrameworkElement,Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>
+            Commits the value of the specific editor to corresponding property of data object.
+            </summary>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.ValidateValue(Windows.UI.Xaml.FrameworkElement,Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>
+            Validates the value of the editor.
+            </summary>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.RequestFocus(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Requests focus for the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase.SetProperties(Windows.UI.Xaml.FrameworkElement,Xamarin.Forms.View,System.String)">
+            <summary>
+            Sets Forms properties changes to Native.
+            </summary>
+            <param name="view">The view.</param>
+            <param name="propertyName">The property name.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1">
+            <summary>
+            Represent a class to handle the UIView specific initialization, wiring and un wiring.
+            </summary>
+            <typeparam name="EditorView"></typeparam>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.CommitValue(Windows.UI.Xaml.FrameworkElement,Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>
+            Commits the value of the specific editor to corresponding property in the business object.
+            </summary>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.GetReadOnly(Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>
+            Get ReadOnly value for editor's view.
+            </summary>        
+            <param name="view">DataFormItemView.</param>     
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnUpdateValue(Syncfusion.UWP.DataForm.DataFormItem,`0)">
+            <summary>        
+            Updates the value of the specific editor to corresponding property in the business object.
+            </summary>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnUpdateSettings(Syncfusion.UWP.DataForm.DataFormItem,`0)">
+            <summary>
+            Updates the editor settings.
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="view"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.ConvertValue(Syncfusion.UWP.DataForm.DataFormItem,System.Object)">
+            <summary>
+            Convert value specified by <see cref="T:Syncfusion.UWP.DataForm.ConverterAttribute"/>
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.ConvertBack(Syncfusion.UWP.DataForm.DataFormItem,System.Object)">
+            <summary>
+            Convert back to value by <see cref="T:Syncfusion.UWP.DataForm.ConverterAttribute"/>
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnRequestFocus(`0)">
+            <summary>
+            Requests focus for particular editor.
+            </summary>
+            <param name="view">The view to be fcoused.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnEditorAction(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Do the editor action of next key.
+            </summary>
+            <param name="view"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnUpdateReadOnly(Syncfusion.UWP.DataForm.DataFormItem,`0)">
+            <summary>
+            Update value of ReadOnly property in editor's view.
+            </summary>        
+            <param name="dataFormItem">The corresponding DataFormItem.</param>    
+            <param name="view">the editor.</param>    
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnCreateEditorView">
+            <summary>
+            Create and return it for DataFormItemView�s sub view.
+            </summary>
+            <returns>
+            Returns corresponding EditorView.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnMeasure(`0,System.Int32,System.Int32)">
+            <summary>
+            Measure with specified width and height.
+            </summary>
+            <param name="view"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnLayout(`0,Windows.Foundation.Rect)">
+            <summary>
+            Layouts the editor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnInitializeView(Syncfusion.UWP.DataForm.DataFormItem,`0)">
+            <summary>
+            Initialize View with DataFormItemView.DataFormItem property info.
+            </summary>
+            <param name="dataFormItem">The dataFormItem is property info of Editor</param>   
+            <param name="view">The UIview.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnWireEvents(`0)">
+            <summary>
+            Wires events for DataFormItemView's editor view.
+            </summary>
+            <param name="view">The view to wire the events.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnValidateValue(`0,Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>        
+            Validates the value of the specific editor to corresponding property in the business object.
+            </summary>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnCommitValue(`0,Syncfusion.UWP.DataForm.DataFormItemView)">
+            <summary>        
+            Commits the value of the specific editor to corresponding property in the business object.
+            </summary>
+            <param name="view">the editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnUnWireEvents(`0)">
+            <summary>
+            UnWires events for DataFormItemView's editor view.
+            </summary>
+            <param name="view">The view to unwire the events</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormEditor`1.OnSetProperties(`0,Xamarin.Forms.View,System.String)">
+            <summary>
+            Sets forms editor property to native editor.
+            </summary>
+            <param name="view">The view to set properties.</param>
+            <param name="propertyName">The view to get properties.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormMultiLineTextEditor">
+            <summary>
+            Represents a class to handle multiline text editor with UITextField.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormMultiLineTextEditor.UpdateInputScope(Windows.UI.Xaml.Controls.UIElementCollection,Syncfusion.UWP.DataForm.DataFormTextItem)">
+            <summary>
+            Update the InputScope value in runtime type for which type of data being placed in a text editor.
+            </summary>
+            <param name="children">The UIElementCollection of EditorView</param>
+            <param name="dataFormTextItem">The DataFormTextItem is property info of Editor</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormNumericEditor">
+            <summary>
+            Represents a class to handle the numeric type property editor with NumericTextBoxView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormNumericEditor.UpdateInputScope(Windows.UI.Xaml.Controls.UIElementCollection,Syncfusion.UWP.DataForm.DataFormNumericItem)">
+            <summary>
+            Update the InputScope value in runtime type for which type of data being placed in a text editor.
+            </summary>
+            <param name="children">The UIElementCollection of EditorView</param>
+            <param name="dataFormNumericItem">The DataFormNumericItem is property info of Editor</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormPasswordEditor">
+            <summary>
+            Represents a class to handle the password type property editor with UITextField.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormPasswordEditor.UpdateInputScope(Windows.UI.Xaml.Controls.UIElementCollection,Syncfusion.UWP.DataForm.DataFormTextItem)">
+            <summary>
+            Update the InputScope value in runtime type for which type of data being placed in a text editor.
+            </summary>
+            <param name="children">The UIElementCollection of EditorView</param>
+            <param name="dataFormTextItem">The DataFormTextItem is property info of Editor</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormSegmentedEditor">
+            <summary>
+            Represents a class to handle the enum type property editor with UISegmenenedControl.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormSegmentedEditor.OnUpdateReadOnly(Syncfusion.UWP.DataForm.DataFormItem,Syncfusion.UWP.DataForm.Editors.SfRadioButtonGroup)">
+            <summary>
+            Update the IsEnabled property in runtime whether to allow user to edit or not.
+            </summary>
+            <param name="dataFormItem">The corresponding DataFormItem</param>
+            <param name="view">The UIView</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormSwitchEditor">
+            <summary>
+            Represents a class to handle the bool type property editor with UISwitch.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormTextEditor">
+            <summary>
+            Represents a class to handle the string type property editor with UITextField.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Editors.DataFormTextEditor.UpdateInputScope(Windows.UI.Xaml.Controls.UIElementCollection,Syncfusion.UWP.DataForm.DataFormTextItem)">
+            <summary>
+            Update the InputScope value in runtime type for which type of data being placed in a text editor.
+            </summary>
+            <param name="children">The UIElementCollection of EditorView</param>
+            <param name="dataFormTextItem">The DataFormTextItem is property info of Editor</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormTimeEditor">
+            <summary>
+            Represents a class to handle the date time type property editor with SfTimePicker.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Editors.DataFormNumericUpDownEditor">
+            <summary>
+            Represents a class to handle the numeric type property editor with SfNumericUpDownView.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.ConverterAttribute">
+            <summary>
+            Specifies the converter <see cref="T:Syncfusion.UWP.DataForm.IPropertyValueConverter"/> for the data field to convert the value before reading and saving in DataForm. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ConverterAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.ConverterAttribute"/> class.
+            </summary>
+            <param name="converter">
+            The type of <see cref="T:Syncfusion.UWP.DataForm.IPropertyValueConverter"/> for data field.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ConverterAttribute.ConverterType">
+            <summary>
+            Gets the <see cref="T:Syncfusion.UWP.DataForm.IPropertyValueConverter"/> type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DateRangeAttribute">
+            <summary>
+            Specifies the date range constraints for the value of a data field. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DateRangeAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.DateRangeAttribute"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DateRangeAttribute.MaxDay">
+            <summary>
+            Gets or sets the maximum day of a date.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DateRangeAttribute.MaxMonth">
+            <summary>
+            Gets or sets the maximum month of a date.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DateRangeAttribute.MaxYear">
+            <summary>
+            Gets or sets the maximum year of a date.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DateRangeAttribute.MinDay">
+            <summary>
+            Gets or sets the minimum day of a date.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DateRangeAttribute.MinMonth">
+            <summary>
+            Gets or sets the minimum month of a date.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DateRangeAttribute.MinYear">
+            <summary>
+            Gets or sets the minimum year of a date.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DateRangeAttribute.IsValid(System.Object)">
+            <summary>
+            Checks that the value of the data field is in the specified range.
+            </summary>
+            <param name="value">
+            The data field value to validate.
+            </param>
+            <returns>
+            true if the specified value is in the range; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DisplayOptionsAttribute">
+            <summary>
+            Provides a attribute that lets you specify the the display settings for a data field in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DisplayOptionsAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.DisplayOptionsAttribute"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DisplayOptionsAttribute.ColumnSpan">
+            <summary>
+            Gets or sets the value that indicates number columns the data field can span in view when <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.ColumnCount"/> is set.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DisplayOptionsAttribute.ImageSource">
+            <summary>
+            Gets or sets the image to show in the place of label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DisplayOptionsAttribute.RowSpan">
+            <summary>
+            Gets or sets the row span value of data field in view during layout.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DisplayOptionsAttribute.ShowLabel">
+            <summary>
+            Gets or sets a value that indicates whether to show label in view or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DisplayOptionsAttribute.ValidMessage">
+            <summary>
+            Gets or sets a string which will get displayed when user enters valid value for the data field as success message. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.SfDataForm">
+            <summary>
+            DataForm control provides UI for editing all the public properties 
+            of data object with appropriate editors based on type of property.  
+            DataForm control provides options to control editing, validation of data 
+            and customization of layout. 
+            </summary>       
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.LayoutManager">
+            <summary>
+            Gets or sets the reference to the <see cref="!:Syncfusion.SfDataForm.DataFormLayoutManager"/> instance which layouts labels and editors in <see cref="T:Syncfusion.UWP.DataForm.DataFormItemView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.ItemManager">
+            <summary>
+            Gets the reference to the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemManager"/> instance which generates <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/> with default settings based on attribute setting. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.SourceProvider">
+            <summary>
+            Gets or sets the reference to the <see cref="T:Syncfusion.UWP.DataForm.SourceProvider"/> instance which is used to get the source for picker type editors.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.DataObject">
+            <summary>
+            Gets or sets a data object to view or edit the properties.
+            DataForm generates the editors and labels from the public properties of data object. 
+            </summary>
+            <value>
+            The default value is <b>null</b>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.CommitMode">
+            <summary>
+            Gets or sets the value that determines, when the value entered by user should be saved to the data object. 
+            </summary>
+            <value>
+            The default value is <see cref="F:Syncfusion.UWP.DataForm.CommitMode.LostFocus"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.ColumnCount">
+            <summary>
+            Gets or sets the value denotes the number of editor to be arranged per row. 
+            Be default one editor for one property arranged with label. 
+            </summary>
+            <value>
+            The default value is one.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.ValidationMode">
+            <summary>
+            Gets or sets a value that denotes when the user input should be validated 
+            based on <see cref="!:IDataErrorInfo"/> and <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"/>.
+            </summary>  
+            <value>
+            One of the <see cref="T:Syncfusion.UWP.DataForm.ValidationMode"/> enum.
+            The default value is <see cref="F:Syncfusion.UWP.DataForm.ValidationMode.LostFocus"/>.
+            </value>       
+            <remarks>
+            The <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/> process the built-in validations when data object implements 
+            <see cref="!:System.ComponentModel.IDataErrorInfo"/> or property defined with <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"/>.
+            The validation can be performed explicitly by handling <see cref="!:Validating"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.LabelPosition">
+            <summary>
+            Gets or sets the value denotes how to layout the label associated with editor. 
+            Label's can be positioned either at the top or left side of editor.
+            </summary>
+            <value>
+            The default value is <see cref="F:Syncfusion.UWP.DataForm.LabelPosition.Left"/>.
+            </value>        
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.SfDataForm.IsReadOnly">
+            <summary>
+            Gets or sets a value that indicates whether editors enabled for editing. 
+            </summary>       
+            <value>
+            The default value is false.
+            </value>
+            <remarks>
+            <see cref="P:Syncfusion.UWP.DataForm.DataFormItem.IsReadOnly"/> takes higher priority when explicit defined. 
+            Editors can be enabled or disabled for particular property by setting <see cref="P:Syncfusion.UWP.DataForm.DataFormItem.IsReadOnly"/> in <see cref="!:SfDataForm.AutoGeneratingDataFormItem"/>.
+            Editors can be enabled or disabled for particular property by setting <see cref="P:System.ComponentModel.DataAnnotations.EditableAttribute.AllowEdit"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RegisterEditor(System.Type,System.String)">
+            <summary>
+            Registers editor for property type.
+            </summary>
+            <param name="type">The type to have editor.</param>
+            <param name="editor">The editor that loaded for type.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RegisterEditor(System.String,System.String)">
+            <summary>
+            Registers editor for property name.
+            </summary>
+            <param name="propertyName">The propertyName to have editor.</param>
+            <param name="editor">The editor that loaded for property name.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RegisterEditor(System.String,Syncfusion.UWP.DataForm.Editors.DataFormEditorBase)">
+            <summary>
+            Register custom editor with editor name.
+            </summary>
+            <param name="editorName">The editorName to use the CustomEditor for the property.</param>
+            <param name="dataFormEditor">The custom dataFormEditor to load the customized editor for property.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Commit">
+            <summary>
+            Commits all property values in data form items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Commit(System.String)">
+            <summary>
+            Commits the value of the specific property.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Validate">
+            <summary>
+            Validates all property values of data form items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Validate(System.String)">
+            <summary>
+            Validates the value of the specific property.
+            </summary>
+            <param name="propertyName">The property to be validated.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.UpdateEditor(System.String)">
+            <summary>
+            Updates the value of the specific property in corresponding editor.
+            </summary>
+            <param name="propertyName">The property to be updated.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.ExpandGroup(System.String)">
+            <summary>
+            Expands group by group name.
+            </summary>
+            <param name="groupName">The name of the group.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.CollapseGroup(System.String)">
+            <summary>
+            Collapse group by group name.
+            </summary>
+            <param name="groupName">The name of the group.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.GetGroupExpanderIcon">
+            <summary>
+            Gets the group expander icon.
+            </summary>
+            <returns>The UIImage for the group expander icon.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.GetGroupCollapseIcon">
+            <summary>
+            Gets the group collapse icon.
+            </summary>
+            <returns>The UIImage for the group collapse icon.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RefreshLayout(System.Boolean)">
+            <summary>
+            Loads more fields when the user wants to generate the fields that was canceled.
+            </summary>
+            <param name="generateAllItems">
+            <b>True</b> to regenerate all the items from the committed data object. <b>false</b> only generate the field that was canceled initially.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/> class.
+            </summary>           
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.SetSourceItem(System.Object)">
+            <summary>
+            Sets data object to ItemManager.SourceItem and generates DataFormItems.
+            </summary>
+            <param name="source">The DataObject.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.GenerateFormItemProperties">
+            <summary>
+            Generates DataFormItems.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseAutoGeneratingEvent(Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs)">
+            <summary>
+            Raises the auto generating event.
+            </summary>
+            <returns>The auto generating event args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseExpandingEvent(Syncfusion.UWP.DataForm.GroupItemExpandingEventArgs)">
+            <summary>
+            Raises the DataFormgroupItem expanding event.
+            </summary>
+            <returns>The expanding event args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseExpandedEvent(Syncfusion.UWP.DataForm.GroupItemExpandedEventArgs)">
+            <summary>
+            Raises the DataFormgroupItem expanded event.
+            </summary>
+            <returns>The expanded event args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseCollapsingEvent(Syncfusion.UWP.DataForm.GroupItemCollapsingEventArgs)">
+            <summary>
+             Raises the DataFormgroupItem collapsing event.
+            </summary>
+            <returns>The collapsing event args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseCollapsedEvent(Syncfusion.UWP.DataForm.GroupItemCollapsedEventArgs)">
+            <summary>
+             Raises the DataFormgroupItem collapsed event.
+            </summary>
+            <returns>The collapsed event args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseDataFormItemValidatingEvent(Syncfusion.UWP.DataForm.ValidatingEventArgs)">
+            <summary>
+            Raises the DataFormItemValidating event.
+            </summary>
+            <returns>The DataFormItemValidating args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.RaiseDataFormItemValidatedEvent(Syncfusion.UWP.DataForm.ValidatedEventArgs)">
+            <summary>
+            Raises the DataFormItemValidated event.
+            </summary>
+            <returns>The DataFormItemValidated args.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/> class.
+            </summary>
+            <param name="disposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.OnDataObjectChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Dependency call back for DataObject property.
+            </summary>
+            <param name="obj"></param>
+            <param name="args">An <see cref="T:Windows.UI.Xaml.DependencyPropertyChangedEventArgs">DependencyPropertyChangedEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.Setup">
+            <summary>
+            Setup the SfDataForm initialization.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataForm.FormLoaded">
+            <summary>
+            Initialize the DataForm's item manager, layout manager.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormGroupItemView">
+            <summary>
+            Represent a layout that displays group of the <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            Group consists of expander and label. Expander denotes the expand collapse status of group in View.
+            Label display group name in View.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItemView.DataFormGroupItem">
+            <summary>
+            Gets the <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/> associated with this layout.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItemView.IsExpanded">
+            <summary>
+            Gets a value that indicates whether the group is expanded. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItemView.GroupIcon">
+            <summary>
+            Gets or sets the group icon to show the expander in left.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItemView.GroupHeader">
+            <summary>
+            Gets or sets the group icon to show GroupName in the DataFormGroupItemView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItemView.OnIsExpandedChanged">
+            <summary>
+            IsExpanded call back to change the expander icon.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItemView.SetIsExpanded(System.Boolean)">
+            <summary>
+            Sets IsExpanded flag to change the expander.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItemView.WireEvents">
+            <summary>
+            Wires the events associated with the DataFormGroupItemView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItemView.UnWireEvents">
+            <summary>
+            UnWires the events associated with the DataFormGroupItemView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItemView.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItemView"/> class.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItemView">
+            <summary>
+            Represents a layout that displays editor for data field of the <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            DataFormItemView consists of label shows the caption of data field,
+            editor for editing the data field value, label for showing validation error message. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemView.Editor">
+            <summary>
+            Gets the <see cref="T:Syncfusion.UWP.DataForm.Editors.DataFormEditorBase"/> that creates, updates the editor and also handles editing of data field associated with <see cref="T:Syncfusion.UWP.DataForm.DataFormItemView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemView.DataFormItem">
+            <summary>
+            Gets <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/> associated with this layout.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemView.EditorView">
+            <summary>
+            Gets the editor loaded for data field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemView.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemView"/> class.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemView.MeasureLabel(System.Int32,System.Int32)">
+            <summary>
+            Measures Label.
+            </summary>        
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemView.MeasureValidationLabel(System.Int32,System.Int32)">
+            <summary>
+            Measures Validation label.
+            </summary>        
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemView.MeasureEditor(System.Int32,System.Int32)">
+            <summary>
+            Measures editor.
+            </summary>        
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormLayoutManager">
+            <summary>
+            Represent a class to creates <see cref="T:Syncfusion.UWP.DataForm.DataFormItemView"/>  and <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItemView"/> its sub views for <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.#ctor(Syncfusion.UWP.DataForm.SfDataForm)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.DataFormLayoutManager"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormLayoutManager.DataForm">
+            <summary>
+            Gets the instance of <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>        
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormLayoutManager"/> class.
+            </summary> 
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.MoveToNextFocusableEditor(Syncfusion.UWP.DataForm.DataFormItem)">
+            <returns>Return true to close the soft key board. False to remain key board and move to next editor.</returns>        
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetChildrenSpacing">
+            <summary>
+            Change Label Height Whether the LabelPosition is Top
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.MoveNextFocusableEditor(Syncfusion.UWP.DataForm.DataFormItem)">
+            <returns>Return true to close the soft key board. False to remain key board and move to next editor.</returns>        
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.CreateItemView(System.Int32,System.Int32)">
+            <summary>
+            Generates DataFormItem or DataFormGroupItem.
+            </summary>
+            <param name="rowIndex">The rowIndex of view.</param>
+            <param name="columnIndex">The columnIndex of view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateViewForEditor(Syncfusion.UWP.DataForm.Editors.DataFormEditorBase,Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Generates editor to edit the data object.
+            </summary>
+            <param name="editor">The editor class that handle the editor operation.</param>
+            <param name="dataFormItem">The DataFormItem to get the property information.</param>
+            <returns>
+            Returns UIView.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetItemViewSpacing">
+            <summary>
+            Gets a value that indicates the spacing between the DataFormItemView.
+            </summary>        
+            <returns>Returns the space.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.LayoutLabel(Syncfusion.UWP.DataForm.DataFormItemView,Windows.Foundation.Rect)">
+            <param name="frame"></param>            
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.LayoutValidationLabel(Syncfusion.UWP.DataForm.DataFormItemView,Windows.Foundation.Rect)">
+            <param name="frame"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.LayoutEditor(Syncfusion.UWP.DataForm.DataFormItemView,Windows.Foundation.Rect)">
+            <param name="frame"></param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.CreateNativeDataFormItemView(System.Int32,System.Int32)">
+            <summary>
+            Creates the DataFormItemView and populates its sub view for specified index.
+            </summary>
+            <param name="rowIndex">The rowIndex to create the DataFormItemView</param>
+            <param name="columnIndex">The columnIndex to create the DataFormItemView.</param>
+            <returns>Returns the created DataFormItemView</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.CreateNativeDataFormGroupItemView(System.Int32,System.Int32)">
+            <summary>
+            Creates DataFormGroupItemView and populates its sub view for specified index.
+            </summary>
+            <param name="rowIndex">The rowIndex to create the DataFormGroupItemView.</param>
+            <param name="columnIndex">The columnIndex to create the DataFormGroupItemView.</param>
+            <returns>Returns DataFormGroupItenView.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateViewForNativeLabel(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Generates label to show the label text. 
+            </summary>
+            <param name="dataFormItem">The DataFormItem to get label properties.</param>
+            <returns>
+            Returns UILabel.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateNativeViewForGroupHeader(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Generates label to show the GroupHeader.
+            </summary>
+            <param name="dataFormGroupItem">The DataFormGroupItem to get the group information.</param>
+            <returns>Returns UILabel.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.CreateDataFormItemView(System.Int32,System.Int32)">
+            <summary>
+            Creates the DataFormItemView and populates its sub view for specified index.
+            </summary>
+            <param name="rowIndex">The rowIndex to create the DataFormItemView</param>
+            <param name="columnIndex">The columnIndex to create the DataFormItemView.</param>
+            <returns>Returns the created DataFormItemView</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.CreateDataFormGroupItemView(System.Int32,System.Int32)">
+            <summary>
+            Creates DataFormGroupItemView and populates its sub view for specified index.
+            </summary>
+            <param name="rowIndex">The rowIndex to create the DataFormGroupItemView.</param>
+            <param name="columnIndex">The columnIndex to create the DataFormGroupItemView.</param>
+            <returns>Returns DataFormGroupItenView.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetGroupExpanderIcon(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Gets group expander icon for group.
+            </summary>
+            <param name="dataFormGroupItem">The DataFormGroupItem.</param>
+            <returns>Returns ExpanderIcon</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetGroupCollapseIcon(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Gets group collapse icon for group.
+            </summary>
+            <param name="dataFormGroupItem">The DataFormGroupItem.</param>
+            <returns>Returns CollapseIcon</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetLeftPaddingForLabel(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Gets left start offset for label.
+            </summary>
+            <param name="dataFormItem"></param>
+            <returns>Returns left padding value for label.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetLeftPaddingForGroupIcon(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Gets left start offset for group icon.
+            </summary>
+            <param name="dataFormGroupItem"></param>
+            <returns>Returns Left padding for group icon.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetLeftPaddingForGroupHeader(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Gets left start offset for group header.
+            </summary>
+            <param name="dataFormGroupItem"></param>
+            <returns>Returns left padding for group header.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetLeftPaddingForEditor(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Gets left start offset for editor.
+            </summary>
+            <param name="dataFormItem"></param>
+            <returns>Returns left padding for editor.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetLabelWidth(Syncfusion.UWP.DataForm.DataFormItem,System.Int32)">
+            <summary>
+            Gets label width based on available width.
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="availableWidth"></param>
+            <returns>Returns label width.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetEditorWidth(Syncfusion.UWP.DataForm.DataFormItem,System.Int32)">
+            <summary>
+            Gets editor width based on available width.
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="availableWidth"></param>
+            <returns>Returns editor width.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetLeftPaddingForValidationLabel(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Gets start offset for validation label.
+            </summary>
+            <param name="dataFormItem"></param>
+            <returns>Returns left padding for validation label.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GetValidationLabelWidth(Syncfusion.UWP.DataForm.DataFormItem,System.Int32)">
+            <summary>
+            Gets validation label width based on available width.
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="availableWidth"></param>
+            <returns>Returns validation label width.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateViewForLabel(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Generates label to show the label text. 
+            </summary>
+            <param name="dataFormItem">The DataFormItem to get label properties.</param>
+            <returns>
+            Returns UILabel.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.OnEditorCreated(Syncfusion.UWP.DataForm.DataFormItem,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Raises after editor has created.
+            </summary>
+            <param name="dataFormItem">The DataFormItem.</param>
+            <param name="editor">The Editor.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateViewForGroupHeader(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Generates label to show the GroupHeader.
+            </summary>
+            <param name="dataFormGroupItem">The DataFormGroupItem to get the group information.</param>
+            <returns>Returns UILabel.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateViewForGroupIcon(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Generates image to show the expander icon in DataFormGroupItemView.
+            </summary>
+            <returns>
+            Returns UIImageView.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormLayoutManager"/> class.
+            </summary>
+            <param name="disposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.GenerateViewForValidation(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Generates label to show the validation message. 
+            </summary>
+            <returns>
+            Returns UILabel.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormLayoutManager.OnLabelPropertyChanged(System.String,Xamarin.Forms.Label,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Forms view label call back.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItemViewBase">
+            <summary>
+            Represents a base layout for displaying group,  label and editor of data field for <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemViewBase.IsEnsured">
+            <summary>
+            To check whether item is in view or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemViewBase.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemViewBase"/> class.
+            </summary> 
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemViewBase.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemViewBase"/> class.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormGroupItem">
+            <summary>
+            Represents the class to encapsulates the group settings and <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/> settings for group of data field's appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItem.ColumnCount">
+            <summary>
+            Gets or sets the value denotes the number of editor to be arranged per row. Be default one editor for one property arranged with label. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItem.DataFormItems">
+            <summary>
+            Gets or sets the value that indicates the items that are grouped under the group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItem.IsExpanded">
+            <summary>
+            Gets or sets a value that indicates whether the <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/> is expanded or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItem.AllowExpandCollapse">
+            <summary>
+            Gets or sets a value that indicates whether user can expand or collapse the group.
+            </summary>
+            <remarks>
+            <b>True</b> if user can expand or collapse .Otherwise <b>False</b>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItem.GroupName">
+            <summary>
+            Gets or sets the caption of group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormGroupItem.HasExpanded">
+            <summary>
+            The get items count.
+            </summary>
+            <returns>
+            The <see cref="T:System.Int32"/>.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormGroupItem.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="!:SfDataForm.DataFormItem"/> class.
+            </summary>
+            <param name="isDisposing"> Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItem">
+            <summary>
+            Represents the class that encapsulates the layout and editor setting for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            DataForm layouts caption labels, editors and validation error message based on the property settings of this class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.Editor">
+            <summary>
+            Gets or sets the editor names which denotes the renderer associated with editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.GroupName">
+            <summary>
+            Gets or sets the group name of data field that is used to group properties in View.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.ImageSource">
+            <summary>
+            Gets or sets the image to show in place of label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.IsReadOnly">
+            <summary>
+            Gets or sets the value that indicates whether to allow user to edit or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.LabelText">
+            <summary>
+            Gets or sets the data field caption for the editor in View. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.Name">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.Order">
+            <summary>
+            Gets or sets the order of the editor in a view. Based on this value data fields will be arrange on order by <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.PlaceHolderText">
+            <summary>
+            Gets or sets the water mark for the editor to provide hint for users.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.PropertyInfo">
+            <summary>
+            Gets or the meta data of property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.ShowLabel">
+            <summary>
+            Gets or sets a value that indicates whether to show label or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.IsDirty">
+            <summary>
+            Helps to recalculate the validation label height when needed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.ValidationLabelHeight">
+            <summary>
+            Holds height of validation label.
+            </summary>
+            <remarks>
+            Has measured text size in case invalid data this will hold height based on negative message. 
+            In-case of valid data, this will hold height based on positive message if it was defined.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItem.IsFocused">
+            <summary>
+            Gets or sets a value that indicates the focused item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItem.UpdateViewForValidation">
+            <summary>
+            Updates the validation label text with positive or negative value based on the validation.
+            </summary>
+            <param name="dataFormItem">The datFormItem to update the validation label text.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItem.HasMessage">
+            <summary>
+            Checks there is a positive message with dataFormItem.
+            </summary>
+            <param name="dataFormItem">The dataFormItem to get the positive message.</param>
+            <returns>Returns true when the label has the same text as positive message.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItem.CanFocus">
+            <summary>
+            Returns the whether the editor loaded for data field allows focus.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItem.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/> class.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormNumericItem">
+            <summary>
+            Represents the class that encapsulates the layout and numeric editor setting for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItem.ParsingMode">
+            <summary>
+            Gets or sets a value that decides whether to parse the value as decimal or double.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItem.PercentDisplayMode">
+            <summary>
+            Gets or sets a value which specifies how to display numeric value in percent mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItem.InputScope">
+            <summary>
+            Gets or sets that indicates whether to change the inputscope. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormNumericItemBase">
+            <summary>
+            Represents the base class that encapsulates the layout and numeric editor setting for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItemBase.AllowNull">
+            <summary>
+            Gets or sets a value that indicates whether null value should be allowed for data field or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItemBase.EnableGroupSeparator">
+            <summary>
+            Gets or sets a value that indicates whether display group separator or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItemBase.CultureInfo">
+            <summary>
+            Gets or sets the culture info for formatting.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItemBase.FormatString">
+            <summary>
+            Gets or sets the format string to format the value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericItemBase.MaximumNumberDecimalDigits">
+            <summary>
+            Gets or sets the maximum number decimal digits should be displayed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormDateItem">
+            <summary>
+            Represents the class that encapsulates the layout and date picker editor settings for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDateItem.AllowInlineEditing">
+            <summary>
+            Gets or sets the the value that indicates whether to enable inline editing or not in the editor.
+            </summary>          
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDateItem.ShowDropDownButton">
+            <summary>
+            Gets or sets the the value that indicates whether to show the dropdown button or not in the editor.
+            </summary>             
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDateItem.AllowNull">
+            <summary>
+            Gets or sets the the value that indicates whether to allow null value of the editor.
+            </summary>         
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDateItem.Format">
+            <summary>
+            Gets or sets the date format.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDateItem.MaximumDate">
+            <summary>
+            Gets or sets the maximum allowable date.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDateItem.MinimumDate">
+            <summary>
+            Gets or sets the minimum allowable date.
+            </summary>        
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormTimeItem">
+            <summary>
+            Represents the class that encapsulates the layout and time picker editor setting for type data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTimeItem.Format">
+            <summary>
+            Gets or sets the time format used in time picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTimeItem.AllowInlineEditing">
+            <summary>
+            Gets or sets the the value that indicates whether to enable inline editing or not in the editor.
+            </summary>          
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTimeItem.MaximumTime">
+            <summary>
+            Gets or sets the maximum allowable tiem.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTimeItem.MinimumTime">
+            <summary>
+            Gets or sets the minimum allowable time.
+            </summary>        
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTimeItem.ShowDropDownButton">
+            <summary>
+            Gets or sets the the value that indicates whether to show the dropdown button or not in the editor.
+            </summary>             
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTimeItem.AllowNull">
+            <summary>
+            Gets or sets the the value that indicates whether to allow null value of the editor.
+            </summary>         
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormDropDownItem">
+            <summary>
+            Represents the class that encapsulates the layout and Drop down editor (Spinner) settings for data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDropDownItem.ItemsSource">
+            <summary>
+            Gets or sets the ItemsSource of the Spinner.
+            </summary>      
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDropDownItem.DisplayMemberPath">
+            <summary>
+            Gets or sets the path that is used to display the visual representation of object.
+            </summary>
+            <value>
+            A string that represents the path to display the visual representation of object.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDropDownItem.SelectedValuePath">
+            <summary>
+            Gets or sets the path that is used to get the SelectedValue from the SelectedItem.
+            </summary>
+            <value>
+            The path that is used to get the SelectedValue from the SelectedItem.
+            </value>       
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormDropDownItem.SelectedIndex">
+            <summary>
+            Gets or sets the index of corresponding selected Item in list.
+            </summary>
+            <value>
+            The index of the selected item.The default value is -1.
+            </value>       
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem">
+            <summary>
+            Represents the class that encapsulates the layout and numeric updown editor setting for data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.AutoReverse">
+            <summary>
+            Gets or sets the value which indicates autoReverse should be enabled in numeric up down.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.Maximum">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.Minimum">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.SpinButtonAlignment">
+            <summary>
+            Gets or sets the Spin Button Alignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.PercentDisplayMode">
+            <summary>
+            Gets or sets a value which specifies how to display numeric data in percent mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.ParsingMode">
+            <summary>
+            Gets or sets a value that decides whether the user can parse decimal or double value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.LargeChange">
+            <summary>
+            Gets or sets a largest value to be added to or subtracted with editor value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.SmallChange">
+            <summary>
+            Gets or sets a smallest value to be added to or subtracted with editor value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormNumericUpDownItem.AllowSpinOnMouseWheel">
+            <summary>
+            Gets or sets a value indicating whether spinning value on pointer wheel in editor is allowed or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormTextItem">
+            <summary>
+            Represents the class that encapsulates the layout and text editor setting for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTextItem.TextWrapping">
+            <summary>
+            Gets or sets a value that indicates how editor content should wrap the text.
+            </summary>
+            <value>
+            One of the <see cref="F:Windows.UI.Xaml.TextWrapping.NoWrap"/> enumeration that specifies wrapping behavior of editor content. 
+            The default value is <see cref="F:Windows.UI.Xaml.TextWrapping.NoWrap"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTextItem.AcceptsReturn">
+            <summary>
+            Gets or sets the the value that indicates whether to allow and display newline or return characters.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTextItem.ScrollBarVisibility">
+            <summary>
+            Gets or sets a value that enable the vertical scrollbars.
+            </summary>
+            <value>
+            One of the <see cref="F:Windows.UI.Xaml.Controls.ScrollBarVisibility.Disabled"/> enumeration that specifies scrollbar visibility of the editor.
+            The default value is <see cref="F:Windows.UI.Xaml.Controls.ScrollBarVisibility.Disabled"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormTextItem.InputScope">
+            <summary>
+            Gets or sets the type of data being placed in a text editor.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormSwitchItem">
+            <summary>
+            Represents the class that encapsulates the layout and text editor setting for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormSwitchItem.OffContent">
+            <summary>
+            Gets or sets the text when the toggle in off state.
+            </summary>
+            <value>
+            The displayed text when Toggle in off state.
+            The default value is <b>string.Empty</b>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormSwitchItem.OnContent">
+            <summary>
+            Gets or sets the text when the toggle in on state.
+            </summary>
+            <value>
+            The displayed text when Toggle in on state.
+            The default value is <b>string.Empty</b>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItemBase">
+            <summary>
+            Represents the base class that encapsulates the layout, group and editor setting for a data fields appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.IsGroup">
+            <summary>
+            Gets a value indicating whether the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemBase"/> is group (<see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>) or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.IsVisible">
+            <summary>
+            Gets or sets a value indicating whether to show the data field for editing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.ItemManager">
+            <summary>
+            Gets the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemManager"/> which creates DataFormItem's for for the date fileds appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.View">
+            <summary>
+            Gets a value that indicates the rendering item in view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.ColumnIndex">
+            <summary>
+            Gets or sets the column position of data field in View.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.ColumnSpan">
+            <summary>
+            Gets or sets the value that decides the width of the item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.RowIndex">
+            <summary>
+            Gets or sets the row position of the item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemBase.RowSpan">
+            <summary>
+            Gets or sets a value that decides the height of the item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemBase.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemBase"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemBase.CanFocus">
+            <summary>
+            Returns the whether the editor loaded for data field allows focus when moving by keyboard Go action.
+            </summary>
+            <returns>Return true to set the focus to editor.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemBase.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemBase"/>.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItemManager">
+            <summary>
+            Represents a class that creates DataFormItems collection and item properties
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.#ctor(Syncfusion.UWP.DataForm.SfDataForm)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemManager"/> class.
+            </summary>
+            <param name="dataForm">
+            The data form.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItemManager.DataFormItems">
+            <summary>
+            Gets or sets the list contains the underlying properties as DataFormItems.
+            </summary>     
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.ItemManager"/> class.
+            </summary>        
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetValue(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Gets a value for property.
+            </summary>
+            <param name="dataFormItem">The DataFormItem to get a value.</param>
+            <returns>
+            Returns value.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.SetValue(Syncfusion.UWP.DataForm.DataFormItem,System.Object)">
+            <summary>
+            Sets a value to property.
+            </summary>
+            <param name="dataFormItem">The DataFormItem to get a value.</param>
+            <param name="value">The value to be set.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetEditor(System.Reflection.PropertyInfo)">
+            <summary>
+            Gets editor name for DataFormItem to get DataFormEditor for DataFormItemView.
+            </summary>
+            <param name="propertyInfo">The descriptor of property.</param>
+            <returns>
+            Returns editor name to get DataFormEditor for DataFormItemView.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.ValidateDataFormItemOnINotifyDataErrorInfo(Syncfusion.UWP.DataForm.DataFormItem,System.Object,System.String)">
+            <summary>
+            Validates the <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.DataObject"/> when it implements <see cref="T:System.ComponentModel.INotifyDataErrorInfo"/>
+            </summary>
+            <param name="dataFormItem">The DataFormItem to be validated.</param>
+            <param name="dataObject">The data object to validate. </param>
+            <param name="propertyName">The PropertyName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.ValidateDataFormItem(Syncfusion.UWP.DataForm.DataFormItem,System.Object,System.Boolean)">
+            <summary>
+            Validates the data form item.
+            </summary>
+            <returns><c>true</c>, if data form item was validated, <c>false</c> otherwise.</returns>
+            <param name="dataFormItem">Data form item.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetNextFocusedElement(System.Int32,System.Int32)">
+            <summary>
+            Gets the next focusable element to set the focus when press next key.
+            </summary>
+            <param name="rowIdnex">The rowIndex of current item.</param>        
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.SetItemProperties(System.Object)">
+            <summary>
+            Sets ItemProperties from specified dataSource.
+            </summary>
+            <param name="sourceItem">The bound dataSource.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetItemProperties">
+            <summary>
+            Returns the default System.ComponentModel.PropertyDescriptorCollection.
+            </summary>
+            <returns>A collection of property descriptor.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.SetSourceItem(System.Object)">
+            <summary>
+            The set source item.
+            </summary>
+            <param name="dataObject">
+            The data object.
+            </param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateDataFormItems">
+            <summary>
+            Generates DataFormItems from PropertyInfoCollection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetPickerSource(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            The get picker source.
+            </summary>
+            <param name="propertyInfo">
+            The property info.
+            </param>
+            <param name="name">
+            The name.
+            </param>
+            <returns>
+            The <see cref="T:System.Collections.IList"/>.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.RegisterPropertyEditor(System.String,System.String)">
+            <summary>
+            Adds editor for property in editorPropertyRegistry.
+            </summary>
+            <param name="propertyName">The propertyName to have editor.</param>
+            <param name="editor">The editor that loaded for property name.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.RegisterTypeEditor(System.Type,System.String)">
+            <summary>
+            Adds editor for property in editorTypeRegistry.
+            </summary>
+            <param name="type">The type to have editor.</param>
+            <param name="editor">The editor that loaded for type.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.ExpandGroup(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Expands specified DataFormGroupItem by increasing RowIndex with its count.
+            </summary>
+            <param name="dataFormGroupItem">The dataFormGroupItem.</param>
+            <returns>
+            Returns true to expand in UI.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.CollapseGroup(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Collapse specified DataFormGroupItem by decreasing RowIndex its count.
+            </summary>
+            <param name="dataFormGroupItem">The dataFormGroupItem.</param>
+            <returns>
+            Returns true to collapse in UI.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateDataFormItems(Syncfusion.UWP.DataForm.PropertyInfoCollection,System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase})">
+            <summary>
+             Generates DataFormItems from PropertyInfoCollection.
+            </summary>
+            <param name="itemProperties">the item properties.</param>
+            <param name="dataFormItems">list of data form items.</param>
+            <returns>list of generated data form items</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.ItemManager"/> class.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateDataFormLayoutItems">
+            <summary>
+            Generates DataFormLayoutItems from DataFormItems.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateDataFormItems(Syncfusion.UWP.DataForm.PropertyInfoCollection,System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.String,System.Collections.Generic.List{Syncfusion.XForms.DataForm.DataFormItemBase})">
+            <summary>
+            Generates DataFormItems from property info collection.
+            </summary>
+            <param name="propertyCollection">The DataFormItemProeprties from propertyInfoCollection.</param>
+            <param name="dataFormItems">The list of DataFormItem.</param>
+            <param name="parentPropertyName">The complex property class name.</param>
+            <returns>Returns DataFormItems.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.OrderDataFormGroupItem(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Ordering the data form group items.
+            </summary>
+            <param name="dataFormGroupItem">DataFormGroupItem to be ordered.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateFormsItems(System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.Collections.Generic.List{Syncfusion.XForms.DataForm.DataFormItemBase})">
+            <summary>
+            Generates the dataform items from manually added item collection.
+            </summary>
+            <param name="dataFormItems">The list of native DataFormItem.</param>
+            <param name="formsDataFormItems">The list of forms DataFormItem.</param>
+            <returns>Returns DataFormItems.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateFormsDataFormGroupItem(System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.Collections.Generic.List{Syncfusion.XForms.DataForm.DataFormItemBase},Syncfusion.XForms.DataForm.DataFormItemBase)">
+            <summary>
+            Generate the forms data form group item.
+            </summary>
+            <param name="dataFormItems">The list of native DataFormItem.</param>
+            <param name="formsDataFormItems">The list of forms DataFormItem.</param>
+            <param name="item">The DataFormItemBase item.</param>
+            <returns>Returns DataFormItem.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateFormsDataFormItem(System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.Collections.Generic.List{Syncfusion.XForms.DataForm.DataFormItemBase},Syncfusion.XForms.DataForm.DataFormItemBase)">
+            <summary>
+            Generate the forms data form item.
+            </summary>
+            <param name="dataFormItems">The list of native DataFormItem.</param>
+            <param name="formsDataFormItems">The list of forms DataFormItem.</param>
+            <param name="item">The DataFormItemBase item.</param>
+            <returns>Returns DataFormItem.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateDataFormItemswithComplexProperties(System.Reflection.PropertyInfo,System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.String)">
+            <summary>
+            Generates DataFormItems from property info collection.
+            </summary>
+            <param name="propertyinfo">The propertyInfo to generate the complex properties DataFormItems</param>
+            <param name="dataFormItems">The list of DataFormItem.</param>
+            <param name="parentpropertyname">The complex property class name.</param>
+            <returns>Returns DataFormItems.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GenerateDataFormItemsForDynamic(System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase})">
+            <summary>
+            Generates DataFormItems for dynamic object.
+            </summary>
+            <param name="dataFormItems">The list of DataFormItem.</param>
+            <returns>
+            Returns DataFormItems.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.CreateDataFormItem(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Creates DataFormItem from property descriptor.
+            </summary>
+            <param name="propertyInfo">
+            The property descriptor.
+            </param>
+            <param name="name">
+            The name.
+            </param>
+            <returns>
+            Returns DataFormItem.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetDisplayAttributeValue(Syncfusion.XForms.DataForm.DisplayAttribute,System.String)">
+            <summary>
+            Method used to localize the display attributes from ResourceFile(.resx) file.
+            </summary>
+            <param name="displayAttribute">displayAttribute of SfDataForm.</param>
+            <param name="attribute"> displayAttribute to be localized.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.GetDataFormGroupItem(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.Int32,Syncfusion.UWP.DataForm.DataFormItemBase}},System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.String)">
+            <summary>
+            Gets the DataFormGroupItem if already exist with the groupName or creates the new DataFormGroupItem with the same.
+            </summary>
+            <param name="groupName">The groupName to get or create DataFormGroupitme.</param>
+            <returns>Returns DataFormrGoupItem.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.CreateDataFormGroupItem(System.String)">
+            <summary>
+            Creates DataFormGroupItem with specified groupName.
+            </summary>
+            <param name="groupName">The groupName to create DataFormGroupItem.</param>
+            <returns>
+            Returns DataFormGroupItem.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemManager.UpdatesLayout(Syncfusion.UWP.DataForm.DataFormItem,System.Boolean)">
+            <summary>
+            Updates the layout.
+            </summary>
+            <param name="dataFormItem"></param>
+            <param name="isValid"></param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItems">
+            <summary>
+            Represents a collection that maintains the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemBase"/> which encapsulates the layout and editor setting for a data field appearing in <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItems.Count">
+            <summary>
+            Returns the total count of items including groups and its inner items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItems.Item(System.String)">
+            <summary>
+            Returns the <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/> associated with data field. 
+            </summary>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItems.Item(System.Int32,System.Int32)">
+            <summary>
+            Returns the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemBase"/> based on row and column index.
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.DataFormItems.Item(System.Int32)">
+            <summary>
+            Returns the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemBase"/> for the index.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItems.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItems"/> class.
+            </summary>        
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItems.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItems"/> class.
+            </summary>
+            <param name="isDisposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItemsEnumerator">
+            <summary>
+            Represents the class that process the enumerator of items. 
+            </summary>
+            <exclude/>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsEnumerator.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper"/> class.
+            </summary>     
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsEnumerator.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper"/> class.
+            </summary>
+            <param name="disposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper">
+            <summary>
+            Represents a class to handle the traverse with Items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper"/> class.
+            </summary>     
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper.GetNext(Syncfusion.UWP.DataForm.DataFormItemBase,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets the next data form item.
+            </summary>
+            <param name="dataFormItem">current dataFormItem.</param>
+            <param name="columnCount">If current data form item is in group, its column colunt.Else,dataForm's column count.</param>
+            <param name="rowIndex">row index</param>
+            <param name="columnIndex">column index </param>
+            <returns>item to be returned.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper.GetPrevious(Syncfusion.UWP.DataForm.DataFormItemBase,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets the previous data form item.
+            </summary>
+            <param name="dataFormItem">current dataFormItem.</param>
+            <param name="columnCount">If current data form item is in group, its column colunt.Else,dataForm's column count.</param>
+            <param name="rowIndex">row index</param>
+            <param name="columnIndex">column index </param>
+            <returns>item to be returned.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper.Dispose(System.Boolean)">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper"/> class.
+            </summary>
+            <param name="disposing">Indicates whether the call is from Dispose method or from a finalizer.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.DataFormItemsTraversalHelper.GetTotalSpan(System.Int32,System.Int32,System.Boolean@)">
+            <summary>
+            Gets the total column span of the particular row until specific column index.
+            </summary>
+            <param name="rowIndex">row index.</param>
+            <param name="columnIndex">column Index </param>
+            <param name="hasItem">whether there is any item next to specified column index.</param>
+            <returns>total span</returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.CommitMode">
+            <summary>
+            Defines the constants for <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.CommitMode"/> that specifies when the value entered by user should be saved to the data object. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.CommitMode.LostFocus">
+            <summary>
+            Commits the value when the editor lost it's focus.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.CommitMode.PropertyChanged">
+            <summary>
+            Commits the value immediately when the value is changed.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.CommitMode.Explicit">
+            <summary> 
+            Commits the value manually by calling <see cref="M:Syncfusion.UWP.DataForm.SfDataForm.Commit"/> or <see cref="M:Syncfusion.UWP.DataForm.SfDataForm.Commit(System.String)"/> method.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.ValidationMode">
+            <summary>
+            Defines the constants for <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.ValidationMode"/> that specifies when the user input should be validated for data object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.ValidationMode.LostFocus">
+            <summary>
+            Validates the value when editor focus changed to another editor. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.ValidationMode.PropertyChanged">
+            <summary>
+            Validates the value immediately after the property value is changed.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.ValidationMode.Explicit">
+            <summary> 
+            Validation will be performed explicitly by calling <see cref="M:Syncfusion.UWP.DataForm.SfDataForm.Validate"/> or <see cref="M:Syncfusion.UWP.DataForm.SfDataForm.Validate(System.String)"/> method.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.LabelPosition">
+            <summary>
+            Defines the constants for <see cref="P:Syncfusion.UWP.DataForm.SfDataForm.LabelPosition"/> that specifies whether to layout the label at left or top of editor.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.LabelPosition.Left">
+            <summary>
+            Layout the label at the left of editor.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UWP.DataForm.LabelPosition.Top">
+            <summary>
+            Layout the label at the top of editor.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.AutoGeneratingDataFormItem"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs.#ctor(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs"/> class.
+            </summary>
+            <param name="dataFormItem">
+            The data form item.
+            </param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs.#ctor(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs"/> class.
+            </summary>
+            <param name="dataFormGroupItem">
+            The data form group item.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs.DataFormGroupItem">
+            <summary>
+            Gets or sets the auto generated <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.AutoGeneratingDataFormItemEventArgs.DataFormItem">
+            <summary>
+            Gets or sets the auto generated <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.GroupItemExpandingEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.GroupItemExpanding"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.GroupItemExpandingEventArgs.#ctor(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.GroupItemExpandingEventArgs"/> class.
+            </summary>
+            <param name="dataFormGroupItem">
+            The data form group item.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.GroupItemExpandingEventArgs.DataFormGroupItem">
+            <summary>
+            Gets the expanding <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.GroupItemExpandedEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.GroupItemExpanded"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.GroupItemExpandedEventArgs.#ctor(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.GroupItemExpandedEventArgs"/> class.
+            </summary>
+            <param name="dataFormGroupItem">
+            The data form group item.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.GroupItemExpandedEventArgs.DataFormGroupItem">
+            <summary>
+            Gets the expanded <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.GroupItemCollapsingEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.GroupItemCollapsing"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.GroupItemCollapsingEventArgs.#ctor(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.GroupItemCollapsingEventArgs"/> class.
+            </summary>
+            <param name="dataFormGroupItem">
+            The data form group item.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.GroupItemCollapsingEventArgs.DataFormGroupItem">
+            <summary>
+            Gets the collapsing <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.GroupItemCollapsedEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.GroupItemCollapsed"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.GroupItemCollapsedEventArgs.#ctor(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UWP.DataForm.GroupItemCollapsedEventArgs"/> class.
+            </summary>
+            <param name="dataFormGroupItem">
+            The data form group item.
+            </param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.GroupItemCollapsedEventArgs.DataFormGroupItem">
+            <summary>
+            Gets the collapsed <see cref="T:Syncfusion.UWP.DataForm.DataFormGroupItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.ValidatingEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.Validating"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatingEventArgs.ErrorMessage">
+            <summary>
+            Gets or sets a error message of <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/> in case of invalid data.
+            </summary>
+            <value>The error message.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatingEventArgs.IsValid">
+            <summary>
+            Gets or sets a value indicating whether the data form item is valid or not.
+            </summary>
+            <value><c>true</c> if is valid; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatingEventArgs.PropertyName">
+            <summary>
+            Gets a name of the <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/>.
+            </summary>
+            <value>The name of the property.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatingEventArgs.Value">
+            <summary>
+            Gets a value of data field validating.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.ValidatedEventArgs">
+            <summary>
+            Provides data for <see cref="!:SfDataForm.Validated"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatedEventArgs.ErrorMessage">
+            <summary>
+            Gets a error message of DataFormItem in case of invalid data.
+            </summary>
+            <value>The error message.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatedEventArgs.IsValid">
+            <summary>
+            Gets a value indicating whether the data form item is valid or not.
+            </summary>
+            <value><c>true</c> if is valid; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatedEventArgs.PropertyName">
+            <summary>
+            Gets a name of the <see cref="T:Syncfusion.UWP.DataForm.DataFormItem"/>.
+            </summary>
+            <value>The name of the property.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ValidatedEventArgs.Value">
+            <summary>
+            Gets a value of data field validating.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.SourceProvider">
+            <summary>
+            Represents the class to provide override method to get the source for picker type properties.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SourceProvider.GetSource(System.String)">
+            <summary>
+            Get the source list for picket editor based on data field name.
+            </summary>
+            <param name="sourceName">The data field name to get the list.</param>
+            <returns>
+            Returns the source list based on specified data field name.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.IPropertyValueConverter">
+            <summary>
+            Represents the interface to provide the method for converting the value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.IPropertyValueConverter.Convert(System.Object)">
+            <summary>
+            Converts a value to type which is compatible for specific editor.
+            </summary>
+            <param name="value">the value.</param>
+            <returns>converted value.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.IPropertyValueConverter.ConvertBack(System.Object)">
+            <summary>
+            Converts a value to underlying type.
+            </summary>
+            <param name="value">the value.</param>
+            <returns>converted value.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.PropertyInfoCollection.#ctor">
+            <summary>
+            Initializes a new instance of the PropertyInfoCollection class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.PropertyInfoCollection.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the PropertyInfoCollection class.
+            </summary>
+            <param name="type">The type of the properties in the collection.</param>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.PropertyInfoCollection.Empty">
+            <summary>
+            Gets the empty property info collection.
+            </summary>
+            <value>The empty property info collection.</value>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.PropertyInfoCollection.Type">
+            <summary>
+            Gets the type of the properties in the collection.
+            </summary>
+            <value>The type of the properties in the collection.</value>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.PropertyInfoCollection.Find(System.String,System.Boolean)">
+            <summary>
+            Finds the property info of the given column name in the property info collection.
+            </summary>
+            <param name="columnName">The column name for which the property info is to be obtained.</param>
+            <param name="matchCase">A boolean value indicating whether to consider the casing or not.</param>
+            <returns>The property info of the given column name.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.PropertyDescriptorExtensions.GetComplexPropertyValue(System.String[],Syncfusion.UWP.DataForm.PropertyInfoCollection,System.Object)">
+            <summary>
+            Return the value of the given record and complex property column.
+            </summary>        
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.PropertyDescriptorExtensions.SetComplexPropertyValue(System.String[],Syncfusion.UWP.DataForm.PropertyInfoCollection,System.Object,System.Object)">
+            <summary>
+            Set the value to complex property column with the given record.
+            </summary>        
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.PropertyDescriptorExtensions.GetPropertyDescriptor(Syncfusion.UWP.DataForm.PropertyInfoCollection,System.String)">
+            <summary>
+            Generate the Property Descriptor for corresponding Property it may be simple or complex property
+            </summary>
+            <param name="pdc"></param>
+            <param name="columnName"></param>
+            <param name="columnType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.NullableHelperInternal">
+            <summary>
+            A framework independent utility class for the new Nullable type in .NET Framework 2.0
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.NullableHelperInternal.IsComplexType(System.Type)">
+            <summary>
+            Indicates whether the specified Type has nested properties.
+            </summary>
+            <param name="t">The Type to be checked.</param>
+            <returns>True if nested properties are found; False otherwise.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.NullableHelperInternal.ChangeType(System.Object,System.Type,System.IFormatProvider)">
+            <summary>
+            Use this method instead of Convert.ChangeType. Makes Convert.ChangeType work with Nullable types.
+            </summary>
+            <param name="value"></param>
+            <param name="type"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.NullableHelperInternal.FixDbNUllasNull(System.Object,System.Type)">
+            <summary>
+            Returns null if value is DBNull and specified type is a Nullable type. Otherwise the value is returned unchanged.
+            </summary>
+            <param name="value"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.NullableHelperInternal.GetUnderlyingType(System.Type)">
+            <summary>
+            Returns the underlying type of a Nullable type. For .NET 1.0 and 1.1 this method will always return null.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.NullableHelperInternal.TypeConverterHelper">
+            <exclude/>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.ValueConvert">
+            <summary>
+            <see cref="T:Syncfusion.UWP.DataForm.ValueConvert"/> provides conversion routines for values
+            to convert them to another type and routines for formatting values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ValueConvert.ChangeType(System.Object,System.Type,System.IFormatProvider)">
+            <overload>
+            Converts value from one type to another using an optional <see cref="T:System.IFormatProvider"/>.
+            </overload>
+            <summary>
+            Converts value from one type to another using an optional <see cref="T:System.IFormatProvider"/>.
+            </summary>
+            <param name="value">The original value.</param>
+            <param name="type">The target type.</param>
+            <param name="provider">A <see cref="T:System.IFormatProvider"/> used to format or parse the value.</param>
+            <returns>The new value in the target type.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ValueConvert.ChangeType(System.Object,System.Type,System.IFormatProvider,System.Boolean)">
+            <summary>
+            Converts value from one type to another using an optional <see cref="T:System.IFormatProvider"/>.
+            </summary>
+            <param name="value">The original value.</param>
+            <param name="type">The target type.</param>
+            <param name="provider">A <see cref="T:System.IFormatProvider"/> used to format or parse the value.</param>
+            <param name="returnDbNUllIfNotValid">Indicates whether exceptions should be avoided or catched and return value should be DBNull if
+            it cannot be converted to the target type.</param>
+            <returns>The new value in the target type.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ValueConvert.ChangeType(System.Object,System.Type,System.IFormatProvider,System.String,System.Boolean)">
+            <summary>
+            Converts value from one type to another using an optional <see cref="T:System.IFormatProvider"/>.
+            </summary>
+            <param name="value">The original value.</param>
+            <param name="type">The target type.</param>
+            <param name="provider">A <see cref="T:System.IFormatProvider"/> used to format or parse the value.</param>
+            <param name="format">Format string.</param>
+            <param name="returnDbNUllIfNotValid">Indicates whether exceptions should be avoided or catched and return value should be DBNull if
+            it cannot be converted to the target type.</param>
+            <returns>The new value in the target type.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ValueConvert.Parse(System.String,System.Type,System.IFormatProvider,System.String,System.Boolean)">
+            <summary>
+            Parse the given text using the resultTypes "Parse" method or using a type converter.
+            </summary>
+            <param name="s">The text to parse.</param>
+            <param name="resultType">The requested result type.</param>
+            <param name="provider">A <see cref="T:System.IFormatProvider"/> used to format or parse the value. Can be NULL.</param>
+            <param name="format">A format string used in a <see cref="M:System.Object.ToString"/> call. Right now
+            format is only interpreted to enable roundtripping for formatted dates.
+            </param>
+            <param name="returnDbNUllIfNotValid">Indicates whether DbNull should be returned if value cannot be parsed. Otherwise an exception is thrown.</param>
+            <returns>The new value in the target type.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ValueConvert.IsEmpty(System.String)">
+            <summary>
+            Indicates whether string is null or empty.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.QueryableExtensions">
+            <summary>
+            Provides extension methods for Queryable source. 
+            <para></para>
+            <para></para>
+            <para>var fonts = FontFamily.Families.AsQueryable(); </para>
+            <para></para>
+            <para></para>
+            <para>We would normally write Expressions as, </para>
+            <para></para>
+            <code lang="C#">var names = new string[] {&quot;Tony&quot;, &quot;Al&quot;,
+            &quot;Sean&quot;, &quot;Elia&quot;}.AsQueryable();
+            names.OrderBy(n=&gt;n);</code>
+            <para></para>
+            <para></para>
+            <para>This would sort the names based on alphabetical order. Like so, the
+            Queryable extensions are a set of extension methods that define functions which
+            will generate expressions based on the supplied values to the functions.</para>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.QueryableExtensions.GetValueExpression(System.Linq.Expressions.ParameterExpression,System.String,System.Type)">
+            <summary>
+            Generate expression from simple and complex property
+            </summary>        
+            <param name="propertyName"></param>
+            <param name="sourceType"></param>
+            <param name="paramExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.QueryableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Iterates over a generic IEnumerable instance to a delegated function
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="items">The items.</param>
+            <param name="action">The action.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.QueryableExtensions.Select(System.Linq.IQueryable,System.String,System.Type)">
+            <summary>
+            Generates a Select query for a single property value.
+            </summary>
+            <param name="source"></param>
+            <param name="propertyName"></param>
+            <param name="sourceType">Type</param>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.SfDataFormHelpers">
+            <summary>
+            Represents an extension class that provides helper methods for <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/> control.
+            </summary>	    
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataFormHelpers.CalculateHeight(Syncfusion.UWP.DataForm.SfDataForm,Syncfusion.UWP.DataForm.DataFormItem,System.Double)">
+            <returns>Returns the calculated height.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.SfDataFormHelpers.GetItems(System.Collections.Generic.IList{Syncfusion.UWP.DataForm.DataFormItemBase},System.Int32)">
+            <summary>
+            Gets the list of items from DataFormItems list with specified rowIndex.
+            </summary>
+            <param name="dataFormItems">DataFormItems list</param>
+            <param name="rowIndex">row index.</param>
+            <returns>list of items matches rowIndex</returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.Imagehelper">
+            <summary>
+            Represents a class to handle image source
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.Imagehelper.ToUIImage(System.Byte[])">
+            <summary>
+            Converts byte memory stream to image.
+            </summary>
+            <param name="image">The memory stream</param>
+            <returns>Returns image.</returns>
+        </member>
+        <member name="T:Syncfusion.UWP.DataForm.ScrollPanel">
+            <summary>
+            UIView to layout the DataFormItemView.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ScrollPanel.RowHeight">
+            <summary>
+            Gets a value that indicates the height of the EditorPanel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ScrollPanel.RowCount">
+            <summary>
+            Gets or sets the value that indicates the number of rows in a DataForm.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ScrollPanel.LayoutManager">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.UWP.DataForm.DataFormLayoutManager"/> instance to handle the DataFormItemView collection.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ScrollPanel.VerticalScrollBarOffset">
+            <summary>
+            Gets or sets the VerticalScrollBar offset.
+            </summary>     
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ScrollPanel.ScrollOwner">
+            <summary>
+            Gets the ScrollY of the ScrollViewer to get the Y position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UWP.DataForm.ScrollPanel.VerticalOffset">
+            <summary>
+            Gets the ScrollY of the ScrollViewer to get the Y position.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.Dispose">
+            <summary>
+            Disposes all the resources used by the <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.OnDataObjectChanged">
+            <summary>
+            Disposing and remove DataFormItemViews from ScrollViewer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.GetTotalHeight(System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Gets the extended height of the panel.
+            </summary>
+            <param name="heightPixels">available height</param>
+            <param name="startIndex">start index</param>
+            <param name="endIndex">end Index</param>
+            <returns>the extended height.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.GenerateItems(System.Int32,System.Int32@,System.Int32)">
+            <summary>
+            Generates items.
+            </summary>
+            <param name="actualStartIndex">The start index to start creating item for Items.</param>
+            <param name="actualEndIndex">The end index to end the item creation for Items.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.Indexer(System.Int32,System.Int32)">
+            <summary>
+            Gets the DataFormItemView for specified index.
+            </summary>
+            <param name="index">The index of DataFormItemView</param>
+            <param name="columnIndex">The columnIndex of DataFormItemView.</param>
+            <returns>Returns the DataFormItem of specified index.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.GetTotalSpan(System.Int32)">
+            <summary>
+            Get total span of the particular row.
+            </summary>
+            <param name="rowIndex">row index.</param>        
+            <returns>row span.</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.GetHeight(System.Int32)">
+            <summary>
+            Gets the height for DataFormItemView based on valdiation, row span and label height.
+            </summary>
+            <returns>The height.</returns>
+            <param name="rowIndex">Row index.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.GetHeightForValidation(System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.Int32)">
+            <summary>
+            Gets height for validation label.
+            </summary>
+            <param name="dataFormItems">The lsit of data form items.</param>
+            <param name="rowIndex">The row index for dataformitem</param>
+            <returns>Returns height</returns>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.ScrollPanel.GetHeightForLabel(System.Collections.Generic.List{Syncfusion.UWP.DataForm.DataFormItemBase},System.Int32)">
+            <summary>
+            Gets the height for label.
+            </summary>
+            <returns>The height for label.</returns>
+            <param name="dataFormItems">Data form items.</param>
+            <param name="rowIndex">Row index.</param>
+        </member>
+        <member name="M:Syncfusion.UWP.DataForm.FormUtil.IsComplexType(System.Type)">
+            <summary>
+            Gets the given type is complex type or not.
+            </summary>
+            <param name="t">The type.</param>
+            <returns>
+            Returns true if the type if complex.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.XForms.UWP.DataForm.RendererHelper">
+            <summary>
+            Helper class for UWP renderer project.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.RendererHelper.GetWindowsColor(Xamarin.Forms.Color)">
+            <summary>
+            Gets the native color for the given Xamarin.Forms.Color.
+            </summary>
+            <param name="xColor">Xamarin.Forms color.</param>
+            <returns>Returns the solid color brush.</returns>
+        </member>
+        <member name="T:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService">
+            <summary>
+            Represents a class to handle teh native mathod calls.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.CollapseGroup(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="groupName">Group name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.Commit(System.Object)">
+            <summary>
+            Commit the specified nativeObject.
+            </summary>
+            <returns>The commit.</returns>
+            <param name="nativeObject">Native object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.Commit(System.Object,System.String)">
+            <summary>
+            Commit the specified nativeObject and propertyName.
+            </summary>
+            <returns>The commit.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.ExpandGroup(System.Object,System.String)">
+            <summary>
+            Expands the group.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="groupName">Group name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetEditorWidth(System.Object,Syncfusion.XForms.DataForm.DataFormItem,System.Double)">
+            <summary>
+            Gets the width of the editor.
+            </summary>
+            <returns>The editor width.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+            <param name="availableWidth">Available width.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetValidationLabelWidth(System.Object,Syncfusion.XForms.DataForm.DataFormItem,System.Double)">
+            <summary>
+            Gets the width of the validation label.
+            </summary>
+            <returns>The editor width.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+            <param name="availableWidth">Available width.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetLabelWidth(System.Object,Syncfusion.XForms.DataForm.DataFormItem,System.Double)">
+            <summary>
+            Gets the width of the label.
+            </summary>
+            <returns>The label width.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+            <param name="availableWidth">Available width.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetLeftPaddingForEditor(System.Object,Syncfusion.XForms.DataForm.DataFormItem)">
+            <summary>
+            Gets the left padding for editor.
+            </summary>
+            <returns>The left padding for editor.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetLeftPaddingForLabel(System.Object,Syncfusion.XForms.DataForm.DataFormItem)">
+            <summary>
+            Gets the left padding for label.
+            </summary>
+            <returns>The left padding for label.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetLeftPaddingForGroupHeader(System.Object,Syncfusion.XForms.DataForm.DataFormGroupItem)">
+            <summary>
+            Gets the left padding for group header.
+            </summary>
+            <returns>The left padding for group header.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormGroupItem">Data form group item.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetLeftPaddingForGroupIcon(System.Object,Syncfusion.XForms.DataForm.DataFormGroupItem)">
+            <summary>
+            Gets the left padding for group icon.
+            </summary>
+            <returns>The left padding for group icon.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormGroupItem">Data form group item.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.MoveToNextFocusableEditor(System.Object,Syncfusion.XForms.DataForm.DataFormItem)">
+            <summary>
+            Moves to next focusable editor.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.RefreshLayout(System.Object,System.Boolean)">
+            <summary>
+            Refreshs the layout.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="generateAllItems">If set to <c>true</c> generate all items.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.RegisterPropertyEditor(System.Object,System.String,System.String)">
+            <summary>
+            Registers the property editor.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="propertyName">Property name.</param>
+            <param name="editor">Editor.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.RegisterTypeEditor(System.Object,System.Type,System.String)">
+            <summary>
+            Registers the type editor.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="type">Type.</param>
+            <param name="editor">Editor.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.RegsiterEditor(System.Object,System.String,Syncfusion.XForms.DataForm.Editors.DataFormEditorBase)">
+            <summary>
+            Regsiters the editor.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="editorName">Editor name.</param>
+            <param name="dataFormEditor">Data form editor.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.UpdateEditor(System.Object,System.String)">
+            <summary>
+            Updates the editor.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.Validate(System.Object)">
+            <summary>
+            Validate the specified nativeObject.
+            </summary>
+            <returns>The validate.</returns>
+            <param name="nativeObject">Native object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.Validate(System.Object,System.String)">
+            <summary>
+            Validate the specified nativeObject and propertyName.
+            </summary>
+            <returns>The validate.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetDataFormItem(System.Object,System.Int32)">
+            <summary>
+            Gets the data form item.
+            </summary>
+            <returns>The data form item.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="index">Index.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetDataFormItem(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Gets the data form item.
+            </summary>
+            <returns>The data form item.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="rowIndex">Row index.</param>
+            <param name="columnIndex">Column index.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetDataFormItem(System.Object,System.String)">
+            <summary>
+            Gets the data form item.
+            </summary>
+            <returns>The data form item.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.GetValue(System.Object,Syncfusion.XForms.DataForm.DataFormItem)">
+            <summary>
+            Gets the value.
+            </summary>
+            <returns>The value.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.SetValue(System.Object,Syncfusion.XForms.DataForm.DataFormItem,System.Object)">
+            <summary>
+            Sets the value.
+            </summary>
+            <returns>The value.</returns>
+            <param name="nativeObject">Native object.</param>
+            <param name="dataFormItem">Data form item.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.CreateNativeDataFormItemView(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Creates native DataFormItemView.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="rowIndex">The RowIndex of DataFormItem.</param>
+            <param name="columnIndex">The ColumnIndex of DataFormItem.</param>
+            <returns>Returns DataFormItemView.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.CreateNativeDataFormGroupItemView(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Creates native DataFormGroupItemView.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="rowIndex">The RowIndex of DataFormGroupItem.</param>
+            <param name="columnIndex">The ColumnIndex of DataFormGroupItem.</param>
+            <returns>Returns DataFormGroupItemView.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.Dispose(System.Object)">
+            <summary>
+            Disposes the instance of <see cref="T:Syncfusion.UWP.DataForm.SfDataForm"/>
+            </summary>
+            <param name="nativeObject">The native object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.DataFormDependencyService.Count(System.Object)">
+            <summary>
+            Returns the total count of items including groups and its inner items.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping">
+            <summary>
+            Represents a class to handle the mapping between Native and Forms DataForm, DataFormItem, DataFormGroupItem and its view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetFormsDataFormItem(Syncfusion.UWP.DataForm.DataFormItem)">
+            <summary>
+            Maps native DataFormItem to Forms DataFormItem.
+            </summary>
+            <param name="dataFormItem">The native DataFormItem.</param>
+            <returns>Returns FormsDataFormItem.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.OnFormsDataFormItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Maps property changes from forms DataFormItem to native DataFormItem.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetFormsDataFormGroupItem(Syncfusion.UWP.DataForm.DataFormGroupItem)">
+            <summary>
+            Maps native DataFormGroupItem to forms DataFormGroupItem.
+            </summary>
+            <param name="dataFormGroupItem">The native DataFormGroupItem.</param>
+            <returns>Returns forms DataFormGroupItem.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.SetNativeDataFormGroupItem(Syncfusion.UWP.DataForm.DataFormGroupItem,Syncfusion.XForms.DataForm.DataFormGroupItem)">
+            <summary>
+            Maps forms DataFormGroupItem to native DataFormGroupItem.
+            </summary>
+            <param name="nativeDataFormGroupItem">The native DataFormGroupItem.</param>
+            <param name="formsDataFormGroupItem">The forms DataFormGroupItem.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.SetNativeDataFormItem(Syncfusion.UWP.DataForm.DataFormItem,Syncfusion.XForms.DataForm.DataFormItem)">
+            <summary>
+            Maps forms DataFormItem to native DataFormItem.
+            </summary>
+            <param name="nativeDataFormItem">The native DataFormItem.</param>
+            <param name="formDataFormItem">The forms DataFormItem.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.SetDataFormProperties(System.String,Syncfusion.UWP.DataForm.SfDataForm,Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+            Maps forms DataForm property changes to native DataForm.
+            </summary>
+            <param name="propertyName">The property changed.</param>
+            <param name="nativeDataForm">The native DataForm.</param>
+            <param name="dataForm">The forms DataForm.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetFormsDataFormItemView(Syncfusion.UWP.DataForm.DataFormItemView,Syncfusion.XForms.DataForm.DataFormItem,Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+            Maps native DataFormItemView to forms DataFormItemView.
+            </summary>
+            <param name="view">The native DataFormItemView.</param>
+            <param name="formsDataFormItem">The forms DataFormItem.</param>
+            <param name="dataForm">The forms DataForm.</param>
+            <returns>Returns forms DataFormItemView.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetNativeDataFormItemView(Syncfusion.XForms.DataForm.DataFormItemView,Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+            Maps forms DataFormItemView to native DataFormItemView.
+            </summary>
+            <param name="view">The native DataFormItemView.</param>
+            <param name="formsDataFormItemView">The forms DataFormItem.</param>
+            <param name="dataForm">The forms DataForm.</param>
+            <returns>Returns forms DataFormItemView.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetNativeDataFormGroupItemView(Syncfusion.XForms.DataForm.DataFormGroupItemView,Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+            Maps forms DataFormGroupItemView to native DataFormItemView.
+            </summary>
+            <param name="formsDataFormGroupItemView">The forms DataFormGroupItemView.</param>
+            <param name="dataForm">The forms DataForm.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetFormsDataFormGroupItemView(Syncfusion.UWP.DataForm.DataFormGroupItemView,Syncfusion.XForms.DataForm.DataFormGroupItem,Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+             Maps native forms DataFormGroupItemView forms DataFormGroupItemView.
+            </summary>
+            <param name="nativeDataFormGroupItemView">The native DataFormGroupItemView.</param>
+            <param name="formsDataFormGroupItem">The forms DataFormGroupItem.</param>
+            <param name="dataForm">The forms DataForm</param>
+            <returns>Returns forms DataFormGroupItemView.</returns>        
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetNativeEditor(Syncfusion.UWP.DataForm.SfDataForm,Syncfusion.XForms.DataForm.Editors.DataFormEditorBase)">
+            <summary>
+            Mpas forms editor to native editor.
+            </summary>
+            <param name="nativeObject">The native DataForm.</param>
+            <param name="formsDataFormEditor">The forms editor.</param>
+            <returns>Returns native editor.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.UnWireEvents(Syncfusion.UWP.DataForm.SfDataForm)">
+            <summary>
+            Unwire events of forms object.
+            </summary>
+            <param name="nativeDataForm"></param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormMapping.GetFormsEditor(Syncfusion.UWP.DataForm.Editors.DataFormEditorBase,Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+            Maps native DataFormEditor to forms DataFormEditor.
+            </summary>
+            <param name="nativeDataFormEditor">The native DataFormEditor.</param>
+            <param name="dataForm">The forms DataForm</param>
+            <returns>Returns forms DataFormEditor.</returns>
+        </member>
+        <member name="T:Syncfusion.XForms.UWP.DataForm.NativeDataFormEditor">
+            <summary>
+            Reprsents a class to handle custom editor from DataFormEditor.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.UWP.DataForm.SfDataFormViewRenderer">
+            <summary>
+            Represents a class to render the native DataForm.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.XForms.UWP.DataForm.SfDataFormViewRenderer.#ctor" -->
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormViewRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{Syncfusion.XForms.DataForm.SfDataForm})">
+            <summary>
+            Sets native control.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormViewRenderer.GetNativeDataForm(Syncfusion.XForms.DataForm.SfDataForm)">
+            <summary>
+            Gets the native data form.
+            </summary>
+            <returns>The native data form.</returns>
+            <param name="dataForm">Data form.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.SfDataFormViewRenderer.OnDataFormPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Call back for propery changes
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.UWP.DataForm.SfDataFormRenderer">
+            <summary>
+            Reprsents the renderer class for a <see cref="T:Syncfusion.XForms.DataForm.SfDataForm"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.Syncfusion_SfDataForm_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.Syncfusion_SfDataForm_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.UWP.DataForm.Syncfusion_SfDataForm_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

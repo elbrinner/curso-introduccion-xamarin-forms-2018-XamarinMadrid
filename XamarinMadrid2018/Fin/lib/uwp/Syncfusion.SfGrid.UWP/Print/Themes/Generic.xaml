@@ -1,0 +1,190 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:local="using:Syncfusion.UI.Xaml.Grid">
+    <Style x:Key="PrintPageControlStyle" TargetType="local:PrintPageControl">
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintPageControl">
+                    <Viewbox x:Name="PART_Viewbox">
+                        <Border Width="{Binding PrintPageWidth}"
+                                Height="{Binding PrintPageHeight}"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <Border Margin="{Binding PrintPageMargin}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <!--UWP-5069 In UWP we need to set Horizontal and Vertical ContentAlignment as Stretch ,otherwise loaded by content height and width it’s default behavior of ContentControl in UWP-->
+                                    <ContentControl Height="{Binding PrintPageHeaderHeight}"
+                                                    ContentTemplate="{Binding PrintPageHeaderTemplate}" 
+                                                    HorizontalContentAlignment="Stretch"
+                                                    VerticalContentAlignment="Stretch"/>
+                                    <Border x:Name="PartScalingBorder" Grid.Row="1">
+                                        <ContentPresenter x:Name="Part_Panel" />
+                                    </Border>
+                                    <ContentControl Grid.Row="2"
+                                                    Height="{Binding PrintPageFooterHeight}"
+                                                    ContentTemplate="{Binding PrintPageFooterTemplate}" 
+                                                    HorizontalContentAlignment="Stretch"
+                                                    VerticalContentAlignment="Stretch"/>
+                                </Grid>
+                            </Border>
+                        </Border>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintPageControlStyle}" TargetType="local:PrintPageControl"/>
+
+    <Style x:Key="PrintGridCellStyle" TargetType="local:PrintGridCell">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="0,0,1,1" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Height" Value="{Binding PrintRowHeight}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintGridCell">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter Margin="{TemplateBinding Padding}" Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintGridCellStyle}" TargetType="local:PrintGridCell"/>
+
+    <Style x:Key="PrintHeaderCellStyle" TargetType="local:PrintHeaderCell">
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Height" Value="{Binding PrintHeaderRowHeight}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintHeaderCell">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter Margin="{TemplateBinding Padding}" Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintHeaderCellStyle}" TargetType="local:PrintHeaderCell"/>
+
+    <Style x:Key="PrintCaptionSummaryCellStyle" TargetType="local:PrintCaptionSummaryCell">
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Height" Value="{Binding PrintGroupCaptionRowHeight}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintCaptionSummaryCell">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter Margin="{TemplateBinding Padding}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintCaptionSummaryCellStyle}" TargetType="local:PrintCaptionSummaryCell"/>
+    
+    <Style x:Key="PrintGroupSummaryCellStyle" TargetType="local:PrintGroupSummaryCell">
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Height" Value="{Binding PrintSummaryRowHeight}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintGroupSummaryCell">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter Margin="{TemplateBinding Padding}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintGroupSummaryCellStyle}" TargetType="local:PrintGroupSummaryCell"/>
+
+    <Style x:Key="PrintTableSummaryCellStyle" TargetType="local:PrintTableSummaryCell">
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Height" Value="{Binding PrintSummaryRowHeight}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintTableSummaryCell">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter Margin="{TemplateBinding Padding}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintTableSummaryCellStyle}" TargetType="local:PrintTableSummaryCell"/>
+
+    <!--  PrintUnboundRowCell Styles added  -->
+    <Style x:Name="PrintUnboundRowCellStyle" TargetType="local:PrintUnboundRowCell">
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrintUnboundRowCell">
+                    <Grid>
+                        <Border 
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid>
+                                <ContentPresenter Margin="{TemplateBinding Padding}"
+                                                  FontFamily="{TemplateBinding FontFamily}"
+                                                  FontSize="{TemplateBinding FontSize}"
+                                                  Foreground="{TemplateBinding Foreground}" />
+                            </Grid>
+                        </Border>                  
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style BasedOn="{StaticResource PrintUnboundRowCellStyle}" TargetType="local:PrintUnboundRowCell"/>
+
+</ResourceDictionary>

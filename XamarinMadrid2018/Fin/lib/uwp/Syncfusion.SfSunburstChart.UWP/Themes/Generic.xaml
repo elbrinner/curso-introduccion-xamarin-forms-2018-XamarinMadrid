@@ -1,0 +1,10 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.SfSunburstChart.UWP/Base/Themes/SunburstChart.xaml"/>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.SfSunburstChart.UWP/Legend/Themes/SunburstLegend.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
+

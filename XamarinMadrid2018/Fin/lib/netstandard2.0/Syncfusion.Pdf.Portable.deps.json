@@ -1,0 +1,71 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "648e43956d57b6d8fe4cd03cc24913c83291eb92"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Syncfusion.Pdf.Portable/16.2200.0.41": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.1",
+          "System.Text.Encoding.CodePages": "4.4.0",
+          "Syncfusion.Compression.Portable": "16.2200.0.41"
+        },
+        "runtime": {
+          "Syncfusion.Pdf.Portable.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.Text.Encoding.CodePages/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        }
+      },
+      "Syncfusion.Compression.Portable/16.2200.0.41": {
+        "runtime": {
+          "Syncfusion.Compression.Portable.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Syncfusion.Pdf.Portable/16.2200.0.41": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dvsme4Y4lhmkY0FTfbg0R0/cjeV3mSsh+ep6yEsA5WYSRtdltVGbiCZbTwtn+B4QZpAU+51dennz6GL2lXSZfg==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+      "path": "netstandard.library/2.0.1",
+      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+      "path": "system.text.encoding.codepages/4.4.0",
+      "hashPath": "system.text.encoding.codepages.4.4.0.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Portable/16.2200.0.41": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,96 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uwp="using:Syncfusion.XForms.UWP.Buttons">
+
+    <uwp:DisplayModeToVisibilityConverter x:Key="DisplayModeToVisibilityConverter" />
+
+    <Style x:Key="DefaultSfSegmentedViewStyle" TargetType="uwp:SfSegmentedControl" >
+        <Setter Property="BorderBrush" Value="LightGray" />
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <ItemsStackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="uwp:SfSegmentedControl">
+                    <Border
+                        x:Name="PART_ViewBorder"
+                        Height="{Binding Path=SegmentHeight, Mode=TwoWay,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                        Background="{Binding Path=Background, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                        BorderBrush="{Binding Path=BorderBrush, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                        CornerRadius="{Binding Path=CornerRadius, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                        <!--BorderThickness="{Binding Path=BorderThickness, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}"-->
+
+                        <Grid >
+                            <Grid x:Name="PART_Header"  >
+                                <ScrollViewer x:Name="PART_ScrollViewer" 
+                                              VerticalScrollBarVisibility="Disabled"
+                                              VerticalScrollMode="Disabled"
+                                              HorizontalScrollMode="Enabled"
+                                              HorizontalScrollBarVisibility="Hidden">
+                                    <Grid >
+                                        <Border 
+                                            x:Name="SelectionStip" 
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                           />
+                                        <ItemsPresenter />
+                                    </Grid>
+                                </ScrollViewer>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style BasedOn="{StaticResource DefaultSfSegmentedViewStyle}" TargetType="uwp:SfSegmentedControl" />
+
+    <Style x:Key="DefaultSfSegmentItemStyle" TargetType="uwp:SfSegmentItem">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="5" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="uwp:SfSegmentItem">
+                    <StackPanel  x:Name="PART_ItemBorder"
+                                 HorizontalAlignment="Center"
+                                 Background="Transparent"
+                                 VerticalAlignment="Center">
+                        <!--           Height="{Binding Path=Parent.SegmentHeight,RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                    Width="{Binding Path=Parent.SegmentWidth,RelativeSource={RelativeSource Mode=TemplatedParent}}"                         CornerRadius="{Binding Path=Parent.SegmentCornerRadius, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+ Width="{Binding Path=SegmentWidth, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}"-->
+                        <TextBlock x:Name="Part_Icon" 
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"  
+                                       Text="{Binding Path=IconFont, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       FontFamily="{Binding Path=FontIconFontFamily, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       FontSize="{Binding Path=FontIconFontSize, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       Visibility="{Binding Path=Parent.DisplayMode, RelativeSource={RelativeSource Mode=TemplatedParent},Converter={StaticResource DisplayModeToVisibilityConverter},ConverterParameter=image}"   
+                                 
+                                        />
+                        <TextBlock x:Name="Part_Text"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"   
+                                       Text="{Binding Path=Text, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       FontStyle="{Binding Path=TitleFontAttributes, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       FontWeight="{Binding Path=TitleFontWeight, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       FontFamily="{Binding Path=TitleFontFamily, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       FontSize="{Binding Path=TitleFontSize, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       Visibility="{Binding Path=Parent.DisplayMode, RelativeSource={RelativeSource Mode=TemplatedParent},Converter={StaticResource DisplayModeToVisibilityConverter},ConverterParameter=text}"   
+                                        />
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style BasedOn="{StaticResource DefaultSfSegmentItemStyle}" TargetType="uwp:SfSegmentItem" />
+
+</ResourceDictionary>
+

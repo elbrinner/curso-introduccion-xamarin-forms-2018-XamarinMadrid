@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Core.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Core.XForms.IPullToRefresh">
+            <summary>
+            Defines methods and properties that must be implemented to get notification of the pull to refresh actions.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.Pulling(System.Double,System.Boolean@)">
+            <summary>
+            Provides notifications regarding the pulling action with the progress value and an out parameter to cancel the pulling event. 
+            </summary>
+            <param name="progress">progress value of the pulling action.</param>
+            <param name="cancel">If cancel is set to true, pulling will be cancelled</param>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.Refreshing">
+            <summary>
+            Provides notifications regarding the refreshing action.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.Refreshed">
+            <summary>
+            Signals that the view refreshing is completed. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.PullingCancelled">
+            <summary>
+            Signals that the pulling action is cancelled before the progress meeting 100.
+            </summary>
+        </member>
+    </members>
+</doc>
