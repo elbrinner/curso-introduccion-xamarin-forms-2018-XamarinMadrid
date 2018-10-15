@@ -8,18 +8,19 @@ using XamarinMadrid2018.Services.SpecificPlataform;
 [assembly: Xamarin.Forms.Dependency(typeof(DialogService))]
 namespace XamarinMadrid2018.Droid.SpecificPlataform
 {
-    public class DialogService : IDialogService
-    {
-        public void ShowAlert(string title, string message, string titleButton)
+    public void ShowAlert(string title, string message, string titleButton)
         {
-            AlertDialog.Builder alert = new AlertDialog.Builder(Forms.Context);
-            alert.SetTitle(title);
-            alert.SetMessage(message);
-           
 
-            Dialog dialog = alert.Create();
-            dialog.Show();
+            var alert = (new AlertDialog.Builder(Forms.Context)).Create();
+            alert.SetMessage(message);
+            alert.SetTitle(title);
+            alert.SetButton(titleButton, handllerNotingButton);
+            alert.Show();
 
         }
-    }
+
+        private void handllerNotingButton(object sender, DialogClickEventArgs e)
+        {
+          
+        }
 }
