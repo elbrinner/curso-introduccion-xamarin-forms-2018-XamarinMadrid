@@ -16,7 +16,7 @@
 
                 <DataTemplate>
                     <ViewCell>
-                       <Frame Margin="15" BackgroundColor="White" CornerRadius="15">
+                       <Frame Margin="15" BackgroundColor="White" CornerRadius="15"  >
                                 <Grid RowSpacing="1">
                                     <Grid.RowDefinitions>
                                            <RowDefinition></RowDefinition>
@@ -24,7 +24,7 @@
                                      <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="50"></ColumnDefinition>
                                             <ColumnDefinition Width="*"></ColumnDefinition>
-                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="auto"></ColumnDefinition>
 
                                             </Grid.ColumnDefinitions>
 

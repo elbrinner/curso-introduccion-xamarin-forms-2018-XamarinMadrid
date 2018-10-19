@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="XamarinMadrid2018.Pages.DetailPage"
+             Title="{Binding TitlePage}">
+    <ContentPage.Content>
+
+    <StackLayout x:Name="stack">
+      <StackLayout.Resources>
+        <ResourceDictionary>
+          <DataTemplate x:Key="toolTipTemplate1">
+            <StackLayout BackgroundColor="#404041">
+              <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" WinPhone="3,3,3,3" />
+              </StackLayout.Padding>
+              <Label Text="Precio anterior" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" Grid.Row="0" />
+              <BoxView Grid.Row="1" Color="White" HeightRequest="0.75" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+              <StackLayout Orientation="Horizontal"  VerticalOptions="FillAndExpand" BackgroundColor="#404041" Spacing="0" Padding="3" Margin="0">
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" TextColor="#CCCCCC" FontAttributes="Bold" FontFamily="Helvetica" FontSize="12" />
+                <Label Text="{Binding Value,StringFormat=' :  {0}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" />
+              </StackLayout>
+            </StackLayout>
+          </DataTemplate>
+          <DataTemplate x:Key="toolTipTemplate2">
+            <StackLayout BackgroundColor="#404041">
+              <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" WinPhone="3,3,3,3" />
+              </StackLayout.Padding>
+              <Label Text="Precio de apertura" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" Grid.Row="0" />
+              <BoxView Grid.Row="1" Color="White" HeightRequest="0.75" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+              <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" BackgroundColor="#404041" Spacing="0" Padding="3" Margin="0">
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" TextColor="#CCCCCC" FontAttributes="Bold" FontFamily="Helvetica" FontSize="12" />
+                <Label Text="{Binding Value,StringFormat=' :  {0}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" />
+              </StackLayout>
+            </StackLayout>
+          </DataTemplate>
+          <DataTemplate x:Key="toolTipTemplate3">
+            <StackLayout BackgroundColor="#404041">
+              <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" WinPhone="3,3,3,3" />
+              </StackLayout.Padding>
+              <Label Text="Precio de compra" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" Grid.Row="0" />
+              <BoxView Grid.Row="1" Color="White" HeightRequest="0.75" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+              <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" BackgroundColor="#404041" Spacing="0" Padding="3" Margin="0">
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" TextColor="#CCCCCC" FontAttributes="Bold" FontFamily="Helvetica" FontSize="12" />
+                <Label Text="{Binding Value,StringFormat=' :  {0}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" />
+              </StackLayout>
+            </StackLayout>
+          </DataTemplate>
+
+           <DataTemplate x:Key="toolTipTemplate4">
+            <StackLayout BackgroundColor="#404041">
+              <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" WinPhone="3,3,3,3" />
+              </StackLayout.Padding>
+              <Label Text="Precio de venta" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" Grid.Row="0" />
+              <BoxView Grid.Row="1" Color="White" HeightRequest="0.75" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+              <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" BackgroundColor="#404041" Spacing="0" Padding="3" Margin="0">
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" TextColor="#CCCCCC" FontAttributes="Bold" FontFamily="Helvetica" FontSize="12" />
+                <Label Text="{Binding Value,StringFormat=' :  {0}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" />
+              </StackLayout>
+            </StackLayout>
+          </DataTemplate>
+
+           <DataTemplate x:Key="toolTipTemplate5">
+            <StackLayout BackgroundColor="#404041">
+              <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" WinPhone="3,3,3,3" />
+              </StackLayout.Padding>
+              <Label Text="Menor precio del día" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" Grid.Row="0" />
+              <BoxView Grid.Row="1" Color="White" HeightRequest="0.75" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+              <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" BackgroundColor="#404041" Spacing="0" Padding="3" Margin="0">
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" TextColor="#CCCCCC" FontAttributes="Bold" FontFamily="Helvetica" FontSize="12" />
+                <Label Text="{Binding Value,StringFormat=' :  {0}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" />
+              </StackLayout>
+            </StackLayout>
+          </DataTemplate>
+
+             <DataTemplate x:Key="toolTipTemplate6">
+            <StackLayout BackgroundColor="#404041">
+              <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" WinPhone="3,3,3,3" />
+              </StackLayout.Padding>
+              <Label Text="Mayor precio del día" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" Grid.Row="0" />
+              <BoxView Grid.Row="1" Color="White" HeightRequest="0.75" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+              <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" BackgroundColor="#404041" Spacing="0" Padding="3" Margin="0">
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" TextColor="#CCCCCC" FontAttributes="Bold" FontFamily="Helvetica" FontSize="12" />
+                <Label Text="{Binding Value,StringFormat=' :  {0}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Margin="0" FontSize="12" />
+              </StackLayout>
+            </StackLayout>
+          </DataTemplate>
+                    
+        </ResourceDictionary>
+      </StackLayout.Resources>
+      <chart:SfChart x:Name="Chart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <chart:SfChart.ColorModel>
+          <chart:ChartColorModel Palette="Natural" />
+        </chart:SfChart.ColorModel>
+        <chart:SfChart.Title>
+          <chart:ChartTitle Text="Cotización del día"  />
+        </chart:SfChart.Title>
+
+                
+        <chart:SfChart.ChartBehaviors>
+          <chart:ChartTooltipBehavior BackgroundColor="#404041" />
+        </chart:SfChart.ChartBehaviors>
+        <chart:SfChart.PrimaryAxis>
+          <chart:CategoryAxis EdgeLabelsDrawingMode="Shift" LabelPlacement="BetweenTicks" IsVisible="true" ShowMajorGridLines="false" >
+          </chart:CategoryAxis>
+        </chart:SfChart.PrimaryAxis>
+        <chart:SfChart.SecondaryAxis>
+          <chart:NumericalAxis IsVisible="false" ShowMajorGridLines="false" ShowMinorGridLines="false">
+            <chart:NumericalAxis.Title>
+              <chart:ChartAxisTitle Text="Medals">
+                <chart:ChartAxisTitle.Font>
+                  <OnPlatform x:TypeArguments="Font" iOS="12" />
+                </chart:ChartAxisTitle.Font>
+                <chart:ChartAxisTitle.Margin>
+                  <OnPlatform x:TypeArguments="Thickness" Android="0,0,10,0" />
+                </chart:ChartAxisTitle.Margin>
+              </chart:ChartAxisTitle>
+            </chart:NumericalAxis.Title>
+          </chart:NumericalAxis>
+        </chart:SfChart.SecondaryAxis>
+        <chart:SfChart.Legend>
+          <chart:ChartLegend ToggleSeriesVisibility="True" DockPosition="Bottom" IconWidth="14" IconHeight="14" />
+        </chart:SfChart.Legend>
+        <chart:SfChart.Series>
+          <chart:ColumnSeries x:Name="columnSeries1" ItemsSource="{Binding ColumnData1}" XBindingPath="Name" YBindingPath="Value" LegendIcon="SeriesType" Label="Precio anterior" EnableTooltip="true" EnableAnimation="True" TooltipTemplate="{StaticResource toolTipTemplate1}">
+            <chart:ColumnSeries.DataMarker>
+              <chart:ChartDataMarker ShowLabel="True">
+                <chart:ChartDataMarker.LabelStyle>
+                  <chart:DataMarkerLabelStyle LabelPosition="Inner" >
+                    <chart:DataMarkerLabelStyle.Font>
+                      <OnPlatform x:TypeArguments="Font" iOS="12" />
+                    </chart:DataMarkerLabelStyle.Font>
+                  </chart:DataMarkerLabelStyle>
+                </chart:ChartDataMarker.LabelStyle>
+              </chart:ChartDataMarker>
+            </chart:ColumnSeries.DataMarker>
+          </chart:ColumnSeries>
+                    
+          <chart:ColumnSeries x:Name="columnSeries2" ItemsSource="{Binding ColumnData2}" XBindingPath="Name" YBindingPath="Value" LegendIcon="SeriesType" Label="Precio apertura" EnableTooltip="true" EnableAnimation="True" TooltipTemplate="{StaticResource toolTipTemplate2}">
+            <chart:ColumnSeries.DataMarker>
+              <chart:ChartDataMarker ShowLabel="True">
+                <chart:ChartDataMarker.LabelStyle>
+                  <chart:DataMarkerLabelStyle LabelPosition="Inner" >
+                    <chart:DataMarkerLabelStyle.Font>
+                      <OnPlatform x:TypeArguments="Font" iOS="12" />
+                    </chart:DataMarkerLabelStyle.Font>
+                  </chart:DataMarkerLabelStyle>
+                </chart:ChartDataMarker.LabelStyle>
+              </chart:ChartDataMarker>
+            </chart:ColumnSeries.DataMarker>
+          </chart:ColumnSeries>
+                    
+          <chart:ColumnSeries x:Name="columnSeries3" ItemsSource="{Binding ColumnData3}" XBindingPath="Name" YBindingPath="Value" LegendIcon="SeriesType" Label="Precio compra" EnableTooltip="true" EnableAnimation="True" TooltipTemplate="{StaticResource toolTipTemplate3}">
+            <chart:ColumnSeries.DataMarker>
+              <chart:ChartDataMarker ShowLabel="True">
+                <chart:ChartDataMarker.LabelStyle>
+                  <chart:DataMarkerLabelStyle LabelPosition="Inner" >
+                    <chart:DataMarkerLabelStyle.Font>
+                      <OnPlatform x:TypeArguments="Font" iOS="12" />
+                    </chart:DataMarkerLabelStyle.Font>
+                  </chart:DataMarkerLabelStyle>
+                </chart:ChartDataMarker.LabelStyle>
+              </chart:ChartDataMarker>
+            </chart:ColumnSeries.DataMarker>
+          </chart:ColumnSeries>
+
+
+       <chart:ColumnSeries x:Name="columnSeries4" ItemsSource="{Binding ColumnData4}" XBindingPath="Name" YBindingPath="Value" LegendIcon="SeriesType" Label="Precio de venta" EnableTooltip="true" EnableAnimation="True" TooltipTemplate="{StaticResource toolTipTemplate4}">
+            <chart:ColumnSeries.DataMarker>
+              <chart:ChartDataMarker ShowLabel="True">
+                <chart:ChartDataMarker.LabelStyle>
+                  <chart:DataMarkerLabelStyle LabelPosition="Inner" >
+                    <chart:DataMarkerLabelStyle.Font>
+                      <OnPlatform x:TypeArguments="Font" iOS="12" />
+                    </chart:DataMarkerLabelStyle.Font>
+                  </chart:DataMarkerLabelStyle>
+                </chart:ChartDataMarker.LabelStyle>
+              </chart:ChartDataMarker>
+            </chart:ColumnSeries.DataMarker>
+          </chart:ColumnSeries>
+
+         <chart:ColumnSeries x:Name="columnSeries5" ItemsSource="{Binding ColumnData5}" XBindingPath="Name" YBindingPath="Value" LegendIcon="SeriesType" Label="Menor precio del día" EnableTooltip="true" EnableAnimation="True" TooltipTemplate="{StaticResource toolTipTemplate5}">
+            <chart:ColumnSeries.DataMarker>
+              <chart:ChartDataMarker ShowLabel="True">
+                <chart:ChartDataMarker.LabelStyle>
+                  <chart:DataMarkerLabelStyle LabelPosition="Inner" >
+                    <chart:DataMarkerLabelStyle.Font>
+                      <OnPlatform x:TypeArguments="Font" iOS="12" />
+                    </chart:DataMarkerLabelStyle.Font>
+                  </chart:DataMarkerLabelStyle>
+                </chart:ChartDataMarker.LabelStyle>
+              </chart:ChartDataMarker>
+            </chart:ColumnSeries.DataMarker>
+          </chart:ColumnSeries>
+
+             <chart:ColumnSeries x:Name="columnSeries6" ItemsSource="{Binding ColumnData6}" XBindingPath="Name" YBindingPath="Value" LegendIcon="SeriesType" Label="Mayor precio del día" EnableTooltip="true" EnableAnimation="True" TooltipTemplate="{StaticResource toolTipTemplate6}">
+            <chart:ColumnSeries.DataMarker>
+              <chart:ChartDataMarker ShowLabel="True">
+                <chart:ChartDataMarker.LabelStyle>
+                  <chart:DataMarkerLabelStyle LabelPosition="Inner" >
+                    <chart:DataMarkerLabelStyle.Font>
+                      <OnPlatform x:TypeArguments="Font" iOS="12" />
+                    </chart:DataMarkerLabelStyle.Font>
+                  </chart:DataMarkerLabelStyle>
+                </chart:ChartDataMarker.LabelStyle>
+              </chart:ChartDataMarker>
+            </chart:ColumnSeries.DataMarker>
+          </chart:ColumnSeries>        
+
+                    
+        </chart:SfChart.Series>
+
+
+          
+                
+      </chart:SfChart>
+    </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
